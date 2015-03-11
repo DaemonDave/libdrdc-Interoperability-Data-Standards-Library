@@ -3,7 +3,8 @@
 
 
 AC_PREREQ(2.6)
-AC_INIT([libdrdc], [[0.2-0]], [david.erickson@drdc-rddc.gc.ca])
+AC_INIT([src/libdrdc.h])
+AC_INIT_AUTOMAKE([libdrdc], [[0.2-0]], [david.erickson@drdc-rddc.gc.ca])
 
 # determine system type by conventional m4 macro
 AC_CANONICAL_TARGET
