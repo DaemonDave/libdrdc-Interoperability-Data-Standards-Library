@@ -1,0 +1,302 @@
+\hypertarget{group__a}{
+\section{Matrix Operations}
+\label{group__a}\index{Matrix Operations@{Matrix Operations}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{group__a_gfc9e8bb8b888bf8f1577f0f04ec74f09}{vectorCompare} (const int n, const double $\ast$vector1, const double $\ast$vector2, const double $\ast$fuzzVector)
+\begin{CompactList}\small\item\em Vector Comparison. \item\end{CompactList}\item 
+double \hyperlink{group__a_gc985f610b5e647c96a03cf89098aa271}{vectorDot} (const int n, const double $\ast$vector1, const double $\ast$vector2)
+\begin{CompactList}\small\item\em Vector Dot Product. \item\end{CompactList}\item 
+double \hyperlink{group__a_gdf52065f80318dcc65c395566784fbc5}{vectorMagnitude} (const int n, const double $\ast$vector)
+\begin{CompactList}\small\item\em Vector Magnitude. \item\end{CompactList}\item 
+void \hyperlink{group__a_g0b322588b02d41e5bc4f37b292d15e16}{vectorNormalize} (const int n, double $\ast$vector)
+\begin{CompactList}\small\item\em Unitize Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g1ac846f1472a6bbb80a7b10e44c9c8e7}{vectorCross} (const double $\ast$vector1, const double $\ast$vector2, double $\ast$resultVector)
+\begin{CompactList}\small\item\em Vector Cross Product. \item\end{CompactList}\item 
+void \hyperlink{group__a_g97fc3b2e8bbe3973ac8fe0c122807b89}{vectorScale} (const int n, const double alpha, double $\ast$vector)
+\begin{CompactList}\small\item\em Vector Scaling. \item\end{CompactList}\item 
+void \hyperlink{group__a_g08d2c57a110ec57f89669160ae1fd089}{vectorCopy} (const int n, const double $\ast$srcVector, double $\ast$destVector)
+\begin{CompactList}\small\item\em Copy Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g3498940945f9d5437032454f4838350c}{vectorAxpy} (const int n, const double alpha, const double $\ast$x, double $\ast$y)
+\begin{CompactList}\small\item\em Scalar-Vector Product. \item\end{CompactList}\item 
+void \hyperlink{group__a_g36d84832e6a52057a4519e003d299e95}{vectorZeros} (const int n, double $\ast$vector)
+\begin{CompactList}\small\item\em Zero Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g04a15ca8e56a12b927b5408ce191795a}{vectorSplit} (const int n, const int m, const double $\ast$orgVector, double $\ast$vector1, double $\ast$vector2)
+\begin{CompactList}\small\item\em Split Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_gc00ab414706bc82820e985055f285f3b}{vectorJoin} (const int n, const int m, const double $\ast$vector1, const double $\ast$vector2, double $\ast$resultVector)
+\begin{CompactList}\small\item\em Join Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g097b52024b56996c79e5c8767afd66ae}{matrixMvp} (const char transA, const double alpha, const double $\ast$a, const double $\ast$x, const double beta, double $\ast$y)
+\begin{CompactList}\small\item\em 4x4 Matrix-Vector Product \item\end{CompactList}\item 
+void \hyperlink{group__a_g83ebfef715d1b7634526d23bed49d68c}{matrixMmp} (const char transA, const char transB, const double alpha, const double $\ast$a, const double $\ast$b, const double beta, double $\ast$c)
+\begin{CompactList}\small\item\em 4x4 Matrix-Matrix Product \item\end{CompactList}\item 
+double \hyperlink{group__a_ga173dc4c93e8bc6f1747c5367f63afd8}{matrixDeterminant} (const double $\ast$matrix)
+\begin{CompactList}\small\item\em 4x4 Matrix Determint \item\end{CompactList}\item 
+void \hyperlink{group__a_g39674801055355a4eb3338ba6023b83c}{matrixTranspose} (double $\ast$matrix)
+\begin{CompactList}\small\item\em 4x4 Matrix Transpose \item\end{CompactList}\item 
+void \hyperlink{group__a_g0621678b0351aa86eda18b2e559c7f71}{matrixIdentity} (double $\ast$matrix)
+\begin{CompactList}\small\item\em 4x4 Identity Matrix. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__a_ga173dc4c93e8bc6f1747c5367f63afd8}{
+\index{a@{a}!matrixDeterminant@{matrixDeterminant}}
+\index{matrixDeterminant@{matrixDeterminant}!a@{a}}
+\subsubsection[matrixDeterminant]{\setlength{\rightskip}{0pt plus 5cm}double matrixDeterminant (const double $\ast$ {\em matrix})}}
+\label{group__a_ga173dc4c93e8bc6f1747c5367f63afd8}
+
+
+4x4 Matrix Determint 
+
+This function computes the determint of a 4x4 matrix.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em matrix}]Input. 4x4 matrix.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The determint of the matrix. \end{Desc}
+\hypertarget{group__a_g0621678b0351aa86eda18b2e559c7f71}{
+\index{a@{a}!matrixIdentity@{matrixIdentity}}
+\index{matrixIdentity@{matrixIdentity}!a@{a}}
+\subsubsection[matrixIdentity]{\setlength{\rightskip}{0pt plus 5cm}void matrixIdentity (double $\ast$ {\em matrix})}}
+\label{group__a_g0621678b0351aa86eda18b2e559c7f71}
+
+
+4x4 Identity Matrix. 
+
+This function sets an 4x4 identity matrix.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em matrix}]Input/Output. 4x4 matrix. \end{description}
+\end{Desc}
+\hypertarget{group__a_g83ebfef715d1b7634526d23bed49d68c}{
+\index{a@{a}!matrixMmp@{matrixMmp}}
+\index{matrixMmp@{matrixMmp}!a@{a}}
+\subsubsection[matrixMmp]{\setlength{\rightskip}{0pt plus 5cm}void matrixMmp (const char {\em transA}, \/  const char {\em transB}, \/  const double {\em alpha}, \/  const double $\ast$ {\em a}, \/  const double $\ast$ {\em b}, \/  const double {\em beta}, \/  double $\ast$ {\em c})}}
+\label{group__a_g83ebfef715d1b7634526d23bed49d68c}
+
+
+4x4 Matrix-Matrix Product 
+
+This function performs a 4x4 matrix-matrix operation defined as c = alpha$\ast$op(a)$\ast$op(b) + beta$\ast$c, where op(x) is one of op(x) = x or op(x) = x'. x' is the transpose of x.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em transA}]Input. Specifies the operation to be performed on A. N or n - No transpose. T or t - Transpose. \item[{\em transB}]Input. Specifies the operation to be performed on B. N or n - No transpose. T or t - Transpose. \item[{\em alpha}]Input. Scalar. \item[{\em a}]Input. 4x4 matrix. \item[{\em b}]Input. 4x4 matrix. \item[{\em beta}]Input. Scalar. \item[{\em c}]Output. 4x4 matrix.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{group__a_g097b52024b56996c79e5c8767afd66ae}{
+\index{a@{a}!matrixMvp@{matrixMvp}}
+\index{matrixMvp@{matrixMvp}!a@{a}}
+\subsubsection[matrixMvp]{\setlength{\rightskip}{0pt plus 5cm}void matrixMvp (const char {\em transA}, \/  const double {\em alpha}, \/  const double $\ast$ {\em a}, \/  const double $\ast$ {\em x}, \/  const double {\em beta}, \/  double $\ast$ {\em y})}}
+\label{group__a_g097b52024b56996c79e5c8767afd66ae}
+
+
+4x4 Matrix-Vector Product 
+
+This function performs a 4x4 matrix-vector operation defined as y = alpha$\ast$a$\ast$x + beta$\ast$y or y = alpha$\ast$a'$\ast$x + beta$\ast$y. a' is the transpose of a.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em transA}]Input. Specifies the operation to be performed. N or n - No transpose. T or t - Transpose. \item[{\em alpha}]Input. Scalar. \item[{\em a}]Input. 4x4 matrix. \item[{\em x}]Input. 4-vector. \item[{\em beta}]Input. Scalar. \item[{\em y}]Output. 4-vector. \end{description}
+\end{Desc}
+\hypertarget{group__a_g39674801055355a4eb3338ba6023b83c}{
+\index{a@{a}!matrixTranspose@{matrixTranspose}}
+\index{matrixTranspose@{matrixTranspose}!a@{a}}
+\subsubsection[matrixTranspose]{\setlength{\rightskip}{0pt plus 5cm}void matrixTranspose (double $\ast$ {\em matrix})}}
+\label{group__a_g39674801055355a4eb3338ba6023b83c}
+
+
+4x4 Matrix Transpose 
+
+This function transposes a matrix.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em matrix}]Input/Output. 4x4 matrix. \end{description}
+\end{Desc}
+\hypertarget{group__a_g3498940945f9d5437032454f4838350c}{
+\index{a@{a}!vectorAxpy@{vectorAxpy}}
+\index{vectorAxpy@{vectorAxpy}!a@{a}}
+\subsubsection[vectorAxpy]{\setlength{\rightskip}{0pt plus 5cm}void vectorAxpy (const int {\em n}, \/  const double {\em alpha}, \/  const double $\ast$ {\em x}, \/  double $\ast$ {\em y})}}
+\label{group__a_g3498940945f9d5437032454f4838350c}
+
+
+Scalar-Vector Product. 
+
+This function performs a vector-vector operation defined as y = alpha$\ast$x + y.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em alpha}]Input. Scalar \item[{\em x}]Input. n-vector. \item[{\em y}]Output. n-vector. \end{description}
+\end{Desc}
+\hypertarget{group__a_gfc9e8bb8b888bf8f1577f0f04ec74f09}{
+\index{a@{a}!vectorCompare@{vectorCompare}}
+\index{vectorCompare@{vectorCompare}!a@{a}}
+\subsubsection[vectorCompare]{\setlength{\rightskip}{0pt plus 5cm}int vectorCompare (const int {\em n}, \/  const double $\ast$ {\em vector1}, \/  const double $\ast$ {\em vector2}, \/  const double $\ast$ {\em fuzzVector})}}
+\label{group__a_gfc9e8bb8b888bf8f1577f0f04ec74f09}
+
+
+Vector Comparison. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em vector1}]Input. n-vector 1. \item[{\em vector2}]Input. n-vector 2. \item[{\em fuzzVector}]Input. n-vector. How close the two vectors are considered to be equal.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if not equal. Otherwise, it returns one if two vectors are equal. \end{Desc}
+\hypertarget{group__a_g08d2c57a110ec57f89669160ae1fd089}{
+\index{a@{a}!vectorCopy@{vectorCopy}}
+\index{vectorCopy@{vectorCopy}!a@{a}}
+\subsubsection[vectorCopy]{\setlength{\rightskip}{0pt plus 5cm}void vectorCopy (const int {\em n}, \/  const double $\ast$ {\em srcVector}, \/  double $\ast$ {\em destVector})}}
+\label{group__a_g08d2c57a110ec57f89669160ae1fd089}
+
+
+Copy Vector. 
+
+This function performs a vector-vector operation defined as Y = X.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em srcVector}]Input. n-vector. \item[{\em destVector}]Output. n-vector. \end{description}
+\end{Desc}
+\hypertarget{group__a_g1ac846f1472a6bbb80a7b10e44c9c8e7}{
+\index{a@{a}!vectorCross@{vectorCross}}
+\index{vectorCross@{vectorCross}!a@{a}}
+\subsubsection[vectorCross]{\setlength{\rightskip}{0pt plus 5cm}void vectorCross (const double $\ast$ {\em vector1}, \/  const double $\ast$ {\em vector2}, \/  double $\ast$ {\em resultVector})}}
+\label{group__a_g1ac846f1472a6bbb80a7b10e44c9c8e7}
+
+
+Vector Cross Product. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em vector1}]Input. 3-vector 1. \item[{\em vector2}]Input. 3-vector 2. \item[{\em resultVector}]Output. 3-vector. The cross product result. \end{description}
+\end{Desc}
+\hypertarget{group__a_gc985f610b5e647c96a03cf89098aa271}{
+\index{a@{a}!vectorDot@{vectorDot}}
+\index{vectorDot@{vectorDot}!a@{a}}
+\subsubsection[vectorDot]{\setlength{\rightskip}{0pt plus 5cm}double vectorDot (const int {\em n}, \/  const double $\ast$ {\em vector1}, \/  const double $\ast$ {\em vector2})}}
+\label{group__a_gc985f610b5e647c96a03cf89098aa271}
+
+
+Vector Dot Product. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em vector1}]Input. n-vector 1. \item[{\em vector2}]Input. n-vector 2.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the dot prorduct result of two vectors. \end{Desc}
+\hypertarget{group__a_gc00ab414706bc82820e985055f285f3b}{
+\index{a@{a}!vectorJoin@{vectorJoin}}
+\index{vectorJoin@{vectorJoin}!a@{a}}
+\subsubsection[vectorJoin]{\setlength{\rightskip}{0pt plus 5cm}void vectorJoin (const int {\em n}, \/  const int {\em m}, \/  const double $\ast$ {\em vector1}, \/  const double $\ast$ {\em vector2}, \/  double $\ast$ {\em resultVector})}}
+\label{group__a_gc00ab414706bc82820e985055f285f3b}
+
+
+Join Vector. 
+
+This function joins a n-vector vector1 and a m-vector vector2 into a n+m vector resultVector.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector1 vector elements. \item[{\em m}]Input. Number of vector2 vector elements. \item[{\em vector1}]Input. n-vector. \item[{\em vector2}]Input. m-vector. \item[{\em resultVector}]Output. n+m vector. \end{description}
+\end{Desc}
+\hypertarget{group__a_gdf52065f80318dcc65c395566784fbc5}{
+\index{a@{a}!vectorMagnitude@{vectorMagnitude}}
+\index{vectorMagnitude@{vectorMagnitude}!a@{a}}
+\subsubsection[vectorMagnitude]{\setlength{\rightskip}{0pt plus 5cm}double vectorMagnitude (const int {\em n}, \/  const double $\ast$ {\em vector})}}
+\label{group__a_gdf52065f80318dcc65c395566784fbc5}
+
+
+Vector Magnitude. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em vector}]Input. n-vector.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the magnitude of the vector. \end{Desc}
+\hypertarget{group__a_g0b322588b02d41e5bc4f37b292d15e16}{
+\index{a@{a}!vectorNormalize@{vectorNormalize}}
+\index{vectorNormalize@{vectorNormalize}!a@{a}}
+\subsubsection[vectorNormalize]{\setlength{\rightskip}{0pt plus 5cm}void vectorNormalize (const int {\em n}, \/  double $\ast$ {\em vector})}}
+\label{group__a_g0b322588b02d41e5bc4f37b292d15e16}
+
+
+Unitize Vector. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em vector}]Input. n-vector.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if a divied-by-zero error occurs. \end{Desc}
+\hypertarget{group__a_g97fc3b2e8bbe3973ac8fe0c122807b89}{
+\index{a@{a}!vectorScale@{vectorScale}}
+\index{vectorScale@{vectorScale}!a@{a}}
+\subsubsection[vectorScale]{\setlength{\rightskip}{0pt plus 5cm}void vectorScale (const int {\em n}, \/  const double {\em alpha}, \/  double $\ast$ {\em vector})}}
+\label{group__a_g97fc3b2e8bbe3973ac8fe0c122807b89}
+
+
+Vector Scaling. 
+
+This function performs a vector-vector operation defined as X = alpha$\ast$X.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em alpha}]Input. Scalar. \item[{\em vector}]Input. n-vector.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{group__a_g04a15ca8e56a12b927b5408ce191795a}{
+\index{a@{a}!vectorSplit@{vectorSplit}}
+\index{vectorSplit@{vectorSplit}!a@{a}}
+\subsubsection[vectorSplit]{\setlength{\rightskip}{0pt plus 5cm}void vectorSplit (const int {\em n}, \/  const int {\em m}, \/  const double $\ast$ {\em orgVector}, \/  double $\ast$ {\em vector1}, \/  double $\ast$ {\em vector2})}}
+\label{group__a_g04a15ca8e56a12b927b5408ce191795a}
+
+
+Split Vector. 
+
+This function splits a n+m vector orgVector into a n-vector vector1 and a m-vector vector2.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector1 vector elements. \item[{\em m}]Input. Number of vector2 vector elements. \item[{\em orgVector}]Input. n+m vector. \item[{\em vector1}]Output. n-vector. \item[{\em vector2}]Output. m-vector. \end{description}
+\end{Desc}
+\hypertarget{group__a_g36d84832e6a52057a4519e003d299e95}{
+\index{a@{a}!vectorZeros@{vectorZeros}}
+\index{vectorZeros@{vectorZeros}!a@{a}}
+\subsubsection[vectorZeros]{\setlength{\rightskip}{0pt plus 5cm}void vectorZeros (const int {\em n}, \/  double $\ast$ {\em vector})}}
+\label{group__a_g36d84832e6a52057a4519e003d299e95}
+
+
+Zero Vector. 
+
+This function sets all the elements of a vector to zeros.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]Input. Number of vector elements. \item[{\em vector}]Output. n-vector. \end{description}
+\end{Desc}

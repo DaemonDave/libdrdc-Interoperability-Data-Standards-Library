@@ -1,0 +1,5 @@
+lsame.o lsame.o: lsame.c blaswrap.h f2c.h
+
+blaswrap.h:
+
+f2c.h:

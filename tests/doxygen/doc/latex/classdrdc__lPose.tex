@@ -1,0 +1,226 @@
+\hypertarget{classdrdc__lPose}{
+\section{drdc\_\-lPose Class Reference}
+\label{classdrdc__lPose}\index{drdc\_\-lPose@{drdc\_\-lPose}}
+}
+C++ Local Pose Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__lPose_88390e6eb880184af556cb7692706279}{drdc\_\-lPose} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lPose_014c2e1bca0662a9f7d1526d5398d82e}{set} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} position, \hyperlink{classdrdc__Orient}{drdc\_\-Orient} orientation)
+\begin{CompactList}\small\item\em Set the object by specifying Local Position and Quaternion orientation. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lPose_706422e4993b89982acdbd447f3aed38}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lPose_2279cd2f27850888c3fdfea0ca14e4d4}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__lPose_0b31eb0f050398db82c6d942fc190cfd}{compare} (\hyperlink{classdrdc__lPose}{drdc\_\-lPose} localPose, \hyperlink{classdrdc__lPose}{drdc\_\-lPose} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lPose_9ca79a1aa842f3187d25d783ada66f2a}{getPosition} ()
+\begin{CompactList}\small\item\em Return Local Position. \item\end{CompactList}\item 
+\hyperlink{classdrdc__Orient}{drdc\_\-Orient} \hyperlink{classdrdc__lPose_0f3c4aacd51b0f1f41de86bd90baaa7d}{getOrientation} ()
+\begin{CompactList}\small\item\em Return Quaternion orientation. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPose}{drdc\_\-lPose} \& \hyperlink{classdrdc__lPose_61ef881f54c7b30e4a2bc2dda04c81cc}{operator=} (\hyperlink{classdrdc__lPose}{drdc\_\-lPose} localPose)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lPose_182fbae4d3cd0ea39f5589c3a3563849}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPose}{drdc\_\-lPose} \hyperlink{classdrdc__lPose_23e21ccf8e16055a40ed4afc66b0f093}{operator$\ast$} (\hyperlink{classdrdc__lPose}{drdc\_\-lPose} localPose)
+\begin{CompactList}\small\item\em Local Pose multiplication operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lPose_6e809b6b9175171c651d4435783d1527}{operator$\ast$} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Local Pose - Local Position multiplication operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WPose}{drdc\_\-WPose} \hyperlink{classdrdc__lPose_62422847e77d7bfccb2c2c00d5cb8f44}{to\_\-WPose} (double falseElevation)
+\begin{CompactList}\small\item\em Convert ECEF Pose to World Pose. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lePose}{drdc\_\-lePose} \hyperlink{classdrdc__lPose_d56ee6ffecee2d6f760a2fca99e2b503}{to\_\-lePose} ()
+\begin{CompactList}\small\item\em Convert Local Pose to Local Euler Pose. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__lPose_7461c5f2274e0fa6c3ade454e44c74cf}{to\_\-HMatrix} ()
+\begin{CompactList}\small\item\em Convert Local Pose to Homogeneous Matrix. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} \hyperlink{classdrdc__lPose_1e5f7f1156fd80a1b41aa1e11e56dab4}{to\_\-WUTMPose} (\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone)
+\begin{CompactList}\small\item\em Convert Local Pose to World UTM Pose. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__lPose_92a783818add679fa656ffc4913c71ce}{vector}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ Local Pose Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__lPose_88390e6eb880184af556cb7692706279}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!drdc\_\-lPose@{drdc\_\-lPose}}
+\index{drdc\_\-lPose@{drdc\_\-lPose}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[drdc\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-lPose::drdc\_\-lPose ()}}
+\label{classdrdc__lPose_88390e6eb880184af556cb7692706279}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__lPose_014c2e1bca0662a9f7d1526d5398d82e}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!set@{set}}
+\index{set@{set}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lPose::set ({\bf drdc\_\-lPosn} {\em position}, \/  {\bf drdc\_\-Orient} {\em orientation})}}
+\label{classdrdc__lPose_014c2e1bca0662a9f7d1526d5398d82e}
+
+
+Set the object by specifying Local Position and Quaternion orientation. 
+
+\hypertarget{classdrdc__lPose_706422e4993b89982acdbd447f3aed38}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!set@{set}}
+\index{set@{set}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lPose::set (const double $\ast$ {\em array})}}
+\label{classdrdc__lPose_706422e4993b89982acdbd447f3aed38}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__lPose_2279cd2f27850888c3fdfea0ca14e4d4}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lPose::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__lPose_2279cd2f27850888c3fdfea0ca14e4d4}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__lPose_0b31eb0f050398db82c6d942fc190cfd}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!compare@{compare}}
+\index{compare@{compare}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-lPose::compare ({\bf drdc\_\-lPose} {\em localPose}, \/  {\bf drdc\_\-lPose} {\em fuzz})}}
+\label{classdrdc__lPose_0b31eb0f050398db82c6d942fc190cfd}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__lPose_9ca79a1aa842f3187d25d783ada66f2a}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lPose::getPosition ()}}
+\label{classdrdc__lPose_9ca79a1aa842f3187d25d783ada66f2a}
+
+
+Return Local Position. 
+
+\hypertarget{classdrdc__lPose_0f3c4aacd51b0f1f41de86bd90baaa7d}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[getOrientation]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Orient} drdc\_\-lPose::getOrientation ()}}
+\label{classdrdc__lPose_0f3c4aacd51b0f1f41de86bd90baaa7d}
+
+
+Return Quaternion orientation. 
+
+\hypertarget{classdrdc__lPose_61ef881f54c7b30e4a2bc2dda04c81cc}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPose}\& drdc\_\-lPose::operator= ({\bf drdc\_\-lPose} {\em localPose})}}
+\label{classdrdc__lPose_61ef881f54c7b30e4a2bc2dda04c81cc}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__lPose_182fbae4d3cd0ea39f5589c3a3563849}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lPose::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__lPose_182fbae4d3cd0ea39f5589c3a3563849}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__lPose_23e21ccf8e16055a40ed4afc66b0f093}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPose} drdc\_\-lPose::operator$\ast$ ({\bf drdc\_\-lPose} {\em localPose})}}
+\label{classdrdc__lPose_23e21ccf8e16055a40ed4afc66b0f093}
+
+
+Local Pose multiplication operator. 
+
+\hypertarget{classdrdc__lPose_6e809b6b9175171c651d4435783d1527}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lPose::operator$\ast$ ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__lPose_6e809b6b9175171c651d4435783d1527}
+
+
+Local Pose - Local Position multiplication operator. 
+
+\hypertarget{classdrdc__lPose_62422847e77d7bfccb2c2c00d5cb8f44}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!to\_\-WPose@{to\_\-WPose}}
+\index{to\_\-WPose@{to\_\-WPose}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[to\_\-WPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPose} drdc\_\-lPose::to\_\-WPose (double {\em falseElevation})}}
+\label{classdrdc__lPose_62422847e77d7bfccb2c2c00d5cb8f44}
+
+
+Convert ECEF Pose to World Pose. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em falseElevation}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__lPose_d56ee6ffecee2d6f760a2fca99e2b503}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!to\_\-lePose@{to\_\-lePose}}
+\index{to\_\-lePose@{to\_\-lePose}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[to\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lePose} drdc\_\-lPose::to\_\-lePose ()}}
+\label{classdrdc__lPose_d56ee6ffecee2d6f760a2fca99e2b503}
+
+
+Convert Local Pose to Local Euler Pose. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__lPose_7461c5f2274e0fa6c3ade454e44c74cf}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!to\_\-HMatrix@{to\_\-HMatrix}}
+\index{to\_\-HMatrix@{to\_\-HMatrix}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-lPose::to\_\-HMatrix ()}}
+\label{classdrdc__lPose_7461c5f2274e0fa6c3ade454e44c74cf}
+
+
+Convert Local Pose to Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__lPose_1e5f7f1156fd80a1b41aa1e11e56dab4}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!to\_\-WUTMPose@{to\_\-WUTMPose}}
+\index{to\_\-WUTMPose@{to\_\-WUTMPose}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[to\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPose} drdc\_\-lPose::to\_\-WUTMPose ({\bf drdc\_\-UTMZone\_\-t} {\em zone})}}
+\label{classdrdc__lPose_1e5f7f1156fd80a1b41aa1e11e56dab4}
+
+
+Convert Local Pose to World UTM Pose. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em zone}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__lPose_92a783818add679fa656ffc4913c71ce}{
+\index{drdc\_\-lPose@{drdc\_\-lPose}!vector@{vector}}
+\index{vector@{vector}!drdc_lPose@{drdc\_\-lPose}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-lPose::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__lPose_92a783818add679fa656ffc4913c71ce}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

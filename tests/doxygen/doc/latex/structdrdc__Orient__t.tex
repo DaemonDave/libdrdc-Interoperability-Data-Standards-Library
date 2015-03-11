@@ -1,0 +1,326 @@
+\hypertarget{structdrdc__Orient__t}{
+\section{drdc\_\-Orient\_\-t Struct Reference}
+\label{structdrdc__Orient__t}\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}}
+}
+OOC Quaternion Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__Orient__t_1c7f7a1cc0c16797a0f7fbce6d3b1c99}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__Orient__t_7d099087aa69fc1aedffd77f7744c441}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__Orient__t_bc95816c336a44ee2ed6a3e739070971}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_33504e9b07aebd96d0b3792acfc13d99}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_08c035799b9a3a3095b93a230dde7373}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\begin{CompactList}\small\item\em Set the self object by using array data type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_743034467ae09dc406254e1a2ead4831}{toArray} )(const void $\ast$self, double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the self object to data array type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_63ca59a43edbdfc554318bf802830277}{destroy} )(void $\ast$self)
+\begin{CompactList}\small\item\em Delete the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_eda80d52d1eef8480b02e38c1b2079c8}{set} )(void $\ast$self, double w, double x, double y, double z)
+\begin{CompactList}\small\item\em Set the Auaternion object by specifying w, x, y and z components. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__Orient__t_05db22caf07cfd2672fcc6daef167ad7}{getW} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return w component of Quaternion. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__Orient__t_735b8ebd199a1e71872e08b96f613e5f}{getX} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return x component of Quaternion. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__Orient__t_2a605d16af23ba39281358b780feb4f7}{getY} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return y component of Quaternion. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__Orient__t_4cb25960d5d86860b503b3142fce5759}{getZ} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return z component of Quaternion. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_87eca4fac4d681f036865d3197b38967}{plus} )(void $\ast$self, const void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Plus operator, resultObject = self + object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_8bc82fdd134eeaf579ab7ea98cbb8613}{minus} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Minus operator, resultObject = self - object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_6bf2cf45abcb88fa36e006091f9b9f7d}{negate} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Negate operator, resultObject = - self. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_20bb85a9a44ee33c191386b0d8b03a38}{scale} )(void $\ast$self, double scalar, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Scale operator, resultObject = self $\ast$ scalar. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_eca47781207092b889d7d7b8aaabff5a}{mult} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Quaternion multiplication operator. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_0fca278ef2257a2c645c0c1e1a46a9ac}{multVec} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Quaternion-Vector multiplication operator. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_ac3a732bfd83f0a8053bc47f61217426}{normalize} )(void $\ast$self)
+\begin{CompactList}\small\item\em Normalize Quaternion. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__Orient__t_1ec8cc2750eb72e3b1bb299623c7ea33}{magnitude} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return magnitude of Quaternion. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_f7869b90e7daf9ef2a7393ca730ffd0e}{identity} )(void $\ast$self)
+\begin{CompactList}\small\item\em Create identity Quaternion. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_5763d3a77beab92499ad9b34372ff0a1}{inverse} )(void $\ast$self, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Inverse a Quaternion. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_900a9fe69012056dbee9f166650e777a}{fromRotAxis} )(void $\ast$self, \hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, double angle)
+\begin{CompactList}\small\item\em Construct Quaternion from Rotation of a axis. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_6ee726277b61039e7de0cc29099e8fe2}{fromRotVec} )(void $\ast$self, double angle, void $\ast$unitVector)
+\begin{CompactList}\small\item\em Construct Quaternion from rotating an angle about a unit vector. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_12f7b4fd36f95a7aaf65c938c2ade0ca}{toRotVec} )(void $\ast$self, double $\ast$angle, void $\ast$unitVector)
+\begin{CompactList}\small\item\em Convert Quaternion to Rotation Vector (angle and unit vector). \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_b491fbe468cbc5c75e372ffe0e0a632f}{to\_\-HMatrix} )(void $\ast$self, void $\ast$homogeneous)
+\begin{CompactList}\small\item\em Convert Quaternion to Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__Orient__t_900b9c9b0a700211ad1305f9eeb89dc0}{to\_\-eOrient} )(void $\ast$self, void $\ast$eulerRPY)
+\begin{CompactList}\small\item\em Convert Quaternion to Euler RPY. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC Quaternion Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__Orient__t_1c7f7a1cc0c16797a0f7fbce6d3b1c99}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-Orient\_\-t::vector}}}
+\label{structdrdc__Orient__t_1c7f7a1cc0c16797a0f7fbce6d3b1c99}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__Orient__t_7d099087aa69fc1aedffd77f7744c441}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!index@{index}}
+\index{index@{index}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-Orient\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__Orient__t_7d099087aa69fc1aedffd77f7744c441}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__Orient__t_bc95816c336a44ee2ed6a3e739070971}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-Orient\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__Orient__t_bc95816c336a44ee2ed6a3e739070971}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__Orient__t_33504e9b07aebd96d0b3792acfc13d99}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__Orient__t_33504e9b07aebd96d0b3792acfc13d99}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__Orient__t_08c035799b9a3a3095b93a230dde7373}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__Orient__t_08c035799b9a3a3095b93a230dde7373}
+
+
+Set the self object by using array data type. 
+
+\hypertarget{structdrdc__Orient__t_743034467ae09dc406254e1a2ead4831}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__Orient__t_743034467ae09dc406254e1a2ead4831}
+
+
+Convert data in the self object to data array type. 
+
+\hypertarget{structdrdc__Orient__t_63ca59a43edbdfc554318bf802830277}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__Orient__t_63ca59a43edbdfc554318bf802830277}
+
+
+Delete the self object. 
+
+\hypertarget{structdrdc__Orient__t_eda80d52d1eef8480b02e38c1b2079c8}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!set@{set}}
+\index{set@{set}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::set})(void $\ast$self, double w, double x, double y, double z)}}
+\label{structdrdc__Orient__t_eda80d52d1eef8480b02e38c1b2079c8}
+
+
+Set the Auaternion object by specifying w, x, y and z components. 
+
+\hypertarget{structdrdc__Orient__t_05db22caf07cfd2672fcc6daef167ad7}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!getW@{getW}}
+\index{getW@{getW}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[getW]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-Orient\_\-t::getW})(void $\ast$self)}}
+\label{structdrdc__Orient__t_05db22caf07cfd2672fcc6daef167ad7}
+
+
+Return w component of Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_735b8ebd199a1e71872e08b96f613e5f}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!getX@{getX}}
+\index{getX@{getX}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[getX]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-Orient\_\-t::getX})(void $\ast$self)}}
+\label{structdrdc__Orient__t_735b8ebd199a1e71872e08b96f613e5f}
+
+
+Return x component of Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_2a605d16af23ba39281358b780feb4f7}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!getY@{getY}}
+\index{getY@{getY}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[getY]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-Orient\_\-t::getY})(void $\ast$self)}}
+\label{structdrdc__Orient__t_2a605d16af23ba39281358b780feb4f7}
+
+
+Return y component of Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_4cb25960d5d86860b503b3142fce5759}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!getZ@{getZ}}
+\index{getZ@{getZ}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[getZ]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-Orient\_\-t::getZ})(void $\ast$self)}}
+\label{structdrdc__Orient__t_4cb25960d5d86860b503b3142fce5759}
+
+
+Return z component of Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_87eca4fac4d681f036865d3197b38967}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!plus@{plus}}
+\index{plus@{plus}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[plus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::plus})(void $\ast$self, const void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__Orient__t_87eca4fac4d681f036865d3197b38967}
+
+
+Plus operator, resultObject = self + object. 
+
+\hypertarget{structdrdc__Orient__t_8bc82fdd134eeaf579ab7ea98cbb8613}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!minus@{minus}}
+\index{minus@{minus}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[minus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::minus})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__Orient__t_8bc82fdd134eeaf579ab7ea98cbb8613}
+
+
+Minus operator, resultObject = self - object. 
+
+\hypertarget{structdrdc__Orient__t_6bf2cf45abcb88fa36e006091f9b9f7d}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!negate@{negate}}
+\index{negate@{negate}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[negate]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::negate})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__Orient__t_6bf2cf45abcb88fa36e006091f9b9f7d}
+
+
+Negate operator, resultObject = - self. 
+
+\hypertarget{structdrdc__Orient__t_20bb85a9a44ee33c191386b0d8b03a38}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!scale@{scale}}
+\index{scale@{scale}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[scale]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::scale})(void $\ast$self, double scalar, void $\ast$resultObject)}}
+\label{structdrdc__Orient__t_20bb85a9a44ee33c191386b0d8b03a38}
+
+
+Scale operator, resultObject = self $\ast$ scalar. 
+
+\hypertarget{structdrdc__Orient__t_eca47781207092b889d7d7b8aaabff5a}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!mult@{mult}}
+\index{mult@{mult}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[mult]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::mult})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__Orient__t_eca47781207092b889d7d7b8aaabff5a}
+
+
+Quaternion multiplication operator. 
+
+resultObject = self $\ast$ object
+
+Object and resultObject are \hyperlink{structdrdc__Orient__t}{drdc\_\-Orient\_\-t} type. \hypertarget{structdrdc__Orient__t_0fca278ef2257a2c645c0c1e1a46a9ac}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!multVec@{multVec}}
+\index{multVec@{multVec}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[multVec]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::multVec})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__Orient__t_0fca278ef2257a2c645c0c1e1a46a9ac}
+
+
+Quaternion-Vector multiplication operator. 
+
+resultObject = self $\ast$ object
+
+Object and resultObject are \hyperlink{structdrdc__lPosn__t}{drdc\_\-lPosn\_\-t} or \hyperlink{structdrdc__WUTMPosn__t}{drdc\_\-WUTMPosn\_\-t} type. \hypertarget{structdrdc__Orient__t_ac3a732bfd83f0a8053bc47f61217426}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!normalize@{normalize}}
+\index{normalize@{normalize}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[normalize]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::normalize})(void $\ast$self)}}
+\label{structdrdc__Orient__t_ac3a732bfd83f0a8053bc47f61217426}
+
+
+Normalize Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_1ec8cc2750eb72e3b1bb299623c7ea33}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[magnitude]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-Orient\_\-t::magnitude})(void $\ast$self)}}
+\label{structdrdc__Orient__t_1ec8cc2750eb72e3b1bb299623c7ea33}
+
+
+Return magnitude of Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_f7869b90e7daf9ef2a7393ca730ffd0e}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!identity@{identity}}
+\index{identity@{identity}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[identity]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::identity})(void $\ast$self)}}
+\label{structdrdc__Orient__t_f7869b90e7daf9ef2a7393ca730ffd0e}
+
+
+Create identity Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_5763d3a77beab92499ad9b34372ff0a1}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!inverse@{inverse}}
+\index{inverse@{inverse}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[inverse]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::inverse})(void $\ast$self, void $\ast$resultObject)}}
+\label{structdrdc__Orient__t_5763d3a77beab92499ad9b34372ff0a1}
+
+
+Inverse a Quaternion. 
+
+\hypertarget{structdrdc__Orient__t_900a9fe69012056dbee9f166650e777a}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!fromRotAxis@{fromRotAxis}}
+\index{fromRotAxis@{fromRotAxis}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[fromRotAxis]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::fromRotAxis})(void $\ast$self, {\bf Axis\_\-t} axis, double angle)}}
+\label{structdrdc__Orient__t_900a9fe69012056dbee9f166650e777a}
+
+
+Construct Quaternion from Rotation of a axis. 
+
+\hypertarget{structdrdc__Orient__t_6ee726277b61039e7de0cc29099e8fe2}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!fromRotVec@{fromRotVec}}
+\index{fromRotVec@{fromRotVec}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[fromRotVec]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::fromRotVec})(void $\ast$self, double angle, void $\ast$unitVector)}}
+\label{structdrdc__Orient__t_6ee726277b61039e7de0cc29099e8fe2}
+
+
+Construct Quaternion from rotating an angle about a unit vector. 
+
+\hypertarget{structdrdc__Orient__t_12f7b4fd36f95a7aaf65c938c2ade0ca}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!toRotVec@{toRotVec}}
+\index{toRotVec@{toRotVec}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[toRotVec]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::toRotVec})(void $\ast$self, double $\ast$angle, void $\ast$unitVector)}}
+\label{structdrdc__Orient__t_12f7b4fd36f95a7aaf65c938c2ade0ca}
+
+
+Convert Quaternion to Rotation Vector (angle and unit vector). 
+
+\hypertarget{structdrdc__Orient__t_b491fbe468cbc5c75e372ffe0e0a632f}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!to\_\-HMatrix@{to\_\-HMatrix}}
+\index{to\_\-HMatrix@{to\_\-HMatrix}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::to\_\-HMatrix})(void $\ast$self, void $\ast$homogeneous)}}
+\label{structdrdc__Orient__t_b491fbe468cbc5c75e372ffe0e0a632f}
+
+
+Convert Quaternion to Homogeneous Matrix. 
+
+\hypertarget{structdrdc__Orient__t_900b9c9b0a700211ad1305f9eeb89dc0}{
+\index{drdc\_\-Orient\_\-t@{drdc\_\-Orient\_\-t}!to\_\-eOrient@{to\_\-eOrient}}
+\index{to\_\-eOrient@{to\_\-eOrient}!drdc_Orient_t@{drdc\_\-Orient\_\-t}}
+\subsubsection[to\_\-eOrient]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-Orient\_\-t::to\_\-eOrient})(void $\ast$self, void $\ast$eulerRPY)}}
+\label{structdrdc__Orient__t_900b9c9b0a700211ad1305f9eeb89dc0}
+
+
+Convert Quaternion to Euler RPY. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

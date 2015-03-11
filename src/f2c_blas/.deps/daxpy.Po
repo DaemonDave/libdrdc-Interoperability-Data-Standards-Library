@@ -1,0 +1,5 @@
+daxpy.o daxpy.o: daxpy.c blaswrap.h f2c.h
+
+blaswrap.h:
+
+f2c.h:

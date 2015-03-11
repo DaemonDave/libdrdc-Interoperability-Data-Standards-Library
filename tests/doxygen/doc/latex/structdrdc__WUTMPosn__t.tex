@@ -1,0 +1,265 @@
+\hypertarget{structdrdc__WUTMPosn__t}{
+\section{drdc\_\-WUTMPosn\_\-t Struct Reference}
+\label{structdrdc__WUTMPosn__t}\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}}
+}
+OOC World UTM Position Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__WUTMPosn__t_70880a0baf98a0102abcc138be9fb8cf}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{structdrdc__WUTMPosn__t_932192c6467a673d6537e77421bdbb09}{zone}
+\begin{CompactList}\small\item\em UTM Zone. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__WUTMPosn__t_93da68394919d2b437f14b2a6c622f31}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__WUTMPosn__t_f39deedc7e308d049bf768ffa35dad45}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_4bdb61afed8ac02e0e2cbf077fe781ea}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_f59044680829cd0f12c9a3de49911bae}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_4577590d5ad73c7e7522d38821c5fcc8}{toArray} )(const void $\ast$self, double $\ast$array)
+\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_3e3ff4cfa5adb3de52bd4519d8e3f65b}{destroy} )(void $\ast$self)
+\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_f532b3b39c957ac058ec88a372a53c3a}{set} )(void $\ast$self, double easting, double northing, double elevation)
+\begin{CompactList}\small\item\em Set the World UTM Position object by specifying Easting, Northing and Elevation values. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__WUTMPosn__t_64ffface39fd90112695fb3e0d26b587}{getEasting} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return the Easting value from the World UTM Position object. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__WUTMPosn__t_d68032235695b2ced53538e02e090b75}{getNorthing} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return the Northing value from the World UTM Position object. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__WUTMPosn__t_26cca9bcac6e57ce316839fd7bbe4fee}{getElevation} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return the Elevation value from the World UTM Position object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_4b94b8f02165069e28d21375a2dda7df}{setZone} )(void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{structdrdc__WUTMPosn__t_932192c6467a673d6537e77421bdbb09}{zone})
+\begin{CompactList}\small\item\em Set UTM Zone. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_391cac345775ffc92734126d33ddbc63}{getZone} )(void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} $\ast$\hyperlink{structdrdc__WUTMPosn__t_932192c6467a673d6537e77421bdbb09}{zone})
+\begin{CompactList}\small\item\em Return UTM Zone. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_eaf4db1b5ceb35b7f4adb96973cd84fb}{plus} )(void $\ast$self, const void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Plus operator, resultObject = self + object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_954f69b19638b4636527e3e3586c3335}{minus} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Minus operator, resultObject = self - object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_597ecc0b559b3a8ce183403149e56fd1}{negate} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Negate operator, resultObject = - self. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_e7c9b83d1c882ef805af39242a160d2b}{scale} )(void $\ast$self, double scalar, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Scale operator, resultObject = self $\ast$ scalar. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__WUTMPosn__t_152667cc56a1c8824d624f45028460f6}{dot} )(void $\ast$self, void $\ast$object)
+\begin{CompactList}\small\item\em Vector dot operator. It returns vector dot result. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_ecfb44e580963c488c8c48680aca5c05}{cross} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Vector cross operator, resultObject = self cross object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_7175dd5c4ea307a45221bdf70c1973a3}{to\_\-lPosn} )(void $\ast$self, void $\ast$localPosition)
+\begin{CompactList}\small\item\em Map World UTM Position to Local Position It is a simple mapping function. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WUTMPosn__t_3931b582e201f37b69d65fa238ca8aff}{to\_\-WPosn} )(void $\ast$self, void $\ast$worldPosition)
+\begin{CompactList}\small\item\em Convert World UTM Position to World Position. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC World UTM Position Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__WUTMPosn__t_70880a0baf98a0102abcc138be9fb8cf}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-WUTMPosn\_\-t::vector}}}
+\label{structdrdc__WUTMPosn__t_70880a0baf98a0102abcc138be9fb8cf}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__WUTMPosn__t_932192c6467a673d6537e77421bdbb09}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!zone@{zone}}
+\index{zone@{zone}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[zone]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-UTMZone\_\-t} {\bf drdc\_\-WUTMPosn\_\-t::zone}}}
+\label{structdrdc__WUTMPosn__t_932192c6467a673d6537e77421bdbb09}
+
+
+UTM Zone. 
+
+\hypertarget{structdrdc__WUTMPosn__t_93da68394919d2b437f14b2a6c622f31}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!index@{index}}
+\index{index@{index}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__WUTMPosn__t_93da68394919d2b437f14b2a6c622f31}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__WUTMPosn__t_f39deedc7e308d049bf768ffa35dad45}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__WUTMPosn__t_f39deedc7e308d049bf768ffa35dad45}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__WUTMPosn__t_4bdb61afed8ac02e0e2cbf077fe781ea}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__WUTMPosn__t_4bdb61afed8ac02e0e2cbf077fe781ea}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__WUTMPosn__t_f59044680829cd0f12c9a3de49911bae}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__WUTMPosn__t_f59044680829cd0f12c9a3de49911bae}
+
+
+\hypertarget{structdrdc__WUTMPosn__t_4577590d5ad73c7e7522d38821c5fcc8}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__WUTMPosn__t_4577590d5ad73c7e7522d38821c5fcc8}
+
+
+\hypertarget{structdrdc__WUTMPosn__t_3e3ff4cfa5adb3de52bd4519d8e3f65b}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__WUTMPosn__t_3e3ff4cfa5adb3de52bd4519d8e3f65b}
+
+
+\hypertarget{structdrdc__WUTMPosn__t_f532b3b39c957ac058ec88a372a53c3a}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!set@{set}}
+\index{set@{set}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::set})(void $\ast$self, double easting, double northing, double elevation)}}
+\label{structdrdc__WUTMPosn__t_f532b3b39c957ac058ec88a372a53c3a}
+
+
+Set the World UTM Position object by specifying Easting, Northing and Elevation values. 
+
+\hypertarget{structdrdc__WUTMPosn__t_64ffface39fd90112695fb3e0d26b587}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!getEasting@{getEasting}}
+\index{getEasting@{getEasting}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[getEasting]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::getEasting})(void $\ast$self)}}
+\label{structdrdc__WUTMPosn__t_64ffface39fd90112695fb3e0d26b587}
+
+
+Return the Easting value from the World UTM Position object. 
+
+\hypertarget{structdrdc__WUTMPosn__t_d68032235695b2ced53538e02e090b75}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!getNorthing@{getNorthing}}
+\index{getNorthing@{getNorthing}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[getNorthing]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::getNorthing})(void $\ast$self)}}
+\label{structdrdc__WUTMPosn__t_d68032235695b2ced53538e02e090b75}
+
+
+Return the Northing value from the World UTM Position object. 
+
+\hypertarget{structdrdc__WUTMPosn__t_26cca9bcac6e57ce316839fd7bbe4fee}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!getElevation@{getElevation}}
+\index{getElevation@{getElevation}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[getElevation]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::getElevation})(void $\ast$self)}}
+\label{structdrdc__WUTMPosn__t_26cca9bcac6e57ce316839fd7bbe4fee}
+
+
+Return the Elevation value from the World UTM Position object. 
+
+\hypertarget{structdrdc__WUTMPosn__t_4b94b8f02165069e28d21375a2dda7df}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!setZone@{setZone}}
+\index{setZone@{setZone}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[setZone]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::setZone})(void $\ast$self, {\bf drdc\_\-UTMZone\_\-t} {\bf zone})}}
+\label{structdrdc__WUTMPosn__t_4b94b8f02165069e28d21375a2dda7df}
+
+
+Set UTM Zone. 
+
+\hypertarget{structdrdc__WUTMPosn__t_391cac345775ffc92734126d33ddbc63}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!getZone@{getZone}}
+\index{getZone@{getZone}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[getZone]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::getZone})(void $\ast$self, {\bf drdc\_\-UTMZone\_\-t} $\ast${\bf zone})}}
+\label{structdrdc__WUTMPosn__t_391cac345775ffc92734126d33ddbc63}
+
+
+Return UTM Zone. 
+
+\hypertarget{structdrdc__WUTMPosn__t_eaf4db1b5ceb35b7f4adb96973cd84fb}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!plus@{plus}}
+\index{plus@{plus}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[plus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::plus})(void $\ast$self, const void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__WUTMPosn__t_eaf4db1b5ceb35b7f4adb96973cd84fb}
+
+
+Plus operator, resultObject = self + object. 
+
+\hypertarget{structdrdc__WUTMPosn__t_954f69b19638b4636527e3e3586c3335}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!minus@{minus}}
+\index{minus@{minus}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[minus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::minus})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__WUTMPosn__t_954f69b19638b4636527e3e3586c3335}
+
+
+Minus operator, resultObject = self - object. 
+
+\hypertarget{structdrdc__WUTMPosn__t_597ecc0b559b3a8ce183403149e56fd1}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!negate@{negate}}
+\index{negate@{negate}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[negate]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::negate})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__WUTMPosn__t_597ecc0b559b3a8ce183403149e56fd1}
+
+
+Negate operator, resultObject = - self. 
+
+\hypertarget{structdrdc__WUTMPosn__t_e7c9b83d1c882ef805af39242a160d2b}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!scale@{scale}}
+\index{scale@{scale}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[scale]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::scale})(void $\ast$self, double scalar, void $\ast$resultObject)}}
+\label{structdrdc__WUTMPosn__t_e7c9b83d1c882ef805af39242a160d2b}
+
+
+Scale operator, resultObject = self $\ast$ scalar. 
+
+\hypertarget{structdrdc__WUTMPosn__t_152667cc56a1c8824d624f45028460f6}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!dot@{dot}}
+\index{dot@{dot}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[dot]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::dot})(void $\ast$self, void $\ast$object)}}
+\label{structdrdc__WUTMPosn__t_152667cc56a1c8824d624f45028460f6}
+
+
+Vector dot operator. It returns vector dot result. 
+
+\hypertarget{structdrdc__WUTMPosn__t_ecfb44e580963c488c8c48680aca5c05}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!cross@{cross}}
+\index{cross@{cross}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::cross})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__WUTMPosn__t_ecfb44e580963c488c8c48680aca5c05}
+
+
+Vector cross operator, resultObject = self cross object. 
+
+\hypertarget{structdrdc__WUTMPosn__t_7175dd5c4ea307a45221bdf70c1973a3}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!to\_\-lPosn@{to\_\-lPosn}}
+\index{to\_\-lPosn@{to\_\-lPosn}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[to\_\-lPosn]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::to\_\-lPosn})(void $\ast$self, void $\ast$localPosition)}}
+\label{structdrdc__WUTMPosn__t_7175dd5c4ea307a45221bdf70c1973a3}
+
+
+Map World UTM Position to Local Position It is a simple mapping function. 
+
+The mapping scheme is shown as follows:\begin{itemize}
+\item x - Easting\item y - Northing\item z - Elevation\end{itemize}
+
+
+Other mapping schemes can be achieved by using coordinate transformations. \hypertarget{structdrdc__WUTMPosn__t_3931b582e201f37b69d65fa238ca8aff}{
+\index{drdc\_\-WUTMPosn\_\-t@{drdc\_\-WUTMPosn\_\-t}!to\_\-WPosn@{to\_\-WPosn}}
+\index{to\_\-WPosn@{to\_\-WPosn}!drdc_WUTMPosn_t@{drdc\_\-WUTMPosn\_\-t}}
+\subsubsection[to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WUTMPosn\_\-t::to\_\-WPosn})(void $\ast$self, void $\ast$worldPosition)}}
+\label{structdrdc__WUTMPosn__t_3931b582e201f37b69d65fa238ca8aff}
+
+
+Convert World UTM Position to World Position. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

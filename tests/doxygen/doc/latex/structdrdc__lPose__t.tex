@@ -1,0 +1,209 @@
+\hypertarget{structdrdc__lPose__t}{
+\section{drdc\_\-lPose\_\-t Struct Reference}
+\label{structdrdc__lPose__t}\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}}
+}
+OOC Local Pose Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__lPose__t_a2606cafb79c9c8391a246b5b9f04cd1}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lPose__t_7f347af757e1e7d642878ca00a28a806}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__lPose__t_a06dae4c38f13dd718b88a62a259dde9}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_c9cc04bfd0d80d10a4edcf25686fc4e3}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_c57df145bf3c3822128fe37bc1e530c6}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\begin{CompactList}\small\item\em Set the self object by using array data type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_896a70046179976efa52362a59ce54d2}{toArray} )(const void $\ast$self, double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the self object to data array type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_d9c56a71e8224d85bedbdbc468f73962}{destroy} )(void $\ast$self)
+\begin{CompactList}\small\item\em Delete the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_fcc32b888211dce06e5ae90747281555}{set} )(void $\ast$self, void $\ast$position, void $\ast$orientation)
+\begin{CompactList}\small\item\em Set the Local Pose object by specifying Local Position and Quaternion. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_7ea061e1553a860eb7c5ccbe07846948}{getPosition} )(void $\ast$self, void $\ast$position)
+\begin{CompactList}\small\item\em Return Local Position of Local Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_0bd925f93db71c6a83c72ae286588d03}{getOrientation} )(void $\ast$self, void $\ast$orientation)
+\begin{CompactList}\small\item\em Return Quaternion orientation of Local Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_a6f487a1f79398f7f4ff149d9fc2d931}{mult} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Local Pose multiplication operator. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_a745ee51417233f421a1b7070d07aa47}{multVec} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Local Pose - Local Position multiplication operator. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_2f2d7db92fa938afae79e7068b5eded6}{to\_\-WPose} )(void $\ast$self, double falseElevation, void $\ast$worldPose)
+\begin{CompactList}\small\item\em Convert Local Pose to World Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_380cbf9027e090e6e630130be267726e}{to\_\-WUTMPose} )(void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone, void $\ast$worldUTMPose)
+\begin{CompactList}\small\item\em Map World UTM Pose to Local Pose It is a simple mapping function. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_78f7d7124384ad525040834608a80e7b}{to\_\-lePose} )(void $\ast$self, void $\ast$localEulerPose)
+\begin{CompactList}\small\item\em Convert Local Pose to Local Euler Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPose__t_8edc1a2e055fc2c8d4bdd1fdc95ed531}{to\_\-HMatrix} )(void $\ast$self, void $\ast$homogeneous)
+\begin{CompactList}\small\item\em Convert Local Pose to Homogeneous Matrix. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC Local Pose Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__lPose__t_a2606cafb79c9c8391a246b5b9f04cd1}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-lPose\_\-t::vector}}}
+\label{structdrdc__lPose__t_a2606cafb79c9c8391a246b5b9f04cd1}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__lPose__t_7f347af757e1e7d642878ca00a28a806}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!index@{index}}
+\index{index@{index}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lPose\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__lPose__t_7f347af757e1e7d642878ca00a28a806}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__lPose__t_a06dae4c38f13dd718b88a62a259dde9}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-lPose\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__lPose__t_a06dae4c38f13dd718b88a62a259dde9}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__lPose__t_c9cc04bfd0d80d10a4edcf25686fc4e3}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__lPose__t_c9cc04bfd0d80d10a4edcf25686fc4e3}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__lPose__t_c57df145bf3c3822128fe37bc1e530c6}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__lPose__t_c57df145bf3c3822128fe37bc1e530c6}
+
+
+Set the self object by using array data type. 
+
+\hypertarget{structdrdc__lPose__t_896a70046179976efa52362a59ce54d2}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__lPose__t_896a70046179976efa52362a59ce54d2}
+
+
+Convert data in the self object to data array type. 
+
+\hypertarget{structdrdc__lPose__t_d9c56a71e8224d85bedbdbc468f73962}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__lPose__t_d9c56a71e8224d85bedbdbc468f73962}
+
+
+Delete the self object. 
+
+\hypertarget{structdrdc__lPose__t_fcc32b888211dce06e5ae90747281555}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!set@{set}}
+\index{set@{set}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::set})(void $\ast$self, void $\ast$position, void $\ast$orientation)}}
+\label{structdrdc__lPose__t_fcc32b888211dce06e5ae90747281555}
+
+
+Set the Local Pose object by specifying Local Position and Quaternion. 
+
+\hypertarget{structdrdc__lPose__t_7ea061e1553a860eb7c5ccbe07846948}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::getPosition})(void $\ast$self, void $\ast$position)}}
+\label{structdrdc__lPose__t_7ea061e1553a860eb7c5ccbe07846948}
+
+
+Return Local Position of Local Pose. 
+
+\hypertarget{structdrdc__lPose__t_0bd925f93db71c6a83c72ae286588d03}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[getOrientation]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::getOrientation})(void $\ast$self, void $\ast$orientation)}}
+\label{structdrdc__lPose__t_0bd925f93db71c6a83c72ae286588d03}
+
+
+Return Quaternion orientation of Local Pose. 
+
+\hypertarget{structdrdc__lPose__t_a6f487a1f79398f7f4ff149d9fc2d931}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!mult@{mult}}
+\index{mult@{mult}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[mult]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::mult})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__lPose__t_a6f487a1f79398f7f4ff149d9fc2d931}
+
+
+Local Pose multiplication operator. 
+
+resultObject = self $\ast$ object
+
+Object and resultObject are \hyperlink{classdrdc__lPose}{drdc\_\-lPose} type. \hypertarget{structdrdc__lPose__t_a745ee51417233f421a1b7070d07aa47}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!multVec@{multVec}}
+\index{multVec@{multVec}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[multVec]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::multVec})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__lPose__t_a745ee51417233f421a1b7070d07aa47}
+
+
+Local Pose - Local Position multiplication operator. 
+
+resultObject = self $\ast$ object.
+
+Object and resultObject are \hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} type. \hypertarget{structdrdc__lPose__t_2f2d7db92fa938afae79e7068b5eded6}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!to\_\-WPose@{to\_\-WPose}}
+\index{to\_\-WPose@{to\_\-WPose}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[to\_\-WPose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::to\_\-WPose})(void $\ast$self, double falseElevation, void $\ast$worldPose)}}
+\label{structdrdc__lPose__t_2f2d7db92fa938afae79e7068b5eded6}
+
+
+Convert Local Pose to World Pose. 
+
+\hypertarget{structdrdc__lPose__t_380cbf9027e090e6e630130be267726e}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!to\_\-WUTMPose@{to\_\-WUTMPose}}
+\index{to\_\-WUTMPose@{to\_\-WUTMPose}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[to\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::to\_\-WUTMPose})(void $\ast$self, {\bf drdc\_\-UTMZone\_\-t} zone, void $\ast$worldUTMPose)}}
+\label{structdrdc__lPose__t_380cbf9027e090e6e630130be267726e}
+
+
+Map World UTM Pose to Local Pose It is a simple mapping function. 
+
+The mapping scheme is shown as follows:\begin{itemize}
+\item x - Easting\item y - Northing\item z - Elevation\item Orientation - Orientation\end{itemize}
+
+
+Other mapping schemes can be achieved by using coordinate transformations. \hypertarget{structdrdc__lPose__t_78f7d7124384ad525040834608a80e7b}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!to\_\-lePose@{to\_\-lePose}}
+\index{to\_\-lePose@{to\_\-lePose}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[to\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::to\_\-lePose})(void $\ast$self, void $\ast$localEulerPose)}}
+\label{structdrdc__lPose__t_78f7d7124384ad525040834608a80e7b}
+
+
+Convert Local Pose to Local Euler Pose. 
+
+\hypertarget{structdrdc__lPose__t_8edc1a2e055fc2c8d4bdd1fdc95ed531}{
+\index{drdc\_\-lPose\_\-t@{drdc\_\-lPose\_\-t}!to\_\-HMatrix@{to\_\-HMatrix}}
+\index{to\_\-HMatrix@{to\_\-HMatrix}!drdc_lPose_t@{drdc\_\-lPose\_\-t}}
+\subsubsection[to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPose\_\-t::to\_\-HMatrix})(void $\ast$self, void $\ast$homogeneous)}}
+\label{structdrdc__lPose__t_8edc1a2e055fc2c8d4bdd1fdc95ed531}
+
+
+Convert Local Pose to Homogeneous Matrix. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

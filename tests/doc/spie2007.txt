@@ -1,0 +1,35 @@
+This paper outlines the libdrdc standards for nomenclature, definitions, units of
+measure, and representations for use between systems, subsystems, devices, nodes, and
+processes. The aim of this document is to reduce ambiguity by establishing common
+rules for the interpretation of information. The adoption of these standards within the
+work by DRDC and from contractors who assist the program will increase the
+efficiency of implementation and increase the interoperability of projects and
+components. It is recommended that Autonomous Intelligent Systems (AIS) adopt
+these standards for all future work.
+The importance of the recommended standards was reinforced during the Autonomous
+Land Systems (ALS) program development. Independent software development
+employed various standards for units of measure, representations, and definition lead to
+difficiulties. Some software components adopted unique representations, or used
+Imperial units of measure. This lead to data confusion in a number of cases between
+data sources and data sinks, making the entire effort much more difficult than would
+have been the case had a priori standards been in place.
+The reasons for the selection of the standards reported in this publication are manifold:
+some are due to common convention, some are chosen in order to be compliant with
+Joint Architecture for Unmanned Systems (JAUS) representations, and a few are
+arbitrary. However, whatever their origin, it is important to point out that the adoption
+of comprehensive set of standards is vital in order to reap the benefit of common
+representations. Data exchange without common semantics leads to confusion and
+inefficiency, and is unacceptable in a research program that relies on a considerable
+amount of systems integration and interoperability. All of the conventions outlined are
+important to provide context to the data that is received from other systems,
+subsystems, devices, nodes, and processes.
+The standards outlined are intended for use at the level of interface between systems,
+subsystems, devices, nodes, and processes. It is obvious that some devices by their
+design do not inherently adopt these conventions (e.g. a GPS that represents angle as
+degrees as opposed to radians ) and so the absolute adoption of these standards is not
+practical. Any system, subsystem, device, node, or process may use its own internal
+representation. When that system, subsystem, device, node, or process attempts to
+communicate outside its internal representation, then it is the responsibility of the
+developer to convert the representation to the proposed standards. As long as all
+systems, subsystems, devices, nodes, and processes hold to this standard at the
+interface, then interoperability will be achieved.

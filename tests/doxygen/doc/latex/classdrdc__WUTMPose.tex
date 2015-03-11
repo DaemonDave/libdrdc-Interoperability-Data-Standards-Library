@@ -1,0 +1,225 @@
+\hypertarget{classdrdc__WUTMPose}{
+\section{drdc\_\-WUTMPose Class Reference}
+\label{classdrdc__WUTMPose}\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}}
+}
+World UTM Pose Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__WUTMPose_6b93e540205bcbd934e6425ef5b09802}{drdc\_\-WUTMPose} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPose_39ae2ab40c9e7bed0b394649f3b373c2}{set} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} position, \hyperlink{classdrdc__Orient}{drdc\_\-Orient} orientation)
+\begin{CompactList}\small\item\em Set the object by specifying World UTM Position and quaternion. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPose_aede572f074b7051fc391917ed225854}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPose_43fbeedcfc4efffb0a0949fcd023f6c3}{setZone} (\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{classdrdc__WUTMPose_4596093fb33fafbb1257e54ff17bd13e}{zone})
+\begin{CompactList}\small\item\em Set UTM zone. \item\end{CompactList}\item 
+\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{classdrdc__WUTMPose_59bf0d0502a85f8f6447061ceacc34f8}{getZone} ()
+\begin{CompactList}\small\item\em Return UTM zone. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPose_2f1f5dda8f09010eb6a17179f5031236}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__WUTMPose_b891de95d9a341b347fa16f0d93dfdf7}{compare} (\hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} worldPose, \hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WUTMPose_2c223ece264489cf30d8dfbb173649d0}{getPosition} ()
+\begin{CompactList}\small\item\em Return World UTM Position. \item\end{CompactList}\item 
+\hyperlink{classdrdc__Orient}{drdc\_\-Orient} \hyperlink{classdrdc__WUTMPose_1eb7b922ae53d759a87d5d2ccb8ca12a}{getOrientation} ()
+\begin{CompactList}\small\item\em Return Quaternion orientation. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} \& \hyperlink{classdrdc__WUTMPose_686de4656f46487e97a18d93d47417b5}{operator=} (\hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} worldUTMPose)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WUTMPose_e3851920a2524a29a89ddfc8915cac57}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} \hyperlink{classdrdc__WUTMPose_d7fc2a0ccbee0f9042f0f5202deb7186}{operator$\ast$} (\hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} worldUTMPose)
+\begin{CompactList}\small\item\em World UTM Pose multiplication. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WUTMPose_0e17522a504ad33eed8c6bb42ae2cac3}{operator$\ast$} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition)
+\begin{CompactList}\small\item\em World UTM Pose - Position multiplication. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WPose}{drdc\_\-WPose} \hyperlink{classdrdc__WUTMPose_16b86001c3ee0e7b22cffcfdda270e06}{to\_\-WPose} ()
+\begin{CompactList}\small\item\em Convert World UTM Pose to World Pose. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPose}{drdc\_\-lPose} \hyperlink{classdrdc__WUTMPose_9fe6b8c960457e26367848e82a00a37e}{to\_\-lPose} ()
+\begin{CompactList}\small\item\em Map World UTM Pose to Local Pose. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__WUTMPose_8dc6dad1cd2224fc414137fb4665cd5d}{vector}
+\begin{CompactList}\small\item\em Data vector. \item\end{CompactList}\item 
+\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{classdrdc__WUTMPose_4596093fb33fafbb1257e54ff17bd13e}{zone}
+\begin{CompactList}\small\item\em UTM zone. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+World UTM Pose Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__WUTMPose_6b93e540205bcbd934e6425ef5b09802}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!drdc\_\-WUTMPose@{drdc\_\-WUTMPose}}
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[drdc\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-WUTMPose::drdc\_\-WUTMPose ()}}
+\label{classdrdc__WUTMPose_6b93e540205bcbd934e6425ef5b09802}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__WUTMPose_39ae2ab40c9e7bed0b394649f3b373c2}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!set@{set}}
+\index{set@{set}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPose::set ({\bf drdc\_\-WUTMPosn} {\em position}, \/  {\bf drdc\_\-Orient} {\em orientation})}}
+\label{classdrdc__WUTMPose_39ae2ab40c9e7bed0b394649f3b373c2}
+
+
+Set the object by specifying World UTM Position and quaternion. 
+
+\hypertarget{classdrdc__WUTMPose_aede572f074b7051fc391917ed225854}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!set@{set}}
+\index{set@{set}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPose::set (const double $\ast$ {\em array})}}
+\label{classdrdc__WUTMPose_aede572f074b7051fc391917ed225854}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__WUTMPose_43fbeedcfc4efffb0a0949fcd023f6c3}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!setZone@{setZone}}
+\index{setZone@{setZone}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[setZone]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPose::setZone ({\bf drdc\_\-UTMZone\_\-t} {\em zone})}}
+\label{classdrdc__WUTMPose_43fbeedcfc4efffb0a0949fcd023f6c3}
+
+
+Set UTM zone. 
+
+\hypertarget{classdrdc__WUTMPose_59bf0d0502a85f8f6447061ceacc34f8}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!getZone@{getZone}}
+\index{getZone@{getZone}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[getZone]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-UTMZone\_\-t} drdc\_\-WUTMPose::getZone ()}}
+\label{classdrdc__WUTMPose_59bf0d0502a85f8f6447061ceacc34f8}
+
+
+Return UTM zone. 
+
+\hypertarget{classdrdc__WUTMPose_2f1f5dda8f09010eb6a17179f5031236}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPose::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__WUTMPose_2f1f5dda8f09010eb6a17179f5031236}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__WUTMPose_b891de95d9a341b347fa16f0d93dfdf7}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!compare@{compare}}
+\index{compare@{compare}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-WUTMPose::compare ({\bf drdc\_\-WUTMPose} {\em worldPose}, \/  {\bf drdc\_\-WUTMPose} {\em fuzz})}}
+\label{classdrdc__WUTMPose_b891de95d9a341b347fa16f0d93dfdf7}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__WUTMPose_2c223ece264489cf30d8dfbb173649d0}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WUTMPose::getPosition ()}}
+\label{classdrdc__WUTMPose_2c223ece264489cf30d8dfbb173649d0}
+
+
+Return World UTM Position. 
+
+\hypertarget{classdrdc__WUTMPose_1eb7b922ae53d759a87d5d2ccb8ca12a}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[getOrientation]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Orient} drdc\_\-WUTMPose::getOrientation ()}}
+\label{classdrdc__WUTMPose_1eb7b922ae53d759a87d5d2ccb8ca12a}
+
+
+Return Quaternion orientation. 
+
+\hypertarget{classdrdc__WUTMPose_686de4656f46487e97a18d93d47417b5}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPose}\& drdc\_\-WUTMPose::operator= ({\bf drdc\_\-WUTMPose} {\em worldUTMPose})}}
+\label{classdrdc__WUTMPose_686de4656f46487e97a18d93d47417b5}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__WUTMPose_e3851920a2524a29a89ddfc8915cac57}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WUTMPose::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__WUTMPose_e3851920a2524a29a89ddfc8915cac57}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__WUTMPose_d7fc2a0ccbee0f9042f0f5202deb7186}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPose} drdc\_\-WUTMPose::operator$\ast$ ({\bf drdc\_\-WUTMPose} {\em worldUTMPose})}}
+\label{classdrdc__WUTMPose_d7fc2a0ccbee0f9042f0f5202deb7186}
+
+
+World UTM Pose multiplication. 
+
+\hypertarget{classdrdc__WUTMPose_0e17522a504ad33eed8c6bb42ae2cac3}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WUTMPose::operator$\ast$ ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition})}}
+\label{classdrdc__WUTMPose_0e17522a504ad33eed8c6bb42ae2cac3}
+
+
+World UTM Pose - Position multiplication. 
+
+\hypertarget{classdrdc__WUTMPose_16b86001c3ee0e7b22cffcfdda270e06}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!to\_\-WPose@{to\_\-WPose}}
+\index{to\_\-WPose@{to\_\-WPose}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[to\_\-WPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPose} drdc\_\-WUTMPose::to\_\-WPose ()}}
+\label{classdrdc__WUTMPose_16b86001c3ee0e7b22cffcfdda270e06}
+
+
+Convert World UTM Pose to World Pose. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__WUTMPose_9fe6b8c960457e26367848e82a00a37e}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!to\_\-lPose@{to\_\-lPose}}
+\index{to\_\-lPose@{to\_\-lPose}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPose} drdc\_\-WUTMPose::to\_\-lPose ()}}
+\label{classdrdc__WUTMPose_9fe6b8c960457e26367848e82a00a37e}
+
+
+Map World UTM Pose to Local Pose. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__WUTMPose_8dc6dad1cd2224fc414137fb4665cd5d}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!vector@{vector}}
+\index{vector@{vector}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-WUTMPose::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__WUTMPose_8dc6dad1cd2224fc414137fb4665cd5d}
+
+
+Data vector. 
+
+\hypertarget{classdrdc__WUTMPose_4596093fb33fafbb1257e54ff17bd13e}{
+\index{drdc\_\-WUTMPose@{drdc\_\-WUTMPose}!zone@{zone}}
+\index{zone@{zone}!drdc_WUTMPose@{drdc\_\-WUTMPose}}
+\subsubsection[zone]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-UTMZone\_\-t} {\bf drdc\_\-WUTMPose::zone}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__WUTMPose_4596093fb33fafbb1257e54ff17bd13e}
+
+
+UTM zone. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

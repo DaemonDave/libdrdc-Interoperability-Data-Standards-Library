@@ -1,0 +1,363 @@
+\hypertarget{classdrdc__HMatrix}{
+\section{drdc\_\-HMatrix Class Reference}
+\label{classdrdc__HMatrix}\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}}
+}
+C++ Homogeneous Matrix Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__HMatrix_d9fed0c7347760fbf770c4b06d06da0b}{drdc\_\-HMatrix} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_ce6e722fa2bb72ffcf049dcca10a3244}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_efc643c73c028a28530cdd1312f2b9ea}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__HMatrix_5e948bc0daf09f8fd9e780683303b995}{compare} (\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} homogeneous, \hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__HMatrix_2e28d6ec867b30ca11e5054fe2854cc1}{getPosition} ()
+\begin{CompactList}\small\item\em Return the translation part of the Homogeneous Matrix. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_1a7c2f6cb34255c88a40c832a96e5fb3}{setPosition} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Set the translation part of the Homogeneous Matrix. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \& \hyperlink{classdrdc__HMatrix_9b19afd1fb7b7fb2f6540c829272f675}{operator=} (\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} homogeneous)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__HMatrix_1b54142408745495456f761e509a9d7c}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__HMatrix_5da0db87a60d8585c726bb1dbab1a20a}{operator+} (\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} homogeneous)
+\begin{CompactList}\small\item\em Plus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__HMatrix_6c725d25897a9e3e533a064a5b4cd31c}{operator-} ()
+\begin{CompactList}\small\item\em Negate operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__HMatrix_7c52fcfd868193a46a491fc6daf7f36f}{operator-} (\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} homogeneous)
+\begin{CompactList}\small\item\em Minus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__HMatrix_9125f22fe1c846f0fe33d3bd2782f1e6}{operator$\ast$} (double a)
+\begin{CompactList}\small\item\em Scale operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__HMatrix_fa022b048b7270e7e09c8e8d25e172f5}{operator$\ast$} (\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} homogeneous)
+\begin{CompactList}\small\item\em Homogeneous Matrix multiplication operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__HMatrix_6aa7d1bd902154022b03a8b15ee7afa6}{operator$\ast$} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Homogeneous Matrix - Local Position multiplication operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__HMatrix_c949f0bedceffa08288465649ee14dfa}{operator$\ast$} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition)
+\begin{CompactList}\small\item\em Homogeneous Matrix - World UTM Position multiplication operator. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_b123740bea69ad0119682771d0cce7a5}{normalize} ()
+\begin{CompactList}\small\item\em Normalize a Homogeneous Matrix. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__HMatrix_9d8593f3e84fb400bfd27dc48e137934}{transpose} ()
+\begin{CompactList}\small\item\em Transpose a Homogeneous Matrix. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_c51b27e0651263aacb0aee7c7815f5e6}{fromRotAxis} (const \hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, const double theta)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from rotation of an axis. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_c96a446ac4ed830ae94ea7259d711788}{fromRotVec} (double theta, \hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} unitVector)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from rotation vector. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_a264908dfdd69262c02b7e041ec12f20}{fromDH} (double linkLength, double twistAngle, double jointOffset, double jointAngle)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from DH representation. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_4005e8dacfae57ad94af32c58f69b443}{fromLink} (\hyperlink{structdrdc__LinkSpecs__t}{drdc\_\-LinkSpecs\_\-t} linkSpec, double jointOffsetOrAngle)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from link specification struct. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_2eb122e8c6debc51f4c290ce9a3ffbc2}{toRotVec} (double $\ast$theta, \hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} $\ast$unitVector)
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to rotation vector. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__HMatrix_47b76fbb959993241a3b00e7bd2ffae5}{identity} ()
+\begin{CompactList}\small\item\em Create an identity Homogeneous Matrix. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__HMatrix_315a6b078d1d53eae992c70ec21fc1c4}{inverse} ()
+\begin{CompactList}\small\item\em Inverse a Homogeneous Matrix. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPose}{drdc\_\-lPose} \hyperlink{classdrdc__HMatrix_dba5a3f501e9831e97bd18c1857b84d9}{to\_\-lPose} ()
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Local Pose. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lePose}{drdc\_\-lePose} \hyperlink{classdrdc__HMatrix_d87777199dadee62fbd5508956ab14b8}{to\_\-lePose} ()
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Local Euler Pose. \item\end{CompactList}\item 
+\hyperlink{classdrdc__Orient}{drdc\_\-Orient} \hyperlink{classdrdc__HMatrix_07a66bec680b8e525741a89d85fa766a}{to\_\-Orient} ()
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Quaternion. \item\end{CompactList}\item 
+\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} \hyperlink{classdrdc__HMatrix_57523497b807ffcc61239f4b1a577aa1}{to\_\-eOrient} ()
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Euler RPY. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__HMatrix_c37eb823c50302c2c53c1be325373f0c}{vector}
+\begin{CompactList}\small\item\em Data vector. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ Homogeneous Matrix Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__HMatrix_d9fed0c7347760fbf770c4b06d06da0b}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!drdc\_\-HMatrix@{drdc\_\-HMatrix}}
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[drdc\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-HMatrix::drdc\_\-HMatrix ()}}
+\label{classdrdc__HMatrix_d9fed0c7347760fbf770c4b06d06da0b}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__HMatrix_ce6e722fa2bb72ffcf049dcca10a3244}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!set@{set}}
+\index{set@{set}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::set (const double $\ast$ {\em array})}}
+\label{classdrdc__HMatrix_ce6e722fa2bb72ffcf049dcca10a3244}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__HMatrix_efc643c73c028a28530cdd1312f2b9ea}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__HMatrix_efc643c73c028a28530cdd1312f2b9ea}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__HMatrix_5e948bc0daf09f8fd9e780683303b995}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!compare@{compare}}
+\index{compare@{compare}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-HMatrix::compare ({\bf drdc\_\-HMatrix} {\em homogeneous}, \/  {\bf drdc\_\-HMatrix} {\em fuzz})}}
+\label{classdrdc__HMatrix_5e948bc0daf09f8fd9e780683303b995}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__HMatrix_2e28d6ec867b30ca11e5054fe2854cc1}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-HMatrix::getPosition ()}}
+\label{classdrdc__HMatrix_2e28d6ec867b30ca11e5054fe2854cc1}
+
+
+Return the translation part of the Homogeneous Matrix. 
+
+\hypertarget{classdrdc__HMatrix_1a7c2f6cb34255c88a40c832a96e5fb3}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[setPosition]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::setPosition ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__HMatrix_1a7c2f6cb34255c88a40c832a96e5fb3}
+
+
+Set the translation part of the Homogeneous Matrix. 
+
+\hypertarget{classdrdc__HMatrix_9b19afd1fb7b7fb2f6540c829272f675}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix}\& drdc\_\-HMatrix::operator= ({\bf drdc\_\-HMatrix} {\em homogeneous})}}
+\label{classdrdc__HMatrix_9b19afd1fb7b7fb2f6540c829272f675}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__HMatrix_1b54142408745495456f761e509a9d7c}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-HMatrix::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__HMatrix_1b54142408745495456f761e509a9d7c}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__HMatrix_5da0db87a60d8585c726bb1dbab1a20a}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator+@{operator+}}
+\index{operator+@{operator+}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator+]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-HMatrix::operator+ ({\bf drdc\_\-HMatrix} {\em homogeneous})}}
+\label{classdrdc__HMatrix_5da0db87a60d8585c726bb1dbab1a20a}
+
+
+Plus operator. 
+
+\hypertarget{classdrdc__HMatrix_6c725d25897a9e3e533a064a5b4cd31c}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-HMatrix::operator- ()}}
+\label{classdrdc__HMatrix_6c725d25897a9e3e533a064a5b4cd31c}
+
+
+Negate operator. 
+
+\hypertarget{classdrdc__HMatrix_7c52fcfd868193a46a491fc6daf7f36f}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-HMatrix::operator- ({\bf drdc\_\-HMatrix} {\em homogeneous})}}
+\label{classdrdc__HMatrix_7c52fcfd868193a46a491fc6daf7f36f}
+
+
+Minus operator. 
+
+\hypertarget{classdrdc__HMatrix_9125f22fe1c846f0fe33d3bd2782f1e6}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-HMatrix::operator$\ast$ (double {\em a})}}
+\label{classdrdc__HMatrix_9125f22fe1c846f0fe33d3bd2782f1e6}
+
+
+Scale operator. 
+
+\hypertarget{classdrdc__HMatrix_fa022b048b7270e7e09c8e8d25e172f5}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-HMatrix::operator$\ast$ ({\bf drdc\_\-HMatrix} {\em homogeneous})}}
+\label{classdrdc__HMatrix_fa022b048b7270e7e09c8e8d25e172f5}
+
+
+Homogeneous Matrix multiplication operator. 
+
+\hypertarget{classdrdc__HMatrix_6aa7d1bd902154022b03a8b15ee7afa6}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-HMatrix::operator$\ast$ ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__HMatrix_6aa7d1bd902154022b03a8b15ee7afa6}
+
+
+Homogeneous Matrix - Local Position multiplication operator. 
+
+\hypertarget{classdrdc__HMatrix_c949f0bedceffa08288465649ee14dfa}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-HMatrix::operator$\ast$ ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition})}}
+\label{classdrdc__HMatrix_c949f0bedceffa08288465649ee14dfa}
+
+
+Homogeneous Matrix - World UTM Position multiplication operator. 
+
+\hypertarget{classdrdc__HMatrix_b123740bea69ad0119682771d0cce7a5}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!normalize@{normalize}}
+\index{normalize@{normalize}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[normalize]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::normalize ()}}
+\label{classdrdc__HMatrix_b123740bea69ad0119682771d0cce7a5}
+
+
+Normalize a Homogeneous Matrix. 
+
+\hypertarget{classdrdc__HMatrix_9d8593f3e84fb400bfd27dc48e137934}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!transpose@{transpose}}
+\index{transpose@{transpose}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[transpose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-HMatrix::transpose ()}}
+\label{classdrdc__HMatrix_9d8593f3e84fb400bfd27dc48e137934}
+
+
+Transpose a Homogeneous Matrix. 
+
+\hypertarget{classdrdc__HMatrix_c51b27e0651263aacb0aee7c7815f5e6}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!fromRotAxis@{fromRotAxis}}
+\index{fromRotAxis@{fromRotAxis}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[fromRotAxis]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::fromRotAxis (const {\bf Axis\_\-t} {\em axis}, \/  const double {\em theta})}}
+\label{classdrdc__HMatrix_c51b27e0651263aacb0aee7c7815f5e6}
+
+
+Construct Homogeneous Matrix from rotation of an axis. 
+
+\hypertarget{classdrdc__HMatrix_c96a446ac4ed830ae94ea7259d711788}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!fromRotVec@{fromRotVec}}
+\index{fromRotVec@{fromRotVec}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[fromRotVec]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::fromRotVec (double {\em theta}, \/  {\bf drdc\_\-lPosn} {\em unitVector})}}
+\label{classdrdc__HMatrix_c96a446ac4ed830ae94ea7259d711788}
+
+
+Construct Homogeneous Matrix from rotation vector. 
+
+\hypertarget{classdrdc__HMatrix_a264908dfdd69262c02b7e041ec12f20}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!fromDH@{fromDH}}
+\index{fromDH@{fromDH}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[fromDH]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::fromDH (double {\em linkLength}, \/  double {\em twistAngle}, \/  double {\em jointOffset}, \/  double {\em jointAngle})}}
+\label{classdrdc__HMatrix_a264908dfdd69262c02b7e041ec12f20}
+
+
+Construct Homogeneous Matrix from DH representation. 
+
+\hypertarget{classdrdc__HMatrix_4005e8dacfae57ad94af32c58f69b443}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!fromLink@{fromLink}}
+\index{fromLink@{fromLink}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[fromLink]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::fromLink ({\bf drdc\_\-LinkSpecs\_\-t} {\em linkSpec}, \/  double {\em jointOffsetOrAngle})}}
+\label{classdrdc__HMatrix_4005e8dacfae57ad94af32c58f69b443}
+
+
+Construct Homogeneous Matrix from link specification struct. 
+
+\hypertarget{classdrdc__HMatrix_2eb122e8c6debc51f4c290ce9a3ffbc2}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!toRotVec@{toRotVec}}
+\index{toRotVec@{toRotVec}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[toRotVec]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::toRotVec (double $\ast$ {\em theta}, \/  {\bf drdc\_\-lPosn} $\ast$ {\em unitVector})}}
+\label{classdrdc__HMatrix_2eb122e8c6debc51f4c290ce9a3ffbc2}
+
+
+Convert Homogeneous Matrix to rotation vector. 
+
+\hypertarget{classdrdc__HMatrix_47b76fbb959993241a3b00e7bd2ffae5}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!identity@{identity}}
+\index{identity@{identity}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[identity]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-HMatrix::identity ()}}
+\label{classdrdc__HMatrix_47b76fbb959993241a3b00e7bd2ffae5}
+
+
+Create an identity Homogeneous Matrix. 
+
+\hypertarget{classdrdc__HMatrix_315a6b078d1d53eae992c70ec21fc1c4}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!inverse@{inverse}}
+\index{inverse@{inverse}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[inverse]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-HMatrix::inverse ()}}
+\label{classdrdc__HMatrix_315a6b078d1d53eae992c70ec21fc1c4}
+
+
+Inverse a Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__HMatrix_dba5a3f501e9831e97bd18c1857b84d9}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!to\_\-lPose@{to\_\-lPose}}
+\index{to\_\-lPose@{to\_\-lPose}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPose} drdc\_\-HMatrix::to\_\-lPose ()}}
+\label{classdrdc__HMatrix_dba5a3f501e9831e97bd18c1857b84d9}
+
+
+Convert Homogeneous Matrix to Local Pose. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__HMatrix_d87777199dadee62fbd5508956ab14b8}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!to\_\-lePose@{to\_\-lePose}}
+\index{to\_\-lePose@{to\_\-lePose}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[to\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lePose} drdc\_\-HMatrix::to\_\-lePose ()}}
+\label{classdrdc__HMatrix_d87777199dadee62fbd5508956ab14b8}
+
+
+Convert Homogeneous Matrix to Local Euler Pose. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__HMatrix_07a66bec680b8e525741a89d85fa766a}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!to\_\-Orient@{to\_\-Orient}}
+\index{to\_\-Orient@{to\_\-Orient}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[to\_\-Orient]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Orient} drdc\_\-HMatrix::to\_\-Orient ()}}
+\label{classdrdc__HMatrix_07a66bec680b8e525741a89d85fa766a}
+
+
+Convert Homogeneous Matrix to Quaternion. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__HMatrix_57523497b807ffcc61239f4b1a577aa1}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!to\_\-eOrient@{to\_\-eOrient}}
+\index{to\_\-eOrient@{to\_\-eOrient}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[to\_\-eOrient]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient} drdc\_\-HMatrix::to\_\-eOrient ()}}
+\label{classdrdc__HMatrix_57523497b807ffcc61239f4b1a577aa1}
+
+
+Convert Homogeneous Matrix to Euler RPY. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__HMatrix_c37eb823c50302c2c53c1be325373f0c}{
+\index{drdc\_\-HMatrix@{drdc\_\-HMatrix}!vector@{vector}}
+\index{vector@{vector}!drdc_HMatrix@{drdc\_\-HMatrix}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-HMatrix::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__HMatrix_c37eb823c50302c2c53c1be325373f0c}
+
+
+Data vector. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

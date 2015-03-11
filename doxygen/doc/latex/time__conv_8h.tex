@@ -1,0 +1,199 @@
+\hypertarget{time__conv_8h}{
+\section{/home/dave/src/libdrdc/src/time\_\-conv/time\_\-conv.h File Reference}
+\label{time__conv_8h}\index{/home/dave/src/libdrdc/src/time\_\-conv/time\_\-conv.h@{/home/dave/src/libdrdc/src/time\_\-conv/time\_\-conv.h}}
+}
+{\tt \#include $<$time.h$>$}\par
+{\tt \#include $<$sys/time.h$>$}\par
+{\tt \#include \char`\"{}libdrdc.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structJausTime__t}{JausTime\_\-t}
+\begin{CompactList}\small\item\em JAUS Timestamp and Datestamp Structure. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{time__conv_8h_464232bd99783ea770c965123f68bfcb}{JAUS\_\-TIME\_\-STAMP\_\-SIZE\_\-BYTES}~JAUS\_\-UNSIGNED\_\-INTEGER\_\-SIZE\_\-BYTES
+\item 
+\#define \hyperlink{time__conv_8h_aa03cbba9dd118b1e0f5f29702c23b8b}{JAUS\_\-DATE\_\-STAMP\_\-SIZE\_\-BYTES}~JAUS\_\-UNSIGNED\_\-SHORT\_\-SIZE\_\-BYTES
+\item 
+\#define \hyperlink{time__conv_8h_4ec22a9711fa99869161039214d34f7d}{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-SHIFT}~0
+\item 
+\#define \hyperlink{time__conv_8h_cb9cf317e5219e46886067536035e501}{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-SHIFT}~10
+\item 
+\#define \hyperlink{time__conv_8h_184af38bdffeaecbb4419531f904a241}{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-SHIFT}~16
+\item 
+\#define \hyperlink{time__conv_8h_499d549fa211889bf9246bc99dacf537}{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-SHIFT}~22
+\item 
+\#define \hyperlink{time__conv_8h_79c835118f75e4a5a767d8bdca035112}{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-SHIFT}~27
+\item 
+\#define \hyperlink{time__conv_8h_b7c6f10e18a3c04187ca6b6a2a625071}{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-SHIFT}~0
+\item 
+\#define \hyperlink{time__conv_8h_e57dcb0e65f347e02b625bc012ec4c60}{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-SHIFT}~5
+\item 
+\#define \hyperlink{time__conv_8h_9d7420460cd03c6a23f1b201c2c0c903}{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-SHIFT}~9
+\item 
+\#define \hyperlink{time__conv_8h_0b9c2ceada9e661bd969055ec5c74b08}{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-MASK}~0x1FF
+\item 
+\#define \hyperlink{time__conv_8h_9c1f99c6d2ddcab527c850b5386eea93}{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-MASK}~0x3F
+\item 
+\#define \hyperlink{time__conv_8h_ee104e8a8e598fb48b0938b09d49e8e6}{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-MASK}~0x3F
+\item 
+\#define \hyperlink{time__conv_8h_38f8f805788f266ef579672937851376}{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-MASK}~0x1F
+\item 
+\#define \hyperlink{time__conv_8h_4ad86d373cd46eea0e9883118e4a5230}{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-MASK}~0x1F
+\item 
+\#define \hyperlink{time__conv_8h_dd50c95176cc0e19de778116b1d25df9}{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-MASK}~0x1F
+\item 
+\#define \hyperlink{time__conv_8h_3fef3465d83fb5c99a39df06fcc829bb}{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-MASK}~0x0F
+\item 
+\#define \hyperlink{time__conv_8h_176379836a52e61aff330be0302268a1}{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-MASK}~0x7F
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+struct timeval \hyperlink{group__time__conv_gd96aa6054228a1751cc4361c09faf60c}{timeUtcToGps} (const short leapSec, const struct timeval $\ast$utcTime)
+\begin{CompactList}\small\item\em UTC time to GPS time. \item\end{CompactList}\item 
+struct timeval \hyperlink{group__time__conv_gdc88a6af3e3644ef9874e2cb55aa1976}{timeGpsToUtc} (const short leapSec, const struct timeval $\ast$gpsTime)
+\begin{CompactList}\small\item\em GPS time to UTC time. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_gfabd8046b6f8c5c8c8ba591a283ce5cf}{jausTimeConvert} (const struct timeval $\ast$timeVal, \hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Convert Time to Jaus Timestamp and Datestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_gefa61d2f15de88919f2c623b39edb394}{jausTimeStampPack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Pack Jaus Timestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_g8c18bc24bd1c4d704a2e475a95649dbc}{jausDateStampPack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Pack Jaus Datestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_g0e70191e4545f9180f005c013a8573a0}{jausTimeToString} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time, char $\ast$buffer)
+\begin{CompactList}\small\item\em Convert Jaus Time Structure to String. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_g32861ee818838c146b1a50bd18a1b443}{jausTimeStampUnpack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Unpack Jaus Timestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_ga8c0786a64ecb030207a9153aa8cd624}{jausDateStampUnpack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Unpack Jaus Datestamp. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{time__conv_8h_dd50c95176cc0e19de778116b1d25df9}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-MASK@{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-MASK}}
+\index{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-MASK@{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-MASK~0x1F}}
+\label{time__conv_8h_dd50c95176cc0e19de778116b1d25df9}
+
+
+\hypertarget{time__conv_8h_b7c6f10e18a3c04187ca6b6a2a625071}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-SHIFT@{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-SHIFT}}
+\index{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-SHIFT@{JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-DATE\_\-STAMP\_\-DAY\_\-SHIFT~0}}
+\label{time__conv_8h_b7c6f10e18a3c04187ca6b6a2a625071}
+
+
+\hypertarget{time__conv_8h_3fef3465d83fb5c99a39df06fcc829bb}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-MASK@{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-MASK}}
+\index{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-MASK@{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-MASK~0x0F}}
+\label{time__conv_8h_3fef3465d83fb5c99a39df06fcc829bb}
+
+
+\hypertarget{time__conv_8h_e57dcb0e65f347e02b625bc012ec4c60}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-SHIFT@{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-SHIFT}}
+\index{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-SHIFT@{JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-DATE\_\-STAMP\_\-MONTH\_\-SHIFT~5}}
+\label{time__conv_8h_e57dcb0e65f347e02b625bc012ec4c60}
+
+
+\hypertarget{time__conv_8h_aa03cbba9dd118b1e0f5f29702c23b8b}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-DATE\_\-STAMP\_\-SIZE\_\-BYTES@{JAUS\_\-DATE\_\-STAMP\_\-SIZE\_\-BYTES}}
+\index{JAUS\_\-DATE\_\-STAMP\_\-SIZE\_\-BYTES@{JAUS\_\-DATE\_\-STAMP\_\-SIZE\_\-BYTES}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-DATE\_\-STAMP\_\-SIZE\_\-BYTES]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-DATE\_\-STAMP\_\-SIZE\_\-BYTES~JAUS\_\-UNSIGNED\_\-SHORT\_\-SIZE\_\-BYTES}}
+\label{time__conv_8h_aa03cbba9dd118b1e0f5f29702c23b8b}
+
+
+\hypertarget{time__conv_8h_176379836a52e61aff330be0302268a1}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-MASK@{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-MASK}}
+\index{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-MASK@{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-MASK~0x7F}}
+\label{time__conv_8h_176379836a52e61aff330be0302268a1}
+
+
+\hypertarget{time__conv_8h_9d7420460cd03c6a23f1b201c2c0c903}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-SHIFT@{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-SHIFT}}
+\index{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-SHIFT@{JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-DATE\_\-STAMP\_\-YEAR\_\-SHIFT~9}}
+\label{time__conv_8h_9d7420460cd03c6a23f1b201c2c0c903}
+
+
+\hypertarget{time__conv_8h_4ad86d373cd46eea0e9883118e4a5230}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-MASK}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-MASK~0x1F}}
+\label{time__conv_8h_4ad86d373cd46eea0e9883118e4a5230}
+
+
+\hypertarget{time__conv_8h_79c835118f75e4a5a767d8bdca035112}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-SHIFT}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-DAY\_\-SHIFT~27}}
+\label{time__conv_8h_79c835118f75e4a5a767d8bdca035112}
+
+
+\hypertarget{time__conv_8h_38f8f805788f266ef579672937851376}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-MASK}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-MASK~0x1F}}
+\label{time__conv_8h_38f8f805788f266ef579672937851376}
+
+
+\hypertarget{time__conv_8h_499d549fa211889bf9246bc99dacf537}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-SHIFT}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-HOUR\_\-SHIFT~22}}
+\label{time__conv_8h_499d549fa211889bf9246bc99dacf537}
+
+
+\hypertarget{time__conv_8h_0b9c2ceada9e661bd969055ec5c74b08}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-MASK}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-MASK~0x1FF}}
+\label{time__conv_8h_0b9c2ceada9e661bd969055ec5c74b08}
+
+
+\hypertarget{time__conv_8h_4ec22a9711fa99869161039214d34f7d}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-SHIFT}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-MILLISEC\_\-SHIFT~0}}
+\label{time__conv_8h_4ec22a9711fa99869161039214d34f7d}
+
+
+\hypertarget{time__conv_8h_ee104e8a8e598fb48b0938b09d49e8e6}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-MASK}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-MASK~0x3F}}
+\label{time__conv_8h_ee104e8a8e598fb48b0938b09d49e8e6}
+
+
+\hypertarget{time__conv_8h_184af38bdffeaecbb4419531f904a241}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-SHIFT}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-MINUTE\_\-SHIFT~16}}
+\label{time__conv_8h_184af38bdffeaecbb4419531f904a241}
+
+
+\hypertarget{time__conv_8h_9c1f99c6d2ddcab527c850b5386eea93}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-MASK}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-MASK@{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-MASK}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-MASK~0x3F}}
+\label{time__conv_8h_9c1f99c6d2ddcab527c850b5386eea93}
+
+
+\hypertarget{time__conv_8h_cb9cf317e5219e46886067536035e501}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-SHIFT}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-SHIFT@{JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-SHIFT}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-SHIFT]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-SECOND\_\-SHIFT~10}}
+\label{time__conv_8h_cb9cf317e5219e46886067536035e501}
+
+
+\hypertarget{time__conv_8h_464232bd99783ea770c965123f68bfcb}{
+\index{time\_\-conv.h@{time\_\-conv.h}!JAUS\_\-TIME\_\-STAMP\_\-SIZE\_\-BYTES@{JAUS\_\-TIME\_\-STAMP\_\-SIZE\_\-BYTES}}
+\index{JAUS\_\-TIME\_\-STAMP\_\-SIZE\_\-BYTES@{JAUS\_\-TIME\_\-STAMP\_\-SIZE\_\-BYTES}!time_conv.h@{time\_\-conv.h}}
+\subsubsection[JAUS\_\-TIME\_\-STAMP\_\-SIZE\_\-BYTES]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-TIME\_\-STAMP\_\-SIZE\_\-BYTES~JAUS\_\-UNSIGNED\_\-INTEGER\_\-SIZE\_\-BYTES}}
+\label{time__conv_8h_464232bd99783ea770c965123f68bfcb}
+
+

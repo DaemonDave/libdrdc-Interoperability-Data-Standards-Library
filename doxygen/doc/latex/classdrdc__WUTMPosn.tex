@@ -1,0 +1,286 @@
+\hypertarget{classdrdc__WUTMPosn}{
+\section{drdc\_\-WUTMPosn Class Reference}
+\label{classdrdc__WUTMPosn}\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}}
+}
+C++ World UTM Position Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__WUTMPosn_53156834afa26149ee93315c8fe40941}{drdc\_\-WUTMPosn} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPosn_b1cad0ece4e461064de5c8b0da95306f}{set} (double easting, double northing, double elevation)
+\begin{CompactList}\small\item\em Set the object by specifying UTM easting, northing and elevation. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPosn_96108ff7b3bbb32f5142b0c2c8ce616f}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPosn_ac0d6c2ca71999b6ad63740888e061a4}{setZone} (\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{classdrdc__WUTMPosn_c00550c816a3939d62df40940763beed}{zone})
+\begin{CompactList}\small\item\em Set UTM zone. \item\end{CompactList}\item 
+\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{classdrdc__WUTMPosn_13fa9fd7ca91fc24952f52d41339a2cb}{getZone} ()
+\begin{CompactList}\small\item\em Return UTM zone. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WUTMPosn_568892ce7a76ddbc19e3d627a977261f}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__WUTMPosn_ad6103831648f11947798527a8df34d5}{compare} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition, \hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WUTMPosn_3e4c6d4abbc6efa724733b795826c766}{getEasting} ()
+\begin{CompactList}\small\item\em Return the Easting value from the object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WUTMPosn_d0f500ab444b9cca16e37333b3bf9455}{getNorthing} ()
+\begin{CompactList}\small\item\em Return the Northing value from the object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WUTMPosn_bf685c57793268aba186272c75f69441}{getElevation} ()
+\begin{CompactList}\small\item\em Return the Elevation value from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \& \hyperlink{classdrdc__WUTMPosn_dd6c29f98f75aacb1c21b29617e0ffbc}{operator=} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WUTMPosn_48d0a9be9ae8c4d0fe65f4c6c7dafb46}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WUTMPosn_243334e7b04a731573a2d2fc875377b6}{operator+} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition)
+\begin{CompactList}\small\item\em Plus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WUTMPosn_54f6cc02b2435080a081ad979cf36480}{operator-} ()
+\begin{CompactList}\small\item\em Negate operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WUTMPosn_94275ec1d96ae6a0e1740346e79c6a14}{operator-} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition)
+\begin{CompactList}\small\item\em Minus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WUTMPosn_40f35ee9635745a294b204d70364a886}{operator$\ast$} (double a)
+\begin{CompactList}\small\item\em Scale operator. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WUTMPosn_718e139e68caf39f65c919f55d76b1fc}{dot} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition)
+\begin{CompactList}\small\item\em Vector dot operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WUTMPosn_4e5c3df2101517981b207471ad925105}{cross} (\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} worldUTMPosition)
+\begin{CompactList}\small\item\em Vector cross operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__WUTMPosn_b678adb758987bd816743aef94f3d867}{to\_\-lPosn} ()
+\begin{CompactList}\small\item\em Map World UTM Position to Local Position. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} \hyperlink{classdrdc__WUTMPosn_17fe9ddb27cbf0bef977e716dafc92c0}{to\_\-WPosn} ()
+\begin{CompactList}\small\item\em Convert World UTM Position to World Position. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__WUTMPosn_5b083fd3680689ff552bdbff909f6a80}{vector}
+\begin{CompactList}\small\item\em Data vector. \item\end{CompactList}\item 
+\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} \hyperlink{classdrdc__WUTMPosn_c00550c816a3939d62df40940763beed}{zone}
+\begin{CompactList}\small\item\em UTM zone. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ World UTM Position Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__WUTMPosn_53156834afa26149ee93315c8fe40941}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}}
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[drdc\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-WUTMPosn::drdc\_\-WUTMPosn ()}}
+\label{classdrdc__WUTMPosn_53156834afa26149ee93315c8fe40941}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__WUTMPosn_b1cad0ece4e461064de5c8b0da95306f}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!set@{set}}
+\index{set@{set}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPosn::set (double {\em easting}, \/  double {\em northing}, \/  double {\em elevation})}}
+\label{classdrdc__WUTMPosn_b1cad0ece4e461064de5c8b0da95306f}
+
+
+Set the object by specifying UTM easting, northing and elevation. 
+
+\hypertarget{classdrdc__WUTMPosn_96108ff7b3bbb32f5142b0c2c8ce616f}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!set@{set}}
+\index{set@{set}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPosn::set (const double $\ast$ {\em array})}}
+\label{classdrdc__WUTMPosn_96108ff7b3bbb32f5142b0c2c8ce616f}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__WUTMPosn_ac0d6c2ca71999b6ad63740888e061a4}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!setZone@{setZone}}
+\index{setZone@{setZone}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[setZone]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPosn::setZone ({\bf drdc\_\-UTMZone\_\-t} {\em zone})}}
+\label{classdrdc__WUTMPosn_ac0d6c2ca71999b6ad63740888e061a4}
+
+
+Set UTM zone. 
+
+\hypertarget{classdrdc__WUTMPosn_13fa9fd7ca91fc24952f52d41339a2cb}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!getZone@{getZone}}
+\index{getZone@{getZone}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[getZone]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-UTMZone\_\-t} drdc\_\-WUTMPosn::getZone ()}}
+\label{classdrdc__WUTMPosn_13fa9fd7ca91fc24952f52d41339a2cb}
+
+
+Return UTM zone. 
+
+\hypertarget{classdrdc__WUTMPosn_568892ce7a76ddbc19e3d627a977261f}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WUTMPosn::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__WUTMPosn_568892ce7a76ddbc19e3d627a977261f}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__WUTMPosn_ad6103831648f11947798527a8df34d5}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!compare@{compare}}
+\index{compare@{compare}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-WUTMPosn::compare ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition}, \/  {\bf drdc\_\-WUTMPosn} {\em fuzz})}}
+\label{classdrdc__WUTMPosn_ad6103831648f11947798527a8df34d5}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__WUTMPosn_3e4c6d4abbc6efa724733b795826c766}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!getEasting@{getEasting}}
+\index{getEasting@{getEasting}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[getEasting]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WUTMPosn::getEasting ()}}
+\label{classdrdc__WUTMPosn_3e4c6d4abbc6efa724733b795826c766}
+
+
+Return the Easting value from the object. 
+
+\hypertarget{classdrdc__WUTMPosn_d0f500ab444b9cca16e37333b3bf9455}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!getNorthing@{getNorthing}}
+\index{getNorthing@{getNorthing}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[getNorthing]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WUTMPosn::getNorthing ()}}
+\label{classdrdc__WUTMPosn_d0f500ab444b9cca16e37333b3bf9455}
+
+
+Return the Northing value from the object. 
+
+\hypertarget{classdrdc__WUTMPosn_bf685c57793268aba186272c75f69441}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!getElevation@{getElevation}}
+\index{getElevation@{getElevation}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[getElevation]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WUTMPosn::getElevation ()}}
+\label{classdrdc__WUTMPosn_bf685c57793268aba186272c75f69441}
+
+
+Return the Elevation value from the object. 
+
+\hypertarget{classdrdc__WUTMPosn_dd6c29f98f75aacb1c21b29617e0ffbc}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn}\& drdc\_\-WUTMPosn::operator= ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition})}}
+\label{classdrdc__WUTMPosn_dd6c29f98f75aacb1c21b29617e0ffbc}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__WUTMPosn_48d0a9be9ae8c4d0fe65f4c6c7dafb46}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WUTMPosn::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__WUTMPosn_48d0a9be9ae8c4d0fe65f4c6c7dafb46}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__WUTMPosn_243334e7b04a731573a2d2fc875377b6}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!operator+@{operator+}}
+\index{operator+@{operator+}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[operator+]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WUTMPosn::operator+ ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition})}}
+\label{classdrdc__WUTMPosn_243334e7b04a731573a2d2fc875377b6}
+
+
+Plus operator. 
+
+\hypertarget{classdrdc__WUTMPosn_54f6cc02b2435080a081ad979cf36480}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WUTMPosn::operator- ()}}
+\label{classdrdc__WUTMPosn_54f6cc02b2435080a081ad979cf36480}
+
+
+Negate operator. 
+
+\hypertarget{classdrdc__WUTMPosn_94275ec1d96ae6a0e1740346e79c6a14}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WUTMPosn::operator- ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition})}}
+\label{classdrdc__WUTMPosn_94275ec1d96ae6a0e1740346e79c6a14}
+
+
+Minus operator. 
+
+\hypertarget{classdrdc__WUTMPosn_40f35ee9635745a294b204d70364a886}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WUTMPosn::operator$\ast$ (double {\em a})}}
+\label{classdrdc__WUTMPosn_40f35ee9635745a294b204d70364a886}
+
+
+Scale operator. 
+
+\hypertarget{classdrdc__WUTMPosn_718e139e68caf39f65c919f55d76b1fc}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!dot@{dot}}
+\index{dot@{dot}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[dot]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WUTMPosn::dot ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition})}}
+\label{classdrdc__WUTMPosn_718e139e68caf39f65c919f55d76b1fc}
+
+
+Vector dot operator. 
+
+\hypertarget{classdrdc__WUTMPosn_4e5c3df2101517981b207471ad925105}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!cross@{cross}}
+\index{cross@{cross}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WUTMPosn::cross ({\bf drdc\_\-WUTMPosn} {\em worldUTMPosition})}}
+\label{classdrdc__WUTMPosn_4e5c3df2101517981b207471ad925105}
+
+
+Vector cross operator. 
+
+\hypertarget{classdrdc__WUTMPosn_b678adb758987bd816743aef94f3d867}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!to\_\-lPosn@{to\_\-lPosn}}
+\index{to\_\-lPosn@{to\_\-lPosn}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[to\_\-lPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-WUTMPosn::to\_\-lPosn ()}}
+\label{classdrdc__WUTMPosn_b678adb758987bd816743aef94f3d867}
+
+
+Map World UTM Position to Local Position. 
+
+It is a simple mapping function. The mapping scheme is shown as follows:\begin{itemize}
+\item x - Easting\item y - Northing\item z - Elevation\end{itemize}
+
+
+Other mapping schemes can be achieved by using coordinate transformations.
+
+\begin{Desc}
+\item[Returns:]Local Position \end{Desc}
+\hypertarget{classdrdc__WUTMPosn_17fe9ddb27cbf0bef977e716dafc92c0}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!to\_\-WPosn@{to\_\-WPosn}}
+\index{to\_\-WPosn@{to\_\-WPosn}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPosn} drdc\_\-WUTMPosn::to\_\-WPosn ()}}
+\label{classdrdc__WUTMPosn_17fe9ddb27cbf0bef977e716dafc92c0}
+
+
+Convert World UTM Position to World Position. 
+
+\begin{Desc}
+\item[Returns:]World Position \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__WUTMPosn_5b083fd3680689ff552bdbff909f6a80}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!vector@{vector}}
+\index{vector@{vector}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-WUTMPosn::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__WUTMPosn_5b083fd3680689ff552bdbff909f6a80}
+
+
+Data vector. 
+
+\hypertarget{classdrdc__WUTMPosn_c00550c816a3939d62df40940763beed}{
+\index{drdc\_\-WUTMPosn@{drdc\_\-WUTMPosn}!zone@{zone}}
+\index{zone@{zone}!drdc_WUTMPosn@{drdc\_\-WUTMPosn}}
+\subsubsection[zone]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-UTMZone\_\-t} {\bf drdc\_\-WUTMPosn::zone}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__WUTMPosn_c00550c816a3939d62df40940763beed}
+
+
+UTM zone. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

@@ -1,0 +1,948 @@
+\hypertarget{wrapper_8h}{
+\section{/home/dave/src/libdrdc/src/wrapper/wrapper.h File Reference}
+\label{wrapper_8h}\index{/home/dave/src/libdrdc/src/wrapper/wrapper.h@{/home/dave/src/libdrdc/src/wrapper/wrapper.h}}
+}
+{\tt \#include $<$math.h$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include \char`\"{}libdrdc.h\char`\"{}}\par
+{\tt \#include \char`\"{}matrix\_\-ops.h\char`\"{}}\par
+{\tt \#include \char`\"{}homogeneous.h\char`\"{}}\par
+{\tt \#include \char`\"{}quaternion.h\char`\"{}}\par
+{\tt \#include \char`\"{}coordinate.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t}
+\begin{CompactList}\small\item\em UTM Zone Structure \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__DMS__t}{drdc\_\-DMS\_\-t}
+\begin{CompactList}\small\item\em Degree-Minute-Second Structure. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__Datum__t}{drdc\_\-Datum\_\-t}
+\begin{CompactList}\small\item\em Global Datum \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__LinkSpecs__t}{drdc\_\-LinkSpecs\_\-t}
+\begin{CompactList}\small\item\em Manipulator Linkage Specification. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t}
+\begin{CompactList}\small\item\em Generic Vector Type. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__lPosn__t}{drdc\_\-lPosn\_\-t}
+\begin{CompactList}\small\item\em OOC Local Position Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__WUTMPosn__t}{drdc\_\-WUTMPosn\_\-t}
+\begin{CompactList}\small\item\em OOC World UTM Position Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__WPosn__t}{drdc\_\-WPosn\_\-t}
+\begin{CompactList}\small\item\em OOC World Position Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__eOrient__t}{drdc\_\-eOrient\_\-t}
+\begin{CompactList}\small\item\em OOC Euler RPY Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__Orient__t}{drdc\_\-Orient\_\-t}
+\begin{CompactList}\small\item\em OOC Quaternion Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__HMatrix__t}{drdc\_\-HMatrix\_\-t}
+\begin{CompactList}\small\item\em OOC Homogeneous Matrix Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__WPose__t}{drdc\_\-WPose\_\-t}
+\begin{CompactList}\small\item\em OOC World Pose Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__lPose__t}{drdc\_\-lPose\_\-t}
+\begin{CompactList}\small\item\em OOC Local Pose Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__WUTMPose__t}{drdc\_\-WUTMPose\_\-t}
+\begin{CompactList}\small\item\em OOC World UTM Pose Representation. \item\end{CompactList}\item 
+struct \hyperlink{structdrdc__lePose__t}{drdc\_\-lePose\_\-t}
+\begin{CompactList}\small\item\em OOC Local Euler Pose Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__lPosn}{drdc\_\-lPosn}
+\begin{CompactList}\small\item\em C++ Local Position Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn}
+\begin{CompactList}\small\item\em C++ World UTM Position Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__WPosn}{drdc\_\-WPosn}
+\begin{CompactList}\small\item\em C++ World Position Represenation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__eOrient}{drdc\_\-eOrient}
+\begin{CompactList}\small\item\em C++ Euler RPY Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__Orient}{drdc\_\-Orient}
+\begin{CompactList}\small\item\em C++ Quaternion Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix}
+\begin{CompactList}\small\item\em C++ Homogeneous Matrix Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__lPose}{drdc\_\-lPose}
+\begin{CompactList}\small\item\em C++ Local Pose Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__lePose}{drdc\_\-lePose}
+\begin{CompactList}\small\item\em C++ Local Euler Pose Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__WPose}{drdc\_\-WPose}
+\begin{CompactList}\small\item\em C++ World Pose Representation. \item\end{CompactList}\item 
+class \hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose}
+\begin{CompactList}\small\item\em World UTM Pose Representation. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3}{drdc\_\-Joint\_\-t} \{ \hyperlink{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3396aa4264ab865ee1c1d0a510f3be929}{JOINT\_\-TYPE\_\-ERR}, 
+\hyperlink{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3d9b011f8bbfbbd2c8cf13fbb18fecec6}{JOINT\_\-REVOLUTE}, 
+\hyperlink{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3f3a3988dce9ac53b5fa4eac816d17bb8}{JOINT\_\-PRISMATIC}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{wrapper_8h_443d5b2b6afff97d38e9c9f3aae12cc7}{wp\_\-compare} (void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\item 
+int \hyperlink{wrapper_8h_7abedc2c677dc1acd20b7d5f9375e1a9}{wp\_\-compareUTM} (void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\item 
+double \hyperlink{wrapper_8h_fdd7fbceaeef6457e4e23a4fae6d2586}{wp\_\-index} (void $\ast$self, unsigned char n)
+\item 
+void \hyperlink{wrapper_8h_549779b7cc0d5f66834b54cdaa13219b}{wp\_\-setFromArray} (void $\ast$self, const double $\ast$array)
+\item 
+void \hyperlink{wrapper_8h_225370fd73f2d1d20d711827fbf00f09}{wp\_\-toArray} (void $\ast$self, double $\ast$array)
+\item 
+void \hyperlink{wrapper_8h_245680f18c2308eff094d35f1a866f67}{wp\_\-destroy} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_b1ca0c13cc9db94476971c6b41683178}{wp\_\-copy} (void $\ast$self, void $\ast$dest)
+\item 
+void \hyperlink{wrapper_8h_8f1a313f0a340c01caed7b8491970af0}{wp\_\-copyUTM} (void $\ast$self, void $\ast$dest)
+\item 
+void \hyperlink{wrapper_8h_de21a17bb9237d493259ee9774dc6c3b}{wp\_\-set3} (void $\ast$self, double arg0, double arg1, double arg2)
+\item 
+void \hyperlink{wrapper_8h_a1ea74e5c4ac99ab8fd7c5e8f173ba4b}{wp\_\-print} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_835e17f5940e092f28f8d346a24994af}{wp\_\-set4} (void $\ast$self, double arg0, double arg1, double arg2, double arg3)
+\item 
+double \hyperlink{wrapper_8h_460811f3a46be6a2d9cac41ca5ba26a3}{wp\_\-getArg0} (void $\ast$self)
+\item 
+double \hyperlink{wrapper_8h_c84f629608f717dfd748a73bac17ca35}{wp\_\-getArg1} (void $\ast$self)
+\item 
+double \hyperlink{wrapper_8h_1a19e89f810cf701a85f63b821a27fac}{wp\_\-getArg2} (void $\ast$self)
+\item 
+double \hyperlink{wrapper_8h_1ad1b98154747d9d188d57a0c2142641}{wp\_\-getArg3} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_9b3bec7fcde0a3075258f5e2adac998b}{wp\_\-plus} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_ddaaf8bab89a409d5d30cf7bc1cb063f}{wp\_\-minus} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_87351dac3d183344686020bd82d7c3c7}{wp\_\-negate} (void $\ast$self, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_a932049c23885ecc0e327211617d12f4}{wp\_\-scale} (void $\ast$self, double scalar, void $\ast$resultObject)
+\item 
+double \hyperlink{wrapper_8h_67a6e56558e24c129fe113abdbce1ba3}{wp\_\-dot} (void $\ast$self, void $\ast$object)
+\item 
+void \hyperlink{wrapper_8h_ffadaf26f318d4ee884eac2ed45356b2}{wp\_\-cross} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_1bb0ce97c02b20f06c4bed48cdff9bac}{wp\_\-normalize} (void $\ast$self)
+\item 
+double \hyperlink{wrapper_8h_63255c8d591789a49369fa95970dd5dd}{wp\_\-magnitude} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_f4a4f716e3b8e7ff6bf2adb0c3be9b0c}{wp\_\-lPosn\_\-to\_\-WUTMPosn} (void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone, void $\ast$worldUTMPosition)
+\item 
+void \hyperlink{wrapper_8h_beabfbb8ef2424b9cd9a07a420e145ad}{wp\_\-lPose\_\-to\_\-WUTMPose} (void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone, void $\ast$worldUTMPose)
+\item 
+void \hyperlink{wrapper_8h_0bf3494ccde6bcf23144511c038ce5bd}{wp\_\-lPosn\_\-to\_\-WPosn} (void $\ast$self, double falseElevation, void $\ast$worldPosition)
+\item 
+void \hyperlink{wrapper_8h_3645cc3503ae9cbe90f70860a454bb0b}{wp\_\-WUTMPosn\_\-to\_\-WPosn} (void $\ast$self, void $\ast$worldPosition)
+\item 
+void \hyperlink{wrapper_8h_ce5c9cc851ef9669dc7f897ea68923e0}{wp\_\-WUTMPosn\_\-setZone} (void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone)
+\item 
+void \hyperlink{wrapper_8h_039d3c5b2a0a5434c475193a6390039e}{wp\_\-WUTMPosn\_\-getZone} (void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} $\ast$zone)
+\item 
+void \hyperlink{wrapper_8h_9228cd8fb88884baa838157cfd43fb3f}{wp\_\-WUTMPose\_\-setZone} (void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone)
+\item 
+void \hyperlink{wrapper_8h_08e07f44b2992ac961173a50d5b109a2}{wp\_\-WUTMPose\_\-getZone} (void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} $\ast$zone)
+\item 
+void \hyperlink{wrapper_8h_63f9e7dfaa5411bcf64334e70b854314}{wp\_\-WPosn\_\-to\_\-lPosn} (void $\ast$self, double falseElevation, void $\ast$localPosition)
+\item 
+void \hyperlink{wrapper_8h_6755d74a246a491d4e16d7f9e57e3b15}{wp\_\-WPosnNormalize} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_3fe568f32c740669590e79e533b29f31}{wp\_\-WPosn\_\-to\_\-WUTMPosn} (void $\ast$self, void $\ast$worldUTMPosition)
+\item 
+void \hyperlink{wrapper_8h_04fa53e7b6b2e0f427edc0026d197d33}{wp\_\-eOrient\_\-to\_\-HMatrix} (void $\ast$self, void $\ast$homogeneous)
+\item 
+void \hyperlink{wrapper_8h_8de5c2b409eb07ab8e117f10c19e03a9}{wp\_\-eOrient\_\-to\_\-Orient} (void $\ast$self, void $\ast$quaternion)
+\item 
+void \hyperlink{wrapper_8h_76bb836ba664cc29926086f47b8a852e}{wp\_\-QuatMult} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_93263d5cc7fab3cec3b3172e2e909a4f}{wp\_\-QuatMultVec} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_d77dbe0cd25d8288fc8e582d8a68340a}{wp\_\-QuatDiv} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_f9c7e284bf5baf20e22c8e26bf4dab10}{wp\_\-QuatInverse} (void $\ast$self, void $\ast$resultObject)
+\item 
+double \hyperlink{wrapper_8h_595f36d2ca0ae12a94415df419f1a98a}{wp\_\-QuatMagnitude} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_93e2e560c8680a231c98fcb3bfd9541d}{wp\_\-QuatNormalize} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_5be11b02d080a0c368f32dde326f65b2}{wp\_\-Orient\_\-to\_\-eOrient} (void $\ast$self, void $\ast$eulerRPY)
+\item 
+void \hyperlink{wrapper_8h_80ecb60d4d9f45a9a7bb072c575d1545}{wp\_\-Orient\_\-to\_\-HMatrix} (void $\ast$self, void $\ast$homogeneous)
+\item 
+void \hyperlink{wrapper_8h_8462f53f8150d729c54dd7973f34c3dc}{wp\_\-QuatToRotVec} (void $\ast$self, double $\ast$theta, void $\ast$unitVector)
+\item 
+void \hyperlink{wrapper_8h_7ab77528ca38d16774afe7eb113ac769}{wp\_\-QuatFromRotVec} (void $\ast$self, double theta, void $\ast$unitVector)
+\item 
+void \hyperlink{wrapper_8h_7dbc84e6b339f371c9bf943f9e2d01c5}{wp\_\-QuatIdentity} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_21416636a49425418c8c47405e037ce4}{wp\_\-QuatRotAxis} (void $\ast$self, const \hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, const double theta)
+\item 
+void \hyperlink{wrapper_8h_a96c5c199b1b4ad8dacb3272a5fa27dc}{wp\_\-HMatrixMult} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_560c556362a46bfb219cd2c6da588870}{wp\_\-HMatrixMultVec} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_6d62c0f4487bc2c511522c242b59fa58}{wp\_\-HMatrixToRotVec} (void $\ast$self, double $\ast$theta, void $\ast$unitVector)
+\item 
+void \hyperlink{wrapper_8h_7949029fa0e71d7d6a8e4d0be1147e22}{wp\_\-HMatrixFromRotVec} (void $\ast$self, double theta, void $\ast$unitVector)
+\item 
+void \hyperlink{wrapper_8h_0c9cf92437646238d3e15a9fd5b7d72e}{wp\_\-HMatrixNormalize} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_298a0701eac27cb7fe419e6fbd638b23}{wp\_\-HMatrix\_\-to\_\-eOrient} (void $\ast$self, void $\ast$eulerRPY)
+\item 
+void \hyperlink{wrapper_8h_3cd27122b60bf885d3e7a66b2be39334}{wp\_\-HMatrix\_\-to\_\-Orient} (void $\ast$self, void $\ast$quaternion)
+\item 
+void \hyperlink{wrapper_8h_6dacbe43f85124959b7965354a07ad68}{wp\_\-HMatrixIdentity} (void $\ast$self)
+\item 
+void \hyperlink{wrapper_8h_3aa81d24b5a4bdfc65f33661957669b4}{wp\_\-HMatrixRotAxis} (void $\ast$self, const \hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, const double theta)
+\item 
+void \hyperlink{wrapper_8h_816c0d10764102eb547c06261391dbfe}{wp\_\-HMatrixTranspose} (void $\ast$self, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_58a205ab1b362972a6224077dc24dd17}{wp\_\-HMatrixGetTranslation} (void $\ast$self, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_7050d1e6f02ed8569686c5c600d7d723}{wp\_\-HMatrixSetTranslation} (void $\ast$self, void $\ast$object)
+\item 
+void \hyperlink{wrapper_8h_f51f79b7904959bb49d850418326da97}{wp\_\-HMatrixFromDH} (void $\ast$self, double linkLength, double twistAngle, double jointOffset, double jointAngle)
+\item 
+void \hyperlink{wrapper_8h_26d0b01cd1db2d2f840319b3ef920cde}{wp\_\-HMatrixFromLink} (void $\ast$self, \hyperlink{structdrdc__LinkSpecs__t}{drdc\_\-LinkSpecs\_\-t} $\ast$linkSpecs, double jointOffsetOrAngle)
+\item 
+void \hyperlink{wrapper_8h_186a6ec64e106290330b11b6993642ed}{wp\_\-HMatrixInverse} (void $\ast$self, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_9cabcc6b42302357041e8293acaff38d}{wp\_\-setPose} (void $\ast$self, void $\ast$position, void $\ast$orientation)
+\item 
+void \hyperlink{wrapper_8h_7f3658864262dc6e4663c4204975984d}{wp\_\-getPosition} (void $\ast$self, void $\ast$position)
+\item 
+void \hyperlink{wrapper_8h_35d5dcf7d6997890c52f40a37892132f}{wp\_\-getOrientation} (void $\ast$self, void $\ast$orientation)
+\item 
+void \hyperlink{wrapper_8h_4547d3e27bedca7b3816f30a36c60d05}{wp\_\-poseMult} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_3c3a4f97f97c379763fe002e2ec7a07b}{wp\_\-poseMultVec} (void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\item 
+void \hyperlink{wrapper_8h_50d739b8e2c1f08dab268505474c288b}{wp\_\-WPose\_\-to\_\-WUTMPose} (void $\ast$self, void $\ast$worldUTMPose)
+\item 
+void \hyperlink{wrapper_8h_53c95f1858327613ee7365a6e9443cf6}{wp\_\-WPose\_\-to\_\-lPose} (void $\ast$self, double falseElevation, void $\ast$localPose)
+\item 
+void \hyperlink{wrapper_8h_7ef85134a570b04079fb1a666ae62a7c}{wp\_\-lPose\_\-to\_\-WPose} (void $\ast$self, double falseElevation, void $\ast$worldPose)
+\item 
+void \hyperlink{wrapper_8h_e113378afb8adb24f7841f110950b13c}{wp\_\-lPose\_\-to\_\-lePose} (void $\ast$self, void $\ast$localEulerPose)
+\item 
+void \hyperlink{wrapper_8h_8440233046426adf05ebbbb8233992f0}{wp\_\-lPose\_\-to\_\-HMatrix} (void $\ast$self, void $\ast$homogeneous)
+\item 
+void \hyperlink{wrapper_8h_9889ae9c916e45b8d6b6a7873724b05f}{wp\_\-WUTMPose\_\-to\_\-WPose} (void $\ast$self, void $\ast$worldPose)
+\item 
+void \hyperlink{wrapper_8h_4eee09586dbfeb1602e0203187ed2f93}{wp\_\-lePose\_\-to\_\-lPose} (void $\ast$self, void $\ast$localPose)
+\item 
+void \hyperlink{wrapper_8h_70f6a90a0f38323e8e72860da93449bc}{wp\_\-lePose\_\-to\_\-HMatrix} (void $\ast$self, void $\ast$homogeneous)
+\item 
+void \hyperlink{wrapper_8h_12796f27156ee26053f23172ce85d12f}{wp\_\-HMatrix\_\-to\_\-lPose} (void $\ast$self, void $\ast$localPose)
+\item 
+void \hyperlink{wrapper_8h_f981c834b44acad32fe48ae5c59cd55b}{wp\_\-HMatrix\_\-to\_\-lePose} (void $\ast$self, void $\ast$localEulerPose)
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{wrapper_8h_1eb047523ee89668938cc648aee7fe69}{new\_\-Vector} (unsigned char dsize)
+\item 
+\hyperlink{structdrdc__lPosn__t}{drdc\_\-lPosn\_\-t} $\ast$ \hyperlink{wrapper_8h_b6dc0f2bf10b8f18433edc0fb0cae449}{new\_\-lPosn} ()
+\begin{CompactList}\small\item\em Local Position Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__WUTMPosn__t}{drdc\_\-WUTMPosn\_\-t} $\ast$ \hyperlink{wrapper_8h_07d2035c88267bb0252468371df7158e}{new\_\-WUTMPosn} ()
+\begin{CompactList}\small\item\em World Position (UTM) Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__WPosn__t}{drdc\_\-WPosn\_\-t} $\ast$ \hyperlink{wrapper_8h_ee2f0d259433f7652f2c4fb03928468d}{new\_\-WPosn} ()
+\begin{CompactList}\small\item\em World Position Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__eOrient__t}{drdc\_\-eOrient\_\-t} $\ast$ \hyperlink{wrapper_8h_62c5ed88f5c4d58d55091f99725cf827}{new\_\-eOrient} ()
+\begin{CompactList}\small\item\em Euler RPY Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__Orient__t}{drdc\_\-Orient\_\-t} $\ast$ \hyperlink{wrapper_8h_8382dd1391b9f40c1f8a2d6ae38cc4f0}{new\_\-Orient} ()
+\begin{CompactList}\small\item\em Quaternion Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__HMatrix__t}{drdc\_\-HMatrix\_\-t} $\ast$ \hyperlink{wrapper_8h_b20cbe003a9152a58c03c742cdc8eb30}{new\_\-HMatrix} ()
+\begin{CompactList}\small\item\em Homogeneous Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__WPose__t}{drdc\_\-WPose\_\-t} $\ast$ \hyperlink{wrapper_8h_12ea1544e47b8c8c92156c7ae5c6c0fc}{new\_\-WPose} ()
+\begin{CompactList}\small\item\em World Pose Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__lPose__t}{drdc\_\-lPose\_\-t} $\ast$ \hyperlink{wrapper_8h_780664df5e6ed015147affba7e4edb45}{new\_\-lPose} ()
+\begin{CompactList}\small\item\em Local Pose Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__WUTMPose__t}{drdc\_\-WUTMPose\_\-t} $\ast$ \hyperlink{wrapper_8h_a0e617f867999b07bacd0609c46329e8}{new\_\-WUTMPose} ()
+\begin{CompactList}\small\item\em World Pose (UTM) Constructor. \item\end{CompactList}\item 
+\hyperlink{structdrdc__lePose__t}{drdc\_\-lePose\_\-t} $\ast$ \hyperlink{wrapper_8h_b1ab3c1672795d6d5a01072e4863aac0}{new\_\-lePose} ()
+\begin{CompactList}\small\item\em Local Pose (Euler RPY) Constructor. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3}{
+\index{wrapper.h@{wrapper.h}!drdc\_\-Joint\_\-t@{drdc\_\-Joint\_\-t}}
+\index{drdc\_\-Joint\_\-t@{drdc\_\-Joint\_\-t}!wrapper.h@{wrapper.h}}
+\subsubsection[drdc\_\-Joint\_\-t]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf drdc\_\-Joint\_\-t}}}
+\label{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{JOINT\_\-TYPE\_\-ERR@{JOINT\_\-TYPE\_\-ERR}!wrapper.h@{wrapper.h}}\index{wrapper.h@{wrapper.h}!JOINT\_\-TYPE\_\-ERR@{JOINT\_\-TYPE\_\-ERR}}\item[{\em 
+\hypertarget{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3396aa4264ab865ee1c1d0a510f3be929}{
+JOINT\_\-TYPE\_\-ERR}
+\label{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3396aa4264ab865ee1c1d0a510f3be929}
+}]\index{JOINT\_\-REVOLUTE@{JOINT\_\-REVOLUTE}!wrapper.h@{wrapper.h}}\index{wrapper.h@{wrapper.h}!JOINT\_\-REVOLUTE@{JOINT\_\-REVOLUTE}}\item[{\em 
+\hypertarget{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3d9b011f8bbfbbd2c8cf13fbb18fecec6}{
+JOINT\_\-REVOLUTE}
+\label{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3d9b011f8bbfbbd2c8cf13fbb18fecec6}
+}]\index{JOINT\_\-PRISMATIC@{JOINT\_\-PRISMATIC}!wrapper.h@{wrapper.h}}\index{wrapper.h@{wrapper.h}!JOINT\_\-PRISMATIC@{JOINT\_\-PRISMATIC}}\item[{\em 
+\hypertarget{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3f3a3988dce9ac53b5fa4eac816d17bb8}{
+JOINT\_\-PRISMATIC}
+\label{wrapper_8h_c1aa168ffdd1e279c2ee9baaa4adaac3f3a3988dce9ac53b5fa4eac816d17bb8}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{wrapper_8h_62c5ed88f5c4d58d55091f99725cf827}{
+\index{wrapper.h@{wrapper.h}!new\_\-eOrient@{new\_\-eOrient}}
+\index{new\_\-eOrient@{new\_\-eOrient}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-eOrient]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient\_\-t}$\ast$ new\_\-eOrient ()}}
+\label{wrapper_8h_62c5ed88f5c4d58d55091f99725cf827}
+
+
+Euler RPY Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_b20cbe003a9152a58c03c742cdc8eb30}{
+\index{wrapper.h@{wrapper.h}!new\_\-HMatrix@{new\_\-HMatrix}}
+\index{new\_\-HMatrix@{new\_\-HMatrix}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix\_\-t}$\ast$ new\_\-HMatrix ()}}
+\label{wrapper_8h_b20cbe003a9152a58c03c742cdc8eb30}
+
+
+Homogeneous Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_b1ab3c1672795d6d5a01072e4863aac0}{
+\index{wrapper.h@{wrapper.h}!new\_\-lePose@{new\_\-lePose}}
+\index{new\_\-lePose@{new\_\-lePose}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lePose\_\-t}$\ast$ new\_\-lePose ()}}
+\label{wrapper_8h_b1ab3c1672795d6d5a01072e4863aac0}
+
+
+Local Pose (Euler RPY) Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_780664df5e6ed015147affba7e4edb45}{
+\index{wrapper.h@{wrapper.h}!new\_\-lPose@{new\_\-lPose}}
+\index{new\_\-lPose@{new\_\-lPose}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPose\_\-t}$\ast$ new\_\-lPose ()}}
+\label{wrapper_8h_780664df5e6ed015147affba7e4edb45}
+
+
+Local Pose Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_b6dc0f2bf10b8f18433edc0fb0cae449}{
+\index{wrapper.h@{wrapper.h}!new\_\-lPosn@{new\_\-lPosn}}
+\index{new\_\-lPosn@{new\_\-lPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-lPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn\_\-t}$\ast$ new\_\-lPosn ()}}
+\label{wrapper_8h_b6dc0f2bf10b8f18433edc0fb0cae449}
+
+
+Local Position Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_8382dd1391b9f40c1f8a2d6ae38cc4f0}{
+\index{wrapper.h@{wrapper.h}!new\_\-Orient@{new\_\-Orient}}
+\index{new\_\-Orient@{new\_\-Orient}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-Orient]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Orient\_\-t}$\ast$ new\_\-Orient ()}}
+\label{wrapper_8h_8382dd1391b9f40c1f8a2d6ae38cc4f0}
+
+
+Quaternion Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_1eb047523ee89668938cc648aee7fe69}{
+\index{wrapper.h@{wrapper.h}!new\_\-Vector@{new\_\-Vector}}
+\index{new\_\-Vector@{new\_\-Vector}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-Vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ new\_\-Vector (unsigned char {\em dsize})}}
+\label{wrapper_8h_1eb047523ee89668938cc648aee7fe69}
+
+
+\hypertarget{wrapper_8h_12ea1544e47b8c8c92156c7ae5c6c0fc}{
+\index{wrapper.h@{wrapper.h}!new\_\-WPose@{new\_\-WPose}}
+\index{new\_\-WPose@{new\_\-WPose}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-WPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPose\_\-t}$\ast$ new\_\-WPose ()}}
+\label{wrapper_8h_12ea1544e47b8c8c92156c7ae5c6c0fc}
+
+
+World Pose Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_ee2f0d259433f7652f2c4fb03928468d}{
+\index{wrapper.h@{wrapper.h}!new\_\-WPosn@{new\_\-WPosn}}
+\index{new\_\-WPosn@{new\_\-WPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPosn\_\-t}$\ast$ new\_\-WPosn ()}}
+\label{wrapper_8h_ee2f0d259433f7652f2c4fb03928468d}
+
+
+World Position Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_a0e617f867999b07bacd0609c46329e8}{
+\index{wrapper.h@{wrapper.h}!new\_\-WUTMPose@{new\_\-WUTMPose}}
+\index{new\_\-WUTMPose@{new\_\-WUTMPose}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPose\_\-t}$\ast$ new\_\-WUTMPose ()}}
+\label{wrapper_8h_a0e617f867999b07bacd0609c46329e8}
+
+
+World Pose (UTM) Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_07d2035c88267bb0252468371df7158e}{
+\index{wrapper.h@{wrapper.h}!new\_\-WUTMPosn@{new\_\-WUTMPosn}}
+\index{new\_\-WUTMPosn@{new\_\-WUTMPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[new\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn\_\-t}$\ast$ new\_\-WUTMPosn ()}}
+\label{wrapper_8h_07d2035c88267bb0252468371df7158e}
+
+
+World Position (UTM) Constructor. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{wrapper_8h_443d5b2b6afff97d38e9c9f3aae12cc7}{
+\index{wrapper.h@{wrapper.h}!wp\_\-compare@{wp\_\-compare}}
+\index{wp\_\-compare@{wp\_\-compare}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-compare]{\setlength{\rightskip}{0pt plus 5cm}int wp\_\-compare (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em fuzzObject})}}
+\label{wrapper_8h_443d5b2b6afff97d38e9c9f3aae12cc7}
+
+
+\hypertarget{wrapper_8h_7abedc2c677dc1acd20b7d5f9375e1a9}{
+\index{wrapper.h@{wrapper.h}!wp\_\-compareUTM@{wp\_\-compareUTM}}
+\index{wp\_\-compareUTM@{wp\_\-compareUTM}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-compareUTM]{\setlength{\rightskip}{0pt plus 5cm}int wp\_\-compareUTM (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em fuzzObject})}}
+\label{wrapper_8h_7abedc2c677dc1acd20b7d5f9375e1a9}
+
+
+\hypertarget{wrapper_8h_b1ca0c13cc9db94476971c6b41683178}{
+\index{wrapper.h@{wrapper.h}!wp\_\-copy@{wp\_\-copy}}
+\index{wp\_\-copy@{wp\_\-copy}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-copy]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-copy (void $\ast$ {\em self}, \/  void $\ast$ {\em dest})}}
+\label{wrapper_8h_b1ca0c13cc9db94476971c6b41683178}
+
+
+\hypertarget{wrapper_8h_8f1a313f0a340c01caed7b8491970af0}{
+\index{wrapper.h@{wrapper.h}!wp\_\-copyUTM@{wp\_\-copyUTM}}
+\index{wp\_\-copyUTM@{wp\_\-copyUTM}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-copyUTM]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-copyUTM (void $\ast$ {\em self}, \/  void $\ast$ {\em dest})}}
+\label{wrapper_8h_8f1a313f0a340c01caed7b8491970af0}
+
+
+\hypertarget{wrapper_8h_ffadaf26f318d4ee884eac2ed45356b2}{
+\index{wrapper.h@{wrapper.h}!wp\_\-cross@{wp\_\-cross}}
+\index{wp\_\-cross@{wp\_\-cross}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-cross]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-cross (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_ffadaf26f318d4ee884eac2ed45356b2}
+
+
+\hypertarget{wrapper_8h_245680f18c2308eff094d35f1a866f67}{
+\index{wrapper.h@{wrapper.h}!wp\_\-destroy@{wp\_\-destroy}}
+\index{wp\_\-destroy@{wp\_\-destroy}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-destroy]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-destroy (void $\ast$ {\em self})}}
+\label{wrapper_8h_245680f18c2308eff094d35f1a866f67}
+
+
+\hypertarget{wrapper_8h_67a6e56558e24c129fe113abdbce1ba3}{
+\index{wrapper.h@{wrapper.h}!wp\_\-dot@{wp\_\-dot}}
+\index{wp\_\-dot@{wp\_\-dot}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-dot]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-dot (void $\ast$ {\em self}, \/  void $\ast$ {\em object})}}
+\label{wrapper_8h_67a6e56558e24c129fe113abdbce1ba3}
+
+
+\hypertarget{wrapper_8h_04fa53e7b6b2e0f427edc0026d197d33}{
+\index{wrapper.h@{wrapper.h}!wp\_\-eOrient\_\-to\_\-HMatrix@{wp\_\-eOrient\_\-to\_\-HMatrix}}
+\index{wp\_\-eOrient\_\-to\_\-HMatrix@{wp\_\-eOrient\_\-to\_\-HMatrix}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-eOrient\_\-to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-eOrient\_\-to\_\-HMatrix (void $\ast$ {\em self}, \/  void $\ast$ {\em homogeneous})}}
+\label{wrapper_8h_04fa53e7b6b2e0f427edc0026d197d33}
+
+
+\hypertarget{wrapper_8h_8de5c2b409eb07ab8e117f10c19e03a9}{
+\index{wrapper.h@{wrapper.h}!wp\_\-eOrient\_\-to\_\-Orient@{wp\_\-eOrient\_\-to\_\-Orient}}
+\index{wp\_\-eOrient\_\-to\_\-Orient@{wp\_\-eOrient\_\-to\_\-Orient}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-eOrient\_\-to\_\-Orient]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-eOrient\_\-to\_\-Orient (void $\ast$ {\em self}, \/  void $\ast$ {\em quaternion})}}
+\label{wrapper_8h_8de5c2b409eb07ab8e117f10c19e03a9}
+
+
+\hypertarget{wrapper_8h_460811f3a46be6a2d9cac41ca5ba26a3}{
+\index{wrapper.h@{wrapper.h}!wp\_\-getArg0@{wp\_\-getArg0}}
+\index{wp\_\-getArg0@{wp\_\-getArg0}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-getArg0]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-getArg0 (void $\ast$ {\em self})}}
+\label{wrapper_8h_460811f3a46be6a2d9cac41ca5ba26a3}
+
+
+\hypertarget{wrapper_8h_c84f629608f717dfd748a73bac17ca35}{
+\index{wrapper.h@{wrapper.h}!wp\_\-getArg1@{wp\_\-getArg1}}
+\index{wp\_\-getArg1@{wp\_\-getArg1}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-getArg1]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-getArg1 (void $\ast$ {\em self})}}
+\label{wrapper_8h_c84f629608f717dfd748a73bac17ca35}
+
+
+\hypertarget{wrapper_8h_1a19e89f810cf701a85f63b821a27fac}{
+\index{wrapper.h@{wrapper.h}!wp\_\-getArg2@{wp\_\-getArg2}}
+\index{wp\_\-getArg2@{wp\_\-getArg2}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-getArg2]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-getArg2 (void $\ast$ {\em self})}}
+\label{wrapper_8h_1a19e89f810cf701a85f63b821a27fac}
+
+
+\hypertarget{wrapper_8h_1ad1b98154747d9d188d57a0c2142641}{
+\index{wrapper.h@{wrapper.h}!wp\_\-getArg3@{wp\_\-getArg3}}
+\index{wp\_\-getArg3@{wp\_\-getArg3}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-getArg3]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-getArg3 (void $\ast$ {\em self})}}
+\label{wrapper_8h_1ad1b98154747d9d188d57a0c2142641}
+
+
+\hypertarget{wrapper_8h_35d5dcf7d6997890c52f40a37892132f}{
+\index{wrapper.h@{wrapper.h}!wp\_\-getOrientation@{wp\_\-getOrientation}}
+\index{wp\_\-getOrientation@{wp\_\-getOrientation}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-getOrientation]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-getOrientation (void $\ast$ {\em self}, \/  void $\ast$ {\em orientation})}}
+\label{wrapper_8h_35d5dcf7d6997890c52f40a37892132f}
+
+
+\hypertarget{wrapper_8h_7f3658864262dc6e4663c4204975984d}{
+\index{wrapper.h@{wrapper.h}!wp\_\-getPosition@{wp\_\-getPosition}}
+\index{wp\_\-getPosition@{wp\_\-getPosition}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-getPosition]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-getPosition (void $\ast$ {\em self}, \/  void $\ast$ {\em position})}}
+\label{wrapper_8h_7f3658864262dc6e4663c4204975984d}
+
+
+\hypertarget{wrapper_8h_298a0701eac27cb7fe419e6fbd638b23}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrix\_\-to\_\-eOrient@{wp\_\-HMatrix\_\-to\_\-eOrient}}
+\index{wp\_\-HMatrix\_\-to\_\-eOrient@{wp\_\-HMatrix\_\-to\_\-eOrient}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrix\_\-to\_\-eOrient]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrix\_\-to\_\-eOrient (void $\ast$ {\em self}, \/  void $\ast$ {\em eulerRPY})}}
+\label{wrapper_8h_298a0701eac27cb7fe419e6fbd638b23}
+
+
+\hypertarget{wrapper_8h_f981c834b44acad32fe48ae5c59cd55b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrix\_\-to\_\-lePose@{wp\_\-HMatrix\_\-to\_\-lePose}}
+\index{wp\_\-HMatrix\_\-to\_\-lePose@{wp\_\-HMatrix\_\-to\_\-lePose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrix\_\-to\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrix\_\-to\_\-lePose (void $\ast$ {\em self}, \/  void $\ast$ {\em localEulerPose})}}
+\label{wrapper_8h_f981c834b44acad32fe48ae5c59cd55b}
+
+
+\hypertarget{wrapper_8h_12796f27156ee26053f23172ce85d12f}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrix\_\-to\_\-lPose@{wp\_\-HMatrix\_\-to\_\-lPose}}
+\index{wp\_\-HMatrix\_\-to\_\-lPose@{wp\_\-HMatrix\_\-to\_\-lPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrix\_\-to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrix\_\-to\_\-lPose (void $\ast$ {\em self}, \/  void $\ast$ {\em localPose})}}
+\label{wrapper_8h_12796f27156ee26053f23172ce85d12f}
+
+
+\hypertarget{wrapper_8h_3cd27122b60bf885d3e7a66b2be39334}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrix\_\-to\_\-Orient@{wp\_\-HMatrix\_\-to\_\-Orient}}
+\index{wp\_\-HMatrix\_\-to\_\-Orient@{wp\_\-HMatrix\_\-to\_\-Orient}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrix\_\-to\_\-Orient]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrix\_\-to\_\-Orient (void $\ast$ {\em self}, \/  void $\ast$ {\em quaternion})}}
+\label{wrapper_8h_3cd27122b60bf885d3e7a66b2be39334}
+
+
+\hypertarget{wrapper_8h_f51f79b7904959bb49d850418326da97}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixFromDH@{wp\_\-HMatrixFromDH}}
+\index{wp\_\-HMatrixFromDH@{wp\_\-HMatrixFromDH}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixFromDH]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixFromDH (void $\ast$ {\em self}, \/  double {\em linkLength}, \/  double {\em twistAngle}, \/  double {\em jointOffset}, \/  double {\em jointAngle})}}
+\label{wrapper_8h_f51f79b7904959bb49d850418326da97}
+
+
+\hypertarget{wrapper_8h_26d0b01cd1db2d2f840319b3ef920cde}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixFromLink@{wp\_\-HMatrixFromLink}}
+\index{wp\_\-HMatrixFromLink@{wp\_\-HMatrixFromLink}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixFromLink]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixFromLink (void $\ast$ {\em self}, \/  {\bf drdc\_\-LinkSpecs\_\-t} $\ast$ {\em linkSpecs}, \/  double {\em jointOffsetOrAngle})}}
+\label{wrapper_8h_26d0b01cd1db2d2f840319b3ef920cde}
+
+
+\hypertarget{wrapper_8h_7949029fa0e71d7d6a8e4d0be1147e22}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixFromRotVec@{wp\_\-HMatrixFromRotVec}}
+\index{wp\_\-HMatrixFromRotVec@{wp\_\-HMatrixFromRotVec}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixFromRotVec]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixFromRotVec (void $\ast$ {\em self}, \/  double {\em theta}, \/  void $\ast$ {\em unitVector})}}
+\label{wrapper_8h_7949029fa0e71d7d6a8e4d0be1147e22}
+
+
+\hypertarget{wrapper_8h_58a205ab1b362972a6224077dc24dd17}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixGetTranslation@{wp\_\-HMatrixGetTranslation}}
+\index{wp\_\-HMatrixGetTranslation@{wp\_\-HMatrixGetTranslation}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixGetTranslation]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixGetTranslation (void $\ast$ {\em self}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_58a205ab1b362972a6224077dc24dd17}
+
+
+\hypertarget{wrapper_8h_6dacbe43f85124959b7965354a07ad68}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixIdentity@{wp\_\-HMatrixIdentity}}
+\index{wp\_\-HMatrixIdentity@{wp\_\-HMatrixIdentity}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixIdentity]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixIdentity (void $\ast$ {\em self})}}
+\label{wrapper_8h_6dacbe43f85124959b7965354a07ad68}
+
+
+\hypertarget{wrapper_8h_186a6ec64e106290330b11b6993642ed}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixInverse@{wp\_\-HMatrixInverse}}
+\index{wp\_\-HMatrixInverse@{wp\_\-HMatrixInverse}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixInverse]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixInverse (void $\ast$ {\em self}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_186a6ec64e106290330b11b6993642ed}
+
+
+\hypertarget{wrapper_8h_a96c5c199b1b4ad8dacb3272a5fa27dc}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixMult@{wp\_\-HMatrixMult}}
+\index{wp\_\-HMatrixMult@{wp\_\-HMatrixMult}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixMult]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixMult (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_a96c5c199b1b4ad8dacb3272a5fa27dc}
+
+
+\hypertarget{wrapper_8h_560c556362a46bfb219cd2c6da588870}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixMultVec@{wp\_\-HMatrixMultVec}}
+\index{wp\_\-HMatrixMultVec@{wp\_\-HMatrixMultVec}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixMultVec]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixMultVec (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_560c556362a46bfb219cd2c6da588870}
+
+
+\hypertarget{wrapper_8h_0c9cf92437646238d3e15a9fd5b7d72e}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixNormalize@{wp\_\-HMatrixNormalize}}
+\index{wp\_\-HMatrixNormalize@{wp\_\-HMatrixNormalize}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixNormalize]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixNormalize (void $\ast$ {\em self})}}
+\label{wrapper_8h_0c9cf92437646238d3e15a9fd5b7d72e}
+
+
+\hypertarget{wrapper_8h_3aa81d24b5a4bdfc65f33661957669b4}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixRotAxis@{wp\_\-HMatrixRotAxis}}
+\index{wp\_\-HMatrixRotAxis@{wp\_\-HMatrixRotAxis}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixRotAxis]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixRotAxis (void $\ast$ {\em self}, \/  const {\bf Axis\_\-t} {\em axis}, \/  const double {\em theta})}}
+\label{wrapper_8h_3aa81d24b5a4bdfc65f33661957669b4}
+
+
+\hypertarget{wrapper_8h_7050d1e6f02ed8569686c5c600d7d723}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixSetTranslation@{wp\_\-HMatrixSetTranslation}}
+\index{wp\_\-HMatrixSetTranslation@{wp\_\-HMatrixSetTranslation}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixSetTranslation]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixSetTranslation (void $\ast$ {\em self}, \/  void $\ast$ {\em object})}}
+\label{wrapper_8h_7050d1e6f02ed8569686c5c600d7d723}
+
+
+\hypertarget{wrapper_8h_6d62c0f4487bc2c511522c242b59fa58}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixToRotVec@{wp\_\-HMatrixToRotVec}}
+\index{wp\_\-HMatrixToRotVec@{wp\_\-HMatrixToRotVec}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixToRotVec]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixToRotVec (void $\ast$ {\em self}, \/  double $\ast$ {\em theta}, \/  void $\ast$ {\em unitVector})}}
+\label{wrapper_8h_6d62c0f4487bc2c511522c242b59fa58}
+
+
+\hypertarget{wrapper_8h_816c0d10764102eb547c06261391dbfe}{
+\index{wrapper.h@{wrapper.h}!wp\_\-HMatrixTranspose@{wp\_\-HMatrixTranspose}}
+\index{wp\_\-HMatrixTranspose@{wp\_\-HMatrixTranspose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-HMatrixTranspose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-HMatrixTranspose (void $\ast$ {\em self}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_816c0d10764102eb547c06261391dbfe}
+
+
+\hypertarget{wrapper_8h_fdd7fbceaeef6457e4e23a4fae6d2586}{
+\index{wrapper.h@{wrapper.h}!wp\_\-index@{wp\_\-index}}
+\index{wp\_\-index@{wp\_\-index}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-index]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-index (void $\ast$ {\em self}, \/  unsigned char {\em n})}}
+\label{wrapper_8h_fdd7fbceaeef6457e4e23a4fae6d2586}
+
+
+\hypertarget{wrapper_8h_70f6a90a0f38323e8e72860da93449bc}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lePose\_\-to\_\-HMatrix@{wp\_\-lePose\_\-to\_\-HMatrix}}
+\index{wp\_\-lePose\_\-to\_\-HMatrix@{wp\_\-lePose\_\-to\_\-HMatrix}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lePose\_\-to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lePose\_\-to\_\-HMatrix (void $\ast$ {\em self}, \/  void $\ast$ {\em homogeneous})}}
+\label{wrapper_8h_70f6a90a0f38323e8e72860da93449bc}
+
+
+\hypertarget{wrapper_8h_4eee09586dbfeb1602e0203187ed2f93}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lePose\_\-to\_\-lPose@{wp\_\-lePose\_\-to\_\-lPose}}
+\index{wp\_\-lePose\_\-to\_\-lPose@{wp\_\-lePose\_\-to\_\-lPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lePose\_\-to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lePose\_\-to\_\-lPose (void $\ast$ {\em self}, \/  void $\ast$ {\em localPose})}}
+\label{wrapper_8h_4eee09586dbfeb1602e0203187ed2f93}
+
+
+\hypertarget{wrapper_8h_8440233046426adf05ebbbb8233992f0}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lPose\_\-to\_\-HMatrix@{wp\_\-lPose\_\-to\_\-HMatrix}}
+\index{wp\_\-lPose\_\-to\_\-HMatrix@{wp\_\-lPose\_\-to\_\-HMatrix}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lPose\_\-to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lPose\_\-to\_\-HMatrix (void $\ast$ {\em self}, \/  void $\ast$ {\em homogeneous})}}
+\label{wrapper_8h_8440233046426adf05ebbbb8233992f0}
+
+
+\hypertarget{wrapper_8h_e113378afb8adb24f7841f110950b13c}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lPose\_\-to\_\-lePose@{wp\_\-lPose\_\-to\_\-lePose}}
+\index{wp\_\-lPose\_\-to\_\-lePose@{wp\_\-lPose\_\-to\_\-lePose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lPose\_\-to\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lPose\_\-to\_\-lePose (void $\ast$ {\em self}, \/  void $\ast$ {\em localEulerPose})}}
+\label{wrapper_8h_e113378afb8adb24f7841f110950b13c}
+
+
+\hypertarget{wrapper_8h_7ef85134a570b04079fb1a666ae62a7c}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lPose\_\-to\_\-WPose@{wp\_\-lPose\_\-to\_\-WPose}}
+\index{wp\_\-lPose\_\-to\_\-WPose@{wp\_\-lPose\_\-to\_\-WPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lPose\_\-to\_\-WPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lPose\_\-to\_\-WPose (void $\ast$ {\em self}, \/  double {\em falseElevation}, \/  void $\ast$ {\em worldPose})}}
+\label{wrapper_8h_7ef85134a570b04079fb1a666ae62a7c}
+
+
+\hypertarget{wrapper_8h_beabfbb8ef2424b9cd9a07a420e145ad}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lPose\_\-to\_\-WUTMPose@{wp\_\-lPose\_\-to\_\-WUTMPose}}
+\index{wp\_\-lPose\_\-to\_\-WUTMPose@{wp\_\-lPose\_\-to\_\-WUTMPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lPose\_\-to\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lPose\_\-to\_\-WUTMPose (void $\ast$ {\em self}, \/  {\bf drdc\_\-UTMZone\_\-t} {\em zone}, \/  void $\ast$ {\em worldUTMPose})}}
+\label{wrapper_8h_beabfbb8ef2424b9cd9a07a420e145ad}
+
+
+\hypertarget{wrapper_8h_0bf3494ccde6bcf23144511c038ce5bd}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lPosn\_\-to\_\-WPosn@{wp\_\-lPosn\_\-to\_\-WPosn}}
+\index{wp\_\-lPosn\_\-to\_\-WPosn@{wp\_\-lPosn\_\-to\_\-WPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lPosn\_\-to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lPosn\_\-to\_\-WPosn (void $\ast$ {\em self}, \/  double {\em falseElevation}, \/  void $\ast$ {\em worldPosition})}}
+\label{wrapper_8h_0bf3494ccde6bcf23144511c038ce5bd}
+
+
+\hypertarget{wrapper_8h_f4a4f716e3b8e7ff6bf2adb0c3be9b0c}{
+\index{wrapper.h@{wrapper.h}!wp\_\-lPosn\_\-to\_\-WUTMPosn@{wp\_\-lPosn\_\-to\_\-WUTMPosn}}
+\index{wp\_\-lPosn\_\-to\_\-WUTMPosn@{wp\_\-lPosn\_\-to\_\-WUTMPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-lPosn\_\-to\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-lPosn\_\-to\_\-WUTMPosn (void $\ast$ {\em self}, \/  {\bf drdc\_\-UTMZone\_\-t} {\em zone}, \/  void $\ast$ {\em worldUTMPosition})}}
+\label{wrapper_8h_f4a4f716e3b8e7ff6bf2adb0c3be9b0c}
+
+
+\hypertarget{wrapper_8h_63255c8d591789a49369fa95970dd5dd}{
+\index{wrapper.h@{wrapper.h}!wp\_\-magnitude@{wp\_\-magnitude}}
+\index{wp\_\-magnitude@{wp\_\-magnitude}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-magnitude]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-magnitude (void $\ast$ {\em self})}}
+\label{wrapper_8h_63255c8d591789a49369fa95970dd5dd}
+
+
+\hypertarget{wrapper_8h_ddaaf8bab89a409d5d30cf7bc1cb063f}{
+\index{wrapper.h@{wrapper.h}!wp\_\-minus@{wp\_\-minus}}
+\index{wp\_\-minus@{wp\_\-minus}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-minus]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-minus (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_ddaaf8bab89a409d5d30cf7bc1cb063f}
+
+
+\hypertarget{wrapper_8h_87351dac3d183344686020bd82d7c3c7}{
+\index{wrapper.h@{wrapper.h}!wp\_\-negate@{wp\_\-negate}}
+\index{wp\_\-negate@{wp\_\-negate}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-negate]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-negate (void $\ast$ {\em self}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_87351dac3d183344686020bd82d7c3c7}
+
+
+\hypertarget{wrapper_8h_1bb0ce97c02b20f06c4bed48cdff9bac}{
+\index{wrapper.h@{wrapper.h}!wp\_\-normalize@{wp\_\-normalize}}
+\index{wp\_\-normalize@{wp\_\-normalize}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-normalize]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-normalize (void $\ast$ {\em self})}}
+\label{wrapper_8h_1bb0ce97c02b20f06c4bed48cdff9bac}
+
+
+\hypertarget{wrapper_8h_5be11b02d080a0c368f32dde326f65b2}{
+\index{wrapper.h@{wrapper.h}!wp\_\-Orient\_\-to\_\-eOrient@{wp\_\-Orient\_\-to\_\-eOrient}}
+\index{wp\_\-Orient\_\-to\_\-eOrient@{wp\_\-Orient\_\-to\_\-eOrient}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-Orient\_\-to\_\-eOrient]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-Orient\_\-to\_\-eOrient (void $\ast$ {\em self}, \/  void $\ast$ {\em eulerRPY})}}
+\label{wrapper_8h_5be11b02d080a0c368f32dde326f65b2}
+
+
+\hypertarget{wrapper_8h_80ecb60d4d9f45a9a7bb072c575d1545}{
+\index{wrapper.h@{wrapper.h}!wp\_\-Orient\_\-to\_\-HMatrix@{wp\_\-Orient\_\-to\_\-HMatrix}}
+\index{wp\_\-Orient\_\-to\_\-HMatrix@{wp\_\-Orient\_\-to\_\-HMatrix}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-Orient\_\-to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-Orient\_\-to\_\-HMatrix (void $\ast$ {\em self}, \/  void $\ast$ {\em homogeneous})}}
+\label{wrapper_8h_80ecb60d4d9f45a9a7bb072c575d1545}
+
+
+\hypertarget{wrapper_8h_9b3bec7fcde0a3075258f5e2adac998b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-plus@{wp\_\-plus}}
+\index{wp\_\-plus@{wp\_\-plus}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-plus]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-plus (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_9b3bec7fcde0a3075258f5e2adac998b}
+
+
+\hypertarget{wrapper_8h_4547d3e27bedca7b3816f30a36c60d05}{
+\index{wrapper.h@{wrapper.h}!wp\_\-poseMult@{wp\_\-poseMult}}
+\index{wp\_\-poseMult@{wp\_\-poseMult}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-poseMult]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-poseMult (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_4547d3e27bedca7b3816f30a36c60d05}
+
+
+\hypertarget{wrapper_8h_3c3a4f97f97c379763fe002e2ec7a07b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-poseMultVec@{wp\_\-poseMultVec}}
+\index{wp\_\-poseMultVec@{wp\_\-poseMultVec}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-poseMultVec]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-poseMultVec (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_3c3a4f97f97c379763fe002e2ec7a07b}
+
+
+\hypertarget{wrapper_8h_a1ea74e5c4ac99ab8fd7c5e8f173ba4b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-print@{wp\_\-print}}
+\index{wp\_\-print@{wp\_\-print}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-print]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-print (void $\ast$ {\em self})}}
+\label{wrapper_8h_a1ea74e5c4ac99ab8fd7c5e8f173ba4b}
+
+
+\hypertarget{wrapper_8h_d77dbe0cd25d8288fc8e582d8a68340a}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatDiv@{wp\_\-QuatDiv}}
+\index{wp\_\-QuatDiv@{wp\_\-QuatDiv}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatDiv]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatDiv (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_d77dbe0cd25d8288fc8e582d8a68340a}
+
+
+\hypertarget{wrapper_8h_7ab77528ca38d16774afe7eb113ac769}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatFromRotVec@{wp\_\-QuatFromRotVec}}
+\index{wp\_\-QuatFromRotVec@{wp\_\-QuatFromRotVec}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatFromRotVec]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatFromRotVec (void $\ast$ {\em self}, \/  double {\em theta}, \/  void $\ast$ {\em unitVector})}}
+\label{wrapper_8h_7ab77528ca38d16774afe7eb113ac769}
+
+
+\hypertarget{wrapper_8h_7dbc84e6b339f371c9bf943f9e2d01c5}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatIdentity@{wp\_\-QuatIdentity}}
+\index{wp\_\-QuatIdentity@{wp\_\-QuatIdentity}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatIdentity]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatIdentity (void $\ast$ {\em self})}}
+\label{wrapper_8h_7dbc84e6b339f371c9bf943f9e2d01c5}
+
+
+\hypertarget{wrapper_8h_f9c7e284bf5baf20e22c8e26bf4dab10}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatInverse@{wp\_\-QuatInverse}}
+\index{wp\_\-QuatInverse@{wp\_\-QuatInverse}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatInverse]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatInverse (void $\ast$ {\em self}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_f9c7e284bf5baf20e22c8e26bf4dab10}
+
+
+\hypertarget{wrapper_8h_595f36d2ca0ae12a94415df419f1a98a}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatMagnitude@{wp\_\-QuatMagnitude}}
+\index{wp\_\-QuatMagnitude@{wp\_\-QuatMagnitude}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatMagnitude]{\setlength{\rightskip}{0pt plus 5cm}double wp\_\-QuatMagnitude (void $\ast$ {\em self})}}
+\label{wrapper_8h_595f36d2ca0ae12a94415df419f1a98a}
+
+
+\hypertarget{wrapper_8h_76bb836ba664cc29926086f47b8a852e}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatMult@{wp\_\-QuatMult}}
+\index{wp\_\-QuatMult@{wp\_\-QuatMult}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatMult]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatMult (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_76bb836ba664cc29926086f47b8a852e}
+
+
+\hypertarget{wrapper_8h_93263d5cc7fab3cec3b3172e2e909a4f}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatMultVec@{wp\_\-QuatMultVec}}
+\index{wp\_\-QuatMultVec@{wp\_\-QuatMultVec}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatMultVec]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatMultVec (void $\ast$ {\em self}, \/  void $\ast$ {\em object}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_93263d5cc7fab3cec3b3172e2e909a4f}
+
+
+\hypertarget{wrapper_8h_93e2e560c8680a231c98fcb3bfd9541d}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatNormalize@{wp\_\-QuatNormalize}}
+\index{wp\_\-QuatNormalize@{wp\_\-QuatNormalize}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatNormalize]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatNormalize (void $\ast$ {\em self})}}
+\label{wrapper_8h_93e2e560c8680a231c98fcb3bfd9541d}
+
+
+\hypertarget{wrapper_8h_21416636a49425418c8c47405e037ce4}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatRotAxis@{wp\_\-QuatRotAxis}}
+\index{wp\_\-QuatRotAxis@{wp\_\-QuatRotAxis}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatRotAxis]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatRotAxis (void $\ast$ {\em self}, \/  const {\bf Axis\_\-t} {\em axis}, \/  const double {\em theta})}}
+\label{wrapper_8h_21416636a49425418c8c47405e037ce4}
+
+
+\hypertarget{wrapper_8h_8462f53f8150d729c54dd7973f34c3dc}{
+\index{wrapper.h@{wrapper.h}!wp\_\-QuatToRotVec@{wp\_\-QuatToRotVec}}
+\index{wp\_\-QuatToRotVec@{wp\_\-QuatToRotVec}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-QuatToRotVec]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-QuatToRotVec (void $\ast$ {\em self}, \/  double $\ast$ {\em theta}, \/  void $\ast$ {\em unitVector})}}
+\label{wrapper_8h_8462f53f8150d729c54dd7973f34c3dc}
+
+
+\hypertarget{wrapper_8h_a932049c23885ecc0e327211617d12f4}{
+\index{wrapper.h@{wrapper.h}!wp\_\-scale@{wp\_\-scale}}
+\index{wp\_\-scale@{wp\_\-scale}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-scale]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-scale (void $\ast$ {\em self}, \/  double {\em scalar}, \/  void $\ast$ {\em resultObject})}}
+\label{wrapper_8h_a932049c23885ecc0e327211617d12f4}
+
+
+\hypertarget{wrapper_8h_de21a17bb9237d493259ee9774dc6c3b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-set3@{wp\_\-set3}}
+\index{wp\_\-set3@{wp\_\-set3}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-set3]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-set3 (void $\ast$ {\em self}, \/  double {\em arg0}, \/  double {\em arg1}, \/  double {\em arg2})}}
+\label{wrapper_8h_de21a17bb9237d493259ee9774dc6c3b}
+
+
+\hypertarget{wrapper_8h_835e17f5940e092f28f8d346a24994af}{
+\index{wrapper.h@{wrapper.h}!wp\_\-set4@{wp\_\-set4}}
+\index{wp\_\-set4@{wp\_\-set4}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-set4]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-set4 (void $\ast$ {\em self}, \/  double {\em arg0}, \/  double {\em arg1}, \/  double {\em arg2}, \/  double {\em arg3})}}
+\label{wrapper_8h_835e17f5940e092f28f8d346a24994af}
+
+
+\hypertarget{wrapper_8h_549779b7cc0d5f66834b54cdaa13219b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-setFromArray@{wp\_\-setFromArray}}
+\index{wp\_\-setFromArray@{wp\_\-setFromArray}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-setFromArray (void $\ast$ {\em self}, \/  const double $\ast$ {\em array})}}
+\label{wrapper_8h_549779b7cc0d5f66834b54cdaa13219b}
+
+
+\hypertarget{wrapper_8h_9cabcc6b42302357041e8293acaff38d}{
+\index{wrapper.h@{wrapper.h}!wp\_\-setPose@{wp\_\-setPose}}
+\index{wp\_\-setPose@{wp\_\-setPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-setPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-setPose (void $\ast$ {\em self}, \/  void $\ast$ {\em position}, \/  void $\ast$ {\em orientation})}}
+\label{wrapper_8h_9cabcc6b42302357041e8293acaff38d}
+
+
+\hypertarget{wrapper_8h_225370fd73f2d1d20d711827fbf00f09}{
+\index{wrapper.h@{wrapper.h}!wp\_\-toArray@{wp\_\-toArray}}
+\index{wp\_\-toArray@{wp\_\-toArray}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-toArray]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-toArray (void $\ast$ {\em self}, \/  double $\ast$ {\em array})}}
+\label{wrapper_8h_225370fd73f2d1d20d711827fbf00f09}
+
+
+\hypertarget{wrapper_8h_53c95f1858327613ee7365a6e9443cf6}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WPose\_\-to\_\-lPose@{wp\_\-WPose\_\-to\_\-lPose}}
+\index{wp\_\-WPose\_\-to\_\-lPose@{wp\_\-WPose\_\-to\_\-lPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WPose\_\-to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WPose\_\-to\_\-lPose (void $\ast$ {\em self}, \/  double {\em falseElevation}, \/  void $\ast$ {\em localPose})}}
+\label{wrapper_8h_53c95f1858327613ee7365a6e9443cf6}
+
+
+\hypertarget{wrapper_8h_50d739b8e2c1f08dab268505474c288b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WPose\_\-to\_\-WUTMPose@{wp\_\-WPose\_\-to\_\-WUTMPose}}
+\index{wp\_\-WPose\_\-to\_\-WUTMPose@{wp\_\-WPose\_\-to\_\-WUTMPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WPose\_\-to\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WPose\_\-to\_\-WUTMPose (void $\ast$ {\em self}, \/  void $\ast$ {\em worldUTMPose})}}
+\label{wrapper_8h_50d739b8e2c1f08dab268505474c288b}
+
+
+\hypertarget{wrapper_8h_63f9e7dfaa5411bcf64334e70b854314}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WPosn\_\-to\_\-lPosn@{wp\_\-WPosn\_\-to\_\-lPosn}}
+\index{wp\_\-WPosn\_\-to\_\-lPosn@{wp\_\-WPosn\_\-to\_\-lPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WPosn\_\-to\_\-lPosn]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WPosn\_\-to\_\-lPosn (void $\ast$ {\em self}, \/  double {\em falseElevation}, \/  void $\ast$ {\em localPosition})}}
+\label{wrapper_8h_63f9e7dfaa5411bcf64334e70b854314}
+
+
+\hypertarget{wrapper_8h_3fe568f32c740669590e79e533b29f31}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WPosn\_\-to\_\-WUTMPosn@{wp\_\-WPosn\_\-to\_\-WUTMPosn}}
+\index{wp\_\-WPosn\_\-to\_\-WUTMPosn@{wp\_\-WPosn\_\-to\_\-WUTMPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WPosn\_\-to\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WPosn\_\-to\_\-WUTMPosn (void $\ast$ {\em self}, \/  void $\ast$ {\em worldUTMPosition})}}
+\label{wrapper_8h_3fe568f32c740669590e79e533b29f31}
+
+
+\hypertarget{wrapper_8h_6755d74a246a491d4e16d7f9e57e3b15}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WPosnNormalize@{wp\_\-WPosnNormalize}}
+\index{wp\_\-WPosnNormalize@{wp\_\-WPosnNormalize}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WPosnNormalize]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WPosnNormalize (void $\ast$ {\em self})}}
+\label{wrapper_8h_6755d74a246a491d4e16d7f9e57e3b15}
+
+
+\hypertarget{wrapper_8h_08e07f44b2992ac961173a50d5b109a2}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WUTMPose\_\-getZone@{wp\_\-WUTMPose\_\-getZone}}
+\index{wp\_\-WUTMPose\_\-getZone@{wp\_\-WUTMPose\_\-getZone}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WUTMPose\_\-getZone]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WUTMPose\_\-getZone (void $\ast$ {\em self}, \/  {\bf drdc\_\-UTMZone\_\-t} $\ast$ {\em zone})}}
+\label{wrapper_8h_08e07f44b2992ac961173a50d5b109a2}
+
+
+\hypertarget{wrapper_8h_9228cd8fb88884baa838157cfd43fb3f}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WUTMPose\_\-setZone@{wp\_\-WUTMPose\_\-setZone}}
+\index{wp\_\-WUTMPose\_\-setZone@{wp\_\-WUTMPose\_\-setZone}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WUTMPose\_\-setZone]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WUTMPose\_\-setZone (void $\ast$ {\em self}, \/  {\bf drdc\_\-UTMZone\_\-t} {\em zone})}}
+\label{wrapper_8h_9228cd8fb88884baa838157cfd43fb3f}
+
+
+\hypertarget{wrapper_8h_9889ae9c916e45b8d6b6a7873724b05f}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WUTMPose\_\-to\_\-WPose@{wp\_\-WUTMPose\_\-to\_\-WPose}}
+\index{wp\_\-WUTMPose\_\-to\_\-WPose@{wp\_\-WUTMPose\_\-to\_\-WPose}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WUTMPose\_\-to\_\-WPose]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WUTMPose\_\-to\_\-WPose (void $\ast$ {\em self}, \/  void $\ast$ {\em worldPose})}}
+\label{wrapper_8h_9889ae9c916e45b8d6b6a7873724b05f}
+
+
+\hypertarget{wrapper_8h_039d3c5b2a0a5434c475193a6390039e}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WUTMPosn\_\-getZone@{wp\_\-WUTMPosn\_\-getZone}}
+\index{wp\_\-WUTMPosn\_\-getZone@{wp\_\-WUTMPosn\_\-getZone}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WUTMPosn\_\-getZone]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WUTMPosn\_\-getZone (void $\ast$ {\em self}, \/  {\bf drdc\_\-UTMZone\_\-t} $\ast$ {\em zone})}}
+\label{wrapper_8h_039d3c5b2a0a5434c475193a6390039e}
+
+
+\hypertarget{wrapper_8h_ce5c9cc851ef9669dc7f897ea68923e0}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WUTMPosn\_\-setZone@{wp\_\-WUTMPosn\_\-setZone}}
+\index{wp\_\-WUTMPosn\_\-setZone@{wp\_\-WUTMPosn\_\-setZone}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WUTMPosn\_\-setZone]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WUTMPosn\_\-setZone (void $\ast$ {\em self}, \/  {\bf drdc\_\-UTMZone\_\-t} {\em zone})}}
+\label{wrapper_8h_ce5c9cc851ef9669dc7f897ea68923e0}
+
+
+\hypertarget{wrapper_8h_3645cc3503ae9cbe90f70860a454bb0b}{
+\index{wrapper.h@{wrapper.h}!wp\_\-WUTMPosn\_\-to\_\-WPosn@{wp\_\-WUTMPosn\_\-to\_\-WPosn}}
+\index{wp\_\-WUTMPosn\_\-to\_\-WPosn@{wp\_\-WUTMPosn\_\-to\_\-WPosn}!wrapper.h@{wrapper.h}}
+\subsubsection[wp\_\-WUTMPosn\_\-to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}void wp\_\-WUTMPosn\_\-to\_\-WPosn (void $\ast$ {\em self}, \/  void $\ast$ {\em worldPosition})}}
+\label{wrapper_8h_3645cc3503ae9cbe90f70860a454bb0b}
+
+

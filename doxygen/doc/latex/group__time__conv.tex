@@ -1,0 +1,154 @@
+\hypertarget{group__time__conv}{
+\section{Time Conversions}
+\label{group__time__conv}\index{Time Conversions@{Time Conversions}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+struct timeval \hyperlink{group__time__conv_gd96aa6054228a1751cc4361c09faf60c}{timeUtcToGps} (const short leapSec, const struct timeval $\ast$utcTime)
+\begin{CompactList}\small\item\em UTC time to GPS time. \item\end{CompactList}\item 
+struct timeval \hyperlink{group__time__conv_gdc88a6af3e3644ef9874e2cb55aa1976}{timeGpsToUtc} (const short leapSec, const struct timeval $\ast$gpsTime)
+\begin{CompactList}\small\item\em GPS time to UTC time. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_gfabd8046b6f8c5c8c8ba591a283ce5cf}{jausTimeConvert} (const struct timeval $\ast$timeVal, \hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Convert Time to Jaus Timestamp and Datestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_gefa61d2f15de88919f2c623b39edb394}{jausTimeStampPack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Pack Jaus Timestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_g8c18bc24bd1c4d704a2e475a95649dbc}{jausDateStampPack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Pack Jaus Datestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_g0e70191e4545f9180f005c013a8573a0}{jausTimeToString} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time, char $\ast$buffer)
+\begin{CompactList}\small\item\em Convert Jaus Time Structure to String. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_g32861ee818838c146b1a50bd18a1b443}{jausTimeStampUnpack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Unpack Jaus Timestamp. \item\end{CompactList}\item 
+int \hyperlink{group__time__conv_ga8c0786a64ecb030207a9153aa8cd624}{jausDateStampUnpack} (\hyperlink{structJausTime__t}{JausTime\_\-t} $\ast$time)
+\begin{CompactList}\small\item\em Unpack Jaus Datestamp. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__time__conv_g8c18bc24bd1c4d704a2e475a95649dbc}{
+\index{time\_\-conv@{time\_\-conv}!jausDateStampPack@{jausDateStampPack}}
+\index{jausDateStampPack@{jausDateStampPack}!time_conv@{time\_\-conv}}
+\subsubsection[jausDateStampPack]{\setlength{\rightskip}{0pt plus 5cm}int jausDateStampPack ({\bf JausTime\_\-t} $\ast$ {\em time})}}
+\label{group__time__conv_g8c18bc24bd1c4d704a2e475a95649dbc}
+
+
+Pack Jaus Datestamp. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]Input/Output. Jaus time structure.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one. \end{Desc}
+\hypertarget{group__time__conv_ga8c0786a64ecb030207a9153aa8cd624}{
+\index{time\_\-conv@{time\_\-conv}!jausDateStampUnpack@{jausDateStampUnpack}}
+\index{jausDateStampUnpack@{jausDateStampUnpack}!time_conv@{time\_\-conv}}
+\subsubsection[jausDateStampUnpack]{\setlength{\rightskip}{0pt plus 5cm}int jausDateStampUnpack ({\bf JausTime\_\-t} $\ast$ {\em time})}}
+\label{group__time__conv_ga8c0786a64ecb030207a9153aa8cd624}
+
+
+Unpack Jaus Datestamp. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]Input/Output. Jaus time structure.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one. \end{Desc}
+\hypertarget{group__time__conv_gfabd8046b6f8c5c8c8ba591a283ce5cf}{
+\index{time\_\-conv@{time\_\-conv}!jausTimeConvert@{jausTimeConvert}}
+\index{jausTimeConvert@{jausTimeConvert}!time_conv@{time\_\-conv}}
+\subsubsection[jausTimeConvert]{\setlength{\rightskip}{0pt plus 5cm}int jausTimeConvert (const struct timeval $\ast$ {\em timeVal}, \/  {\bf JausTime\_\-t} $\ast$ {\em time})}}
+\label{group__time__conv_gfabd8046b6f8c5c8c8ba591a283ce5cf}
+
+
+Convert Time to Jaus Timestamp and Datestamp. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em timeVal}]Input. Unix time value. \item[{\em time}]Output. Jaus time structure.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one. \end{Desc}
+\hypertarget{group__time__conv_gefa61d2f15de88919f2c623b39edb394}{
+\index{time\_\-conv@{time\_\-conv}!jausTimeStampPack@{jausTimeStampPack}}
+\index{jausTimeStampPack@{jausTimeStampPack}!time_conv@{time\_\-conv}}
+\subsubsection[jausTimeStampPack]{\setlength{\rightskip}{0pt plus 5cm}int jausTimeStampPack ({\bf JausTime\_\-t} $\ast$ {\em time})}}
+\label{group__time__conv_gefa61d2f15de88919f2c623b39edb394}
+
+
+Pack Jaus Timestamp. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]Input/Output. Jaus time structure.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one. \end{Desc}
+\hypertarget{group__time__conv_g32861ee818838c146b1a50bd18a1b443}{
+\index{time\_\-conv@{time\_\-conv}!jausTimeStampUnpack@{jausTimeStampUnpack}}
+\index{jausTimeStampUnpack@{jausTimeStampUnpack}!time_conv@{time\_\-conv}}
+\subsubsection[jausTimeStampUnpack]{\setlength{\rightskip}{0pt plus 5cm}int jausTimeStampUnpack ({\bf JausTime\_\-t} $\ast$ {\em time})}}
+\label{group__time__conv_g32861ee818838c146b1a50bd18a1b443}
+
+
+Unpack Jaus Timestamp. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]Input/Output. Jaus time structure.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one. \end{Desc}
+\hypertarget{group__time__conv_g0e70191e4545f9180f005c013a8573a0}{
+\index{time\_\-conv@{time\_\-conv}!jausTimeToString@{jausTimeToString}}
+\index{jausTimeToString@{jausTimeToString}!time_conv@{time\_\-conv}}
+\subsubsection[jausTimeToString]{\setlength{\rightskip}{0pt plus 5cm}int jausTimeToString ({\bf JausTime\_\-t} $\ast$ {\em time}, \/  char $\ast$ {\em buffer})}}
+\label{group__time__conv_g0e70191e4545f9180f005c013a8573a0}
+
+
+Convert Jaus Time Structure to String. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]time Input. Jaus time structure. \item[{\em buffer}]Output. String of Timestamp and datestamp.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one. \end{Desc}
+\hypertarget{group__time__conv_gdc88a6af3e3644ef9874e2cb55aa1976}{
+\index{time\_\-conv@{time\_\-conv}!timeGpsToUtc@{timeGpsToUtc}}
+\index{timeGpsToUtc@{timeGpsToUtc}!time_conv@{time\_\-conv}}
+\subsubsection[timeGpsToUtc]{\setlength{\rightskip}{0pt plus 5cm}struct timeval timeGpsToUtc (const short {\em leapSec}, \/  const struct timeval $\ast$ {\em gpsTime})\hspace{0.3cm}{\tt  \mbox{[}read\mbox{]}}}}
+\label{group__time__conv_gdc88a6af3e3644ef9874e2cb55aa1976}
+
+
+GPS time to UTC time. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em leapSec}]Input. Leap second adjustment. \item[{\em gpsTime}]Input. GPS time.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns UTC time. \end{Desc}
+\hypertarget{group__time__conv_gd96aa6054228a1751cc4361c09faf60c}{
+\index{time\_\-conv@{time\_\-conv}!timeUtcToGps@{timeUtcToGps}}
+\index{timeUtcToGps@{timeUtcToGps}!time_conv@{time\_\-conv}}
+\subsubsection[timeUtcToGps]{\setlength{\rightskip}{0pt plus 5cm}struct timeval timeUtcToGps (const short {\em leapSec}, \/  const struct timeval $\ast$ {\em utcTime})\hspace{0.3cm}{\tt  \mbox{[}read\mbox{]}}}}
+\label{group__time__conv_gd96aa6054228a1751cc4361c09faf60c}
+
+
+UTC time to GPS time. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em leapSec}]Input. Leap second adjustment. \item[{\em utcTime}]Input. UTC time.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns GPS time. \end{Desc}

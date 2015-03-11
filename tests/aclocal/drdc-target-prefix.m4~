@@ -1,0 +1,28 @@
+dnl
+dnl $Id: drdc-target-prefix.m4,v 1.2 2008/09/03 22:04:39 cvsuser Exp $
+dnl
+
+# TARGET_PREFIX
+dnl checks build type for library
+dnl if TARGET_OS=rtems then adjust to use RTEMS rules and tools
+dnl if TARGET_OS=gnu then use normal GNU rules and tools
+AC_DEFUN([TARGET_PREFIX],
+[AC_REQUIRE([AC_CANONICAL_TARGET])dnl
+AC_MSG_CHECKING([target OS])
+case $target in
+	*rtems*)
+		TARGET_OS="rtems"
+		AC_DEFINE([TARGET_OS],["rtems"],[Target Operating System])		
+		AC_MSG_RESULT([RTEMS])
+	;;
+	*linux-gnu)
+		TARGET_OS="gnu"
+		AC_DEFINE([TARGET_OS],["gnu"],[Target Operating System])
+		AC_MSG_RESULT([GNU])		
+	;;
+	*)  
+	AC_MSG_ERROR([[ERROR in TARGET_PREFIX: bad value ${val} for --target option]]) 
+  ;;
+esac
+AC_SUBST(TARGET_OS)
+])

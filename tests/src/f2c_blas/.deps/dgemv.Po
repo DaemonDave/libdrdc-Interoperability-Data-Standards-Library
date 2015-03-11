@@ -1,0 +1,5 @@
+dgemv.o dgemv.o: dgemv.c blaswrap.h f2c.h
+
+blaswrap.h:
+
+f2c.h:

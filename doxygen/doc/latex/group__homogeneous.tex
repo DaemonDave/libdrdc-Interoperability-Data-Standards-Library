@@ -1,0 +1,176 @@
+\hypertarget{group__homogeneous}{
+\section{Homogeneous}
+\label{group__homogeneous}\index{Homogeneous@{Homogeneous}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{group__homogeneous_gac5515e14e14afacf5cf678705c499f0}{HMatrixSetTranslation} (const double $\ast$vector, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Set the Translational Component of a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_gea46cfbea64dcd828a7ad9c0a1a58804}{HMatrixGetTranslation} (const double $\ast$hMatrix, double $\ast$vector)
+\begin{CompactList}\small\item\em Get the Translational Component of a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_ge57333c09ab072ba908b1bd7f75eb586}{RotVectorToHMatrix} (const double theta, const double $\ast$vector, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Rotation Vector to Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g764502d28de75923b75fbc4bcf109e68}{HMatrixToRotVector} (const double $\ast$hMatrix, double $\ast$theta, double $\ast$vector)
+\begin{CompactList}\small\item\em Homogeneous Matrix to Rotation Vector. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g0be4d04db6aa88d63dd839ba12b4ecb7}{EulerRPYToHMatrix} (const double $\ast$rpyVector, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Euler Angle RPY to Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g1331c182a0156371f53bbe26f721c8fa}{HMatrixToEulerRPY} (const double $\ast$hMatrix, double $\ast$rpyVector)
+\begin{CompactList}\small\item\em Homogeneous Matrix to Euler Angle RPY. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_gfc783d7c3cacff9513b7e461b243ee07}{HMatrixNormalize} (double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Normalize a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_ge9f5bb16caafcd7644d14eb29c175833}{RotAxisToHMatrix} (\hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, const double theta, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Rotation about an Axis to Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g7e37012b55e5a56c288513e3bace06f7}{HMatrixInverse} (double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Inverse a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g0c48c0e48e92cd283e7b110ac6a5704b}{HMatrixLink} (const double linkLength, const double twistAngle, const double jointOffset, const double jointAngle, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Homogeneous Matrix from Manipulator Linkage Specification. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__homogeneous_g0be4d04db6aa88d63dd839ba12b4ecb7}{
+\index{homogeneous@{homogeneous}!EulerRPYToHMatrix@{EulerRPYToHMatrix}}
+\index{EulerRPYToHMatrix@{EulerRPYToHMatrix}!homogeneous@{homogeneous}}
+\subsubsection[EulerRPYToHMatrix]{\setlength{\rightskip}{0pt plus 5cm}int EulerRPYToHMatrix (const double $\ast$ {\em rpyVector}, \/  double $\ast$ {\em hMatrix})}}
+\label{group__homogeneous_g0be4d04db6aa88d63dd839ba12b4ecb7}
+
+
+Euler Angle RPY to Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rpyVector}]Input. RPY vector - \mbox{[}roll, pitch, yaw\mbox{]}. \item[{\em hMatrix}]Output. Homogeneous matrix represented by a 16-vector (column major). \end{description}
+\end{Desc}
+\hypertarget{group__homogeneous_gea46cfbea64dcd828a7ad9c0a1a58804}{
+\index{homogeneous@{homogeneous}!HMatrixGetTranslation@{HMatrixGetTranslation}}
+\index{HMatrixGetTranslation@{HMatrixGetTranslation}!homogeneous@{homogeneous}}
+\subsubsection[HMatrixGetTranslation]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixGetTranslation (const double $\ast$ {\em hMatrix}, \/  double $\ast$ {\em vector})}}
+\label{group__homogeneous_gea46cfbea64dcd828a7ad9c0a1a58804}
+
+
+Get the Translational Component of a Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hMatrix}]Input. Homogeneous matrix represented by a 16-vector (column major). \item[{\em vector}]Output. Cartesian vector - \mbox{[}x, y, z\mbox{]}. \end{description}
+\end{Desc}
+\hypertarget{group__homogeneous_g7e37012b55e5a56c288513e3bace06f7}{
+\index{homogeneous@{homogeneous}!HMatrixInverse@{HMatrixInverse}}
+\index{HMatrixInverse@{HMatrixInverse}!homogeneous@{homogeneous}}
+\subsubsection[HMatrixInverse]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixInverse (double $\ast$ {\em hMatrix})}}
+\label{group__homogeneous_g7e37012b55e5a56c288513e3bace06f7}
+
+
+Inverse a Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hMatrix}]Input/Output. Homogeneous matrix represented by a 16-vector (column major). \end{description}
+\end{Desc}
+\hypertarget{group__homogeneous_g0c48c0e48e92cd283e7b110ac6a5704b}{
+\index{homogeneous@{homogeneous}!HMatrixLink@{HMatrixLink}}
+\index{HMatrixLink@{HMatrixLink}!homogeneous@{homogeneous}}
+\subsubsection[HMatrixLink]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixLink (const double {\em linkLength}, \/  const double {\em twistAngle}, \/  const double {\em jointOffset}, \/  const double {\em jointAngle}, \/  double $\ast$ {\em hMatrix})}}
+\label{group__homogeneous_g0c48c0e48e92cd283e7b110ac6a5704b}
+
+
+Homogeneous Matrix from Manipulator Linkage Specification. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em linkLength}]Link length (a). \item[{\em twistAngle}]Twist angle (alpha). \item[{\em jointOffset}]Joint offset (d). \item[{\em jointAngle}]Joint angle (theta). \item[{\em hMatrix}]Result homogeneous matrix. \end{description}
+\end{Desc}
+\hypertarget{group__homogeneous_gfc783d7c3cacff9513b7e461b243ee07}{
+\index{homogeneous@{homogeneous}!HMatrixNormalize@{HMatrixNormalize}}
+\index{HMatrixNormalize@{HMatrixNormalize}!homogeneous@{homogeneous}}
+\subsubsection[HMatrixNormalize]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixNormalize (double $\ast$ {\em hMatrix})}}
+\label{group__homogeneous_gfc783d7c3cacff9513b7e461b243ee07}
+
+
+Normalize a Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hMatrix}]Input/Output. Homogeneous matrix represented by a 16-vector (column major). \end{description}
+\end{Desc}
+\hypertarget{group__homogeneous_gac5515e14e14afacf5cf678705c499f0}{
+\index{homogeneous@{homogeneous}!HMatrixSetTranslation@{HMatrixSetTranslation}}
+\index{HMatrixSetTranslation@{HMatrixSetTranslation}!homogeneous@{homogeneous}}
+\subsubsection[HMatrixSetTranslation]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixSetTranslation (const double $\ast$ {\em vector}, \/  double $\ast$ {\em hMatrix})}}
+\label{group__homogeneous_gac5515e14e14afacf5cf678705c499f0}
+
+
+Set the Translational Component of a Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em vector}]Input. Cartesian vector - \mbox{[}x, y, z\mbox{]}. \item[{\em hMatrix}]Input/Output. Homogeneous matrix represented by a 16-vector (column major). \end{description}
+\end{Desc}
+\hypertarget{group__homogeneous_g1331c182a0156371f53bbe26f721c8fa}{
+\index{homogeneous@{homogeneous}!HMatrixToEulerRPY@{HMatrixToEulerRPY}}
+\index{HMatrixToEulerRPY@{HMatrixToEulerRPY}!homogeneous@{homogeneous}}
+\subsubsection[HMatrixToEulerRPY]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixToEulerRPY (const double $\ast$ {\em hMatrix}, \/  double $\ast$ {\em rpyVector})}}
+\label{group__homogeneous_g1331c182a0156371f53bbe26f721c8fa}
+
+
+Homogeneous Matrix to Euler Angle RPY. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hMatrix}]Input. Homogeneous matrix represented by a 16-vector (column major). \item[{\em rpyVector}]Output. RPY vector - \mbox{[}roll, pitch, yaw\mbox{]}. \end{description}
+\end{Desc}
+\hypertarget{group__homogeneous_g764502d28de75923b75fbc4bcf109e68}{
+\index{homogeneous@{homogeneous}!HMatrixToRotVector@{HMatrixToRotVector}}
+\index{HMatrixToRotVector@{HMatrixToRotVector}!homogeneous@{homogeneous}}
+\subsubsection[HMatrixToRotVector]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixToRotVector (const double $\ast$ {\em hMatrix}, \/  double $\ast$ {\em theta}, \/  double $\ast$ {\em vector})}}
+\label{group__homogeneous_g764502d28de75923b75fbc4bcf109e68}
+
+
+Homogeneous Matrix to Rotation Vector. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hMatrix}]Input. Homogeneous matrix represented by a 16-vector (column major). \item[{\em theta}]Output. Rotation angle in radians \item[{\em vector}]Output. Unit vector represented by a cartesian vector - \mbox{[}x, y, z\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. \end{Desc}
+\hypertarget{group__homogeneous_ge9f5bb16caafcd7644d14eb29c175833}{
+\index{homogeneous@{homogeneous}!RotAxisToHMatrix@{RotAxisToHMatrix}}
+\index{RotAxisToHMatrix@{RotAxisToHMatrix}!homogeneous@{homogeneous}}
+\subsubsection[RotAxisToHMatrix]{\setlength{\rightskip}{0pt plus 5cm}int RotAxisToHMatrix ({\bf Axis\_\-t} {\em axis}, \/  const double {\em theta}, \/  double $\ast$ {\em hMatrix})}}
+\label{group__homogeneous_ge9f5bb16caafcd7644d14eb29c175833}
+
+
+Rotation about an Axis to Homogeneous Matrix. 
+
+Computes a homogeneous transformation representing a rotation of Theta radians about the axis.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em axis}]Input. Enumeration type, AXIS\_\-X, AXIS\_\-Y, or AXIS\_\-Z. \item[{\em theta}]Input. Rotation angle in radians. \item[{\em hMatrix}]Output. Homogeneous matrix represented by a 16-vector (column major).\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if a undefined enumeration type error occurs. \end{Desc}
+\hypertarget{group__homogeneous_ge57333c09ab072ba908b1bd7f75eb586}{
+\index{homogeneous@{homogeneous}!RotVectorToHMatrix@{RotVectorToHMatrix}}
+\index{RotVectorToHMatrix@{RotVectorToHMatrix}!homogeneous@{homogeneous}}
+\subsubsection[RotVectorToHMatrix]{\setlength{\rightskip}{0pt plus 5cm}int RotVectorToHMatrix (const double {\em theta}, \/  const double $\ast$ {\em vector}, \/  double $\ast$ {\em hMatrix})}}
+\label{group__homogeneous_ge57333c09ab072ba908b1bd7f75eb586}
+
+
+Rotation Vector to Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em theta}]Input. Rotation angle in radians. \item[{\em vector}]Input. Unit vector represented by a cartesian vector - \mbox{[}x, y, z\mbox{]}. \item[{\em hMatrix}]Output. Homogeneous matrix represented by a 16-vector (column major). \end{description}
+\end{Desc}

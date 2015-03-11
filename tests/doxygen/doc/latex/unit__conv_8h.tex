@@ -1,0 +1,83 @@
+\hypertarget{unit__conv_8h}{
+\section{/home/dave/src/libdrdc/src/unit\_\-conv/unit\_\-conv.h File Reference}
+\label{unit__conv_8h}\index{/home/dave/src/libdrdc/src/unit\_\-conv/unit\_\-conv.h@{/home/dave/src/libdrdc/src/unit\_\-conv/unit\_\-conv.h}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structUnitConv__t}{UnitConv\_\-t}
+\begin{CompactList}\small\item\em Unit Conversion Structure. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{unit__conv_8h_7f54cb00efda47c368a3c7bcc280e46f}{VOLUME\_\-UNITS\_\-NUM}~7
+\item 
+\#define \hyperlink{unit__conv_8h_368b0619d8748426bf0abc0af1026604}{DISTANCE\_\-UNITS\_\-NUM}~8
+\item 
+\#define \hyperlink{unit__conv_8h_45348c7628f0341b8425d1c65614d800}{MASS\_\-UNITS\_\-NUM}~5
+\item 
+\#define \hyperlink{unit__conv_8h_a328de2ad2251ea9d0ae03e6ddab8181}{VELOCITY\_\-UNITS\_\-NUM}~6
+\item 
+\#define \hyperlink{unit__conv_8h_6a0a544073a8534c24fa490efbcb13d9}{AREA\_\-UNITS\_\-NUM}~7
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+double \hyperlink{group__unit__conv_g6b53eb2372b6c68e82cda5b9cb4049ea}{unitToSiVolume} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the volume units to the SI unit - m$^\wedge$3. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g84e5b74d2c5f3b0bbe1cdb8aff2b11d0}{unitToSiDistance} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the distance units to the SI unit - m. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g8d02fac0f3c4ac8a798e30cc6a747904}{unitToSiMass} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the mass units to the SI unit - kg . \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_ge05c76a067cfe4916abf317f00794c63}{unitToSiVelocity} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the velocity units to the SI unit - m/s. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g9a55776d67d05ae1fccb1c8d9fe284f1}{unitToSiArea} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the area units to the SI unit - m$^\wedge$2. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g83e38e7be9d19563a1c4abae17158e3e}{unitConvertVolume} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between volume units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g8fe6b1304fb3c8d0d21d62178367df0f}{unitConvertDistance} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between distance units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g3fad4536c3e0108ca36dd54208bfa029}{unitConvertMass} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between mass units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g444606c1ce32b9818c42657b817895e0}{unitConvertVelocity} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between velocity units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g2b1c6e35197223f25aef246277f92ac0}{unitConvertArea} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between area units. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{unit__conv_8h_6a0a544073a8534c24fa490efbcb13d9}{
+\index{unit\_\-conv.h@{unit\_\-conv.h}!AREA\_\-UNITS\_\-NUM@{AREA\_\-UNITS\_\-NUM}}
+\index{AREA\_\-UNITS\_\-NUM@{AREA\_\-UNITS\_\-NUM}!unit_conv.h@{unit\_\-conv.h}}
+\subsubsection[AREA\_\-UNITS\_\-NUM]{\setlength{\rightskip}{0pt plus 5cm}\#define AREA\_\-UNITS\_\-NUM~7}}
+\label{unit__conv_8h_6a0a544073a8534c24fa490efbcb13d9}
+
+
+\hypertarget{unit__conv_8h_368b0619d8748426bf0abc0af1026604}{
+\index{unit\_\-conv.h@{unit\_\-conv.h}!DISTANCE\_\-UNITS\_\-NUM@{DISTANCE\_\-UNITS\_\-NUM}}
+\index{DISTANCE\_\-UNITS\_\-NUM@{DISTANCE\_\-UNITS\_\-NUM}!unit_conv.h@{unit\_\-conv.h}}
+\subsubsection[DISTANCE\_\-UNITS\_\-NUM]{\setlength{\rightskip}{0pt plus 5cm}\#define DISTANCE\_\-UNITS\_\-NUM~8}}
+\label{unit__conv_8h_368b0619d8748426bf0abc0af1026604}
+
+
+\hypertarget{unit__conv_8h_45348c7628f0341b8425d1c65614d800}{
+\index{unit\_\-conv.h@{unit\_\-conv.h}!MASS\_\-UNITS\_\-NUM@{MASS\_\-UNITS\_\-NUM}}
+\index{MASS\_\-UNITS\_\-NUM@{MASS\_\-UNITS\_\-NUM}!unit_conv.h@{unit\_\-conv.h}}
+\subsubsection[MASS\_\-UNITS\_\-NUM]{\setlength{\rightskip}{0pt plus 5cm}\#define MASS\_\-UNITS\_\-NUM~5}}
+\label{unit__conv_8h_45348c7628f0341b8425d1c65614d800}
+
+
+\hypertarget{unit__conv_8h_a328de2ad2251ea9d0ae03e6ddab8181}{
+\index{unit\_\-conv.h@{unit\_\-conv.h}!VELOCITY\_\-UNITS\_\-NUM@{VELOCITY\_\-UNITS\_\-NUM}}
+\index{VELOCITY\_\-UNITS\_\-NUM@{VELOCITY\_\-UNITS\_\-NUM}!unit_conv.h@{unit\_\-conv.h}}
+\subsubsection[VELOCITY\_\-UNITS\_\-NUM]{\setlength{\rightskip}{0pt plus 5cm}\#define VELOCITY\_\-UNITS\_\-NUM~6}}
+\label{unit__conv_8h_a328de2ad2251ea9d0ae03e6ddab8181}
+
+
+\hypertarget{unit__conv_8h_7f54cb00efda47c368a3c7bcc280e46f}{
+\index{unit\_\-conv.h@{unit\_\-conv.h}!VOLUME\_\-UNITS\_\-NUM@{VOLUME\_\-UNITS\_\-NUM}}
+\index{VOLUME\_\-UNITS\_\-NUM@{VOLUME\_\-UNITS\_\-NUM}!unit_conv.h@{unit\_\-conv.h}}
+\subsubsection[VOLUME\_\-UNITS\_\-NUM]{\setlength{\rightskip}{0pt plus 5cm}\#define VOLUME\_\-UNITS\_\-NUM~7}}
+\label{unit__conv_8h_7f54cb00efda47c368a3c7bcc280e46f}
+
+

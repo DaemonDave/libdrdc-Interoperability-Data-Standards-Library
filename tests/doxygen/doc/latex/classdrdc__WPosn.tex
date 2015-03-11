@@ -1,0 +1,197 @@
+\hypertarget{classdrdc__WPosn}{
+\section{drdc\_\-WPosn Class Reference}
+\label{classdrdc__WPosn}\index{drdc\_\-WPosn@{drdc\_\-WPosn}}
+}
+C++ World Position Represenation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__WPosn_6b8b3e66b18965be99434cbd494bd79d}{drdc\_\-WPosn} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WPosn_3c292a1607fb80b5a8ec3ebfaff212f7}{set} (double longtitude, double latitude, double elevation)
+\begin{CompactList}\small\item\em Set the object by specifying longtitude, latitude and elevation. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WPosn_2af599ff4db1922f5b95c1a03d70c0cd}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WPosn_e478f6d6dc986f8a370f888152435b3f}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__WPosn_d6c93a1d4a91e10d455250e3d9f61e68}{compare} (\hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} worldPosition, \hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WPosn_c0ee4adae6fd10005bddc94e98d0cd8c}{getLongtitude} ()
+\begin{CompactList}\small\item\em Return the longtitude value from the object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WPosn_7f4a2e744cfbe93e6f94a3a8bf8f1b47}{getLatitude} ()
+\begin{CompactList}\small\item\em Return the latitude value from the object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WPosn_b5d7565b125a7e107590847b2508a2e0}{getElevation} ()
+\begin{CompactList}\small\item\em Return the Elevation value from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} \& \hyperlink{classdrdc__WPosn_f8dff958f4bedb7fc87a40710bc8b718}{operator=} (\hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} worldPosition)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WPosn_a23e47dbf32b6819309d628b268aca46}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WPosn_1ee5a6abd458cb83f456abfe72eb0d66}{normalize} ()
+\begin{CompactList}\small\item\em Normalize lontitude to -180 to 180 degree and latitude to -90 to 90 degree. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__WPosn_d277ac3e0f3a88e72d59297c0e2fcc46}{to\_\-lPosn} (double falseElevation)
+\begin{CompactList}\small\item\em Convert World Position to ECEF Position. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__WPosn_a12b36984bf6e77147cdbe1fd17c9bcd}{to\_\-WUTMPosn} ()
+\begin{CompactList}\small\item\em Convert World Position to World UTM Position. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__WPosn_635738b33966d90cc50ea00a4f1a0aa4}{vector}
+\begin{CompactList}\small\item\em Data vector. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ World Position Represenation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__WPosn_6b8b3e66b18965be99434cbd494bd79d}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!drdc\_\-WPosn@{drdc\_\-WPosn}}
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[drdc\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-WPosn::drdc\_\-WPosn ()}}
+\label{classdrdc__WPosn_6b8b3e66b18965be99434cbd494bd79d}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__WPosn_3c292a1607fb80b5a8ec3ebfaff212f7}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!set@{set}}
+\index{set@{set}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WPosn::set (double {\em longtitude}, \/  double {\em latitude}, \/  double {\em elevation})}}
+\label{classdrdc__WPosn_3c292a1607fb80b5a8ec3ebfaff212f7}
+
+
+Set the object by specifying longtitude, latitude and elevation. 
+
+\hypertarget{classdrdc__WPosn_2af599ff4db1922f5b95c1a03d70c0cd}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!set@{set}}
+\index{set@{set}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WPosn::set (const double $\ast$ {\em array})}}
+\label{classdrdc__WPosn_2af599ff4db1922f5b95c1a03d70c0cd}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__WPosn_e478f6d6dc986f8a370f888152435b3f}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WPosn::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__WPosn_e478f6d6dc986f8a370f888152435b3f}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__WPosn_d6c93a1d4a91e10d455250e3d9f61e68}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!compare@{compare}}
+\index{compare@{compare}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-WPosn::compare ({\bf drdc\_\-WPosn} {\em worldPosition}, \/  {\bf drdc\_\-WPosn} {\em fuzz})}}
+\label{classdrdc__WPosn_d6c93a1d4a91e10d455250e3d9f61e68}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__WPosn_c0ee4adae6fd10005bddc94e98d0cd8c}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!getLongtitude@{getLongtitude}}
+\index{getLongtitude@{getLongtitude}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[getLongtitude]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WPosn::getLongtitude ()}}
+\label{classdrdc__WPosn_c0ee4adae6fd10005bddc94e98d0cd8c}
+
+
+Return the longtitude value from the object. 
+
+\hypertarget{classdrdc__WPosn_7f4a2e744cfbe93e6f94a3a8bf8f1b47}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!getLatitude@{getLatitude}}
+\index{getLatitude@{getLatitude}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[getLatitude]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WPosn::getLatitude ()}}
+\label{classdrdc__WPosn_7f4a2e744cfbe93e6f94a3a8bf8f1b47}
+
+
+Return the latitude value from the object. 
+
+\hypertarget{classdrdc__WPosn_b5d7565b125a7e107590847b2508a2e0}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!getElevation@{getElevation}}
+\index{getElevation@{getElevation}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[getElevation]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WPosn::getElevation ()}}
+\label{classdrdc__WPosn_b5d7565b125a7e107590847b2508a2e0}
+
+
+Return the Elevation value from the object. 
+
+\hypertarget{classdrdc__WPosn_f8dff958f4bedb7fc87a40710bc8b718}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPosn}\& drdc\_\-WPosn::operator= ({\bf drdc\_\-WPosn} {\em worldPosition})}}
+\label{classdrdc__WPosn_f8dff958f4bedb7fc87a40710bc8b718}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__WPosn_a23e47dbf32b6819309d628b268aca46}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WPosn::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__WPosn_a23e47dbf32b6819309d628b268aca46}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__WPosn_1ee5a6abd458cb83f456abfe72eb0d66}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!normalize@{normalize}}
+\index{normalize@{normalize}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[normalize]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WPosn::normalize ()}}
+\label{classdrdc__WPosn_1ee5a6abd458cb83f456abfe72eb0d66}
+
+
+Normalize lontitude to -180 to 180 degree and latitude to -90 to 90 degree. 
+
+\hypertarget{classdrdc__WPosn_d277ac3e0f3a88e72d59297c0e2fcc46}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!to\_\-lPosn@{to\_\-lPosn}}
+\index{to\_\-lPosn@{to\_\-lPosn}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[to\_\-lPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-WPosn::to\_\-lPosn (double {\em falseElevation})}}
+\label{classdrdc__WPosn_d277ac3e0f3a88e72d59297c0e2fcc46}
+
+
+Convert World Position to ECEF Position. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em falseElevation}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Cartesian position represented by Local Position \end{Desc}
+\hypertarget{classdrdc__WPosn_a12b36984bf6e77147cdbe1fd17c9bcd}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!to\_\-WUTMPosn@{to\_\-WUTMPosn}}
+\index{to\_\-WUTMPosn@{to\_\-WUTMPosn}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[to\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-WPosn::to\_\-WUTMPosn ()}}
+\label{classdrdc__WPosn_a12b36984bf6e77147cdbe1fd17c9bcd}
+
+
+Convert World Position to World UTM Position. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__WPosn_635738b33966d90cc50ea00a4f1a0aa4}{
+\index{drdc\_\-WPosn@{drdc\_\-WPosn}!vector@{vector}}
+\index{vector@{vector}!drdc_WPosn@{drdc\_\-WPosn}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-WPosn::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__WPosn_635738b33966d90cc50ea00a4f1a0aa4}
+
+
+Data vector. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

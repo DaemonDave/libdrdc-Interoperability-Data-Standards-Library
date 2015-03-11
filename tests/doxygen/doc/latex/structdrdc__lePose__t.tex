@@ -1,0 +1,157 @@
+\hypertarget{structdrdc__lePose__t}{
+\section{drdc\_\-lePose\_\-t Struct Reference}
+\label{structdrdc__lePose__t}\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}}
+}
+OOC Local Euler Pose Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__lePose__t_d106d91986354f0113a06bc1b3bddd1f}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lePose__t_a4140fbb8270978861d42f119d1b0218}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__lePose__t_37cacd1dd11b7f44570510f8ec3bf6d9}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_6d5330ca33cba9376ec6c5ea1aa2c38c}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_563282655a158b6e2ea44477d02ef1e3}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\begin{CompactList}\small\item\em Set the self object by using array data type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_5b46f3177e98426490325c7ec638b99e}{toArray} )(const void $\ast$self, double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the self object to data array type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_da06ad9ab4dcca6302286ba11be53b32}{destroy} )(void $\ast$self)
+\begin{CompactList}\small\item\em Delete the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_765510af2cd3050d12c281b6cac0af93}{set} )(void $\ast$self, void $\ast$position, void $\ast$orientation)
+\begin{CompactList}\small\item\em Set the Local Euler Pose object by specifying Local Position and Euler RPY.. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_975326e7d6c204a3a7f9085ba14a971a}{getPosition} )(void $\ast$self, void $\ast$position)
+\begin{CompactList}\small\item\em Return Local Position of Local Euler Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_bdb8fe5909d51047d6e1388542ff4860}{getOrientation} )(void $\ast$self, void $\ast$orientation)
+\begin{CompactList}\small\item\em Return Euler RPY orientation of Local Euler Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_f7480671009e647ae378282c177f5f6f}{to\_\-lPose} )(void $\ast$self, void $\ast$localPose)
+\begin{CompactList}\small\item\em Convert Local Euler Pose to Local Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lePose__t_00b46359c3bda2c6cd2c15628d193ce1}{to\_\-HMatrix} )(void $\ast$self, void $\ast$homogeneous)
+\begin{CompactList}\small\item\em Convert Local Euler Pose to Homogeneous Matrix. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC Local Euler Pose Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__lePose__t_d106d91986354f0113a06bc1b3bddd1f}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-lePose\_\-t::vector}}}
+\label{structdrdc__lePose__t_d106d91986354f0113a06bc1b3bddd1f}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__lePose__t_a4140fbb8270978861d42f119d1b0218}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!index@{index}}
+\index{index@{index}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lePose\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__lePose__t_a4140fbb8270978861d42f119d1b0218}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__lePose__t_37cacd1dd11b7f44570510f8ec3bf6d9}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-lePose\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__lePose__t_37cacd1dd11b7f44570510f8ec3bf6d9}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__lePose__t_6d5330ca33cba9376ec6c5ea1aa2c38c}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__lePose__t_6d5330ca33cba9376ec6c5ea1aa2c38c}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__lePose__t_563282655a158b6e2ea44477d02ef1e3}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__lePose__t_563282655a158b6e2ea44477d02ef1e3}
+
+
+Set the self object by using array data type. 
+
+\hypertarget{structdrdc__lePose__t_5b46f3177e98426490325c7ec638b99e}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__lePose__t_5b46f3177e98426490325c7ec638b99e}
+
+
+Convert data in the self object to data array type. 
+
+\hypertarget{structdrdc__lePose__t_da06ad9ab4dcca6302286ba11be53b32}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__lePose__t_da06ad9ab4dcca6302286ba11be53b32}
+
+
+Delete the self object. 
+
+\hypertarget{structdrdc__lePose__t_765510af2cd3050d12c281b6cac0af93}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!set@{set}}
+\index{set@{set}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::set})(void $\ast$self, void $\ast$position, void $\ast$orientation)}}
+\label{structdrdc__lePose__t_765510af2cd3050d12c281b6cac0af93}
+
+
+Set the Local Euler Pose object by specifying Local Position and Euler RPY.. 
+
+\hypertarget{structdrdc__lePose__t_975326e7d6c204a3a7f9085ba14a971a}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::getPosition})(void $\ast$self, void $\ast$position)}}
+\label{structdrdc__lePose__t_975326e7d6c204a3a7f9085ba14a971a}
+
+
+Return Local Position of Local Euler Pose. 
+
+\hypertarget{structdrdc__lePose__t_bdb8fe5909d51047d6e1388542ff4860}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[getOrientation]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::getOrientation})(void $\ast$self, void $\ast$orientation)}}
+\label{structdrdc__lePose__t_bdb8fe5909d51047d6e1388542ff4860}
+
+
+Return Euler RPY orientation of Local Euler Pose. 
+
+\hypertarget{structdrdc__lePose__t_f7480671009e647ae378282c177f5f6f}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!to\_\-lPose@{to\_\-lPose}}
+\index{to\_\-lPose@{to\_\-lPose}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::to\_\-lPose})(void $\ast$self, void $\ast$localPose)}}
+\label{structdrdc__lePose__t_f7480671009e647ae378282c177f5f6f}
+
+
+Convert Local Euler Pose to Local Pose. 
+
+\hypertarget{structdrdc__lePose__t_00b46359c3bda2c6cd2c15628d193ce1}{
+\index{drdc\_\-lePose\_\-t@{drdc\_\-lePose\_\-t}!to\_\-HMatrix@{to\_\-HMatrix}}
+\index{to\_\-HMatrix@{to\_\-HMatrix}!drdc_lePose_t@{drdc\_\-lePose\_\-t}}
+\subsubsection[to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lePose\_\-t::to\_\-HMatrix})(void $\ast$self, void $\ast$homogeneous)}}
+\label{structdrdc__lePose__t_00b46359c3bda2c6cd2c15628d193ce1}
+
+
+Convert Local Euler Pose to Homogeneous Matrix. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

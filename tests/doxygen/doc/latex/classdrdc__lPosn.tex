@@ -1,0 +1,276 @@
+\hypertarget{classdrdc__lPosn}{
+\section{drdc\_\-lPosn Class Reference}
+\label{classdrdc__lPosn}\index{drdc\_\-lPosn@{drdc\_\-lPosn}}
+}
+C++ Local Position Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__lPosn_39ab1367388ed6f655a1fec657e2fd20}{drdc\_\-lPosn} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lPosn_189bd909895a0c424d953ae266660a98}{set} (double x, double y, double z)
+\begin{CompactList}\small\item\em Set the object by specifying cartesian x, y and z values. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lPosn_d82b724217534dff477bebbfb35d9cc2}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lPosn_6479858b0308f15d6d08db65ac111cff}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__lPosn_f0a8ba3a6236839ec981029ad9c3d9f9}{compare} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition, \hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} fuzz)
+\begin{CompactList}\small\item\em Compare two objects, self and object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lPosn_24bd2d1abe31b04ddf3429436437928f}{getX} ()
+\begin{CompactList}\small\item\em Return the cartesian x value from the object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lPosn_3a7718f613111be6ad5416d0d647e69b}{getY} ()
+\begin{CompactList}\small\item\em Return the cartesian y value from the object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lPosn_5fd391c6678362dc39b851595e9dfad0}{getZ} ()
+\begin{CompactList}\small\item\em Return the cartesian z value from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \& \hyperlink{classdrdc__lPosn_b69846826c38c374214c63391e208fa6}{operator=} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lPosn_560e0df0460811efbcecc0817f62bc64}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lPosn_544e6d8a1487af369ea8846864e11935}{operator+} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Plus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lPosn_3d1a980f8ae3cc19e7f30cd29daeab46}{operator-} ()
+\begin{CompactList}\small\item\em Negate operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lPosn_56edc91463f7140e560a77a26539d5e1}{operator-} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Minus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lPosn_0b379c29cf404ffe8ee7f2c927e688c8}{operator$\ast$} (double a)
+\begin{CompactList}\small\item\em Scale operator. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lPosn_97a8281cc5a20e38b0ca91226e80595f}{dot} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Vector dot operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lPosn_1fb0e2e37ecb3e79b416ce5a83a54ebb}{cross} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} localPosition)
+\begin{CompactList}\small\item\em Vector cross operator. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lPosn_2d0627c5961baeab891d62cb8a836d85}{normalize} ()
+\begin{CompactList}\small\item\em Normalize the object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lPosn_a333c2527fc3ec4398ea0940bfc1c5fc}{magnitude} ()
+\begin{CompactList}\small\item\em Return the magnitude of the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} \hyperlink{classdrdc__lPosn_243a0513a9126c8e171953e663bdb213}{to\_\-WUTMPosn} (\hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone)
+\begin{CompactList}\small\item\em Map Local Position to World UTM Position. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} \hyperlink{classdrdc__lPosn_6abd4aad19a2f3323e36ce16800a5d3e}{to\_\-WPosn} (double falseElevation)
+\begin{CompactList}\small\item\em Convert ECEF Position to World Position. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__lPosn_91f12f937fa99f51bc221c237f47b63f}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ Local Position Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__lPosn_39ab1367388ed6f655a1fec657e2fd20}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!drdc\_\-lPosn@{drdc\_\-lPosn}}
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[drdc\_\-lPosn]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-lPosn::drdc\_\-lPosn ()}}
+\label{classdrdc__lPosn_39ab1367388ed6f655a1fec657e2fd20}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__lPosn_189bd909895a0c424d953ae266660a98}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!set@{set}}
+\index{set@{set}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lPosn::set (double {\em x}, \/  double {\em y}, \/  double {\em z})}}
+\label{classdrdc__lPosn_189bd909895a0c424d953ae266660a98}
+
+
+Set the object by specifying cartesian x, y and z values. 
+
+\hypertarget{classdrdc__lPosn_d82b724217534dff477bebbfb35d9cc2}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!set@{set}}
+\index{set@{set}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lPosn::set (const double $\ast$ {\em array})}}
+\label{classdrdc__lPosn_d82b724217534dff477bebbfb35d9cc2}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__lPosn_6479858b0308f15d6d08db65ac111cff}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lPosn::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__lPosn_6479858b0308f15d6d08db65ac111cff}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__lPosn_f0a8ba3a6236839ec981029ad9c3d9f9}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!compare@{compare}}
+\index{compare@{compare}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-lPosn::compare ({\bf drdc\_\-lPosn} {\em localPosition}, \/  {\bf drdc\_\-lPosn} {\em fuzz})}}
+\label{classdrdc__lPosn_f0a8ba3a6236839ec981029ad9c3d9f9}
+
+
+Compare two objects, self and object. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__lPosn_24bd2d1abe31b04ddf3429436437928f}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!getX@{getX}}
+\index{getX@{getX}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[getX]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lPosn::getX ()}}
+\label{classdrdc__lPosn_24bd2d1abe31b04ddf3429436437928f}
+
+
+Return the cartesian x value from the object. 
+
+\hypertarget{classdrdc__lPosn_3a7718f613111be6ad5416d0d647e69b}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!getY@{getY}}
+\index{getY@{getY}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[getY]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lPosn::getY ()}}
+\label{classdrdc__lPosn_3a7718f613111be6ad5416d0d647e69b}
+
+
+Return the cartesian y value from the object. 
+
+\hypertarget{classdrdc__lPosn_5fd391c6678362dc39b851595e9dfad0}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!getZ@{getZ}}
+\index{getZ@{getZ}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[getZ]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lPosn::getZ ()}}
+\label{classdrdc__lPosn_5fd391c6678362dc39b851595e9dfad0}
+
+
+Return the cartesian z value from the object. 
+
+\hypertarget{classdrdc__lPosn_b69846826c38c374214c63391e208fa6}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn}\& drdc\_\-lPosn::operator= ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__lPosn_b69846826c38c374214c63391e208fa6}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__lPosn_560e0df0460811efbcecc0817f62bc64}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lPosn::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__lPosn_560e0df0460811efbcecc0817f62bc64}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__lPosn_544e6d8a1487af369ea8846864e11935}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!operator+@{operator+}}
+\index{operator+@{operator+}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[operator+]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lPosn::operator+ ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__lPosn_544e6d8a1487af369ea8846864e11935}
+
+
+Plus operator. 
+
+\hypertarget{classdrdc__lPosn_3d1a980f8ae3cc19e7f30cd29daeab46}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lPosn::operator- ()}}
+\label{classdrdc__lPosn_3d1a980f8ae3cc19e7f30cd29daeab46}
+
+
+Negate operator. 
+
+\hypertarget{classdrdc__lPosn_56edc91463f7140e560a77a26539d5e1}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lPosn::operator- ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__lPosn_56edc91463f7140e560a77a26539d5e1}
+
+
+Minus operator. 
+
+\hypertarget{classdrdc__lPosn_0b379c29cf404ffe8ee7f2c927e688c8}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lPosn::operator$\ast$ (double {\em a})}}
+\label{classdrdc__lPosn_0b379c29cf404ffe8ee7f2c927e688c8}
+
+
+Scale operator. 
+
+\hypertarget{classdrdc__lPosn_97a8281cc5a20e38b0ca91226e80595f}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!dot@{dot}}
+\index{dot@{dot}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[dot]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lPosn::dot ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__lPosn_97a8281cc5a20e38b0ca91226e80595f}
+
+
+Vector dot operator. 
+
+\hypertarget{classdrdc__lPosn_1fb0e2e37ecb3e79b416ce5a83a54ebb}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!cross@{cross}}
+\index{cross@{cross}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lPosn::cross ({\bf drdc\_\-lPosn} {\em localPosition})}}
+\label{classdrdc__lPosn_1fb0e2e37ecb3e79b416ce5a83a54ebb}
+
+
+Vector cross operator. 
+
+\hypertarget{classdrdc__lPosn_2d0627c5961baeab891d62cb8a836d85}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!normalize@{normalize}}
+\index{normalize@{normalize}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[normalize]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lPosn::normalize ()}}
+\label{classdrdc__lPosn_2d0627c5961baeab891d62cb8a836d85}
+
+
+Normalize the object. 
+
+\hypertarget{classdrdc__lPosn_a333c2527fc3ec4398ea0940bfc1c5fc}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[magnitude]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lPosn::magnitude ()}}
+\label{classdrdc__lPosn_a333c2527fc3ec4398ea0940bfc1c5fc}
+
+
+Return the magnitude of the object. 
+
+\hypertarget{classdrdc__lPosn_243a0513a9126c8e171953e663bdb213}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!to\_\-WUTMPosn@{to\_\-WUTMPosn}}
+\index{to\_\-WUTMPosn@{to\_\-WUTMPosn}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[to\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPosn} drdc\_\-lPosn::to\_\-WUTMPosn ({\bf drdc\_\-UTMZone\_\-t} {\em zone})}}
+\label{classdrdc__lPosn_243a0513a9126c8e171953e663bdb213}
+
+
+Map Local Position to World UTM Position. 
+
+It is a simple mapping function. The mapping scheme is shown as follows:\begin{itemize}
+\item x - Easting\item y - Northing\item z - Elevation\end{itemize}
+
+
+Other mapping schemes can be achieved by using coordinate transformations. \hypertarget{classdrdc__lPosn_6abd4aad19a2f3323e36ce16800a5d3e}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!to\_\-WPosn@{to\_\-WPosn}}
+\index{to\_\-WPosn@{to\_\-WPosn}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPosn} drdc\_\-lPosn::to\_\-WPosn (double {\em falseElevation})}}
+\label{classdrdc__lPosn_6abd4aad19a2f3323e36ce16800a5d3e}
+
+
+Convert ECEF Position to World Position. 
+
+ECEF is a global position representation. Here we use Local Position, which is really a cartesian system, to represent ECEF system.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em falseElevation}]False elevation. \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__lPosn_91f12f937fa99f51bc221c237f47b63f}{
+\index{drdc\_\-lPosn@{drdc\_\-lPosn}!vector@{vector}}
+\index{vector@{vector}!drdc_lPosn@{drdc\_\-lPosn}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-lPosn::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__lPosn_91f12f937fa99f51bc221c237f47b63f}
+
+
+Protected data vector. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

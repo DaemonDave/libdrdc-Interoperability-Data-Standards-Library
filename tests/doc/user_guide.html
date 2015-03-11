@@ -1,0 +1,2081 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.2.5" />
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revision {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble,
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-right: 10%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock {
+  margin-right: 0%;
+}
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock > div.content {
+  padding-left: 2.0em;
+}
+
+div.attribution {
+  text-align: right;
+}
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.verseblock div.content {
+  white-space: pre;
+}
+
+div.imageblock div.content { padding-left: 0; }
+div.imageblock img { border: 1px solid silver; }
+span.image img { border-style: none; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: italic;
+}
+dd > *:first-child {
+  margin-top: 0;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+div.olist2 ol {
+  list-style-type: lower-alpha;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+
+div.hlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hlist td {
+  padding-bottom: 5px;
+}
+td.hlist1 {
+  vertical-align: top;
+  font-style: italic;
+  padding-right: 0.8em;
+}
+td.hlist2 {
+  vertical-align: top;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-content {
+  padding-left: 2.0em;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+window.onload = function(){generateToc(2)}
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, October 2006. License: GPL */
+
+function getText(el) {
+  var text = "";
+  for (var i = el.firstChild; i != null; i = i.nextSibling) {
+    if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+      text += i.data;
+    else if (i.firstChild != null)
+      text += getText(i);
+  }
+  return text;
+}
+
+function TocEntry(el, text, toclevel) {
+  this.element = el;
+  this.text = text;
+  this.toclevel = toclevel;
+}
+
+function tocEntries(el, toclevels) {
+  var result = new Array;
+  var re = new RegExp('[hH]([2-'+(toclevels+1)+'])');
+  // Function that scans the DOM tree for header elements (the DOM2
+  // nodeIterator API would be a better technique but not supported by all
+  // browsers).
+  var iterate = function (el) {
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+        var mo = re.exec(i.tagName)
+        if (mo)
+          result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+        iterate(i);
+      }
+    }
+  }
+  iterate(el);
+  return result;
+}
+
+// This function does the work. toclevels = 1..4.
+function generateToc(toclevels) {
+  var toc = document.getElementById("toc");
+  var entries = tocEntries(document.getElementsByTagName("body")[0], toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "toc" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+}
+/*]]>*/
+</script>
+<title>libdrdc User Guide</title>
+</head>
+<body>
+<div id="header">
+<h1>libdrdc User Guide</h1>
+<span id="author">Tie Peng</span><br />
+<span id="email"><tt>&lt;<a href="mailto:pengt@sil.sk.ca">pengt@sil.sk.ca</a>&gt;</tt></span><br />
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<h2 id="_introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="para"><p>The goal is to develop an independent standards library that can be
+used on several platforms/ OSs and in several forms to maintain a
+unified implementation and unified data standard. It will serve as a
+ubiquitous interface for communication amongst devices / manned
+vehicles.</p></div>
+<div class="para"><p>The LIBDFDC library encapsulates the functions/classes needed to
+implement basic interoperability amongst manned and unmanned systems
+by including conversions, coordinate frames of reference, and
+constants to avoid representation ambiguity.</p></div>
+</div>
+<h2 id="_architecture">2. Architecture</h2>
+<div class="sectionbody">
+<div class="para"><p>Figure shows the libdrc layered software architecture.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="figure2.png" alt="figure2.png" height="256"/>
+</div>
+<div class="image-title">Figure: Libdrdc Architecture</div>
+</div>
+<h3 id="_low_level_c_library">2.1. Low-Level C Library</h3><div style="clear:left"></div>
+<div class="para"><p>The low-level C library provides a collections of small, efficient
+routines written in C for position, orientation, global coordinate systems,
+time, data and units of measure operations. It is ideal for
+small embedded microcontroller applications.</p></div>
+<h3 id="_high_level_wrapper">2.2. High-Level Wrapper</h3><div style="clear:left"></div>
+<div class="para"><p>The libdrdc high level wrapper encapsulates low level routines and
+data structures within more concise, robust, portable, and
+maintainable higher level object-oriented class interfaces.</p></div>
+<div class="para"><p>The OOC (Object Oriented C) wrapper is designed for developing the
+complex embedded applications that don't want to use <span>C++</span>
+compiler. By adopting OOC methodology, libdrdc can use the <span>C++</span>
+features such as data encapsulation and abstraction, access
+restriction and information hiding without a <span>C++</span> compiler.</p></div>
+<div class="para"><p><span>C++</span> wrapper serves as a high-level <span>C++</span> interface to the low-level C
+functions. <span>C++</span> Wrapper provides a set of <span>C++</span> wrapper classes that use
+the C library to make it easier to integrate into high level
+applications.</p></div>
+<h3 id="_library_components">2.3. Library Components</h3><div style="clear:left"></div>
+<div class="para"><p>The libdrdc provides a rich assortment of standard, portable, open
+source libraries on Linix, MS Window and RTEMS platforms for UGV
+applications. The library can be broken down as follows:</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+f2c_blas, Fortran-to-C converted common BLAS matrix and vector routines.
+</p>
+</li>
+<li>
+<p>
+matrix_ops, Wrapper of common BLAS matrix and vector routines.
+</p>
+</li>
+<li>
+<p>
+coordinate, World coordinate frame transformations.
+</p>
+</li>
+<li>
+<p>
+homogeneous, Homogeneous matrix, Euler RPY and manipulator transformation routines.
+</p>
+</li>
+<li>
+<p>
+quaternion, Quaternion, Euler RPYtransformations routines.
+</p>
+</li>
+<li>
+<p>
+data_conv,  Data format conversions, JAUS scaled integer representations.
+</p>
+</li>
+<li>
+<p>
+unit_conv, Units of Measure Conversions.
+</p>
+</li>
+<li>
+<p>
+time_conv, Time conversions, JAUS timestamp representations.
+</p>
+</li>
+<li>
+<p>
+wrapper, C++ and OOC wrapper of coordinate and pose transformations.
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_representations">3. Representations</h2>
+<div class="sectionbody">
+<h3 id="_position_representations">3.1. Position Representations</h3><div style="clear:left"></div>
+<h4 id="_geodetic_geographic_coordinates">3.1.1. Geodetic( Geographic) Coordinates</h4>
+<div class="para"><p>Geodetic coordinates are angular coordinates (longitude and
+latitude), and are defined relative to a particular Earth geodetic
+datum. A geodetic datum is a means of representing the figure of the Earth,
+usually as an oblate ellipsoid of revolution, and is the reference for the
+system of geodetic coordinates.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="latlon2.gif" alt="latlon2.gif" height="384"/>
+</div>
+<div class="image-title">Figure: World Position</div>
+</div>
+<div class="para"><p>In the libdrdc library, the world coordinate frame of reference uses the
+Geodetic coordinates latitude, longitude, and elevation as the
+position 3-vector. Elevation is represented by adding a False
+Elevation to the radius origin from Mean Sea Level (MSL), also known
+as orthometric height. The world coordinate frame uses the World
+Geodetic System 1984 (WGS84) geodetic datum.</p></div>
+<h4 id="_universal_transverse_mercator_utm_projection">3.1.2. Universal Transverse Mercator (UTM) Projection</h4>
+<div class="para"><p>Projected coordinates are planar Cartesian coordinates that result
+from performing a mathematical mapping from a point on the Earth's
+surface to a plane.</p></div>
+<div class="para"><p>The UTM projection is a conformal projection. It creates minimal
+distortion of areas, local angles, and distance. The UTM projection
+divides the cylinder into 60 vertical zones. Each UTM zone is exactly
+6 degrees of longitude wide and is further divided into north and
+south parts. The UTM zones each have their own coordinate system which
+is completely different than the coordinate system of other
+zones. Because of this, it is difficult to use the UTM projection when
+traveling between UTM zones. This is rarely a problem with unmanned
+ground systems because the six degree UTM zones are much larger than
+what would be reasonably expected for a system of this type to
+traverse.</p></div>
+<h4 id="_cartesian_coordinates">3.1.3. Cartesian Coordinates</h4>
+<div class="para"><p>Cartesian coordinates are coordinates that measure the position of a
+point from a defined origin along axes that are perpendicular in the
+represented three-dimensional space.</p></div>
+<div class="para"><p>All the Cartesian coordinate systems in libdrdc are represented by a
+local position data type.</p></div>
+<h5 id="_ecef_coordinates">ECEF Coordinates</h5>
+<div class="para"><p>Earth centered, earth-fixed (ECEF) Cartesian coordinates define three
+dimensional positions with respect to the center of mass of the
+reference ellipsoid.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="ecefxyz.gif" alt="ecefxyz.gif" height="384"/>
+</div>
+<div class="image-title">Figure: ECEF Position</div>
+</div>
+<div class="para"><p>The ECEF coordinate is a world position representation although it is
+represented using a local position data type in libdrdc. It is used to
+perform Global Pose transformations over a large geographic distance.</p></div>
+<h5 id="_local_coordinates">Local Coordinates</h5>
+<div class="para"><p>Local coordinates are Cartesian coordinates in a non-Earth
+(non-georeferenced) coordinate system.</p></div>
+<div class="vlist"><dl>
+<dt>
+Vehicle Coordinate
+</dt>
+<dd>
+<p>
+This coordinate system is attached to the vehicle frame. The x-axis
+points in the forward direction and the z-axis points downward. The
+y-axis is defined so as to have right-handed coordinate system.
+</p>
+</dd>
+</dl></div>
+<div class="imageblock">
+<div class="content">
+<img src="local_frame.png" alt="local_frame.png"/>
+</div>
+<div class="image-title">Figure: Local Frame</div>
+</div>
+<div class="vlist"><dl>
+<dt>
+Manipulator Base Coordinate
+</dt>
+<dd>
+<p>
+This coordinate system is attached to the vehicle base just like the
+vehicle coordinate system. The origin is located at the intersection
+of the line along the first joint axis, and the line along the first
+link. The z-axis is along the first joint axis and the direction of
+the x-axis is user defined, but fixed with respect to the vehicle
+frame.
+</p>
+</dd>
+<dt>
+UTM
+</dt>
+<dd>
+<p>
+UTM (without zone representation) is the proposed JAUS World Model
+standard for defining Cartesian coordinates. For the dimensions of a
+small geographical area, we can neglect the effect of earth curvature
+and define a local Cartesian coordinate system with x- and y-axis
+horizontal, and the z-axis pointing to the sky. For example, x could
+be easting, y northing, and z the elevation of a position.
+</p>
+</dd>
+</dl></div>
+<h3 id="_orientation_representations">3.2. Orientation Representations</h3><div style="clear:left"></div>
+<div class="para"><p>Orientation is the angle vector which describes the difference in
+angles from the coordinate frame of reference and the current objects
+angles. The angle may be a vector of angles in the case of Euler
+Angles or a set of quaternions.</p></div>
+<h4 id="_euler_rpy">3.2.1. Euler RPY</h4>
+<div class="para"><p>Euler RPY describes orientation as three rotations about three
+mutually perpendicular axes. The JAUS -compliant Euler Angle-axis
+sequence Yaw-Pitch-Roll represents a rotation of a vehicle about the
+Z, Y, and X axes, respectively, to the desired orientation.</p></div>
+<h4 id="_quaternion">3.2.2. Quaternion</h4>
+<div class="para"><p>Quaternions are a mathematical construct that represents a rotation in
+three dimensions. A quaternion contains a scalar component and a 3D
+vector component. Orientation for global and local coordinates is
+represented by quaternions. Quaternions do not suffer from gimbal lock
+because quaternion rotation operators are singularity-free unlike
+Euler Angles. Also, quaternion multiplication is faster than rotation
+matrix computation.</p></div>
+<h3 id="_pose_representations">3.3. Pose Representations</h3><div style="clear:left"></div>
+<div class="para"><p>Pose is the position and orientation of an object with respect to a
+local or global coordinate reference frame.</p></div>
+<div class="vlist"><dl>
+<dt>
+World Pose
+</dt>
+<dd>
+<p>
+World Pose specifies a 7-vector representation of object position and
+orientation using geographical coordinate system and quaternion.
+</p>
+</dd>
+<dt>
+UTM Pose
+</dt>
+<dd>
+<p>
+UTM Pose specifies a 7-vector representation of object position and
+orientation using UTM coordinate system and quaternion.
+</p>
+</dd>
+<dt>
+Local Pose
+</dt>
+<dd>
+<p>
+Local Pose is a 7-vector representation of object position and
+orientation using Local Cartesian coordinate system and quaternion.
+</p>
+</dd>
+<dt>
+Local Euler Pose
+</dt>
+<dd>
+<p>
+JAUS-Compliant Local Euler Pose is a 6-vector representation of object
+position and orientation using Local Cartesian coordinate system and
+Euler RPY.
+</p>
+</dd>
+<dt>
+Homogeneous Transform
+</dt>
+<dd>
+<p>
+Homogeneous Transform is a 4x4 matrix representation of pose.
+</p>
+</dd>
+</dl></div>
+<h3 id="_manipulator_linkage_representations">3.4. Manipulator Linkage Representations</h3><div style="clear:left"></div>
+<div class="para"><p>The libdrdc adopted JAUS standard to represent manipulator linkage.</p></div>
+<h3 id="_time_representations">3.5. Time Representations</h3><div style="clear:left"></div>
+<div class="para"><p>The standard time scale representation adopted is UTC-Coordinated
+Universal Time. Conversion functions are provided to convert GPS time
+to/from UTC time.</p></div>
+<div class="para"><p>In order to be compatible with JAUS-compliant systems, JAUS defined UTC
+timestamp and datestamp are supported.</p></div>
+<h3 id="_data_representations">3.6. Data Representations</h3><div style="clear:left"></div>
+<div class="para"><p>The libdrdc Data types conform to the ISO/IEC Working Group (WG) 14 C data
+types (Standard C) Section 6.2.5.</p></div>
+<div class="para"><p>All floating point variables adheres to the ANSI/IEEE Standard 754-1986
+(Standard for Binary Floating Point Arithmetic).</p></div>
+<div class="para"><p>The libdrdc library supports JAUS's Scaled Integer data types. In the
+JAUS's specification, float or double numbers can be represented as
+integer values by specifying a scale factor and bias. These float
+point data numbers can be sent across low bandwidth communications
+media using integers.</p></div>
+<h3 id="_unit_conversions">3.7. Unit Conversions</h3><div style="clear:left"></div>
+<div class="para"><p>SI units are the standard units of measurement for data. The libdrdc
+provides functions to convert pre-defined units to SI
+units. Conversions between pre-defined units are also supported.</p></div>
+<div class="para"><p>Units conversions include:</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Volume
+</p>
+</li>
+<li>
+<p>
+Distance
+</p>
+</li>
+<li>
+<p>
+Area
+</p>
+</li>
+<li>
+<p>
+Mass
+</p>
+</li>
+<li>
+<p>
+Velocity
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_software_design">4. Software Design</h2>
+<div class="sectionbody">
+<h3 id="_supported_platforms">4.1. Supported Platforms</h3><div style="clear:left"></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Windows XP MSVC
+</p>
+</li>
+<li>
+<p>
+LINUX GNU GCC
+</p>
+</li>
+<li>
+<p>
+RTEMS GCC Cross-Compile Environments (PowerPC, i386, 68H, ARM, MIPS)
+</p>
+</li>
+</ul></div>
+<h3 id="_vector_and_matrix_operations">4.2. Vector and Matrix Operations</h3><div style="clear:left"></div>
+<div class="para"><p>The BLAS (Basic Linear Algebra Subprograms) library has become a de
+facto standard for the elementary vector and matrix operations. The
+libdrdc provides the standard Fortran77 BLAS interface to easily
+integrate BLAS library.</p></div>
+<div class="para"><p>The processor vendor supplied machine-optimized BLAS codes are
+typically faster than the compiled reference Fortran code by a factor
+of 2 up to 10 (e.g. for matrix multiplication). Therefore the
+machine-optimized library should be used whenever it is available. If
+no such vendor supplied library is available, the supplied F2C
+(Fortran-to-C converted routines from CLAPACK) reference code can be
+compiled and used instead.</p></div>
+<h3 id="_exception_handling">4.3. Exception Handling</h3><div style="clear:left"></div>
+<div class="para"><p>The DRDC library implemented a thread safe try/catch/throw
+exception-handling interface in C.</p></div>
+<h3 id="_testing">4.4. Testing</h3><div style="clear:left"></div>
+<div class="para"><p>The following software packages were used to test the libdrdc.</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Geodetic Toolbox. Mike Craymer, Natural Resources Canada.
+</p>
+</li>
+<li>
+<p>
+Robotics Toolbox. Peter I. Corke, CSIRO Division of Manufacturing Technology.
+</p>
+</li>
+<li>
+<p>
+GNU units utility.
+</p>
+</li>
+</ul></div>
+</div>
+<h2 id="_data_types_and_routines">5. Data Types and Routines</h2>
+<div class="sectionbody">
+<h3 id="_low_level_library">5.1. Low-level Library</h3><div style="clear:left"></div>
+<div class="tableblock">
+<table rules="all"
+frame="border"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table: Low-level routines</caption>
+<col width="200" />
+<col width="600" />
+<thead>
+  <tr>
+    <th align="left">
+    Routines
+    </th>
+    <th align="left">
+    Description
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    vectorCompare 
+    </td>
+    <td align="left">
+    Vector Comparison.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorDot 
+    </td>
+    <td align="left">
+    Vector Dot Product.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorMagnitude 
+    </td>
+    <td align="left">
+    Vector Magnitude.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorNormalize 
+    </td>
+    <td align="left">
+    Unitize Vector.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorCross 
+    </td>
+    <td align="left">
+    Vector Cross Product.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorScale 
+    </td>
+    <td align="left">
+    Vector Scaling.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorCopy 
+    </td>
+    <td align="left">
+    Copy Vector.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorAxpy 
+    </td>
+    <td align="left">
+    Scalar-Vector Product.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorZeros 
+    </td>
+    <td align="left">
+    Zero Vector.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorSplit 
+    </td>
+    <td align="left">
+    Split Vector.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    vectorJoin 
+    </td>
+    <td align="left">
+    Join Vector.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    matrixMvp 
+    </td>
+    <td align="left">
+    4x4 Matrix-Vector Product
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    matrixMmp 
+    </td>
+    <td align="left">
+    4x4 Matrix-Matrix Product
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    matrixDeterminant 
+    </td>
+    <td align="left">
+    4x4 Matrix Determint
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    matrixTranspose 
+    </td>
+    <td align="left">
+    4x4 Matrix Transpose
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    matrixIdentity 
+    </td>
+    <td align="left">
+    4x4 Identity Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    
+    </td>
+    <td align="left">
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    LatLon_to_UTM 
+    </td>
+    <td align="left">
+    Lat/Lon to UTM Northing/Easting Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    UTM_to_LatLon 
+    </td>
+    <td align="left">
+    UTM to Lat/Lon Conversion
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    WUTMPosn_to_WPosn 
+    </td>
+    <td align="left">
+    UTM Position to World Position
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    WPosn_to_WUTMPosn 
+    </td>
+    <td align="left">
+    World Position to UTM Position.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    cartesian_to_spherical 
+    </td>
+    <td align="left">
+    Cartesian to Spherical Conversion
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    spherical_to_cartesian 
+    </td>
+    <td align="left">
+    Spherical to Cartesian Conversion
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    WPosn_to_lPosn 
+    </td>
+    <td align="left">
+    World Position to Cartesian Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    lPosn_to_WPosn 
+    </td>
+    <td align="left">
+    Cartesian to World Position Conversion
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    DMS_to_DecimalDegree 
+    </td>
+    <td align="left">
+    Degree-Minute-Second to Decimal Degree Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    
+    </td>
+    <td align="left">
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixSetTranslation 
+    </td>
+    <td align="left">
+    Set the Translational Component of a Homogeneous Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixGetTranslation 
+    </td>
+    <td align="left">
+    Get the Translational Component of a Homogeneous Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    RotVectorToHMatrix 
+    </td>
+    <td align="left">
+    Rotation Vector to Homogeneous Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixToRotVector 
+    </td>
+    <td align="left">
+    Homogeneous Matrix to Rotation Vector.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    EulerRPYToHMatrix 
+    </td>
+    <td align="left">
+    Euler Angle RPY to Homogeneous Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixToEulerRPY 
+    </td>
+    <td align="left">
+    Homogeneous Matrix to Euler Angle RPY.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixNormalize 
+    </td>
+    <td align="left">
+    Normalize a Homogeneous Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    RotAxisToHMatrix 
+    </td>
+    <td align="left">
+    Rotation about an Axis to Homogeneous Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixInverse 
+    </td>
+    <td align="left">
+    Inverse a Homogeneous Matrix.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixLink 
+    </td>
+    <td align="left">
+    Homogeneous Matrix from Manipulator Linkage Specification.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    
+    </td>
+    <td align="left">
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    EulerRPYToQuat 
+    </td>
+    <td align="left">
+    RPY to Quaternion
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatToEulerRPY 
+    </td>
+    <td align="left">
+    Quaternion to RPY
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatQuatMult 
+    </td>
+    <td align="left">
+    Quaternion Multiplication
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatQuatDiv 
+    </td>
+    <td align="left">
+    Quaternion Division
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatInverse 
+    </td>
+    <td align="left">
+    Quaternion Inversion
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatConjugate 
+    </td>
+    <td align="left">
+    Conjugate Quaternion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatMagnitude 
+    </td>
+    <td align="left">
+    Quaterion Magnitude.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatVectorMult 
+    </td>
+    <td align="left">
+    Quaternion and Vector Product
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    HMatrixToQuat 
+    </td>
+    <td align="left">
+    Quaternion to Homogeneous Transformation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatToHMatrix 
+    </td>
+    <td align="left">
+    Homogeneous Transformation to Quaternion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatNormalize 
+    </td>
+    <td align="left">
+    Unitize a Quaternion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    RotAxisToQuat 
+    </td>
+    <td align="left">
+    Rotation about an Axis to Quaternion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    QuatToRotVector 
+    </td>
+    <td align="left">
+    Quaternion to Rotation Vector
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    RotVectorToQuat 
+    </td>
+    <td align="left">
+    Rotation Vector to Quaternion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    
+    </td>
+    <td align="left">
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    timeUtcToGps 
+    </td>
+    <td align="left">
+    UTC time to GPS time.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    timeGpsToUtc 
+    </td>
+    <td align="left">
+    GPS time to UTC time.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausTimeConvert 
+    </td>
+    <td align="left">
+    Convert Time to Jaus Timestamp and Datestamp.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausTimeStampPack 
+    </td>
+    <td align="left">
+    Pack Jaus Timestamp.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausDateStampPack 
+    </td>
+    <td align="left">
+    Pack Jaus Datestamp.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausTimeToString 
+    </td>
+    <td align="left">
+    Convert Jaus Time Structure to String.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausTimeStampUnpack 
+    </td>
+    <td align="left">
+    Unpack Jaus Timestamp.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausDateStampUnpack 
+    </td>
+    <td align="left">
+    Unpack Jaus Datestamp.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    
+    </td>
+    <td align="left">
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitToSiVolume 
+    </td>
+    <td align="left">
+    Converts the volume units to the SI unit - m^3.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitToSiDistance 
+    </td>
+    <td align="left">
+    Converts the distance units to the SI unit - m.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitToSiMass 
+    </td>
+    <td align="left">
+    Converts the mass units to the SI unit - kg .
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitToSiVelocity 
+    </td>
+    <td align="left">
+    Converts the velocity units to the SI unit - m/s.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitToSiArea 
+    </td>
+    <td align="left">
+    Converts the area units to the SI unit - m^2.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitConvertVolume 
+    </td>
+    <td align="left">
+    Converts between volume units.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitConvertDistance 
+    </td>
+    <td align="left">
+    Converts between distance units.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitConvertMass 
+    </td>
+    <td align="left">
+    Converts between mass units.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitConvertVelocity 
+    </td>
+    <td align="left">
+    Converts between velocity units.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    unitConvertArea 
+    </td>
+    <td align="left">
+    Converts between area units.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    
+    </td>
+    <td align="left">
+    
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ieeeFpd32FromFloat 
+    </td>
+    <td align="left">
+    Converts single to float point data represented by 32-bit unsigned integer format.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ieeeFpd64FromDouble 
+    </td>
+    <td align="left">
+    Converts double to float point data represented by 64-bit unsigned integer format.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ieeeFpd32ToFloat 
+    </td>
+    <td align="left">
+    Converts float point data represented by 32-bit unsigned integer format to single.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ieeeFpd64ToDouble 
+    </td>
+    <td align="left">
+    Converts float point data represented by 64-bit unsigned integer format to double.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausByteFromDouble 
+    </td>
+    <td align="left">
+    Double to Jaus Byte Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausByteToDouble 
+    </td>
+    <td align="left">
+    Jaus Byte to Double Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausIntegerToDouble 
+    </td>
+    <td align="left">
+    Jaus Integer to Double Type Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausIntegerFromDouble 
+    </td>
+    <td align="left">
+    Double to Jaus Integer Type Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausLongToDouble 
+    </td>
+    <td align="left">
+    Jaus Long Type to Double Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausLongFromDouble 
+    </td>
+    <td align="left">
+    Double to Jaus Long Type Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausShortToDouble 
+    </td>
+    <td align="left">
+    Jaus Short Type to Double Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausShortFromDouble 
+    </td>
+    <td align="left">
+    Double to Jaus Short Type Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausUnsignedIntegerToDouble 
+    </td>
+    <td align="left">
+    Jaus Unsigned Integer Type to Double Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausUnsignedIntegerFromDouble 
+    </td>
+    <td align="left">
+    Double to Jaus Unsigned Integer Type Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausUnsignedLongToDouble 
+    </td>
+    <td align="left">
+    Jaus Unsigned Long Type to Double Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausUnsignedLongFromDouble 
+    </td>
+    <td align="left">
+    Double to Jaus Unsigned Long Type Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausUnsignedShortToDouble 
+    </td>
+    <td align="left">
+    Jaus Unsigned Short Type to Double Conversion.
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jausUnsignedShortFromDouble 
+    </td>
+    <td align="left">
+    Double to Jaus Unsigned Short Type Conversion.
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<h3 id="_ooc_library">5.2. OOC Library</h3><div style="clear:left"></div>
+<div class="tableblock">
+<table rules="all"
+frame="border"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table: OOC Structs</caption>
+<col width="400" />
+<col width="400" />
+<thead>
+  <tr>
+    <th align="left">
+    Structs
+    </th>
+    <th align="left">
+    Description
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    drdc_Datum_t
+    </td>
+    <td align="left">
+    Global Datum
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_UTMZone_t
+    </td>
+    <td align="left">
+    UTM Zone Structure
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_Vector_t
+    </td>
+    <td align="left">
+    Generic Vector Type
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_LinkSpecs_t
+    </td>
+    <td align="left">
+    Manipulator Linkage Specification
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    JausTime_t
+    </td>
+    <td align="left">
+    JAUS Time Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_WPosn_t
+    </td>
+    <td align="left">
+    World Position Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_lPosn_t
+    </td>
+    <td align="left">
+    Local Position Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_WUTMPosn_t
+    </td>
+    <td align="left">
+    World UTM Position Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_Orient_t
+    </td>
+    <td align="left">
+    Quaternion Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_eOrient_t
+    </td>
+    <td align="left">
+    Euler RPY Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_HMatrix_t
+    </td>
+    <td align="left">
+    Homogeneous Matrix Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_lePose_t
+    </td>
+    <td align="left">
+    Local Euler RPY Pose Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_WPose_t
+    </td>
+    <td align="left">
+    World Pose Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_WUTMPose_t
+    </td>
+    <td align="left">
+    World UTM Pose Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_lPose_t
+    </td>
+    <td align="left">
+    Local Pose Representation
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<h3 id="_c_library">5.3. C++ Library</h3><div style="clear:left"></div>
+<div class="tableblock">
+<table rules="all"
+frame="border"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table: C++ Classes</caption>
+<col width="400" />
+<col width="400" />
+<thead>
+  <tr>
+    <th align="left">
+    Classes
+    </th>
+    <th align="left">
+    Description
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    drdc_WPosn
+    </td>
+    <td align="left">
+    World Position Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_lPosn
+    </td>
+    <td align="left">
+    Local Position Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_WUTMPosn
+    </td>
+    <td align="left">
+    World UTM Position Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_Orient
+    </td>
+    <td align="left">
+    Quaternion Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_eOrient
+    </td>
+    <td align="left">
+    Euler RPY Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_HMatrix
+    </td>
+    <td align="left">
+    Homogeneous Matrix Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_lePose
+    </td>
+    <td align="left">
+    Local Euler RPY Pose Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_WPose
+    </td>
+    <td align="left">
+    World Pose Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_WUTMPose
+    </td>
+    <td align="left">
+    World UTM Pose Representation
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    drdc_lPose
+    </td>
+    <td align="left">
+    Local Pose Representation
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id="_use_libdrdc">6. Use libdrdc</h2>
+<div class="sectionbody">
+<h3 id="_compile_and_run_under_posix_system">6.1. Compile and Run under POSIX System</h3><div style="clear:left"></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Set up environment variables
+</p>
+</li>
+</ul></div>
+<div class="para"><p>Linux:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>export BUILD_TYPE=gnu
+export DRDC_PREFIX=specify a library installation directory</tt></pre>
+</div></div>
+<div class="para"><p>RTEMS:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>export BUILD_TYPE=rtems
+export DRDC_PREFIX=specify a library installation directory
+export RTEMS_MAKEFILE_PATH=/usr/local/rtems/rtems4.7.1/i386-rtems4.7.1/pc686</tt></pre>
+</div></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Configure the compile script
+</p>
+</li>
+</ul></div>
+<div class="para"><p>Linux:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt># Use Linux BLAS library
+./configure --enable-tests
+# Use F2C BLAS in libdrdc
+./configure --enable-tests --enable-f2cblas</tt></pre>
+</div></div>
+<div class="para"><p>RTEMS:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>./configure --enable-f2cblas --target=i386-rtems4.7.1</tt></pre>
+</div></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">You will get errors when use &#8212;enable-tests option. This is because
+building executable in RTEMS is different from building executable in
+Linux. Please see RTEMS manuals.</td>
+</tr></table>
+</div>
+<div class="ilist"><ul>
+<li>
+<p>
+Compile
+</p>
+</li>
+</ul></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>make</tt></pre>
+</div></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Install
+</p>
+</li>
+</ul></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>make install</tt></pre>
+</div></div>
+<div class="ilist"><ul>
+<li>
+<p>
+Run examples
+</p>
+</li>
+</ul></div>
+<div class="para"><p>Linux:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>./tests/wrapper/wrapper_tests</tt></pre>
+</div></div>
+<h3 id="_compile_using_msvc_under_windows">6.2. Compile using MSVC under Windows</h3><div style="clear:left"></div>
+<div class="para"><p>Open the file with extension of ".vcproj" under each component
+directory in MSVC GUI to compile the component source.</p></div>
+<div class="para"><p>For example:</p></div>
+<div class="para"><p>Open ./src/coordinate/coordinate.vcproj and build the solution.</p></div>
+<h3 id="_exceptions">6.3. Exceptions</h3><div style="clear:left"></div>
+<div class="para"><p>To use the libdrdc try-catch exception mechanism, please use the following programming template.</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>#include &lt;stdio.h&gt;
+#include &lt;assert.h&gt;
+#include "wrapper.h"
+#include "libdrdc.h"
+...
+
+struct exception_context the_exception_context[1];
+
+int main(void) {
+  int exception;
+
+  Try {
+     ...;
+
+  } Catch(exception) {
+    fprintf(stderr, "***Exception = %d\n", exception);
+  }
+}</tt></pre>
+</div></div>
+<div class="para"><p>The libdrdc defines following exceptions:</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><tt>#define UNRECOGNIZED_UNIT       (11)
+#define UNRECOGNIZED_ENUM_ITEM  (12)
+#define DIVIDED_BY_ZERO         (13)
+#define BLAS_TRANSPOSE_OPTION_ERROR (14)
+#define CALLOC_NULL_ERROR           (15)
+#define UNRECOGNIZED_INDEX       (16)
+#define UNINITILIZED_UTM_ZONE    (17)</tt></pre>
+</div></div>
+</div>
+<h2 id="_examples">7. Examples</h2>
+<div class="sectionbody">
+<h3 id="_coordinate_frame_representations_and_transformations">7.1. Coordinate Frame Representations and Transformations</h3><div style="clear:left"></div>
+<div class="para"><p>A vehicle is equipped with a global pose sensor. A pan-tilt camera
+mounted on the vehicle can detect a target and estimate the position
+of the target. The leader vehicle communicates the target position to
+the follower vehicle in the World Coordinate Frame.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="figure3.png" alt="figure3.png"/>
+</div>
+<div class="image-title">Figure: Pose Transformation Example</div>
+</div>
+<div class="listingblock">
+<div class="title">Example: Pose Transformations</div>
+<div class="content">
+<pre><tt><strong>double</strong> longtitude, latitude, elevation;
+<strong>double</strong> roll, pitch, yaw;
+
+<i>/* Leader vehicle position in world frame (Spherical Lon Lat elevation) */</i>
+drdc_WPosn vehicleWorldPosition;
+
+<i>/* Vehicle orientation in Euler Angle roll-pitch-yaw Quaternion */</i>
+drdc_eOrient vehicleOrientationRPY;
+
+drdc_Orient vehicleOrientationQuat; /* Vehicle orientation in quaternions */
+
+<i>/* Vehicle World Pose representation (Spherical Lon Lat elevation) and quaternions */</i>
+drdc_WPose vehicleWorldPose;
+
+<i>/* Vehicle UTM pose representation in world frame UTM and quaternions */</i>
+drdc_WUTMPose vehicleUTMPose;
+
+drdc_UTMZone UTMZone; /* UTM zone */
+drdc_lPose mountLocalPose; /* Mount pose w.r.t vehicle frame */
+drdc_lPose panTiltLocalPose; /* PanTilt camera pose w.r.t mount */
+drdc_UTMPose panTiltUTMPose; /* PanTilt camera pose w.r.t UTM */
+drdc_lPosn targetEstimatedPosition; /* Estimated target position w.r.t camera */
+drdc_UTMPosn targetUTMPosition; /* UTM representaion of the target position */
+drdc_WPosn targetWorldPosition; /* Target position in world frame */
+
+<i>/* Get longtitude, latitude, elevation, roll, pitch, yaw from a global pose sensor*/</i>
+<i>/* Represent the vehicle position in world coordinate frame */</i>
+vehicleWorldPosition.set(longtitude, latitude, elevation);
+
+<i>/* Represent the vehicle platform orientation using Euler RPY */</i>
+vehicleOrientationRPY.set(roll, pitch, yaw);
+
+<i>/* Convert RPY representation to Quaternion representation */</i>
+vehicleOrientationQuat = vehicleOrientationRPY.to_Orient();
+
+<i>/* Represent the vehicle Global Pose */</i>
+vehicleWorldPose.set(vehicleWorldPosition, vehicleOrientationQuat);
+
+<i>/* Convert the vehicle Global Pose to UTM Pose */</i>
+vehicleUTMPose = vehicleWorldPose.to_WUTMPose();
+
+UTMZone = vehicleUTMPose.getZone();
+
+<i>/* Get and set vehicleUTMPose, mountLocalPose, panTiltLocalPose... */</i>
+<i>/* Coordinate transforms to convert pantilt camera pose */</i>
+panTiltUTMPose = vehicleUTMPose * mountLocalPose.to_WUTMPose(UTMZone) *
+               panTiltLocalPose.to_WUTMPose(UTMZone);
+
+<i>/* Calculate the target local position in a UTM zone */</i>
+targetUTMPosition= panTiltUTMPose * targetEstimatedPosition.to_WTMPosn(UTMZone);
+
+<i>/* Convert the target position in world frame */</i>
+targetWorldPosition = targetUTMPosition.to_WPosn();
+
+<i>/* Communicate the World Position to the follower... */</i>
+</tt></pre>
+</div></div>
+<h3 id="_manipulator_linkage_representations_2">7.2. Manipulator Linkage Representations</h3><div style="clear:left"></div>
+<div class="para"><p>Use a industrial Puma560 manipulator to demonstrate manipulator representations.</p></div>
+<div class="listingblock">
+<div class="title">Example: Puma560 representation</div>
+<div class="content">
+<pre><tt>    drdc_HMatrix puma560[6], manipulatorTransform;
+    drdc_lPose manipulatorPose;
+    drdc_LinkSpecs_t linkSpecs[] = {
+      {JOINT_REVOLUTE, 0, PI/2, 0},
+      {JOINT_REVOLUTE, 0.4318, 0, 0},
+      {JOINT_REVOLUTE, 0.0203, -PI/2, 0.1505},
+      {JOINT_REVOLUTE, 0, PI/2, 0.4318},
+      {JOINT_REVOLUTE, 0, -PI/2, 0},
+      {JOINT_REVOLUTE, 0, 0, 0},
+    };
+
+    <strong>double</strong> jointOffsetOrAngle[] = {PI/8, 0, PI/4, 0, 0, 0};
+
+    <strong>for</strong>(i=0; i &lt; 6; i++) {
+      puma560[i].fromLink(linkSpecs[i], jointOffsetOrAngle[i]);
+    }
+
+    manipulatorTransform = puma560[0] * puma560[1] * puma560[2] * puma560[3] * puma560[4] * puma560[5];
+
+    <i>//Use Local Pose to represent manipulatr end effort pose</i>
+    manipulatorPose = manipulatorTransform.to_lPose();
+
+    <i>//Linked list can be used too.</i></tt></pre>
+</div></div>
+<h3 id="_unit_conversions_2">7.3. Unit Conversions</h3><div style="clear:left"></div>
+<div class="para"><p>Convert a World Position (longtitude=W106.6278, latitude=N52.1208,
+elevation=473 m) to UTM represenation and then convert the unit from
+meter to kilometer. The final result is represented using C/C++ array
+data type.</p></div>
+<div class="listingblock">
+<div class="title">Example: Unit Conversions in C++</div>
+<div class="content">
+<pre><tt>    drdc_WPosn    GPSPosn;
+    drdc_WUTMPosn UTMPosn;
+    drdc_lPosn    localPosn;
+    <strong>double</strong>        localPosn_a[3];
+
+    GPSPosn.set(-106.6278*deg2rad, 52.1208*deg2rad, 473);
+    UTMPosn = GPSPosn.to_WUTMPosn();
+    localPosn = UTMPosn.to_lPosn();
+
+    localPosn = localPosn * unitConvertDistance("m", "km");
+    localPosn.toArray(localPosn_a);</tt></pre>
+</div></div>
+<div class="listingblock">
+<div class="title">Example: Unit Conversions in OOC</div>
+<div class="content">
+<pre><tt>    drdc_WPosn_t    *GPSPosn = new_WPosn();
+    drdc_WUTMPosn_t *UTMPosn = new_WUTMPosn();
+    drdc_lPosn_t    *localPosn = new_lPosn();
+    double_t        localPosn_a[3];
+
+
+    GPSPosn-&gt;set(GPSPosn, -106.6278*deg2rad, 52.1208*deg2rad, 473);
+    GPSPosn-&gt;to_WUTMPosn(GPSPosn, UTMPosn);
+    UTMPosn-&gt;to_lPosn(UTMPosn, localPosn);
+
+    localPosn-&gt; scale(localPosn, unitConvertDistance("m", "km"), localPosn);
+    localPosn-&gt;toArray(localPosn, localPosn_a);
+
+    GPSPosn-&gt;destroy(GPSPosn);
+    UTMPosn-&gt;destroy(UTMPosn);
+    localPosn-&gt;destroy(localPosn);</tt></pre>
+</div></div>
+<h3 id="_time_represenatations">7.4. Time Represenatations</h3><div style="clear:left"></div>
+<div class="para"><p>Get current UTC time from local machine, convert it to GPS time, and
+then generate JAUS-compliant timestamp and datastamp.</p></div>
+<div class="listingblock">
+<div class="title">Example: Time Represenatations</div>
+<div class="content">
+<pre><tt><strong>struct</strong> timeval utcTime, gpsTime;
+JausTime_t jausGpsTime;
+<strong>char</strong> jausGpsTimeString[80];
+uint32_t timeStamp;
+uint16_t dateStamp;
+
+gettimeofday(&amp;utcTime, NULL);
+gpsTime=timeUtcToGps(14, &amp;utcTime);
+jausTimeConvert(&amp;gpsTime, &amp;jausGpsTime);
+jausTimeToString(&amp;jausGpsTime, jausGpsTimeString);
+printf("%s", jausGpsTimeString);
+timeStamp = jausGpsTime.timeStamp;
+dateStamp = jausGpsTime.dateStamp</tt></pre>
+</div></div>
+<h3 id="_data_representations_2">7.5. Data Representations</h3><div style="clear:left"></div>
+<div class="para"><p>Convert a double longtitude value to IEEE754 double precision format
+reprenseation to facilitate message passing among nodes. As an
+alternative, convert double longtitude value to JAUS integer (16-bit
+signed integer) fromat using scaled integer.</p></div>
+<div class="listingblock">
+<div class="title">Example: Data Represenatations</div>
+<div class="content">
+<pre><tt><strong>double</strong> longtitudeDeg;
+<strong>double</strong> longtitudeRad
+ieeeFpd64 fpd;
+<strong>unsigned</strong> <strong>char</strong> *buf=(<strong>unsigned</strong> <strong>char</strong>*) &amp;fpd;
+<strong>int</strong> i;
+sint32_t longtitudeJausInteger;
+
+longtitudeDeg = -106.6278;
+longtitudeRad = -106.6278*deg2rad;
+
+fpd=ieeeFpd64FromDouble(longtitudeRad);
+
+<strong>for</strong>(i=0; i &lt; 8; i++)
+    printf("%02X", buf[i]);
+
+<i>//If endian conversion is required, use as follows</i>
+<strong>for</strong>(i=0; i &lt; 8; i++)
+    printf("%02X", buf[8-i-1]);
+
+longtitudeJausInteger = jausIntegerFromDouble(longtitudeDeg, -180., 180.)</tt></pre>
+</div></div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2008-04-07 12:24:49 CST
+</div>
+</div>
+</body>
+</html>

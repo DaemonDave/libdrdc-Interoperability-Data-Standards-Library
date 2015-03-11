@@ -1,0 +1,221 @@
+\hypertarget{classdrdc__eOrient}{
+\section{drdc\_\-eOrient Class Reference}
+\label{classdrdc__eOrient}\index{drdc\_\-eOrient@{drdc\_\-eOrient}}
+}
+C++ Euler RPY Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__eOrient_c14573d35fe035bb2416bff9d1ed9415}{drdc\_\-eOrient} ()
+\item 
+void \hyperlink{classdrdc__eOrient_61d95b384837cbdbbbef12cea797836c}{set} (double roll, double pitch, double yaw)
+\begin{CompactList}\small\item\em Set the object by specifying roll, pitch and yaw values. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__eOrient_e7d394328dd13bee772409963493428c}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__eOrient_71f23a163c4c273417c68d4ffe8cb46f}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__eOrient_566075263f078ae4f17560cb7a74fb6a}{compare} (\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} eulerRPY, \hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__eOrient_2b54493f2d83f6fa9cd4acdfd2713943}{getRoll} ()
+\begin{CompactList}\small\item\em Return roll value. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__eOrient_20d6a9876fd56273f7b0a7af25e479a9}{getPitch} ()
+\begin{CompactList}\small\item\em Return pitch value. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__eOrient_53631fe116e11fe4e67b673cc43fd467}{getYaw} ()
+\begin{CompactList}\small\item\em Return yaw value. \item\end{CompactList}\item 
+\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} \& \hyperlink{classdrdc__eOrient_47eeb2637992d6acb9abc5e485cc18db}{operator=} (\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} eulerRPY)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__eOrient_1b30d41e012a175029a27eabc8cf5894}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} \hyperlink{classdrdc__eOrient_552ee8760c19f896e18ae524d2ee02da}{operator+} (\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} eulerRPY)
+\begin{CompactList}\small\item\em Plus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} \hyperlink{classdrdc__eOrient_cf3c5f5527caf79346e61bdc8626ee04}{operator-} ()
+\begin{CompactList}\small\item\em Negate operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} \hyperlink{classdrdc__eOrient_ea687019fd89fc60dd6987df7eb79ba5}{operator-} (\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} eulerRPY)
+\begin{CompactList}\small\item\em Minus operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} \hyperlink{classdrdc__eOrient_5a545bb7cc5415d5f6ada753353a4649}{operator$\ast$} (double a)
+\begin{CompactList}\small\item\em Scale operator. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__eOrient_9e84a33ac930ed1b3b9d8a124025ffdd}{to\_\-HMatrix} ()
+\begin{CompactList}\small\item\em Convert Euler RPY to Homogeneous Matrix. \item\end{CompactList}\item 
+\hyperlink{classdrdc__Orient}{drdc\_\-Orient} \hyperlink{classdrdc__eOrient_e7ece991434258af7eed20910a725759}{to\_\-Orient} ()
+\begin{CompactList}\small\item\em Convert Euler RPY to Quaternion. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__eOrient_3c20a6d621dbcb6b4a52a25843f081e6}{vector}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ Euler RPY Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__eOrient_c14573d35fe035bb2416bff9d1ed9415}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!drdc\_\-eOrient@{drdc\_\-eOrient}}
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[drdc\_\-eOrient]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-eOrient::drdc\_\-eOrient ()}}
+\label{classdrdc__eOrient_c14573d35fe035bb2416bff9d1ed9415}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__eOrient_61d95b384837cbdbbbef12cea797836c}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!set@{set}}
+\index{set@{set}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-eOrient::set (double {\em roll}, \/  double {\em pitch}, \/  double {\em yaw})}}
+\label{classdrdc__eOrient_61d95b384837cbdbbbef12cea797836c}
+
+
+Set the object by specifying roll, pitch and yaw values. 
+
+\hypertarget{classdrdc__eOrient_e7d394328dd13bee772409963493428c}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!set@{set}}
+\index{set@{set}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-eOrient::set (const double $\ast$ {\em array})}}
+\label{classdrdc__eOrient_e7d394328dd13bee772409963493428c}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__eOrient_71f23a163c4c273417c68d4ffe8cb46f}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-eOrient::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__eOrient_71f23a163c4c273417c68d4ffe8cb46f}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__eOrient_566075263f078ae4f17560cb7a74fb6a}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!compare@{compare}}
+\index{compare@{compare}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-eOrient::compare ({\bf drdc\_\-eOrient} {\em eulerRPY}, \/  {\bf drdc\_\-eOrient} {\em fuzz})}}
+\label{classdrdc__eOrient_566075263f078ae4f17560cb7a74fb6a}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__eOrient_2b54493f2d83f6fa9cd4acdfd2713943}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!getRoll@{getRoll}}
+\index{getRoll@{getRoll}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[getRoll]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-eOrient::getRoll ()}}
+\label{classdrdc__eOrient_2b54493f2d83f6fa9cd4acdfd2713943}
+
+
+Return roll value. 
+
+\hypertarget{classdrdc__eOrient_20d6a9876fd56273f7b0a7af25e479a9}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!getPitch@{getPitch}}
+\index{getPitch@{getPitch}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[getPitch]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-eOrient::getPitch ()}}
+\label{classdrdc__eOrient_20d6a9876fd56273f7b0a7af25e479a9}
+
+
+Return pitch value. 
+
+\hypertarget{classdrdc__eOrient_53631fe116e11fe4e67b673cc43fd467}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!getYaw@{getYaw}}
+\index{getYaw@{getYaw}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[getYaw]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-eOrient::getYaw ()}}
+\label{classdrdc__eOrient_53631fe116e11fe4e67b673cc43fd467}
+
+
+Return yaw value. 
+
+\hypertarget{classdrdc__eOrient_47eeb2637992d6acb9abc5e485cc18db}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient}\& drdc\_\-eOrient::operator= ({\bf drdc\_\-eOrient} {\em eulerRPY})}}
+\label{classdrdc__eOrient_47eeb2637992d6acb9abc5e485cc18db}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__eOrient_1b30d41e012a175029a27eabc8cf5894}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-eOrient::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__eOrient_1b30d41e012a175029a27eabc8cf5894}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__eOrient_552ee8760c19f896e18ae524d2ee02da}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!operator+@{operator+}}
+\index{operator+@{operator+}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[operator+]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient} drdc\_\-eOrient::operator+ ({\bf drdc\_\-eOrient} {\em eulerRPY})}}
+\label{classdrdc__eOrient_552ee8760c19f896e18ae524d2ee02da}
+
+
+Plus operator. 
+
+\hypertarget{classdrdc__eOrient_cf3c5f5527caf79346e61bdc8626ee04}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient} drdc\_\-eOrient::operator- ()}}
+\label{classdrdc__eOrient_cf3c5f5527caf79346e61bdc8626ee04}
+
+
+Negate operator. 
+
+\hypertarget{classdrdc__eOrient_ea687019fd89fc60dd6987df7eb79ba5}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!operator-@{operator-}}
+\index{operator-@{operator-}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[operator-]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient} drdc\_\-eOrient::operator- ({\bf drdc\_\-eOrient} {\em eulerRPY})}}
+\label{classdrdc__eOrient_ea687019fd89fc60dd6987df7eb79ba5}
+
+
+Minus operator. 
+
+\hypertarget{classdrdc__eOrient_5a545bb7cc5415d5f6ada753353a4649}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[operator$\ast$]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient} drdc\_\-eOrient::operator$\ast$ (double {\em a})}}
+\label{classdrdc__eOrient_5a545bb7cc5415d5f6ada753353a4649}
+
+
+Scale operator. 
+
+\hypertarget{classdrdc__eOrient_9e84a33ac930ed1b3b9d8a124025ffdd}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!to\_\-HMatrix@{to\_\-HMatrix}}
+\index{to\_\-HMatrix@{to\_\-HMatrix}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-eOrient::to\_\-HMatrix ()}}
+\label{classdrdc__eOrient_9e84a33ac930ed1b3b9d8a124025ffdd}
+
+
+Convert Euler RPY to Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Returns:]Homogeneous Matrix \end{Desc}
+\hypertarget{classdrdc__eOrient_e7ece991434258af7eed20910a725759}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!to\_\-Orient@{to\_\-Orient}}
+\index{to\_\-Orient@{to\_\-Orient}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[to\_\-Orient]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Orient} drdc\_\-eOrient::to\_\-Orient ()}}
+\label{classdrdc__eOrient_e7ece991434258af7eed20910a725759}
+
+
+Convert Euler RPY to Quaternion. 
+
+\begin{Desc}
+\item[Returns:]Quaternion \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__eOrient_3c20a6d621dbcb6b4a52a25843f081e6}{
+\index{drdc\_\-eOrient@{drdc\_\-eOrient}!vector@{vector}}
+\index{vector@{vector}!drdc_eOrient@{drdc\_\-eOrient}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-eOrient::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__eOrient_3c20a6d621dbcb6b4a52a25843f081e6}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

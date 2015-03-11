@@ -1,0 +1,210 @@
+\hypertarget{group__unit__conv}{
+\section{Unit Conversions}
+\label{group__unit__conv}\index{Unit Conversions@{Unit Conversions}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+double \hyperlink{group__unit__conv_g6b53eb2372b6c68e82cda5b9cb4049ea}{unitToSiVolume} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the volume units to the SI unit - m$^\wedge$3. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g84e5b74d2c5f3b0bbe1cdb8aff2b11d0}{unitToSiDistance} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the distance units to the SI unit - m. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g8d02fac0f3c4ac8a798e30cc6a747904}{unitToSiMass} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the mass units to the SI unit - kg . \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_ge05c76a067cfe4916abf317f00794c63}{unitToSiVelocity} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the velocity units to the SI unit - m/s. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g9a55776d67d05ae1fccb1c8d9fe284f1}{unitToSiArea} (const char $\ast$unit)
+\begin{CompactList}\small\item\em Converts the area units to the SI unit - m$^\wedge$2. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g83e38e7be9d19563a1c4abae17158e3e}{unitConvertVolume} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between volume units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g8fe6b1304fb3c8d0d21d62178367df0f}{unitConvertDistance} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between distance units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g3fad4536c3e0108ca36dd54208bfa029}{unitConvertMass} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between mass units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g444606c1ce32b9818c42657b817895e0}{unitConvertVelocity} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between velocity units. \item\end{CompactList}\item 
+double \hyperlink{group__unit__conv_g2b1c6e35197223f25aef246277f92ac0}{unitConvertArea} (const char $\ast$srcUnit, const char $\ast$destUnit)
+\begin{CompactList}\small\item\em Converts between area units. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__unit__conv_g2b1c6e35197223f25aef246277f92ac0}{
+\index{unit\_\-conv@{unit\_\-conv}!unitConvertArea@{unitConvertArea}}
+\index{unitConvertArea@{unitConvertArea}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitConvertArea]{\setlength{\rightskip}{0pt plus 5cm}double unitConvertArea (const char $\ast$ {\em srcUnit}, \/  const char $\ast$ {\em destUnit})}}
+\label{group__unit__conv_g2b1c6e35197223f25aef246277f92ac0}
+
+
+Converts between area units. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em srcUnit}]Input. Source unit string. \item[{\em destUnit}]Input. Destination unit string\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the source units to the destination units. \end{Desc}
+\hypertarget{group__unit__conv_g8fe6b1304fb3c8d0d21d62178367df0f}{
+\index{unit\_\-conv@{unit\_\-conv}!unitConvertDistance@{unitConvertDistance}}
+\index{unitConvertDistance@{unitConvertDistance}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitConvertDistance]{\setlength{\rightskip}{0pt plus 5cm}double unitConvertDistance (const char $\ast$ {\em srcUnit}, \/  const char $\ast$ {\em destUnit})}}
+\label{group__unit__conv_g8fe6b1304fb3c8d0d21d62178367df0f}
+
+
+Converts between distance units. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em srcUnit}]Input. Source unit string \item[{\em destUnit}]Input. Destination unit string\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the source units to the destination units. \end{Desc}
+\hypertarget{group__unit__conv_g3fad4536c3e0108ca36dd54208bfa029}{
+\index{unit\_\-conv@{unit\_\-conv}!unitConvertMass@{unitConvertMass}}
+\index{unitConvertMass@{unitConvertMass}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitConvertMass]{\setlength{\rightskip}{0pt plus 5cm}double unitConvertMass (const char $\ast$ {\em srcUnit}, \/  const char $\ast$ {\em destUnit})}}
+\label{group__unit__conv_g3fad4536c3e0108ca36dd54208bfa029}
+
+
+Converts between mass units. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em srcUnit}]\item[{\em destUnit}]Input. Destination unit string\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the source units to the destination units. \end{Desc}
+\hypertarget{group__unit__conv_g444606c1ce32b9818c42657b817895e0}{
+\index{unit\_\-conv@{unit\_\-conv}!unitConvertVelocity@{unitConvertVelocity}}
+\index{unitConvertVelocity@{unitConvertVelocity}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitConvertVelocity]{\setlength{\rightskip}{0pt plus 5cm}double unitConvertVelocity (const char $\ast$ {\em srcUnit}, \/  const char $\ast$ {\em destUnit})}}
+\label{group__unit__conv_g444606c1ce32b9818c42657b817895e0}
+
+
+Converts between velocity units. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em srcUnit}]Input. Source unit string. \item[{\em destUnit}]Input. Destination unit string\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the source units to the destination units. \end{Desc}
+\hypertarget{group__unit__conv_g83e38e7be9d19563a1c4abae17158e3e}{
+\index{unit\_\-conv@{unit\_\-conv}!unitConvertVolume@{unitConvertVolume}}
+\index{unitConvertVolume@{unitConvertVolume}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitConvertVolume]{\setlength{\rightskip}{0pt plus 5cm}double unitConvertVolume (const char $\ast$ {\em srcUnit}, \/  const char $\ast$ {\em destUnit})}}
+\label{group__unit__conv_g83e38e7be9d19563a1c4abae17158e3e}
+
+
+Converts between volume units. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em srcUnit}]Input. Source unit string. \item[{\em destUnit}]Input. Destination unit string.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the source units to the destination units. \end{Desc}
+\hypertarget{group__unit__conv_g9a55776d67d05ae1fccb1c8d9fe284f1}{
+\index{unit\_\-conv@{unit\_\-conv}!unitToSiArea@{unitToSiArea}}
+\index{unitToSiArea@{unitToSiArea}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitToSiArea]{\setlength{\rightskip}{0pt plus 5cm}double unitToSiArea (const char $\ast$ {\em unit})}}
+\label{group__unit__conv_g9a55776d67d05ae1fccb1c8d9fe284f1}
+
+
+Converts the area units to the SI unit - m$^\wedge$2. 
+
+Units:\begin{itemize}
+\item cm$^\wedge$2\item mm$^\wedge$2\item km$^\wedge$2\item ft$^\wedge$2\item yard$^\wedge$2\item mile$^\wedge$2\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em unit}]Input. Unit string.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the input units to the SI unit. \end{Desc}
+\hypertarget{group__unit__conv_g84e5b74d2c5f3b0bbe1cdb8aff2b11d0}{
+\index{unit\_\-conv@{unit\_\-conv}!unitToSiDistance@{unitToSiDistance}}
+\index{unitToSiDistance@{unitToSiDistance}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitToSiDistance]{\setlength{\rightskip}{0pt plus 5cm}double unitToSiDistance (const char $\ast$ {\em unit})}}
+\label{group__unit__conv_g84e5b74d2c5f3b0bbe1cdb8aff2b11d0}
+
+
+Converts the distance units to the SI unit - m. 
+
+Units:\begin{itemize}
+\item mm\item cm\item km\item inch\item foot\item yard\item mile\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em unit}]Input. Unit string.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the input units to the SI unit. \end{Desc}
+\hypertarget{group__unit__conv_g8d02fac0f3c4ac8a798e30cc6a747904}{
+\index{unit\_\-conv@{unit\_\-conv}!unitToSiMass@{unitToSiMass}}
+\index{unitToSiMass@{unitToSiMass}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitToSiMass]{\setlength{\rightskip}{0pt plus 5cm}double unitToSiMass (const char $\ast$ {\em unit})}}
+\label{group__unit__conv_g8d02fac0f3c4ac8a798e30cc6a747904}
+
+
+Converts the mass units to the SI unit - kg . 
+
+Units:\begin{itemize}
+\item g\item lbs\item uston\item brton\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em unit}]Input. Unit string.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the input units to the SI unit. \end{Desc}
+\hypertarget{group__unit__conv_ge05c76a067cfe4916abf317f00794c63}{
+\index{unit\_\-conv@{unit\_\-conv}!unitToSiVelocity@{unitToSiVelocity}}
+\index{unitToSiVelocity@{unitToSiVelocity}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitToSiVelocity]{\setlength{\rightskip}{0pt plus 5cm}double unitToSiVelocity (const char $\ast$ {\em unit})}}
+\label{group__unit__conv_ge05c76a067cfe4916abf317f00794c63}
+
+
+Converts the velocity units to the SI unit - m/s. 
+
+Units:\begin{itemize}
+\item mm/s\item cm/s\item km/s\item kph\item mph\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em unit}]Input. Unit string.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the input units to the SI unit. \end{Desc}
+\hypertarget{group__unit__conv_g6b53eb2372b6c68e82cda5b9cb4049ea}{
+\index{unit\_\-conv@{unit\_\-conv}!unitToSiVolume@{unitToSiVolume}}
+\index{unitToSiVolume@{unitToSiVolume}!unit_conv@{unit\_\-conv}}
+\subsubsection[unitToSiVolume]{\setlength{\rightskip}{0pt plus 5cm}double unitToSiVolume (const char $\ast$ {\em unit})}}
+\label{group__unit__conv_g6b53eb2372b6c68e82cda5b9cb4049ea}
+
+
+Converts the volume units to the SI unit - m$^\wedge$3. 
+
+Units:\begin{itemize}
+\item usgallon\item brgallon\item ml\item cm$^\wedge$3\item mm$^\wedge$3\item liter\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em unit}]Input. Unit string.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns the conversion multiplication factor needed for converting the input units to the SI unit. \end{Desc}

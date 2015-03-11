@@ -1,0 +1,170 @@
+\hypertarget{classdrdc__lePose}{
+\section{drdc\_\-lePose Class Reference}
+\label{classdrdc__lePose}\index{drdc\_\-lePose@{drdc\_\-lePose}}
+}
+C++ Local Euler Pose Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__lePose_86555e5e034ed0c4410b01cb4727117f}{drdc\_\-lePose} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lePose_a74506b729f79df9cef6bb3607709496}{set} (\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} position, \hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} orientation)
+\begin{CompactList}\small\item\em Set the object by specifying Local Position and Euler RPY orientation. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lePose_9e548bb34490b9d75f6bf8caaa4b0c6b}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__lePose_71cf667ff3d208675f2cbc517f1c4345}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__lePose_961dc8435371eea28ebd6a4d9cb67269}{compare} (\hyperlink{classdrdc__lePose}{drdc\_\-lePose} localEulerPose, \hyperlink{classdrdc__lePose}{drdc\_\-lePose} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} \hyperlink{classdrdc__lePose_1954d7b4ecfd2fcd17d72e9e2d56c067}{getPosition} ()
+\begin{CompactList}\small\item\em Return Local Position. \item\end{CompactList}\item 
+\hyperlink{classdrdc__eOrient}{drdc\_\-eOrient} \hyperlink{classdrdc__lePose_f14f53d67a4156f566c44efcdad9d03c}{getOrientation} ()
+\begin{CompactList}\small\item\em Return Euler RPY orientation. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lePose}{drdc\_\-lePose} \& \hyperlink{classdrdc__lePose_8fb9ac828578499db06cfc2413ae5dfc}{operator=} (\hyperlink{classdrdc__lePose}{drdc\_\-lePose} localEulerPose)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__lePose_faff036dc5a63cdb1d7ec0650740fbc1}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPose}{drdc\_\-lPose} \hyperlink{classdrdc__lePose_06db24cb1d5e73ea14fe07ec14a2cbec}{to\_\-lPose} ()
+\begin{CompactList}\small\item\em Convert Local Euler Pose to Local Pose. \item\end{CompactList}\item 
+\hyperlink{classdrdc__HMatrix}{drdc\_\-HMatrix} \hyperlink{classdrdc__lePose_6d38322461e79058e87eccd77b3259b6}{to\_\-HMatrix} ()
+\begin{CompactList}\small\item\em Convert Local Euler Pose to Homogeneous Matrix. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__lePose_a9f132c5bcd64f4d09aed98b9c25ef53}{vector}
+\begin{CompactList}\small\item\em Data vector. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ Local Euler Pose Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__lePose_86555e5e034ed0c4410b01cb4727117f}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!drdc\_\-lePose@{drdc\_\-lePose}}
+\index{drdc\_\-lePose@{drdc\_\-lePose}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[drdc\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-lePose::drdc\_\-lePose ()}}
+\label{classdrdc__lePose_86555e5e034ed0c4410b01cb4727117f}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__lePose_a74506b729f79df9cef6bb3607709496}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!set@{set}}
+\index{set@{set}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lePose::set ({\bf drdc\_\-lPosn} {\em position}, \/  {\bf drdc\_\-eOrient} {\em orientation})}}
+\label{classdrdc__lePose_a74506b729f79df9cef6bb3607709496}
+
+
+Set the object by specifying Local Position and Euler RPY orientation. 
+
+\hypertarget{classdrdc__lePose_9e548bb34490b9d75f6bf8caaa4b0c6b}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!set@{set}}
+\index{set@{set}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lePose::set (const double $\ast$ {\em array})}}
+\label{classdrdc__lePose_9e548bb34490b9d75f6bf8caaa4b0c6b}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__lePose_71cf667ff3d208675f2cbc517f1c4345}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-lePose::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__lePose_71cf667ff3d208675f2cbc517f1c4345}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__lePose_961dc8435371eea28ebd6a4d9cb67269}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!compare@{compare}}
+\index{compare@{compare}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-lePose::compare ({\bf drdc\_\-lePose} {\em localEulerPose}, \/  {\bf drdc\_\-lePose} {\em fuzz})}}
+\label{classdrdc__lePose_961dc8435371eea28ebd6a4d9cb67269}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__lePose_1954d7b4ecfd2fcd17d72e9e2d56c067}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPosn} drdc\_\-lePose::getPosition ()}}
+\label{classdrdc__lePose_1954d7b4ecfd2fcd17d72e9e2d56c067}
+
+
+Return Local Position. 
+
+\hypertarget{classdrdc__lePose_f14f53d67a4156f566c44efcdad9d03c}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[getOrientation]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-eOrient} drdc\_\-lePose::getOrientation ()}}
+\label{classdrdc__lePose_f14f53d67a4156f566c44efcdad9d03c}
+
+
+Return Euler RPY orientation. 
+
+\hypertarget{classdrdc__lePose_8fb9ac828578499db06cfc2413ae5dfc}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lePose}\& drdc\_\-lePose::operator= ({\bf drdc\_\-lePose} {\em localEulerPose})}}
+\label{classdrdc__lePose_8fb9ac828578499db06cfc2413ae5dfc}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__lePose_faff036dc5a63cdb1d7ec0650740fbc1}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-lePose::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__lePose_faff036dc5a63cdb1d7ec0650740fbc1}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__lePose_06db24cb1d5e73ea14fe07ec14a2cbec}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!to\_\-lPose@{to\_\-lPose}}
+\index{to\_\-lPose@{to\_\-lPose}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPose} drdc\_\-lePose::to\_\-lPose ()}}
+\label{classdrdc__lePose_06db24cb1d5e73ea14fe07ec14a2cbec}
+
+
+Convert Local Euler Pose to Local Pose. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__lePose_6d38322461e79058e87eccd77b3259b6}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!to\_\-HMatrix@{to\_\-HMatrix}}
+\index{to\_\-HMatrix@{to\_\-HMatrix}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-HMatrix} drdc\_\-lePose::to\_\-HMatrix ()}}
+\label{classdrdc__lePose_6d38322461e79058e87eccd77b3259b6}
+
+
+Convert Local Euler Pose to Homogeneous Matrix. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__lePose_a9f132c5bcd64f4d09aed98b9c25ef53}{
+\index{drdc\_\-lePose@{drdc\_\-lePose}!vector@{vector}}
+\index{vector@{vector}!drdc_lePose@{drdc\_\-lePose}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-lePose::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__lePose_a9f132c5bcd64f4d09aed98b9c25ef53}
+
+
+Data vector. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

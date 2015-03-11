@@ -1,0 +1,212 @@
+\hypertarget{structdrdc__eOrient__t}{
+\section{drdc\_\-eOrient\_\-t Struct Reference}
+\label{structdrdc__eOrient__t}\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}}
+}
+OOC Euler RPY Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__eOrient__t_f2af5b645f5c1ca1629335cf5d9f3e5e}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__eOrient__t_d59e483e9439f6fdfa6815f55fb5ee98}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__eOrient__t_43134125625a557e14154ecf72520924}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_1cf0f5c59d1a97bfa330155dccaa7470}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_4b1ac90f5adeaf67720d8d8c6525cdaa}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\begin{CompactList}\small\item\em Set the self object by using array data type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_b91df71ef68638f3fcc2c0aff58f397c}{toArray} )(const void $\ast$self, double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the self object to data array type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_cd7aeae5fcf08152b030a071523c1057}{destroy} )(void $\ast$self)
+\begin{CompactList}\small\item\em Delete the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_75a0e0e07f9be15a987a776c139a9362}{set} )(void $\ast$self, double roll, double pitch, double yaw)
+\begin{CompactList}\small\item\em Set the Euler RPY object by specifying roll, pitch and yaw values. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__eOrient__t_ffdb69bf51a40a9c4d860360ab87ec52}{getRoll} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return roll component of Euler RPY. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__eOrient__t_4af87907ffb2295b0fa044b185e8488d}{getPitch} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return pitch component of Euler RPY. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__eOrient__t_8037a80813d6a996bc85223fc4136ede}{getYaw} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return yaw component of Euler RPY. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_7f398844060c7b582fdd8b576f94443a}{plus} )(void $\ast$self, const void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Plus operator, resultObject = self + object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_ef5188ecc6215dd22826b32ae94c8c3e}{minus} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Minus operator, resultObject = self - object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_95d500ab896201c8f4c3822a1432f556}{negate} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Negate operator, resultObject = - self. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_23756f8de6f265fd46a43971740c3a1e}{scale} )(void $\ast$self, double scalar, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Scale operator, resultObject = self $\ast$ scalar. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_1f0f733ea654b9de7c350049fe7f8e73}{to\_\-HMatrix} )(void $\ast$self, void $\ast$homogeneous)
+\begin{CompactList}\small\item\em Convert Euler RPY to Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__eOrient__t_563921c3128004ab185e357400953dee}{to\_\-Orient} )(void $\ast$self, void $\ast$quaternion)
+\begin{CompactList}\small\item\em Convert Euler RPY to Quaternion. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC Euler RPY Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__eOrient__t_f2af5b645f5c1ca1629335cf5d9f3e5e}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-eOrient\_\-t::vector}}}
+\label{structdrdc__eOrient__t_f2af5b645f5c1ca1629335cf5d9f3e5e}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__eOrient__t_d59e483e9439f6fdfa6815f55fb5ee98}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!index@{index}}
+\index{index@{index}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-eOrient\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__eOrient__t_d59e483e9439f6fdfa6815f55fb5ee98}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__eOrient__t_43134125625a557e14154ecf72520924}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-eOrient\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__eOrient__t_43134125625a557e14154ecf72520924}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__eOrient__t_1cf0f5c59d1a97bfa330155dccaa7470}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__eOrient__t_1cf0f5c59d1a97bfa330155dccaa7470}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__eOrient__t_4b1ac90f5adeaf67720d8d8c6525cdaa}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__eOrient__t_4b1ac90f5adeaf67720d8d8c6525cdaa}
+
+
+Set the self object by using array data type. 
+
+\hypertarget{structdrdc__eOrient__t_b91df71ef68638f3fcc2c0aff58f397c}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__eOrient__t_b91df71ef68638f3fcc2c0aff58f397c}
+
+
+Convert data in the self object to data array type. 
+
+\hypertarget{structdrdc__eOrient__t_cd7aeae5fcf08152b030a071523c1057}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__eOrient__t_cd7aeae5fcf08152b030a071523c1057}
+
+
+Delete the self object. 
+
+\hypertarget{structdrdc__eOrient__t_75a0e0e07f9be15a987a776c139a9362}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!set@{set}}
+\index{set@{set}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::set})(void $\ast$self, double roll, double pitch, double yaw)}}
+\label{structdrdc__eOrient__t_75a0e0e07f9be15a987a776c139a9362}
+
+
+Set the Euler RPY object by specifying roll, pitch and yaw values. 
+
+\hypertarget{structdrdc__eOrient__t_ffdb69bf51a40a9c4d860360ab87ec52}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!getRoll@{getRoll}}
+\index{getRoll@{getRoll}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[getRoll]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-eOrient\_\-t::getRoll})(void $\ast$self)}}
+\label{structdrdc__eOrient__t_ffdb69bf51a40a9c4d860360ab87ec52}
+
+
+Return roll component of Euler RPY. 
+
+\hypertarget{structdrdc__eOrient__t_4af87907ffb2295b0fa044b185e8488d}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!getPitch@{getPitch}}
+\index{getPitch@{getPitch}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[getPitch]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-eOrient\_\-t::getPitch})(void $\ast$self)}}
+\label{structdrdc__eOrient__t_4af87907ffb2295b0fa044b185e8488d}
+
+
+Return pitch component of Euler RPY. 
+
+\hypertarget{structdrdc__eOrient__t_8037a80813d6a996bc85223fc4136ede}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!getYaw@{getYaw}}
+\index{getYaw@{getYaw}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[getYaw]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-eOrient\_\-t::getYaw})(void $\ast$self)}}
+\label{structdrdc__eOrient__t_8037a80813d6a996bc85223fc4136ede}
+
+
+Return yaw component of Euler RPY. 
+
+\hypertarget{structdrdc__eOrient__t_7f398844060c7b582fdd8b576f94443a}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!plus@{plus}}
+\index{plus@{plus}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[plus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::plus})(void $\ast$self, const void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__eOrient__t_7f398844060c7b582fdd8b576f94443a}
+
+
+Plus operator, resultObject = self + object. 
+
+\hypertarget{structdrdc__eOrient__t_ef5188ecc6215dd22826b32ae94c8c3e}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!minus@{minus}}
+\index{minus@{minus}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[minus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::minus})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__eOrient__t_ef5188ecc6215dd22826b32ae94c8c3e}
+
+
+Minus operator, resultObject = self - object. 
+
+\hypertarget{structdrdc__eOrient__t_95d500ab896201c8f4c3822a1432f556}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!negate@{negate}}
+\index{negate@{negate}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[negate]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::negate})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__eOrient__t_95d500ab896201c8f4c3822a1432f556}
+
+
+Negate operator, resultObject = - self. 
+
+\hypertarget{structdrdc__eOrient__t_23756f8de6f265fd46a43971740c3a1e}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!scale@{scale}}
+\index{scale@{scale}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[scale]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::scale})(void $\ast$self, double scalar, void $\ast$resultObject)}}
+\label{structdrdc__eOrient__t_23756f8de6f265fd46a43971740c3a1e}
+
+
+Scale operator, resultObject = self $\ast$ scalar. 
+
+\hypertarget{structdrdc__eOrient__t_1f0f733ea654b9de7c350049fe7f8e73}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!to\_\-HMatrix@{to\_\-HMatrix}}
+\index{to\_\-HMatrix@{to\_\-HMatrix}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[to\_\-HMatrix]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::to\_\-HMatrix})(void $\ast$self, void $\ast$homogeneous)}}
+\label{structdrdc__eOrient__t_1f0f733ea654b9de7c350049fe7f8e73}
+
+
+Convert Euler RPY to Homogeneous Matrix. 
+
+\hypertarget{structdrdc__eOrient__t_563921c3128004ab185e357400953dee}{
+\index{drdc\_\-eOrient\_\-t@{drdc\_\-eOrient\_\-t}!to\_\-Orient@{to\_\-Orient}}
+\index{to\_\-Orient@{to\_\-Orient}!drdc_eOrient_t@{drdc\_\-eOrient\_\-t}}
+\subsubsection[to\_\-Orient]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-eOrient\_\-t::to\_\-Orient})(void $\ast$self, void $\ast$quaternion)}}
+\label{structdrdc__eOrient__t_563921c3128004ab185e357400953dee}
+
+
+Convert Euler RPY to Quaternion. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

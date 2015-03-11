@@ -1,0 +1,276 @@
+\hypertarget{group__quaternion}{
+\section{Quaternion}
+\label{group__quaternion}\index{Quaternion@{Quaternion}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{group__quaternion_g7b1db600de72218b50d586962dcb3b34}{EulerRPYToQuat} (const double $\ast$rpyVector, double $\ast$quaternion)
+\begin{CompactList}\small\item\em RPY to Quaternion \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g77ac8a89edcac95acc7b2d72c199887e}{QuatToEulerRPY} (const double $\ast$quaternion, double $\ast$rpyVector)
+\begin{CompactList}\small\item\em Quaternion to RPY \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g72107735baae1beaa708201db02c785d}{QuatQuatMult} (double $\ast$quaternion1, double $\ast$quaternion2, double $\ast$resultQuaternion)
+\begin{CompactList}\small\item\em Quaternion Multiplication \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g46246ce9c280deac81df5a5c1726e0d3}{QuatQuatDiv} (double $\ast$quaternion1, double $\ast$quaternion2, double $\ast$resultQuaternion)
+\begin{CompactList}\small\item\em Quaternion Division \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g2f9bc45e4b1c6431b33c4ae852603254}{QuatInverse} (double $\ast$quaternion)
+\begin{CompactList}\small\item\em Quaternion Inversion \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gc2441656cae8e9ea1d3b1030559bfd80}{QuatConjugate} (double $\ast$quaternion)
+\begin{CompactList}\small\item\em Conjugate Quaternion. \item\end{CompactList}\item 
+double \hyperlink{group__quaternion_g7c36b75808197e37e672aac00ee21935}{QuatMagnitude} (const double $\ast$quaternion)
+\begin{CompactList}\small\item\em Quaterion Magnitude. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g67f342a45d5ce0d7a1c354d39e443f08}{QuatVectorMult} (double $\ast$quaternion, double $\ast$vector, double $\ast$resultVector)
+\begin{CompactList}\small\item\em Quaternion and Vector Product \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gb7f636ec0cec733d2511ca8b27c72ded}{HMatrixToQuat} (const double $\ast$hMatrix, double $\ast$quaternion)
+\begin{CompactList}\small\item\em Quaternion to Homogeneous Transformation \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gfa6b44f00762a156e643b894e1cd10d9}{QuatToHMatrix} (const double $\ast$quaternion, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Homogeneous Transformation to Quaternion. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g2202f5791224a99890e77027cbfdc9a8}{QuatNormalize} (double $\ast$quaternion)
+\begin{CompactList}\small\item\em Unitize a Quaternion. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gc0787b2da064df053ecf6ff927646b33}{RotAxisToQuat} (const \hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, const double theta, double $\ast$quaternion)
+\begin{CompactList}\small\item\em Rotation about an Axis to Quaternion. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g5c214fb206a96292a7596d1df089f52e}{QuatToRotVector} (const double $\ast$quaternion, double $\ast$theta, double $\ast$vector)
+\begin{CompactList}\small\item\em Quaternion to Rotation Vector \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g3ba8927f691411d3a01bba3d5cc52838}{RotVectorToQuat} (const double theta, const double $\ast$vector, double $\ast$quaternion)
+\begin{CompactList}\small\item\em Rotation Vector to Quaternion. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__quaternion_g7b1db600de72218b50d586962dcb3b34}{
+\index{quaternion@{quaternion}!EulerRPYToQuat@{EulerRPYToQuat}}
+\index{EulerRPYToQuat@{EulerRPYToQuat}!quaternion@{quaternion}}
+\subsubsection[EulerRPYToQuat]{\setlength{\rightskip}{0pt plus 5cm}int EulerRPYToQuat (const double $\ast$ {\em rpyVector}, \/  double $\ast$ {\em quaternion})}}
+\label{group__quaternion_g7b1db600de72218b50d586962dcb3b34}
+
+
+RPY to Quaternion 
+
+Converts the rotation described by the three Euler angles (yaw, pitch, row) into the four-element quaternion vector (qs,qx,qy,qz).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rpyVector}]Input. RPY vector - \mbox{[}roll, pitch, yaw\mbox{]}. \item[{\em quaternion}]Output. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}. \end{description}
+\end{Desc}
+\hypertarget{group__quaternion_gb7f636ec0cec733d2511ca8b27c72ded}{
+\index{quaternion@{quaternion}!HMatrixToQuat@{HMatrixToQuat}}
+\index{HMatrixToQuat@{HMatrixToQuat}!quaternion@{quaternion}}
+\subsubsection[HMatrixToQuat]{\setlength{\rightskip}{0pt plus 5cm}int HMatrixToQuat (const double $\ast$ {\em hMatrix}, \/  double $\ast$ {\em quaternion})}}
+\label{group__quaternion_gb7f636ec0cec733d2511ca8b27c72ded}
+
+
+Quaternion to Homogeneous Transformation 
+
+Converts a quaternion to a homogeneous matrix.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em hMatrix}]Input. Homogeneous matrix described by a 16-vector. \item[{\em quaternion}]Output. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}. \end{description}
+\end{Desc}
+\hypertarget{group__quaternion_gc2441656cae8e9ea1d3b1030559bfd80}{
+\index{quaternion@{quaternion}!QuatConjugate@{QuatConjugate}}
+\index{QuatConjugate@{QuatConjugate}!quaternion@{quaternion}}
+\subsubsection[QuatConjugate]{\setlength{\rightskip}{0pt plus 5cm}int QuatConjugate (double $\ast$ {\em quaternion})}}
+\label{group__quaternion_gc2441656cae8e9ea1d3b1030559bfd80}
+
+
+Conjugate Quaternion. 
+
+Computes the conjugate of a Quaternion.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Input/Output. Input is overwritten by the conjugate Quaternion - \mbox{[}qs, qx, qy, qz\mbox{]}. \end{description}
+\end{Desc}
+\hypertarget{group__quaternion_g2f9bc45e4b1c6431b33c4ae852603254}{
+\index{quaternion@{quaternion}!QuatInverse@{QuatInverse}}
+\index{QuatInverse@{QuatInverse}!quaternion@{quaternion}}
+\subsubsection[QuatInverse]{\setlength{\rightskip}{0pt plus 5cm}int QuatInverse (double $\ast$ {\em quaternion})}}
+\label{group__quaternion_g2f9bc45e4b1c6431b33c4ae852603254}
+
+
+Quaternion Inversion 
+
+Computes the inversion of a Quaternion.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Input/Output. Input is overwritten by the inversed Quaternion - \mbox{[}qs, qx, qy, qz\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if a divied-by-zero error occurs. \end{Desc}
+\hypertarget{group__quaternion_g7c36b75808197e37e672aac00ee21935}{
+\index{quaternion@{quaternion}!QuatMagnitude@{QuatMagnitude}}
+\index{QuatMagnitude@{QuatMagnitude}!quaternion@{quaternion}}
+\subsubsection[QuatMagnitude]{\setlength{\rightskip}{0pt plus 5cm}double QuatMagnitude (const double $\ast$ {\em quaternion})}}
+\label{group__quaternion_g7c36b75808197e37e672aac00ee21935}
+
+
+Quaterion Magnitude. 
+
+Computes the magnitude of a quaternion.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Intput. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns quaterion magnitude. \end{Desc}
+\hypertarget{group__quaternion_g2202f5791224a99890e77027cbfdc9a8}{
+\index{quaternion@{quaternion}!QuatNormalize@{QuatNormalize}}
+\index{QuatNormalize@{QuatNormalize}!quaternion@{quaternion}}
+\subsubsection[QuatNormalize]{\setlength{\rightskip}{0pt plus 5cm}int QuatNormalize (double $\ast$ {\em quaternion})}}
+\label{group__quaternion_g2202f5791224a99890e77027cbfdc9a8}
+
+
+Unitize a Quaternion. 
+
+Computes normalized quaternion.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Input/Output. Input is overwritten by the unitized Quaternion - \mbox{[}qs, qx, qy, qz\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if a divied-by-zero error occurs. \end{Desc}
+\hypertarget{group__quaternion_g46246ce9c280deac81df5a5c1726e0d3}{
+\index{quaternion@{quaternion}!QuatQuatDiv@{QuatQuatDiv}}
+\index{QuatQuatDiv@{QuatQuatDiv}!quaternion@{quaternion}}
+\subsubsection[QuatQuatDiv]{\setlength{\rightskip}{0pt plus 5cm}int QuatQuatDiv (double $\ast$ {\em quaternion1}, \/  double $\ast$ {\em quaternion2}, \/  double $\ast$ {\em resultQuaternion})}}
+\label{group__quaternion_g46246ce9c280deac81df5a5c1726e0d3}
+
+
+Quaternion Division 
+
+Computes Quaternion-Quaternion division.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion1}]Input. Quaternion vector1 - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em quaternion2}]Input. Quaternion vector2 - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em resultQuaternion}]Output. Quaternion division result - \mbox{[}qs, qx, qy, qz\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if a divied-by-zero error occurs. \end{Desc}
+\hypertarget{group__quaternion_g72107735baae1beaa708201db02c785d}{
+\index{quaternion@{quaternion}!QuatQuatMult@{QuatQuatMult}}
+\index{QuatQuatMult@{QuatQuatMult}!quaternion@{quaternion}}
+\subsubsection[QuatQuatMult]{\setlength{\rightskip}{0pt plus 5cm}int QuatQuatMult (double $\ast$ {\em quaternion1}, \/  double $\ast$ {\em quaternion2}, \/  double $\ast$ {\em resultQuaternion})}}
+\label{group__quaternion_g72107735baae1beaa708201db02c785d}
+
+
+Quaternion Multiplication 
+
+Computes Quaternion-Quaternion product.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion1}]Input. Quaternion vector1 - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em quaternion2}]Input. Quaternion vector2 - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em resultQuaternion}]Output. Quaternion Product result - \mbox{[}qs, qx, qy, qz\mbox{]}. \end{description}
+\end{Desc}
+\hypertarget{group__quaternion_g77ac8a89edcac95acc7b2d72c199887e}{
+\index{quaternion@{quaternion}!QuatToEulerRPY@{QuatToEulerRPY}}
+\index{QuatToEulerRPY@{QuatToEulerRPY}!quaternion@{quaternion}}
+\subsubsection[QuatToEulerRPY]{\setlength{\rightskip}{0pt plus 5cm}int QuatToEulerRPY (const double $\ast$ {\em quaternion}, \/  double $\ast$ {\em rpyVector})}}
+\label{group__quaternion_g77ac8a89edcac95acc7b2d72c199887e}
+
+
+Quaternion to RPY 
+
+Converts the four-element unit quaternion (qs,qx,qy,qz) into the equivalent thre e Euler angle rotations (yaw, pitch, row).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Intput. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em rpyVector}]Output. RPY vector - \mbox{[}roll, pitch, yaw\mbox{]}. \end{description}
+\end{Desc}
+\hypertarget{group__quaternion_gfa6b44f00762a156e643b894e1cd10d9}{
+\index{quaternion@{quaternion}!QuatToHMatrix@{QuatToHMatrix}}
+\index{QuatToHMatrix@{QuatToHMatrix}!quaternion@{quaternion}}
+\subsubsection[QuatToHMatrix]{\setlength{\rightskip}{0pt plus 5cm}int QuatToHMatrix (const double $\ast$ {\em quaternion}, \/  double $\ast$ {\em hMatrix})}}
+\label{group__quaternion_gfa6b44f00762a156e643b894e1cd10d9}
+
+
+Homogeneous Transformation to Quaternion. 
+
+Converts a homogeneous matrix to a quaternion.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Intput. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em hMatrix}]Output. Homogeneous matrix described by a 16-vector.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{group__quaternion_g5c214fb206a96292a7596d1df089f52e}{
+\index{quaternion@{quaternion}!QuatToRotVector@{QuatToRotVector}}
+\index{QuatToRotVector@{QuatToRotVector}!quaternion@{quaternion}}
+\subsubsection[QuatToRotVector]{\setlength{\rightskip}{0pt plus 5cm}int QuatToRotVector (const double $\ast$ {\em quaternion}, \/  double $\ast$ {\em theta}, \/  double $\ast$ {\em vector})}}
+\label{group__quaternion_g5c214fb206a96292a7596d1df089f52e}
+
+
+Quaternion to Rotation Vector 
+
+Computes a rotation vector from a quaternion.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Input. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em theta}]Output. Rotation angle in radians. \item[{\em vector}]Output. Cartesian vector - \mbox{[}x, y, z\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{group__quaternion_g67f342a45d5ce0d7a1c354d39e443f08}{
+\index{quaternion@{quaternion}!QuatVectorMult@{QuatVectorMult}}
+\index{QuatVectorMult@{QuatVectorMult}!quaternion@{quaternion}}
+\subsubsection[QuatVectorMult]{\setlength{\rightskip}{0pt plus 5cm}int QuatVectorMult (double $\ast$ {\em quaternion}, \/  double $\ast$ {\em vector}, \/  double $\ast$ {\em resultVector})}}
+\label{group__quaternion_g67f342a45d5ce0d7a1c354d39e443f08}
+
+
+Quaternion and Vector Product 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quaternion}]Intput. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}. \item[{\em vector}]Input. Cartesian vector - \mbox{[}x, y, z\mbox{]}. \item[{\em resultVector}]Output. Cartesian vector - \mbox{[}x, y, z\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if divied-by-zero error occurs. \end{Desc}
+\hypertarget{group__quaternion_gc0787b2da064df053ecf6ff927646b33}{
+\index{quaternion@{quaternion}!RotAxisToQuat@{RotAxisToQuat}}
+\index{RotAxisToQuat@{RotAxisToQuat}!quaternion@{quaternion}}
+\subsubsection[RotAxisToQuat]{\setlength{\rightskip}{0pt plus 5cm}int RotAxisToQuat (const {\bf Axis\_\-t} {\em axis}, \/  const double {\em theta}, \/  double $\ast$ {\em quaternion})}}
+\label{group__quaternion_gc0787b2da064df053ecf6ff927646b33}
+
+
+Rotation about an Axis to Quaternion. 
+
+Computes a quaternion from a rotation about an cartesian axis.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em axis}]Input. Enumeration type, AXIS\_\-X, AXIS\_\-Y, or AXIS\_\-Z. \item[{\em theta}]Input. Rotation angle in radians. \item[{\em quaternion}]Output. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if a undefined AXIS type error occurs. \end{Desc}
+\hypertarget{group__quaternion_g3ba8927f691411d3a01bba3d5cc52838}{
+\index{quaternion@{quaternion}!RotVectorToQuat@{RotVectorToQuat}}
+\index{RotVectorToQuat@{RotVectorToQuat}!quaternion@{quaternion}}
+\subsubsection[RotVectorToQuat]{\setlength{\rightskip}{0pt plus 5cm}int RotVectorToQuat (const double {\em theta}, \/  const double $\ast$ {\em vector}, \/  double $\ast$ {\em quaternion})}}
+\label{group__quaternion_g3ba8927f691411d3a01bba3d5cc52838}
+
+
+Rotation Vector to Quaternion. 
+
+Computes a quaternion from a rotation about a vector.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em theta}]Input. Rotation angle in radians. \item[{\em vector}]Input. Cartesian vector - \mbox{[}x, y, z\mbox{]}. \item[{\em quaternion}]Output. Quaternion vector - \mbox{[}qs, qx, qy, qz\mbox{]}. \end{description}
+\end{Desc}

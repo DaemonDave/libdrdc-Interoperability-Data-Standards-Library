@@ -1,0 +1,157 @@
+\hypertarget{structdrdc__WPose__t}{
+\section{drdc\_\-WPose\_\-t Struct Reference}
+\label{structdrdc__WPose__t}\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}}
+}
+OOC World Pose Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__WPose__t_ee8bf5ed85771fb17a81ad4aa337655c}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__WPose__t_da90532e6b28a4e0858b920649b6bc60}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__WPose__t_99b866961db8996097b6febfc6dad41e}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_47a1b48fdc344f82d3d3597c93b41ed5}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_a41798cf029e6d51ccc7ef79c2bf3f6f}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\begin{CompactList}\small\item\em Set the self object by using array data type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_e169ad4485ee2021344b82ee2e2f282b}{toArray} )(const void $\ast$self, double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the self object to data array type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_af1d0b646c10fa92d1710608a9c884be}{destroy} )(void $\ast$self)
+\begin{CompactList}\small\item\em Delete the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_c92f5aeb84b2e6a64fee507c46142894}{set} )(void $\ast$self, void $\ast$position, void $\ast$orientation)
+\begin{CompactList}\small\item\em Set World Pose object by specifying World Position and Quaternion orientation. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_c8fe7410e2bc56d75ddf74b1eda30974}{getPosition} )(void $\ast$self, void $\ast$position)
+\begin{CompactList}\small\item\em Return World Position of World Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_9bf7a8f57cc6eca900b950ba2bc1591a}{getOrientation} )(void $\ast$self, void $\ast$orientation)
+\begin{CompactList}\small\item\em Return Quaternion orientation of World Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_863289a024c1e98d515f5d2f30cb7e54}{to\_\-WUTMPose} )(void $\ast$self, void $\ast$worldUTMPose)
+\begin{CompactList}\small\item\em Convert World Pose to World UTM Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__WPose__t_a4c73a193364ec71974ea44e10bde8a6}{to\_\-lPose} )(void $\ast$self, double falseElevation, void $\ast$localPose)
+\begin{CompactList}\small\item\em Convert World Pose to Local Pose. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC World Pose Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__WPose__t_ee8bf5ed85771fb17a81ad4aa337655c}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-WPose\_\-t::vector}}}
+\label{structdrdc__WPose__t_ee8bf5ed85771fb17a81ad4aa337655c}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__WPose__t_da90532e6b28a4e0858b920649b6bc60}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!index@{index}}
+\index{index@{index}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-WPose\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__WPose__t_da90532e6b28a4e0858b920649b6bc60}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__WPose__t_99b866961db8996097b6febfc6dad41e}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-WPose\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__WPose__t_99b866961db8996097b6febfc6dad41e}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__WPose__t_47a1b48fdc344f82d3d3597c93b41ed5}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__WPose__t_47a1b48fdc344f82d3d3597c93b41ed5}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__WPose__t_a41798cf029e6d51ccc7ef79c2bf3f6f}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__WPose__t_a41798cf029e6d51ccc7ef79c2bf3f6f}
+
+
+Set the self object by using array data type. 
+
+\hypertarget{structdrdc__WPose__t_e169ad4485ee2021344b82ee2e2f282b}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__WPose__t_e169ad4485ee2021344b82ee2e2f282b}
+
+
+Convert data in the self object to data array type. 
+
+\hypertarget{structdrdc__WPose__t_af1d0b646c10fa92d1710608a9c884be}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__WPose__t_af1d0b646c10fa92d1710608a9c884be}
+
+
+Delete the self object. 
+
+\hypertarget{structdrdc__WPose__t_c92f5aeb84b2e6a64fee507c46142894}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!set@{set}}
+\index{set@{set}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::set})(void $\ast$self, void $\ast$position, void $\ast$orientation)}}
+\label{structdrdc__WPose__t_c92f5aeb84b2e6a64fee507c46142894}
+
+
+Set World Pose object by specifying World Position and Quaternion orientation. 
+
+\hypertarget{structdrdc__WPose__t_c8fe7410e2bc56d75ddf74b1eda30974}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::getPosition})(void $\ast$self, void $\ast$position)}}
+\label{structdrdc__WPose__t_c8fe7410e2bc56d75ddf74b1eda30974}
+
+
+Return World Position of World Pose. 
+
+\hypertarget{structdrdc__WPose__t_9bf7a8f57cc6eca900b950ba2bc1591a}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[getOrientation]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::getOrientation})(void $\ast$self, void $\ast$orientation)}}
+\label{structdrdc__WPose__t_9bf7a8f57cc6eca900b950ba2bc1591a}
+
+
+Return Quaternion orientation of World Pose. 
+
+\hypertarget{structdrdc__WPose__t_863289a024c1e98d515f5d2f30cb7e54}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!to\_\-WUTMPose@{to\_\-WUTMPose}}
+\index{to\_\-WUTMPose@{to\_\-WUTMPose}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[to\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::to\_\-WUTMPose})(void $\ast$self, void $\ast$worldUTMPose)}}
+\label{structdrdc__WPose__t_863289a024c1e98d515f5d2f30cb7e54}
+
+
+Convert World Pose to World UTM Pose. 
+
+\hypertarget{structdrdc__WPose__t_a4c73a193364ec71974ea44e10bde8a6}{
+\index{drdc\_\-WPose\_\-t@{drdc\_\-WPose\_\-t}!to\_\-lPose@{to\_\-lPose}}
+\index{to\_\-lPose@{to\_\-lPose}!drdc_WPose_t@{drdc\_\-WPose\_\-t}}
+\subsubsection[to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-WPose\_\-t::to\_\-lPose})(void $\ast$self, double falseElevation, void $\ast$localPose)}}
+\label{structdrdc__WPose__t_a4c73a193364ec71974ea44e10bde8a6}
+
+
+Convert World Pose to Local Pose. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

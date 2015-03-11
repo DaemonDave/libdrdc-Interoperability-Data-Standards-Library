@@ -1,0 +1,22 @@
+#!/bin/bash
+# libdrdc bootstrap script DRE 20080611
+# purpose: to set needed vars and reconfigure source from scratch
+# Gary Vaughn et. al. 2001 recommends a bootstrap script inside project base.
+
+# clean out old files
+rm -rf autom4te.cache/
+rm -f config.cache
+rm -f aclocal.m4
+rm -f config.h
+rm -f check.log
+
+# execute autoreconf re-configure from scratch and with special options
+aclocal -I aclocal/ # include aclocal macros
+aclocal-1.12 -I aclocal
+autoconf -f
+automake -fai
+libtoolize
+
+echo 'bootstrap complete'
+
+

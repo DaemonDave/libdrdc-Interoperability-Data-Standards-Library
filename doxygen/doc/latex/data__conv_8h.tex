@@ -1,0 +1,137 @@
+\hypertarget{data__conv_8h}{
+\section{/home/dave/src/libdrdc/src/data\_\-conv/data\_\-conv.h File Reference}
+\label{data__conv_8h}\index{/home/dave/src/libdrdc/src/data\_\-conv/data\_\-conv.h@{/home/dave/src/libdrdc/src/data\_\-conv/data\_\-conv.h}}
+}
+{\tt \#include \char`\"{}libdrdc.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{data__conv_8h_bff66f6c0cc4f3b3ec87f6764ab62ed1}{JAUS\_\-BYTE\_\-RANGE}~255.0
+\item 
+\#define \hyperlink{data__conv_8h_eb777bd722e77fd8408d94a0334ca37c}{JAUS\_\-INTEGER\_\-RANGE}~4294967294.0
+\item 
+\#define \hyperlink{data__conv_8h_28edb4ec046f2ed522c8d2039d64897c}{JAUS\_\-LONG\_\-RANGE}~(double) 18446744073709551614.0
+\item 
+\#define \hyperlink{data__conv_8h_79be743699cb1d1bf78b50f55bca62b0}{JAUS\_\-SHORT\_\-RANGE}~65534.0
+\item 
+\#define \hyperlink{data__conv_8h_b23f424ce47bbeaf61dd01f7613882f5}{JAUS\_\-UNSIGNED\_\-INTEGER\_\-RANGE}~4294967294.0
+\item 
+\#define \hyperlink{data__conv_8h_efee19c00d88486801e77c7f028e1bc7}{JAUS\_\-UNSIGNED\_\-LONG\_\-RANGE}~(double) 1.8446744073709552e19
+\item 
+\#define \hyperlink{data__conv_8h_ed61948b5c7168580fe9fc936f24c4f3}{JAUS\_\-UNSIGNED\_\-SHORT\_\-RANGE}~65535.0
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef \hyperlink{libdrdc_8h_06896e8c53f721507066c079052171f8}{uint32\_\-t} \hyperlink{data__conv_8h_53faa48a31565fe5491a2cec680d42af}{ieeeFpd32}
+\item 
+typedef \hyperlink{libdrdc_8h_aa5d1cd013383c889537491c3cfd9aad}{uint64\_\-t} \hyperlink{data__conv_8h_2bfae9897a5537a34f7cb7ec36811596}{ieeeFpd64}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{data__conv_8h_53faa48a31565fe5491a2cec680d42af}{ieeeFpd32} \hyperlink{group__data__conv_gce626fd81ac4f79dfc488e327842dd62}{ieeeFpd32FromFloat} (const float value)
+\begin{CompactList}\small\item\em Converts single to float point data represented by 32-bit unsigned integer format. \item\end{CompactList}\item 
+\hyperlink{data__conv_8h_2bfae9897a5537a34f7cb7ec36811596}{ieeeFpd64} \hyperlink{group__data__conv_g004bc0d509fdc686c5a0ebcf1a0db718}{ieeeFpd64FromDouble} (const double value)
+\begin{CompactList}\small\item\em Converts double to float point data represented by 64-bit unsigned integer format. \item\end{CompactList}\item 
+float \hyperlink{group__data__conv_g05dff20e60a89905d11a28ba3feb6580}{ieeeFpd32ToFloat} (const \hyperlink{data__conv_8h_53faa48a31565fe5491a2cec680d42af}{ieeeFpd32} input)
+\begin{CompactList}\small\item\em Converts float point data represented by 32-bit unsigned integer format to single. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_g170f0ab594dab1c4db01008624225f59}{ieeeFpd64ToDouble} (const \hyperlink{data__conv_8h_2bfae9897a5537a34f7cb7ec36811596}{ieeeFpd64} input)
+\begin{CompactList}\small\item\em Converts float point data represented by 64-bit unsigned integer format to double. \item\end{CompactList}\item 
+\hyperlink{libdrdc_8h_ba7bc1797add20fe3efdf37ced1182c5}{uint8\_\-t} \hyperlink{group__data__conv_g0d27787fcd35af9939ffbf853b2c0349}{jausByteFromDouble} (double value, const double min, const double max)
+\begin{CompactList}\small\item\em Double to Jaus Byte Conversion. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_gdd32c075f72b542276855114fc4ddefd}{jausByteToDouble} (const \hyperlink{libdrdc_8h_ba7bc1797add20fe3efdf37ced1182c5}{uint8\_\-t} value, const double min, const double max)
+\begin{CompactList}\small\item\em Jaus Byte to Double Conversion. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_g77978e778543c4b17b6e90f9c2d19f0d}{jausIntegerToDouble} (const \hyperlink{libdrdc_8h_77a3fd933dcccb072101ccc1809951c1}{sint32\_\-t} value, const double min, const double max)
+\begin{CompactList}\small\item\em Jaus Integer to Double Type Conversion. \item\end{CompactList}\item 
+\hyperlink{libdrdc_8h_77a3fd933dcccb072101ccc1809951c1}{sint32\_\-t} \hyperlink{group__data__conv_g9202437ca54232872b3b21cf829eb255}{jausIntegerFromDouble} (double value, const double min, const double max)
+\begin{CompactList}\small\item\em Double to Jaus Integer Type Conversion. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_g800a7c2530f63a5e6bc279ff80b58053}{jausLongToDouble} (const \hyperlink{libdrdc_8h_07ccfa65c976c915ad50664a7b93f079}{sint64\_\-t} value, const double min, const double max)
+\begin{CompactList}\small\item\em Jaus Long Type to Double Conversion. \item\end{CompactList}\item 
+\hyperlink{libdrdc_8h_07ccfa65c976c915ad50664a7b93f079}{sint64\_\-t} \hyperlink{group__data__conv_g73f3ce33dc453cc3a03ab09735084140}{jausLongFromDouble} (double value, const double min, const double max)
+\begin{CompactList}\small\item\em Double to Jaus Long Type Conversion. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_g0a3aeb6d4da64c5a56f94c711e3a35bb}{jausShortToDouble} (const \hyperlink{libdrdc_8h_5881659ed80e940350d12831204375cd}{sint16\_\-t} value, const double min, const double max)
+\begin{CompactList}\small\item\em Jaus Short Type to Double Conversion. \item\end{CompactList}\item 
+\hyperlink{libdrdc_8h_5881659ed80e940350d12831204375cd}{sint16\_\-t} \hyperlink{group__data__conv_g64a0bea692fa765ff51fc8a897961b6c}{jausShortFromDouble} (double value, const double min, const double max)
+\begin{CompactList}\small\item\em Double to Jaus Short Type Conversion. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_gedb727422eafd1cbcb9497109016314d}{jausUnsignedIntegerToDouble} (const \hyperlink{libdrdc_8h_06896e8c53f721507066c079052171f8}{uint32\_\-t} value, const double min, const double max)
+\begin{CompactList}\small\item\em Jaus Unsigned Integer Type to Double Conversion. \item\end{CompactList}\item 
+\hyperlink{libdrdc_8h_06896e8c53f721507066c079052171f8}{uint32\_\-t} \hyperlink{group__data__conv_g4316bdd79d655a1ac80c1263ffd324cb}{jausUnsignedIntegerFromDouble} (double value, const double min, const double max)
+\begin{CompactList}\small\item\em Double to Jaus Unsigned Integer Type Conversion. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_g778c5ff4cb41a0ba9464a721bd14ef57}{jausUnsignedLongToDouble} (const \hyperlink{libdrdc_8h_aa5d1cd013383c889537491c3cfd9aad}{uint64\_\-t} value, const double min, const double max)
+\begin{CompactList}\small\item\em Jaus Unsigned Long Type to Double Conversion. \item\end{CompactList}\item 
+\hyperlink{libdrdc_8h_aa5d1cd013383c889537491c3cfd9aad}{uint64\_\-t} \hyperlink{group__data__conv_g3aa19ded70d7987e9fdf46fc09696e76}{jausUnsignedLongFromDouble} (double value, const double min, const double max)
+\begin{CompactList}\small\item\em Double to Jaus Unsigned Long Type Conversion. \item\end{CompactList}\item 
+double \hyperlink{group__data__conv_g1489cc4a07b435646434fe9874ecdb84}{jausUnsignedShortToDouble} (const \hyperlink{libdrdc_8h_273cf69d639a59973b6019625df33e30}{uint16\_\-t} value, const double min, const double max)
+\begin{CompactList}\small\item\em Jaus Unsigned Short Type to Double Conversion. \item\end{CompactList}\item 
+\hyperlink{libdrdc_8h_273cf69d639a59973b6019625df33e30}{uint16\_\-t} \hyperlink{group__data__conv_g1bd4561881610850037b611c4e1df1d0}{jausUnsignedShortFromDouble} (double value, const double min, const double max)
+\begin{CompactList}\small\item\em Double to Jaus Unsigned Short Type Conversion. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{data__conv_8h_bff66f6c0cc4f3b3ec87f6764ab62ed1}{
+\index{data\_\-conv.h@{data\_\-conv.h}!JAUS\_\-BYTE\_\-RANGE@{JAUS\_\-BYTE\_\-RANGE}}
+\index{JAUS\_\-BYTE\_\-RANGE@{JAUS\_\-BYTE\_\-RANGE}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[JAUS\_\-BYTE\_\-RANGE]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-BYTE\_\-RANGE~255.0}}
+\label{data__conv_8h_bff66f6c0cc4f3b3ec87f6764ab62ed1}
+
+
+\hypertarget{data__conv_8h_eb777bd722e77fd8408d94a0334ca37c}{
+\index{data\_\-conv.h@{data\_\-conv.h}!JAUS\_\-INTEGER\_\-RANGE@{JAUS\_\-INTEGER\_\-RANGE}}
+\index{JAUS\_\-INTEGER\_\-RANGE@{JAUS\_\-INTEGER\_\-RANGE}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[JAUS\_\-INTEGER\_\-RANGE]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-INTEGER\_\-RANGE~4294967294.0}}
+\label{data__conv_8h_eb777bd722e77fd8408d94a0334ca37c}
+
+
+\hypertarget{data__conv_8h_28edb4ec046f2ed522c8d2039d64897c}{
+\index{data\_\-conv.h@{data\_\-conv.h}!JAUS\_\-LONG\_\-RANGE@{JAUS\_\-LONG\_\-RANGE}}
+\index{JAUS\_\-LONG\_\-RANGE@{JAUS\_\-LONG\_\-RANGE}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[JAUS\_\-LONG\_\-RANGE]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-LONG\_\-RANGE~(double) 18446744073709551614.0}}
+\label{data__conv_8h_28edb4ec046f2ed522c8d2039d64897c}
+
+
+\hypertarget{data__conv_8h_79be743699cb1d1bf78b50f55bca62b0}{
+\index{data\_\-conv.h@{data\_\-conv.h}!JAUS\_\-SHORT\_\-RANGE@{JAUS\_\-SHORT\_\-RANGE}}
+\index{JAUS\_\-SHORT\_\-RANGE@{JAUS\_\-SHORT\_\-RANGE}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[JAUS\_\-SHORT\_\-RANGE]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-SHORT\_\-RANGE~65534.0}}
+\label{data__conv_8h_79be743699cb1d1bf78b50f55bca62b0}
+
+
+\hypertarget{data__conv_8h_b23f424ce47bbeaf61dd01f7613882f5}{
+\index{data\_\-conv.h@{data\_\-conv.h}!JAUS\_\-UNSIGNED\_\-INTEGER\_\-RANGE@{JAUS\_\-UNSIGNED\_\-INTEGER\_\-RANGE}}
+\index{JAUS\_\-UNSIGNED\_\-INTEGER\_\-RANGE@{JAUS\_\-UNSIGNED\_\-INTEGER\_\-RANGE}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[JAUS\_\-UNSIGNED\_\-INTEGER\_\-RANGE]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-UNSIGNED\_\-INTEGER\_\-RANGE~4294967294.0}}
+\label{data__conv_8h_b23f424ce47bbeaf61dd01f7613882f5}
+
+
+\hypertarget{data__conv_8h_efee19c00d88486801e77c7f028e1bc7}{
+\index{data\_\-conv.h@{data\_\-conv.h}!JAUS\_\-UNSIGNED\_\-LONG\_\-RANGE@{JAUS\_\-UNSIGNED\_\-LONG\_\-RANGE}}
+\index{JAUS\_\-UNSIGNED\_\-LONG\_\-RANGE@{JAUS\_\-UNSIGNED\_\-LONG\_\-RANGE}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[JAUS\_\-UNSIGNED\_\-LONG\_\-RANGE]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-UNSIGNED\_\-LONG\_\-RANGE~(double) 1.8446744073709552e19}}
+\label{data__conv_8h_efee19c00d88486801e77c7f028e1bc7}
+
+
+\hypertarget{data__conv_8h_ed61948b5c7168580fe9fc936f24c4f3}{
+\index{data\_\-conv.h@{data\_\-conv.h}!JAUS\_\-UNSIGNED\_\-SHORT\_\-RANGE@{JAUS\_\-UNSIGNED\_\-SHORT\_\-RANGE}}
+\index{JAUS\_\-UNSIGNED\_\-SHORT\_\-RANGE@{JAUS\_\-UNSIGNED\_\-SHORT\_\-RANGE}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[JAUS\_\-UNSIGNED\_\-SHORT\_\-RANGE]{\setlength{\rightskip}{0pt plus 5cm}\#define JAUS\_\-UNSIGNED\_\-SHORT\_\-RANGE~65535.0}}
+\label{data__conv_8h_ed61948b5c7168580fe9fc936f24c4f3}
+
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{data__conv_8h_53faa48a31565fe5491a2cec680d42af}{
+\index{data\_\-conv.h@{data\_\-conv.h}!ieeeFpd32@{ieeeFpd32}}
+\index{ieeeFpd32@{ieeeFpd32}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[ieeeFpd32]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf uint32\_\-t} {\bf ieeeFpd32}}}
+\label{data__conv_8h_53faa48a31565fe5491a2cec680d42af}
+
+
+\hypertarget{data__conv_8h_2bfae9897a5537a34f7cb7ec36811596}{
+\index{data\_\-conv.h@{data\_\-conv.h}!ieeeFpd64@{ieeeFpd64}}
+\index{ieeeFpd64@{ieeeFpd64}!data_conv.h@{data\_\-conv.h}}
+\subsubsection[ieeeFpd64]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf uint64\_\-t} {\bf ieeeFpd64}}}
+\label{data__conv_8h_2bfae9897a5537a34f7cb7ec36811596}
+
+

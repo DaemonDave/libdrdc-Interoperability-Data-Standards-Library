@@ -1,0 +1,36 @@
+\hypertarget{quaternion_8h}{
+\section{/home/dave/src/libdrdc/src/quaternion/quaternion.h File Reference}
+\label{quaternion_8h}\index{/home/dave/src/libdrdc/src/quaternion/quaternion.h@{/home/dave/src/libdrdc/src/quaternion/quaternion.h}}
+}
+{\tt \#include \char`\"{}libdrdc.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{group__quaternion_g7b1db600de72218b50d586962dcb3b34}{EulerRPYToQuat} (const double $\ast$rpyVector, double $\ast$quaternion)
+\begin{CompactList}\small\item\em RPY to Quaternion \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g77ac8a89edcac95acc7b2d72c199887e}{QuatToEulerRPY} (const double $\ast$quaternion, double $\ast$rpyVector)
+\begin{CompactList}\small\item\em Quaternion to RPY \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g72107735baae1beaa708201db02c785d}{QuatQuatMult} (double $\ast$quaternion1, double $\ast$quaternion2, double $\ast$resultQuaternion)
+\begin{CompactList}\small\item\em Quaternion Multiplication \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g46246ce9c280deac81df5a5c1726e0d3}{QuatQuatDiv} (double $\ast$quaternion1, double $\ast$quaternion2, double $\ast$resultQuaternion)
+\begin{CompactList}\small\item\em Quaternion Division \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g2f9bc45e4b1c6431b33c4ae852603254}{QuatInverse} (double $\ast$quaternion)
+\begin{CompactList}\small\item\em Quaternion Inversion \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gc2441656cae8e9ea1d3b1030559bfd80}{QuatConjugate} (double $\ast$quaternion)
+\begin{CompactList}\small\item\em Conjugate Quaternion. \item\end{CompactList}\item 
+double \hyperlink{group__quaternion_g7c36b75808197e37e672aac00ee21935}{QuatMagnitude} (const double $\ast$quaternion)
+\begin{CompactList}\small\item\em Quaterion Magnitude. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g67f342a45d5ce0d7a1c354d39e443f08}{QuatVectorMult} (double $\ast$quaternion, double $\ast$vector, double $\ast$resultVector)
+\begin{CompactList}\small\item\em Quaternion and Vector Product \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gb7f636ec0cec733d2511ca8b27c72ded}{HMatrixToQuat} (const double $\ast$hMatrix, double $\ast$quaternion)
+\begin{CompactList}\small\item\em Quaternion to Homogeneous Transformation \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gfa6b44f00762a156e643b894e1cd10d9}{QuatToHMatrix} (const double $\ast$quaternion, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Homogeneous Transformation to Quaternion. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g2202f5791224a99890e77027cbfdc9a8}{QuatNormalize} (double $\ast$quaternion)
+\begin{CompactList}\small\item\em Unitize a Quaternion. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_gc0787b2da064df053ecf6ff927646b33}{RotAxisToQuat} (const \hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, const double theta, double $\ast$quaternion)
+\begin{CompactList}\small\item\em Rotation about an Axis to Quaternion. \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g5c214fb206a96292a7596d1df089f52e}{QuatToRotVector} (const double $\ast$quaternion, double $\ast$theta, double $\ast$vector)
+\begin{CompactList}\small\item\em Quaternion to Rotation Vector \item\end{CompactList}\item 
+int \hyperlink{group__quaternion_g3ba8927f691411d3a01bba3d5cc52838}{RotVectorToQuat} (const double theta, const double $\ast$vector, double $\ast$quaternion)
+\begin{CompactList}\small\item\em Rotation Vector to Quaternion. \item\end{CompactList}\end{CompactItemize}

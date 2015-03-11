@@ -1,0 +1,267 @@
+\hypertarget{structdrdc__lPosn__t}{
+\section{drdc\_\-lPosn\_\-t Struct Reference}
+\label{structdrdc__lPosn__t}\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}}
+}
+OOC Local Position Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__lPosn__t_2d9d257a1d0a8f872043d6cde860b819}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lPosn__t_4c1c722c6bcf89c94d0d79f912e6a8fc}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__lPosn__t_c96fa0e4a4865314fe8eb3d084146ec2}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_2bbf1f6e34cb3e050387f0c7564481d3}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_5381388dc9938ffd0d7be23e120ba160}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\begin{CompactList}\small\item\em Set the self object by using array data type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_f5141d0bd5985a7796d54164774817e3}{toArray} )(const void $\ast$self, double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the self object to data array type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_e04ff92f3ba6ed312499a748c9000ae2}{destroy} )(void $\ast$self)
+\begin{CompactList}\small\item\em Delete the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_0c5a736a9c88ab1315d2302b99142136}{set} )(void $\ast$self, double x, double y, double z)
+\begin{CompactList}\small\item\em Set the Local Position object by specifying cartesian x, y and z values. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lPosn__t_886c2b143bbca8005b9dca2eaefed1f2}{getX} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return the cartesian x value from the Local Position object. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lPosn__t_0cd1f3c953fb21ce05b6a1ed583dd101}{getY} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return the cartesian y value from the Local Position object. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lPosn__t_4511ab519ad38c9cffcd682da010d4e1}{getZ} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return the cartesian z value from the Local Position object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_bbb83aef73c231ac706d12132d4af780}{plus} )(void $\ast$self, const void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Plus operator, resultObject = self + object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_825ce63786dc54e858080283e77d094c}{minus} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Minus operator, resultObject = self - object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_f448fb95bac4105a59f47d805426a184}{negate} )(void $\ast$self, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Negate operator, resultObject = - self. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_b841f4ece0abc002c4a20591bd18a25b}{scale} )(void $\ast$self, double scalar, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Scale operator, resultObject = self $\ast$ scalar. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lPosn__t_29d500e7d47448506ca584e046a265bf}{dot} )(void $\ast$self, void $\ast$object)
+\begin{CompactList}\small\item\em Vector dot operator. It returns vector dot result. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_a598f7e243438190e4812ffa9cef2d97}{cross} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Vector cross operator, resultObject = self cross object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_7709e0a141c76489ce7f3c60e3d457f8}{normalize} )(void $\ast$self)
+\begin{CompactList}\small\item\em Normalize the self object (vector norm). \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__lPosn__t_d7162293346abf921b33d64d5eaa37fc}{magnitude} )(void $\ast$self)
+\begin{CompactList}\small\item\em Return the magnitude of the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_061d2b3a1190a967bac4f8520ac93f9c}{to\_\-WUTMPosn} )(void $\ast$self, \hyperlink{structdrdc__UTMZone__t}{drdc\_\-UTMZone\_\-t} zone, void $\ast$worldUTMPosition)
+\begin{CompactList}\small\item\em Map Local Position to World UTM Position. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__lPosn__t_e620ba6725974a69bb92bf5cee9d3fb7}{to\_\-WPosn} )(void $\ast$self, double falseElevation, void $\ast$worldPosition)
+\begin{CompactList}\small\item\em Convert ECEF Position to World Position. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC Local Position Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__lPosn__t_2d9d257a1d0a8f872043d6cde860b819}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-lPosn\_\-t::vector}}}
+\label{structdrdc__lPosn__t_2d9d257a1d0a8f872043d6cde860b819}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__lPosn__t_4c1c722c6bcf89c94d0d79f912e6a8fc}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!index@{index}}
+\index{index@{index}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lPosn\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__lPosn__t_4c1c722c6bcf89c94d0d79f912e6a8fc}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__lPosn__t_c96fa0e4a4865314fe8eb3d084146ec2}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-lPosn\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__lPosn__t_c96fa0e4a4865314fe8eb3d084146ec2}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__lPosn__t_2bbf1f6e34cb3e050387f0c7564481d3}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__lPosn__t_2bbf1f6e34cb3e050387f0c7564481d3}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__lPosn__t_5381388dc9938ffd0d7be23e120ba160}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__lPosn__t_5381388dc9938ffd0d7be23e120ba160}
+
+
+Set the self object by using array data type. 
+
+\hypertarget{structdrdc__lPosn__t_f5141d0bd5985a7796d54164774817e3}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__lPosn__t_f5141d0bd5985a7796d54164774817e3}
+
+
+Convert data in the self object to data array type. 
+
+\hypertarget{structdrdc__lPosn__t_e04ff92f3ba6ed312499a748c9000ae2}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__lPosn__t_e04ff92f3ba6ed312499a748c9000ae2}
+
+
+Delete the self object. 
+
+\hypertarget{structdrdc__lPosn__t_0c5a736a9c88ab1315d2302b99142136}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!set@{set}}
+\index{set@{set}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::set})(void $\ast$self, double x, double y, double z)}}
+\label{structdrdc__lPosn__t_0c5a736a9c88ab1315d2302b99142136}
+
+
+Set the Local Position object by specifying cartesian x, y and z values. 
+
+\hypertarget{structdrdc__lPosn__t_886c2b143bbca8005b9dca2eaefed1f2}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!getX@{getX}}
+\index{getX@{getX}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[getX]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lPosn\_\-t::getX})(void $\ast$self)}}
+\label{structdrdc__lPosn__t_886c2b143bbca8005b9dca2eaefed1f2}
+
+
+Return the cartesian x value from the Local Position object. 
+
+\hypertarget{structdrdc__lPosn__t_0cd1f3c953fb21ce05b6a1ed583dd101}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!getY@{getY}}
+\index{getY@{getY}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[getY]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lPosn\_\-t::getY})(void $\ast$self)}}
+\label{structdrdc__lPosn__t_0cd1f3c953fb21ce05b6a1ed583dd101}
+
+
+Return the cartesian y value from the Local Position object. 
+
+\hypertarget{structdrdc__lPosn__t_4511ab519ad38c9cffcd682da010d4e1}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!getZ@{getZ}}
+\index{getZ@{getZ}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[getZ]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lPosn\_\-t::getZ})(void $\ast$self)}}
+\label{structdrdc__lPosn__t_4511ab519ad38c9cffcd682da010d4e1}
+
+
+Return the cartesian z value from the Local Position object. 
+
+\hypertarget{structdrdc__lPosn__t_bbb83aef73c231ac706d12132d4af780}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!plus@{plus}}
+\index{plus@{plus}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[plus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::plus})(void $\ast$self, const void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__lPosn__t_bbb83aef73c231ac706d12132d4af780}
+
+
+Plus operator, resultObject = self + object. 
+
+\hypertarget{structdrdc__lPosn__t_825ce63786dc54e858080283e77d094c}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!minus@{minus}}
+\index{minus@{minus}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[minus]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::minus})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__lPosn__t_825ce63786dc54e858080283e77d094c}
+
+
+Minus operator, resultObject = self - object. 
+
+\hypertarget{structdrdc__lPosn__t_f448fb95bac4105a59f47d805426a184}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!negate@{negate}}
+\index{negate@{negate}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[negate]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::negate})(void $\ast$self, void $\ast$resultObject)}}
+\label{structdrdc__lPosn__t_f448fb95bac4105a59f47d805426a184}
+
+
+Negate operator, resultObject = - self. 
+
+\hypertarget{structdrdc__lPosn__t_b841f4ece0abc002c4a20591bd18a25b}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!scale@{scale}}
+\index{scale@{scale}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[scale]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::scale})(void $\ast$self, double scalar, void $\ast$resultObject)}}
+\label{structdrdc__lPosn__t_b841f4ece0abc002c4a20591bd18a25b}
+
+
+Scale operator, resultObject = self $\ast$ scalar. 
+
+\hypertarget{structdrdc__lPosn__t_29d500e7d47448506ca584e046a265bf}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!dot@{dot}}
+\index{dot@{dot}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[dot]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lPosn\_\-t::dot})(void $\ast$self, void $\ast$object)}}
+\label{structdrdc__lPosn__t_29d500e7d47448506ca584e046a265bf}
+
+
+Vector dot operator. It returns vector dot result. 
+
+\hypertarget{structdrdc__lPosn__t_a598f7e243438190e4812ffa9cef2d97}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!cross@{cross}}
+\index{cross@{cross}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::cross})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__lPosn__t_a598f7e243438190e4812ffa9cef2d97}
+
+
+Vector cross operator, resultObject = self cross object. 
+
+\hypertarget{structdrdc__lPosn__t_7709e0a141c76489ce7f3c60e3d457f8}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!normalize@{normalize}}
+\index{normalize@{normalize}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[normalize]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::normalize})(void $\ast$self)}}
+\label{structdrdc__lPosn__t_7709e0a141c76489ce7f3c60e3d457f8}
+
+
+Normalize the self object (vector norm). 
+
+\hypertarget{structdrdc__lPosn__t_d7162293346abf921b33d64d5eaa37fc}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[magnitude]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-lPosn\_\-t::magnitude})(void $\ast$self)}}
+\label{structdrdc__lPosn__t_d7162293346abf921b33d64d5eaa37fc}
+
+
+Return the magnitude of the self object. 
+
+\hypertarget{structdrdc__lPosn__t_061d2b3a1190a967bac4f8520ac93f9c}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!to\_\-WUTMPosn@{to\_\-WUTMPosn}}
+\index{to\_\-WUTMPosn@{to\_\-WUTMPosn}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[to\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::to\_\-WUTMPosn})(void $\ast$self, {\bf drdc\_\-UTMZone\_\-t} zone, void $\ast$worldUTMPosition)}}
+\label{structdrdc__lPosn__t_061d2b3a1190a967bac4f8520ac93f9c}
+
+
+Map Local Position to World UTM Position. 
+
+It is a simple mapping function. The mapping scheme is shown as follows:\begin{itemize}
+\item x - Easting\item y - Northing\item z - Elevation\end{itemize}
+
+
+Other mapping schemes can be achieved by using coordinate transformations. \hypertarget{structdrdc__lPosn__t_e620ba6725974a69bb92bf5cee9d3fb7}{
+\index{drdc\_\-lPosn\_\-t@{drdc\_\-lPosn\_\-t}!to\_\-WPosn@{to\_\-WPosn}}
+\index{to\_\-WPosn@{to\_\-WPosn}!drdc_lPosn_t@{drdc\_\-lPosn\_\-t}}
+\subsubsection[to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-lPosn\_\-t::to\_\-WPosn})(void $\ast$self, double falseElevation, void $\ast$worldPosition)}}
+\label{structdrdc__lPosn__t_e620ba6725974a69bb92bf5cee9d3fb7}
+
+
+Convert ECEF Position to World Position. 
+
+ECEF is a global position representation. Here we use Local Position, which is really a cartesian system, to represent ECEF system.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em falseElevation}]False elevation. \end{description}
+\end{Desc}
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

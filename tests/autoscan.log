@@ -1,0 +1,127 @@
+autoscan: warning: missing AC_CHECK_FUNCS([gettimeofday]) wanted by: 
+	src/time_conv/time_conv.c:63
+	tests/wrapper/wrapper_cpp_tests.cc:456
+	tests/wrapper/wrapper_tests.cc:115
+autoscan: warning: missing AC_CHECK_FUNCS([pow]) wanted by: 
+	src/coordinate/coordinate.c:238
+	src/coordinate/coordinate.c:310
+	src/coordinate/coordinate.c:310
+autoscan: warning: missing AC_CHECK_FUNCS([rint]) wanted by: 
+	src/data_conv/data_conv.c:74
+	src/data_conv/data_conv.c:101
+	src/data_conv/data_conv.c:120
+	src/data_conv/data_conv.c:139
+	src/data_conv/data_conv.c:157
+	src/data_conv/data_conv.c:176
+	src/data_conv/data_conv.c:195
+autoscan: warning: missing AC_CHECK_FUNCS([sqrt]) wanted by: 
+	src/f2c_blas/dnrm2.c:13
+	src/f2c_blas/dnrm2.c:54
+	src/coordinate/coordinate.c:125
+	src/coordinate/coordinate.c:199
+	src/coordinate/coordinate.c:199
+	src/coordinate/coordinate.c:235
+	src/coordinate/coordinate.c:273
+	src/coordinate/coordinate.c:274
+	src/coordinate/coordinate.c:293
+	src/coordinate/coordinate.c:305
+	src/coordinate/coordinate.c:306
+	src/coordinate/coordinate.c:307
+	src/coordinate/coordinate.c:311
+	src/quaternion/quaternion.c:93
+	src/quaternion/quaternion.c:191
+	src/quaternion/quaternion.c:198
+	src/quaternion/quaternion.c:204
+	src/quaternion/quaternion.c:210
+	src/quaternion/quaternion.c:289
+	src/homogeneous/homogeneous.c:113
+	src/homogeneous/homogeneous.c:219
+autoscan: warning: missing AC_CHECK_FUNCS([strtoul]) wanted by: 
+	src/coordinate/coordinate.c:211
+autoscan: warning: missing AC_CHECK_HEADERS([fcntl.h]) wanted by: 
+	src/extras/dp46/PanTilt.h:17
+	src/extras/dp46/PanTiltImp.c:13
+	src/extras/dp46/test.c:12
+autoscan: warning: missing AC_CHECK_HEADERS([float.h]) wanted by: 
+	src/unit_conv/unit_conv.h:46
+	src/homogeneous/homogeneous.h:45
+autoscan: warning: missing AC_CHECK_HEADERS([sys/time.h]) wanted by: 
+	src/time_conv/time_conv.h:47
+	src/time_conv/time_conv.c:39
+autoscan: warning: missing AC_CHECK_HEADERS([termios.h]) wanted by: 
+	src/extras/dp46/PanTiltImp.c:12
+	src/extras/dp46/test.c:11
+autoscan: warning: missing AC_FUNC_MALLOC wanted by: 
+	src/extras/fsm.c:65
+autoscan: warning: missing AC_PROG_RANLIB wanted by: 
+	ltmain.sh:6855
+autoscan: warning: missing AC_TYPE_SIZE_T wanted by: 
+	src/extras/tscalc.c:63
+	src/extras/fsm.c:162
+	src/extras/fsm.c:162
+	src/extras/fsm.h:81
+	src/extras/fsm.h:82
+	src/extras/fsm.h:83
+	src/extras/fsm.h:91
+	src/extras/fsm.h:91
+	src/extras/fsm.h:113
+	src/extras/fsm.h:113
+	src/extras/tscalc.h:91
+	src/extras/dp46/PanTilt.h:153
+	src/extras/dp46/PanTilt.h:153
+	src/extras/dp46/PanTilt.h:155
+	src/extras/dp46/PanTilt.h:155
+	src/extras/dp46/PanTiltImp.c:49
+	src/extras/dp46/PanTiltImp.c:49
+	src/extras/dp46/PanTiltImp.c:145
+	src/extras/dp46/PanTiltImp.c:145
+	src/extras/dp46/PanTiltImp.c:334
+	tests/extras/t_fsm.c:88
+	tests/extras/t_fsm.c:88
+	tests/extras/t_fsm.c:93
+	tests/extras/t_fsm.c:93
+autoscan: warning: missing AC_TYPE_UINT16_T wanted by: 
+	src/libdrdc.h:117
+	src/data_conv/data_conv.c:179
+	src/data_conv/data_conv.c:186
+	src/data_conv/data_conv.h:268
+	src/data_conv/data_conv.h:280
+	src/time_conv/time_conv.h:57
+	src/time_conv/time_conv.h:58
+	src/time_conv/time_conv.h:59
+	src/time_conv/time_conv.h:60
+	src/time_conv/time_conv.h:61
+	src/time_conv/time_conv.h:62
+	src/time_conv/time_conv.h:63
+	src/time_conv/time_conv.h:64
+	tests/wrapper/wrapper_cpp_tests.cc:454
+autoscan: warning: missing AC_TYPE_UINT32_T wanted by: 
+	src/libdrdc.h:119
+	src/libdrdc.h:143
+	src/libdrdc.h:153
+	src/data_conv/data_conv.c:141
+	src/data_conv/data_conv.c:148
+	src/data_conv/data_conv.h:50
+	src/data_conv/data_conv.h:220
+	src/data_conv/data_conv.h:232
+	src/time_conv/time_conv.h:56
+	tests/common/test.h:22
+	tests/common/test.h:22
+	tests/wrapper/wrapper_cpp_tests.cc:453
+autoscan: warning: missing AC_TYPE_UINT64_T wanted by: 
+	src/libdrdc.h:121
+	src/libdrdc.h:142
+	src/data_conv/data_conv.c:160
+	src/data_conv/data_conv.c:167
+	src/data_conv/data_conv.h:51
+	src/data_conv/data_conv.h:244
+	src/data_conv/data_conv.h:256
+autoscan: warning: missing AC_TYPE_UINT8_T wanted by: 
+	src/libdrdc.h:115
+	src/libdrdc.h:144
+	src/libdrdc.h:154
+	src/wrapper/wrapper.h:121
+	src/data_conv/data_conv.c:65
+	src/data_conv/data_conv.c:78
+	src/data_conv/data_conv.h:126
+	src/data_conv/data_conv.h:137

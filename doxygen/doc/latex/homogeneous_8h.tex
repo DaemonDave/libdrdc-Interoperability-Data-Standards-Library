@@ -1,0 +1,28 @@
+\hypertarget{homogeneous_8h}{
+\section{/home/dave/src/libdrdc/src/homogeneous/homogeneous.h File Reference}
+\label{homogeneous_8h}\index{/home/dave/src/libdrdc/src/homogeneous/homogeneous.h@{/home/dave/src/libdrdc/src/homogeneous/homogeneous.h}}
+}
+{\tt \#include \char`\"{}libdrdc.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{group__homogeneous_gac5515e14e14afacf5cf678705c499f0}{HMatrixSetTranslation} (const double $\ast$vector, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Set the Translational Component of a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_gea46cfbea64dcd828a7ad9c0a1a58804}{HMatrixGetTranslation} (const double $\ast$hMatrix, double $\ast$vector)
+\begin{CompactList}\small\item\em Get the Translational Component of a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_ge57333c09ab072ba908b1bd7f75eb586}{RotVectorToHMatrix} (const double theta, const double $\ast$vector, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Rotation Vector to Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g764502d28de75923b75fbc4bcf109e68}{HMatrixToRotVector} (const double $\ast$hMatrix, double $\ast$theta, double $\ast$vector)
+\begin{CompactList}\small\item\em Homogeneous Matrix to Rotation Vector. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g0be4d04db6aa88d63dd839ba12b4ecb7}{EulerRPYToHMatrix} (const double $\ast$rpyVector, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Euler Angle RPY to Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g1331c182a0156371f53bbe26f721c8fa}{HMatrixToEulerRPY} (const double $\ast$hMatrix, double $\ast$rpyVector)
+\begin{CompactList}\small\item\em Homogeneous Matrix to Euler Angle RPY. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_gfc783d7c3cacff9513b7e461b243ee07}{HMatrixNormalize} (double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Normalize a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_ge9f5bb16caafcd7644d14eb29c175833}{RotAxisToHMatrix} (\hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, const double theta, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Rotation about an Axis to Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g7e37012b55e5a56c288513e3bace06f7}{HMatrixInverse} (double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Inverse a Homogeneous Matrix. \item\end{CompactList}\item 
+int \hyperlink{group__homogeneous_g0c48c0e48e92cd283e7b110ac6a5704b}{HMatrixLink} (const double linkLength, const double twistAngle, const double jointOffset, const double jointAngle, double $\ast$hMatrix)
+\begin{CompactList}\small\item\em Homogeneous Matrix from Manipulator Linkage Specification. \item\end{CompactList}\end{CompactItemize}

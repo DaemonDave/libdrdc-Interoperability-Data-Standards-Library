@@ -1,0 +1,188 @@
+\hypertarget{group__Coordinate}{
+\section{Coordinate}
+\label{group__Coordinate}\index{Coordinate@{Coordinate}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{group__Coordinate_g6c1e48485dd1ac536a1545f7b62c82df}{LatLon\_\-to\_\-UTM} (const double a, const double f, const double Lat, const double Long, double $\ast$UTMNorthing, double $\ast$UTMEasting, unsigned char $\ast$UTMZoneNum, char $\ast$UTMZoneCh)
+\begin{CompactList}\small\item\em Lat/Lon to UTM Northing/Easting Conversion. \item\end{CompactList}\item 
+int \hyperlink{group__Coordinate_gc09942cce14db1739c8441e4cca8a5a6}{UTM\_\-to\_\-LatLon} (const double a, const double f, const double UTMNorthing, const double UTMEasting, const unsigned char UTMZoneNum, const char UTMZoneCh, double $\ast$Lat, double $\ast$Long)
+\begin{CompactList}\small\item\em UTM to Lat/Lon Conversion \item\end{CompactList}\item 
+int \hyperlink{group__Coordinate_gf60ade188e07bb724c798fbaca99b002}{WUTMPosn\_\-to\_\-WPosn} (const double a, const double f, const unsigned char zoneNumber, const char zoneLetter, const double $\ast$worldUTMPosition, double $\ast$worldPosition)
+\begin{CompactList}\small\item\em UTM Position to World Position \item\end{CompactList}\item 
+int \hyperlink{group__Coordinate_g243a9a9ac70866ba4d4513d353058e92}{WPosn\_\-to\_\-WUTMPosn} (const double a, const double f, const double $\ast$worldPosition, unsigned char $\ast$zoneNumber, char $\ast$zoneLetter, double $\ast$worldUTMPosition)
+\begin{CompactList}\small\item\em World Position to UTM Position. \item\end{CompactList}\item 
+int \hyperlink{group__Coordinate_ge470f6de804ac4cbd9248238562ba0a2}{cartesian\_\-to\_\-spherical} (const double $\ast$cartesian, double $\ast$spherical)
+\begin{CompactList}\small\item\em Cartesian to Spherical Conversion \item\end{CompactList}\item 
+int \hyperlink{group__Coordinate_g17c6892e2beefcd95412a53c01815940}{spherical\_\-to\_\-cartesian} (const double $\ast$spherical, double $\ast$cartesian)
+\begin{CompactList}\small\item\em Spherical to Cartesian Conversion \item\end{CompactList}\item 
+int \hyperlink{group__Coordinate_gc93c21c7f2c3b69bd38c0123bba28b36}{WPosn\_\-to\_\-lPosn} (const double a, const double f, const double falseElevation, const double $\ast$worldPosition, double $\ast$cartesian)
+\begin{CompactList}\small\item\em World Position to Cartesian Conversion. \item\end{CompactList}\item 
+int \hyperlink{group__Coordinate_g79ace4a7c8d0331aa300fdb5a68e16ec}{lPosn\_\-to\_\-WPosn} (const double a, const double f, const double falseElevation, const double $\ast$cartesian, double $\ast$worldPosition)
+\begin{CompactList}\small\item\em Cartesian to World Position Conversion \item\end{CompactList}\item 
+double \hyperlink{group__Coordinate_g9e353934d40cb8dc6e102003b945acdd}{DMS\_\-to\_\-DecimalDegree} (const double degrees, const double minutes, const double seconds)
+\begin{CompactList}\small\item\em Degree-Minute-Second to Decimal Degree Conversion. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__Coordinate_ge470f6de804ac4cbd9248238562ba0a2}{
+\index{Coordinate@{Coordinate}!cartesian\_\-to\_\-spherical@{cartesian\_\-to\_\-spherical}}
+\index{cartesian\_\-to\_\-spherical@{cartesian\_\-to\_\-spherical}!Coordinate@{Coordinate}}
+\subsubsection[cartesian\_\-to\_\-spherical]{\setlength{\rightskip}{0pt plus 5cm}int cartesian\_\-to\_\-spherical (const double $\ast$ {\em cartesian}, \/  double $\ast$ {\em spherical})}}
+\label{group__Coordinate_ge470f6de804ac4cbd9248238562ba0a2}
+
+
+Cartesian to Spherical Conversion 
+
+This function converts ECEF XYZ coordinate spherical coordinate.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cartesian}]Cartesian vector - \mbox{[}x, y, z\mbox{]}. \item[{\em spherical}]Spherical vector - \mbox{[}Azimuth, Zenith, Radius\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if errors occur. \end{Desc}
+\hypertarget{group__Coordinate_g9e353934d40cb8dc6e102003b945acdd}{
+\index{Coordinate@{Coordinate}!DMS\_\-to\_\-DecimalDegree@{DMS\_\-to\_\-DecimalDegree}}
+\index{DMS\_\-to\_\-DecimalDegree@{DMS\_\-to\_\-DecimalDegree}!Coordinate@{Coordinate}}
+\subsubsection[DMS\_\-to\_\-DecimalDegree]{\setlength{\rightskip}{0pt plus 5cm}double DMS\_\-to\_\-DecimalDegree (const double {\em degrees}, \/  const double {\em minutes}, \/  const double {\em seconds})}}
+\label{group__Coordinate_g9e353934d40cb8dc6e102003b945acdd}
+
+
+Degree-Minute-Second to Decimal Degree Conversion. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em degrees}]Degree value. \item[{\em minutes}]Minute value. \item[{\em seconds}]Second value.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Decimal degree value. \end{Desc}
+\hypertarget{group__Coordinate_g6c1e48485dd1ac536a1545f7b62c82df}{
+\index{Coordinate@{Coordinate}!LatLon\_\-to\_\-UTM@{LatLon\_\-to\_\-UTM}}
+\index{LatLon\_\-to\_\-UTM@{LatLon\_\-to\_\-UTM}!Coordinate@{Coordinate}}
+\subsubsection[LatLon\_\-to\_\-UTM]{\setlength{\rightskip}{0pt plus 5cm}int LatLon\_\-to\_\-UTM (const double {\em a}, \/  const double {\em f}, \/  const double {\em Lat}, \/  const double {\em Long}, \/  double $\ast$ {\em UTMNorthing}, \/  double $\ast$ {\em UTMEasting}, \/  unsigned char $\ast$ {\em UTMZoneNum}, \/  char $\ast$ {\em UTMZoneCh})}}
+\label{group__Coordinate_g6c1e48485dd1ac536a1545f7b62c82df}
+
+
+Lat/Lon to UTM Northing/Easting Conversion. 
+
+This function converts the specified lat/lon coordinate to UTM coordinate.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Input. Ellipsoid semi-major axis, in meters. (For WGS84 datum, use 6378137.0). \item[{\em f}]Input. Ellipsoid flattening. (For WGS84 datum, use 1 / 298.257223563). \item[{\em Lat}]Input. Latitude in radians. \item[{\em Long}]Input. Longtitude in radians. \item[{\em UTMNorthing}]Output. UTM Northing in meters. \item[{\em UTMEasting}]Output. UTM Easting in meters. \item[{\em UTMZoneNum}]Output. UTM zone number. \item[{\em UTMZoneCh}]Output. UTM zone character.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if errors occur. \end{Desc}
+\hypertarget{group__Coordinate_g79ace4a7c8d0331aa300fdb5a68e16ec}{
+\index{Coordinate@{Coordinate}!lPosn\_\-to\_\-WPosn@{lPosn\_\-to\_\-WPosn}}
+\index{lPosn\_\-to\_\-WPosn@{lPosn\_\-to\_\-WPosn}!Coordinate@{Coordinate}}
+\subsubsection[lPosn\_\-to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}int lPosn\_\-to\_\-WPosn (const double {\em a}, \/  const double {\em f}, \/  const double {\em falseElevation}, \/  const double $\ast$ {\em cartesian}, \/  double $\ast$ {\em worldPosition})}}
+\label{group__Coordinate_g79ace4a7c8d0331aa300fdb5a68e16ec}
+
+
+Cartesian to World Position Conversion 
+
+This function converts ECEF XYZ coordinate to global geographical coordinate.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Input. Ellipsoid semi-major axis, in meters. (For WGS84 datum, use 6378137.0). \item[{\em f}]Input. Ellipsoid flattening. (For WGS84 datum, use 1 / 298.257223563). \item[{\em falseElevation}]False elevation. \item[{\em cartesian}]Cartesian vector - \mbox{[}x, y, z\mbox{]}. \item[{\em worldPosition}]World position vector - \mbox{[}longtitude, latitude, elevation\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if errors occur. \end{Desc}
+\hypertarget{group__Coordinate_g17c6892e2beefcd95412a53c01815940}{
+\index{Coordinate@{Coordinate}!spherical\_\-to\_\-cartesian@{spherical\_\-to\_\-cartesian}}
+\index{spherical\_\-to\_\-cartesian@{spherical\_\-to\_\-cartesian}!Coordinate@{Coordinate}}
+\subsubsection[spherical\_\-to\_\-cartesian]{\setlength{\rightskip}{0pt plus 5cm}int spherical\_\-to\_\-cartesian (const double $\ast$ {\em spherical}, \/  double $\ast$ {\em cartesian})}}
+\label{group__Coordinate_g17c6892e2beefcd95412a53c01815940}
+
+
+Spherical to Cartesian Conversion 
+
+This function converts spherical coordinate to ECEF XYZ coordinate.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cartesian}]Cartesian vector -\mbox{[}x, y, z\mbox{]}. \item[{\em spherical}]Spherical vector - \mbox{[}Azimuth, Zenith, Radius\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if errors occur. \end{Desc}
+\hypertarget{group__Coordinate_gc09942cce14db1739c8441e4cca8a5a6}{
+\index{Coordinate@{Coordinate}!UTM\_\-to\_\-LatLon@{UTM\_\-to\_\-LatLon}}
+\index{UTM\_\-to\_\-LatLon@{UTM\_\-to\_\-LatLon}!Coordinate@{Coordinate}}
+\subsubsection[UTM\_\-to\_\-LatLon]{\setlength{\rightskip}{0pt plus 5cm}int UTM\_\-to\_\-LatLon (const double {\em a}, \/  const double {\em f}, \/  const double {\em UTMNorthing}, \/  const double {\em UTMEasting}, \/  const unsigned char {\em UTMZoneNum}, \/  const char {\em UTMZoneCh}, \/  double $\ast$ {\em Lat}, \/  double $\ast$ {\em Long})}}
+\label{group__Coordinate_gc09942cce14db1739c8441e4cca8a5a6}
+
+
+UTM to Lat/Lon Conversion 
+
+This function converts the specified UTM coordinate lat/lon coordinate.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Input. Ellipsoid semi-major axis, in meters. (For WGS84 datum, use 6378137.0). \item[{\em f}]Input. Ellipsoid flattening. (For WGS84 datum, use 1 / 298.257223563). \item[{\em UTMNorthing}]Input. UTM Northing in meters. \item[{\em UTMEasting}]Input. UTM Easting in meters. \item[{\em UTMZoneNum}]Input. UTM zone number. \item[{\em UTMZoneCh}]Input. UTM zone character. \item[{\em Lat}]Output. Latitude in radians. \item[{\em Long}]Output. Longtitude in radians.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{group__Coordinate_gc93c21c7f2c3b69bd38c0123bba28b36}{
+\index{Coordinate@{Coordinate}!WPosn\_\-to\_\-lPosn@{WPosn\_\-to\_\-lPosn}}
+\index{WPosn\_\-to\_\-lPosn@{WPosn\_\-to\_\-lPosn}!Coordinate@{Coordinate}}
+\subsubsection[WPosn\_\-to\_\-lPosn]{\setlength{\rightskip}{0pt plus 5cm}int WPosn\_\-to\_\-lPosn (const double {\em a}, \/  const double {\em f}, \/  const double {\em falseElevation}, \/  const double $\ast$ {\em worldPosition}, \/  double $\ast$ {\em cartesian})}}
+\label{group__Coordinate_gc93c21c7f2c3b69bd38c0123bba28b36}
+
+
+World Position to Cartesian Conversion. 
+
+This function converts global geographical coordinate to ECEF XYZ coordinate.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Input. Ellipsoid semi-major axis, in meters. (For WGS84 datum, use 6378137.0). \item[{\em f}]Input. Ellipsoid flattening. (For WGS84 datum, use 1 / 298.257223563). \item[{\em falseElevation}]False elevation. \item[{\em worldPosition}]World position vector - \mbox{[}longtitude, latitude, elevation\mbox{]}. \item[{\em cartesian}]Cartesian vector - \mbox{[}x, y, z\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if errors occur. \end{Desc}
+\hypertarget{group__Coordinate_g243a9a9ac70866ba4d4513d353058e92}{
+\index{Coordinate@{Coordinate}!WPosn\_\-to\_\-WUTMPosn@{WPosn\_\-to\_\-WUTMPosn}}
+\index{WPosn\_\-to\_\-WUTMPosn@{WPosn\_\-to\_\-WUTMPosn}!Coordinate@{Coordinate}}
+\subsubsection[WPosn\_\-to\_\-WUTMPosn]{\setlength{\rightskip}{0pt plus 5cm}int WPosn\_\-to\_\-WUTMPosn (const double {\em a}, \/  const double {\em f}, \/  const double $\ast$ {\em worldPosition}, \/  unsigned char $\ast$ {\em zoneNumber}, \/  char $\ast$ {\em zoneLetter}, \/  double $\ast$ {\em worldUTMPosition})}}
+\label{group__Coordinate_g243a9a9ac70866ba4d4513d353058e92}
+
+
+World Position to UTM Position. 
+
+This function is a wrapper of LatLon\_\-to\_\-UTM.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Input. Ellipsoid semi-major axis, in meters. (For WGS84 datum, use 6378137.0). \item[{\em f}]Input. Ellipsoid flattening. (For WGS84 datum, use 1 / 298.257223563). \item[{\em worldPosition}]Input. World position vector - \mbox{[}longtiude, latitude, elevation\mbox{]}. \item[{\em zoneNumber}]Output. UTM zone number. \item[{\em zoneLetter}]Output. UTM zone character. \item[{\em worldUTMPosition}]Output. UTM vector - \mbox{[}easting, northing, elevation\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if errors occur. \end{Desc}
+\hypertarget{group__Coordinate_gf60ade188e07bb724c798fbaca99b002}{
+\index{Coordinate@{Coordinate}!WUTMPosn\_\-to\_\-WPosn@{WUTMPosn\_\-to\_\-WPosn}}
+\index{WUTMPosn\_\-to\_\-WPosn@{WUTMPosn\_\-to\_\-WPosn}!Coordinate@{Coordinate}}
+\subsubsection[WUTMPosn\_\-to\_\-WPosn]{\setlength{\rightskip}{0pt plus 5cm}int WUTMPosn\_\-to\_\-WPosn (const double {\em a}, \/  const double {\em f}, \/  const unsigned char {\em zoneNumber}, \/  const char {\em zoneLetter}, \/  const double $\ast$ {\em worldUTMPosition}, \/  double $\ast$ {\em worldPosition})}}
+\label{group__Coordinate_gf60ade188e07bb724c798fbaca99b002}
+
+
+UTM Position to World Position 
+
+This function is a wrapper of UTM\_\-to\_\-LatLon.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Input. Ellipsoid semi-major axis, in meters. (For WGS84 datum, use 6378137.0). \item[{\em f}]Input. Ellipsoid flattening. (For WGS84 datum, use 1 / 298.257223563). \item[{\em zoneNumber}]Input. UTM zone number. \item[{\em zoneLetter}]Input. UTM zone character. \item[{\em worldUTMPosition}]Input. UTM position vector - \mbox{[}easting, northing, elevation\mbox{]}. \item[{\em worldPosition}]Output. World position vector- \mbox{[}longtiude, latitude, elevation\mbox{]}.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]It returns zero if succesful. Otherwise, it returns one if errors occur. \end{Desc}

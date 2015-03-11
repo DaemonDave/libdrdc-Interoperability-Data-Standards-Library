@@ -1,0 +1,293 @@
+\hypertarget{structdrdc__HMatrix__t}{
+\section{drdc\_\-HMatrix\_\-t Struct Reference}
+\label{structdrdc__HMatrix__t}\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}}
+}
+OOC Homogeneous Matrix Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+const void $\ast$ \hyperlink{structdrdc__HMatrix__t_aec735496db11c4c267fbb03f5942a28}{vector}
+\begin{CompactList}\small\item\em Protected data vector. \item\end{CompactList}\item 
+double($\ast$ \hyperlink{structdrdc__HMatrix__t_bbd23dbb134b5f1b054d8400a2dc94b2}{index} )(void $\ast$self, unsigned char n)
+\begin{CompactList}\small\item\em Return the nth element from the object data vector. \item\end{CompactList}\item 
+int($\ast$ \hyperlink{structdrdc__HMatrix__t_c17f29dbfcfdc85c5f88459e4fac271b}{compare} )(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)
+\begin{CompactList}\small\item\em Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_ca44c3cfeb886b90f0f2af83ddee3e19}{copy} )(void $\ast$self, void $\ast$dest)
+\begin{CompactList}\small\item\em Copy data in the self object to the dest object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_75b930c8a51cd0fa0a163ca2313d1221}{setFromArray} )(void $\ast$self, const double $\ast$array)
+\begin{CompactList}\small\item\em Set the self object by using array data type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_7643f359a9607a1ea958c471726d1bd9}{toArray} )(const void $\ast$self, double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the self object to data array type. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_9dc64b7353043c2f218a3c0b1ad6f7ad}{destroy} )(void $\ast$self)
+\begin{CompactList}\small\item\em Delete the self object. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_79663fad7f7626be17eb5f0f5c3af8ce}{mult} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Homogeneous Matrix multiplication operator. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_15d90da71f6fcab0db9b585a8762cd30}{multVec} )(void $\ast$self, void $\ast$object, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Homogeneous-Vector multiplication operator. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_7dd237c5e42d0a48106bfd31bedeb99f}{setPosition} )(void $\ast$self, \hyperlink{structdrdc__lPosn__t}{drdc\_\-lPosn\_\-t} $\ast$position)
+\begin{CompactList}\small\item\em Set position component of Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_432d1b20c6fc79da446a894988ad188e}{getPosition} )(void $\ast$self, \hyperlink{structdrdc__lPosn__t}{drdc\_\-lPosn\_\-t} $\ast$position)
+\begin{CompactList}\small\item\em Return position component of Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_8230fd2af3d183116fa13ccf499c3ab5}{normalize} )(void $\ast$self)
+\begin{CompactList}\small\item\em Normalize a Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_d574009aefa57168f502263da6ff25bc}{identity} )(void $\ast$self)
+\begin{CompactList}\small\item\em Create identity Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_004d664a140115f5ef8f2b093cdab339}{inverse} )(void $\ast$self, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Inverse a Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_1f0e7eb07e96722033da212cc9b25518}{transpose} )(void $\ast$self, void $\ast$resultObject)
+\begin{CompactList}\small\item\em Transpose a Homogeneous Matrix. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_ce4ff366265225689e58b5eee5323170}{fromDH} )(void $\ast$self, double linkLength, double twistAngle, double jointOffset, double jointAngle)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from DH representation. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_bdb80598a4a45e67b52ef3a910d4c6f1}{fromLink} )(void $\ast$linkSpec, double jointOffsetOrAngle)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from link specification struct. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_db74c31930baca46044d5881184e0ee1}{fromRotAxis} )(void $\ast$self, \hyperlink{libdrdc_8h_32b2eaf8bafc891ec8018cbe48d39243}{Axis\_\-t} axis, double angle)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from rotation of an axis. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_9a588ae7f69e12776056643b2e4477aa}{fromRotVec} )(void $\ast$self, double angle, void $\ast$unitVector)
+\begin{CompactList}\small\item\em Construct Homogeneous Matrix from rotation vector. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_f6d72ccdd0cb8fae5bd0331abb616dc6}{toRotVec} )(void $\ast$self, double $\ast$angle, void $\ast$unitVector)
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to rotation vector. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_0b7448261d2d879f92800461aed4e09e}{to\_\-Orient} )(void $\ast$self, void $\ast$homogeneous)
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Quaternion. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_8c9ab96f1d2099138e7f9bace51c9fb1}{to\_\-eOrient} )(void $\ast$self, \hyperlink{structdrdc__eOrient__t}{drdc\_\-eOrient\_\-t} $\ast$eulerRPY)
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Euler RPY. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_7c6792ab2cdaf09ac6c1d706b0e708c1}{to\_\-lPose} )(void $\ast$self, void $\ast$localPose)
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Local Pose. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{structdrdc__HMatrix__t_abb29b23fa2c3c71fbbb6209984ef9af}{to\_\-lePose} )(void $\ast$self, void $\ast$localEulerPose)
+\begin{CompactList}\small\item\em Convert Homogeneous Matrix to Local Euler Pose. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OOC Homogeneous Matrix Representation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdrdc__HMatrix__t_aec735496db11c4c267fbb03f5942a28}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!vector@{vector}}
+\index{vector@{vector}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ {\bf drdc\_\-HMatrix\_\-t::vector}}}
+\label{structdrdc__HMatrix__t_aec735496db11c4c267fbb03f5942a28}
+
+
+Protected data vector. 
+
+\hypertarget{structdrdc__HMatrix__t_bbd23dbb134b5f1b054d8400a2dc94b2}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!index@{index}}
+\index{index@{index}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[index]{\setlength{\rightskip}{0pt plus 5cm}double($\ast$ {\bf drdc\_\-HMatrix\_\-t::index})(void $\ast$self, unsigned char n)}}
+\label{structdrdc__HMatrix__t_bbd23dbb134b5f1b054d8400a2dc94b2}
+
+
+Return the nth element from the object data vector. 
+
+\hypertarget{structdrdc__HMatrix__t_c17f29dbfcfdc85c5f88459e4fac271b}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!compare@{compare}}
+\index{compare@{compare}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf drdc\_\-HMatrix\_\-t::compare})(void $\ast$self, void $\ast$object, void $\ast$fuzzObject)}}
+\label{structdrdc__HMatrix__t_c17f29dbfcfdc85c5f88459e4fac271b}
+
+
+Compare two objects, self and object. The fuzzObject determines how close they are considered to be equal. 
+
+\hypertarget{structdrdc__HMatrix__t_ca44c3cfeb886b90f0f2af83ddee3e19}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!copy@{copy}}
+\index{copy@{copy}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::copy})(void $\ast$self, void $\ast$dest)}}
+\label{structdrdc__HMatrix__t_ca44c3cfeb886b90f0f2af83ddee3e19}
+
+
+Copy data in the self object to the dest object. 
+
+\hypertarget{structdrdc__HMatrix__t_75b930c8a51cd0fa0a163ca2313d1221}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!setFromArray@{setFromArray}}
+\index{setFromArray@{setFromArray}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[setFromArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::setFromArray})(void $\ast$self, const double $\ast$array)}}
+\label{structdrdc__HMatrix__t_75b930c8a51cd0fa0a163ca2313d1221}
+
+
+Set the self object by using array data type. 
+
+\hypertarget{structdrdc__HMatrix__t_7643f359a9607a1ea958c471726d1bd9}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::toArray})(const void $\ast$self, double $\ast$array)}}
+\label{structdrdc__HMatrix__t_7643f359a9607a1ea958c471726d1bd9}
+
+
+Convert data in the self object to data array type. 
+
+\hypertarget{structdrdc__HMatrix__t_9dc64b7353043c2f218a3c0b1ad6f7ad}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!destroy@{destroy}}
+\index{destroy@{destroy}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[destroy]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::destroy})(void $\ast$self)}}
+\label{structdrdc__HMatrix__t_9dc64b7353043c2f218a3c0b1ad6f7ad}
+
+
+Delete the self object. 
+
+\hypertarget{structdrdc__HMatrix__t_79663fad7f7626be17eb5f0f5c3af8ce}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!mult@{mult}}
+\index{mult@{mult}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[mult]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::mult})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__HMatrix__t_79663fad7f7626be17eb5f0f5c3af8ce}
+
+
+Homogeneous Matrix multiplication operator. 
+
+resultObject = self $\ast$ object
+
+Object and resultObject are Homogeneous Matrix type.. \hypertarget{structdrdc__HMatrix__t_15d90da71f6fcab0db9b585a8762cd30}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!multVec@{multVec}}
+\index{multVec@{multVec}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[multVec]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::multVec})(void $\ast$self, void $\ast$object, void $\ast$resultObject)}}
+\label{structdrdc__HMatrix__t_15d90da71f6fcab0db9b585a8762cd30}
+
+
+Homogeneous-Vector multiplication operator. 
+
+resultObject = self $\ast$ object
+
+Object and resultObject are \hyperlink{classdrdc__lPosn}{drdc\_\-lPosn} or \hyperlink{classdrdc__WUTMPosn}{drdc\_\-WUTMPosn} type. \hypertarget{structdrdc__HMatrix__t_7dd237c5e42d0a48106bfd31bedeb99f}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[setPosition]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::setPosition})(void $\ast$self, {\bf drdc\_\-lPosn\_\-t} $\ast$position)}}
+\label{structdrdc__HMatrix__t_7dd237c5e42d0a48106bfd31bedeb99f}
+
+
+Set position component of Homogeneous Matrix. 
+
+\hypertarget{structdrdc__HMatrix__t_432d1b20c6fc79da446a894988ad188e}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::getPosition})(void $\ast$self, {\bf drdc\_\-lPosn\_\-t} $\ast$position)}}
+\label{structdrdc__HMatrix__t_432d1b20c6fc79da446a894988ad188e}
+
+
+Return position component of Homogeneous Matrix. 
+
+\hypertarget{structdrdc__HMatrix__t_8230fd2af3d183116fa13ccf499c3ab5}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!normalize@{normalize}}
+\index{normalize@{normalize}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[normalize]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::normalize})(void $\ast$self)}}
+\label{structdrdc__HMatrix__t_8230fd2af3d183116fa13ccf499c3ab5}
+
+
+Normalize a Homogeneous Matrix. 
+
+\hypertarget{structdrdc__HMatrix__t_d574009aefa57168f502263da6ff25bc}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!identity@{identity}}
+\index{identity@{identity}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[identity]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::identity})(void $\ast$self)}}
+\label{structdrdc__HMatrix__t_d574009aefa57168f502263da6ff25bc}
+
+
+Create identity Homogeneous Matrix. 
+
+\hypertarget{structdrdc__HMatrix__t_004d664a140115f5ef8f2b093cdab339}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!inverse@{inverse}}
+\index{inverse@{inverse}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[inverse]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::inverse})(void $\ast$self, void $\ast$resultObject)}}
+\label{structdrdc__HMatrix__t_004d664a140115f5ef8f2b093cdab339}
+
+
+Inverse a Homogeneous Matrix. 
+
+\hypertarget{structdrdc__HMatrix__t_1f0e7eb07e96722033da212cc9b25518}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!transpose@{transpose}}
+\index{transpose@{transpose}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[transpose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::transpose})(void $\ast$self, void $\ast$resultObject)}}
+\label{structdrdc__HMatrix__t_1f0e7eb07e96722033da212cc9b25518}
+
+
+Transpose a Homogeneous Matrix. 
+
+\hypertarget{structdrdc__HMatrix__t_ce4ff366265225689e58b5eee5323170}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!fromDH@{fromDH}}
+\index{fromDH@{fromDH}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[fromDH]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::fromDH})(void $\ast$self, double linkLength, double twistAngle, double jointOffset, double jointAngle)}}
+\label{structdrdc__HMatrix__t_ce4ff366265225689e58b5eee5323170}
+
+
+Construct Homogeneous Matrix from DH representation. 
+
+\hypertarget{structdrdc__HMatrix__t_bdb80598a4a45e67b52ef3a910d4c6f1}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!fromLink@{fromLink}}
+\index{fromLink@{fromLink}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[fromLink]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::fromLink})(void $\ast$linkSpec, double jointOffsetOrAngle)}}
+\label{structdrdc__HMatrix__t_bdb80598a4a45e67b52ef3a910d4c6f1}
+
+
+Construct Homogeneous Matrix from link specification struct. 
+
+\hypertarget{structdrdc__HMatrix__t_db74c31930baca46044d5881184e0ee1}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!fromRotAxis@{fromRotAxis}}
+\index{fromRotAxis@{fromRotAxis}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[fromRotAxis]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::fromRotAxis})(void $\ast$self, {\bf Axis\_\-t} axis, double angle)}}
+\label{structdrdc__HMatrix__t_db74c31930baca46044d5881184e0ee1}
+
+
+Construct Homogeneous Matrix from rotation of an axis. 
+
+\hypertarget{structdrdc__HMatrix__t_9a588ae7f69e12776056643b2e4477aa}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!fromRotVec@{fromRotVec}}
+\index{fromRotVec@{fromRotVec}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[fromRotVec]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::fromRotVec})(void $\ast$self, double angle, void $\ast$unitVector)}}
+\label{structdrdc__HMatrix__t_9a588ae7f69e12776056643b2e4477aa}
+
+
+Construct Homogeneous Matrix from rotation vector. 
+
+\hypertarget{structdrdc__HMatrix__t_f6d72ccdd0cb8fae5bd0331abb616dc6}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!toRotVec@{toRotVec}}
+\index{toRotVec@{toRotVec}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[toRotVec]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::toRotVec})(void $\ast$self, double $\ast$angle, void $\ast$unitVector)}}
+\label{structdrdc__HMatrix__t_f6d72ccdd0cb8fae5bd0331abb616dc6}
+
+
+Convert Homogeneous Matrix to rotation vector. 
+
+\hypertarget{structdrdc__HMatrix__t_0b7448261d2d879f92800461aed4e09e}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!to\_\-Orient@{to\_\-Orient}}
+\index{to\_\-Orient@{to\_\-Orient}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[to\_\-Orient]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::to\_\-Orient})(void $\ast$self, void $\ast$homogeneous)}}
+\label{structdrdc__HMatrix__t_0b7448261d2d879f92800461aed4e09e}
+
+
+Convert Homogeneous Matrix to Quaternion. 
+
+\hypertarget{structdrdc__HMatrix__t_8c9ab96f1d2099138e7f9bace51c9fb1}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!to\_\-eOrient@{to\_\-eOrient}}
+\index{to\_\-eOrient@{to\_\-eOrient}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[to\_\-eOrient]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::to\_\-eOrient})(void $\ast$self, {\bf drdc\_\-eOrient\_\-t} $\ast$eulerRPY)}}
+\label{structdrdc__HMatrix__t_8c9ab96f1d2099138e7f9bace51c9fb1}
+
+
+Convert Homogeneous Matrix to Euler RPY. 
+
+\hypertarget{structdrdc__HMatrix__t_7c6792ab2cdaf09ac6c1d706b0e708c1}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!to\_\-lPose@{to\_\-lPose}}
+\index{to\_\-lPose@{to\_\-lPose}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::to\_\-lPose})(void $\ast$self, void $\ast$localPose)}}
+\label{structdrdc__HMatrix__t_7c6792ab2cdaf09ac6c1d706b0e708c1}
+
+
+Convert Homogeneous Matrix to Local Pose. 
+
+\hypertarget{structdrdc__HMatrix__t_abb29b23fa2c3c71fbbb6209984ef9af}{
+\index{drdc\_\-HMatrix\_\-t@{drdc\_\-HMatrix\_\-t}!to\_\-lePose@{to\_\-lePose}}
+\index{to\_\-lePose@{to\_\-lePose}!drdc_HMatrix_t@{drdc\_\-HMatrix\_\-t}}
+\subsubsection[to\_\-lePose]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf drdc\_\-HMatrix\_\-t::to\_\-lePose})(void $\ast$self, void $\ast$localEulerPose)}}
+\label{structdrdc__HMatrix__t_abb29b23fa2c3c71fbbb6209984ef9af}
+
+
+Convert Homogeneous Matrix to Local Euler Pose. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{matrix__ops_8h}{
+\section{/home/dave/src/libdrdc/src/matrix\_\-ops/matrix\_\-ops.h File Reference}
+\label{matrix__ops_8h}\index{/home/dave/src/libdrdc/src/matrix\_\-ops/matrix\_\-ops.h@{/home/dave/src/libdrdc/src/matrix\_\-ops/matrix\_\-ops.h}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{group__a_gfc9e8bb8b888bf8f1577f0f04ec74f09}{vectorCompare} (const int n, const double $\ast$vector1, const double $\ast$vector2, const double $\ast$fuzzVector)
+\begin{CompactList}\small\item\em Vector Comparison. \item\end{CompactList}\item 
+double \hyperlink{group__a_gc985f610b5e647c96a03cf89098aa271}{vectorDot} (const int n, const double $\ast$vector1, const double $\ast$vector2)
+\begin{CompactList}\small\item\em Vector Dot Product. \item\end{CompactList}\item 
+double \hyperlink{group__a_gdf52065f80318dcc65c395566784fbc5}{vectorMagnitude} (const int n, const double $\ast$vector)
+\begin{CompactList}\small\item\em Vector Magnitude. \item\end{CompactList}\item 
+void \hyperlink{group__a_g0b322588b02d41e5bc4f37b292d15e16}{vectorNormalize} (const int n, double $\ast$vector)
+\begin{CompactList}\small\item\em Unitize Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g1ac846f1472a6bbb80a7b10e44c9c8e7}{vectorCross} (const double $\ast$vector1, const double $\ast$vector2, double $\ast$resultVector)
+\begin{CompactList}\small\item\em Vector Cross Product. \item\end{CompactList}\item 
+void \hyperlink{group__a_g97fc3b2e8bbe3973ac8fe0c122807b89}{vectorScale} (const int n, const double alpha, double $\ast$vector)
+\begin{CompactList}\small\item\em Vector Scaling. \item\end{CompactList}\item 
+void \hyperlink{group__a_g08d2c57a110ec57f89669160ae1fd089}{vectorCopy} (const int n, const double $\ast$srcVector, double $\ast$destVector)
+\begin{CompactList}\small\item\em Copy Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g3498940945f9d5437032454f4838350c}{vectorAxpy} (const int n, const double alpha, const double $\ast$x, double $\ast$y)
+\begin{CompactList}\small\item\em Scalar-Vector Product. \item\end{CompactList}\item 
+void \hyperlink{group__a_g36d84832e6a52057a4519e003d299e95}{vectorZeros} (const int n, double $\ast$vector)
+\begin{CompactList}\small\item\em Zero Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g04a15ca8e56a12b927b5408ce191795a}{vectorSplit} (const int n, const int m, const double $\ast$orgVector, double $\ast$vector1, double $\ast$vector2)
+\begin{CompactList}\small\item\em Split Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_gc00ab414706bc82820e985055f285f3b}{vectorJoin} (const int n, const int m, const double $\ast$vector1, const double $\ast$vector2, double $\ast$resultVector)
+\begin{CompactList}\small\item\em Join Vector. \item\end{CompactList}\item 
+void \hyperlink{group__a_g097b52024b56996c79e5c8767afd66ae}{matrixMvp} (const char transA, const double alpha, const double $\ast$a, const double $\ast$x, const double beta, double $\ast$y)
+\begin{CompactList}\small\item\em 4x4 Matrix-Vector Product \item\end{CompactList}\item 
+void \hyperlink{group__a_g83ebfef715d1b7634526d23bed49d68c}{matrixMmp} (const char transA, const char transB, const double alpha, const double $\ast$a, const double $\ast$b, const double beta, double $\ast$c)
+\begin{CompactList}\small\item\em 4x4 Matrix-Matrix Product \item\end{CompactList}\item 
+double \hyperlink{group__a_ga173dc4c93e8bc6f1747c5367f63afd8}{matrixDeterminant} (const double $\ast$matrix)
+\begin{CompactList}\small\item\em 4x4 Matrix Determint \item\end{CompactList}\item 
+void \hyperlink{group__a_g39674801055355a4eb3338ba6023b83c}{matrixTranspose} (double $\ast$matrix)
+\begin{CompactList}\small\item\em 4x4 Matrix Transpose \item\end{CompactList}\item 
+void \hyperlink{group__a_g0621678b0351aa86eda18b2e559c7f71}{matrixIdentity} (double $\ast$matrix)
+\begin{CompactList}\small\item\em 4x4 Identity Matrix. \item\end{CompactList}\item 
+double \hyperlink{matrix__ops_8h_4852a94c3680e1ff16d63e6bd49ebd11}{ddot\_\-} (const int $\ast$n, const double $\ast$dx, const int $\ast$incx, const double $\ast$dy, const int $\ast$incy)
+\item 
+double \hyperlink{matrix__ops_8h_d4b1a2bf243b368e914f0b5986cce74f}{dnrm2\_\-} (const int $\ast$n, const double $\ast$x, const int $\ast$incx)
+\item 
+int \hyperlink{matrix__ops_8h_8a6a79c53e3aa5e78164681424031d1c}{dscal\_\-} (const int $\ast$n, const double $\ast$da, double $\ast$dx, const int $\ast$incx)
+\item 
+int \hyperlink{matrix__ops_8h_f1c81011a1fd06aa3e08e7a1a57a0748}{dcopy\_\-} (const int $\ast$n, const double $\ast$dx, const int $\ast$incx, double $\ast$dy, const int $\ast$incy)
+\item 
+int \hyperlink{matrix__ops_8h_dc4b0f52c4a88e2fc0d17475422b9bd3}{daxpy\_\-} (const int $\ast$n, const double $\ast$da, const double $\ast$dx, const int $\ast$incx, double $\ast$dy, const int $\ast$incy)
+\item 
+int \hyperlink{matrix__ops_8h_eedad55194fa6c74a9efd9e7855a803a}{dgemv\_\-} (const char $\ast$trans, const int $\ast$m, const int $\ast$n, const double $\ast$alpha, const double $\ast$a, const int $\ast$lda, const double $\ast$x, const int $\ast$incx, const double $\ast$beta, double $\ast$y, const int $\ast$incy)
+\item 
+int \hyperlink{matrix__ops_8h_0af4a52313440e67262ba0eec11a1e94}{dgemm\_\-} (const char $\ast$transa, const char $\ast$transb, const int $\ast$m, const int $\ast$n, const int $\ast$k, const double $\ast$alpha, const double $\ast$a, const int $\ast$lda, const double $\ast$b, const int $\ast$ldb, const double $\ast$beta, double $\ast$c, const int $\ast$ldc)
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{matrix__ops_8h_dc4b0f52c4a88e2fc0d17475422b9bd3}{
+\index{matrix\_\-ops.h@{matrix\_\-ops.h}!daxpy\_\-@{daxpy\_\-}}
+\index{daxpy\_\-@{daxpy\_\-}!matrix_ops.h@{matrix\_\-ops.h}}
+\subsubsection[daxpy\_\-]{\setlength{\rightskip}{0pt plus 5cm}int daxpy\_\- (const int $\ast$ {\em n}, \/  const double $\ast$ {\em da}, \/  const double $\ast$ {\em dx}, \/  const int $\ast$ {\em incx}, \/  double $\ast$ {\em dy}, \/  const int $\ast$ {\em incy})}}
+\label{matrix__ops_8h_dc4b0f52c4a88e2fc0d17475422b9bd3}
+
+
+\hypertarget{matrix__ops_8h_f1c81011a1fd06aa3e08e7a1a57a0748}{
+\index{matrix\_\-ops.h@{matrix\_\-ops.h}!dcopy\_\-@{dcopy\_\-}}
+\index{dcopy\_\-@{dcopy\_\-}!matrix_ops.h@{matrix\_\-ops.h}}
+\subsubsection[dcopy\_\-]{\setlength{\rightskip}{0pt plus 5cm}int dcopy\_\- (const int $\ast$ {\em n}, \/  const double $\ast$ {\em dx}, \/  const int $\ast$ {\em incx}, \/  double $\ast$ {\em dy}, \/  const int $\ast$ {\em incy})}}
+\label{matrix__ops_8h_f1c81011a1fd06aa3e08e7a1a57a0748}
+
+
+\hypertarget{matrix__ops_8h_4852a94c3680e1ff16d63e6bd49ebd11}{
+\index{matrix\_\-ops.h@{matrix\_\-ops.h}!ddot\_\-@{ddot\_\-}}
+\index{ddot\_\-@{ddot\_\-}!matrix_ops.h@{matrix\_\-ops.h}}
+\subsubsection[ddot\_\-]{\setlength{\rightskip}{0pt plus 5cm}double ddot\_\- (const int $\ast$ {\em n}, \/  const double $\ast$ {\em dx}, \/  const int $\ast$ {\em incx}, \/  const double $\ast$ {\em dy}, \/  const int $\ast$ {\em incy})}}
+\label{matrix__ops_8h_4852a94c3680e1ff16d63e6bd49ebd11}
+
+
+\hypertarget{matrix__ops_8h_0af4a52313440e67262ba0eec11a1e94}{
+\index{matrix\_\-ops.h@{matrix\_\-ops.h}!dgemm\_\-@{dgemm\_\-}}
+\index{dgemm\_\-@{dgemm\_\-}!matrix_ops.h@{matrix\_\-ops.h}}
+\subsubsection[dgemm\_\-]{\setlength{\rightskip}{0pt plus 5cm}int dgemm\_\- (const char $\ast$ {\em transa}, \/  const char $\ast$ {\em transb}, \/  const int $\ast$ {\em m}, \/  const int $\ast$ {\em n}, \/  const int $\ast$ {\em k}, \/  const double $\ast$ {\em alpha}, \/  const double $\ast$ {\em a}, \/  const int $\ast$ {\em lda}, \/  const double $\ast$ {\em b}, \/  const int $\ast$ {\em ldb}, \/  const double $\ast$ {\em beta}, \/  double $\ast$ {\em c}, \/  const int $\ast$ {\em ldc})}}
+\label{matrix__ops_8h_0af4a52313440e67262ba0eec11a1e94}
+
+
+\hypertarget{matrix__ops_8h_eedad55194fa6c74a9efd9e7855a803a}{
+\index{matrix\_\-ops.h@{matrix\_\-ops.h}!dgemv\_\-@{dgemv\_\-}}
+\index{dgemv\_\-@{dgemv\_\-}!matrix_ops.h@{matrix\_\-ops.h}}
+\subsubsection[dgemv\_\-]{\setlength{\rightskip}{0pt plus 5cm}int dgemv\_\- (const char $\ast$ {\em trans}, \/  const int $\ast$ {\em m}, \/  const int $\ast$ {\em n}, \/  const double $\ast$ {\em alpha}, \/  const double $\ast$ {\em a}, \/  const int $\ast$ {\em lda}, \/  const double $\ast$ {\em x}, \/  const int $\ast$ {\em incx}, \/  const double $\ast$ {\em beta}, \/  double $\ast$ {\em y}, \/  const int $\ast$ {\em incy})}}
+\label{matrix__ops_8h_eedad55194fa6c74a9efd9e7855a803a}
+
+
+\hypertarget{matrix__ops_8h_d4b1a2bf243b368e914f0b5986cce74f}{
+\index{matrix\_\-ops.h@{matrix\_\-ops.h}!dnrm2\_\-@{dnrm2\_\-}}
+\index{dnrm2\_\-@{dnrm2\_\-}!matrix_ops.h@{matrix\_\-ops.h}}
+\subsubsection[dnrm2\_\-]{\setlength{\rightskip}{0pt plus 5cm}double dnrm2\_\- (const int $\ast$ {\em n}, \/  const double $\ast$ {\em x}, \/  const int $\ast$ {\em incx})}}
+\label{matrix__ops_8h_d4b1a2bf243b368e914f0b5986cce74f}
+
+
+\hypertarget{matrix__ops_8h_8a6a79c53e3aa5e78164681424031d1c}{
+\index{matrix\_\-ops.h@{matrix\_\-ops.h}!dscal\_\-@{dscal\_\-}}
+\index{dscal\_\-@{dscal\_\-}!matrix_ops.h@{matrix\_\-ops.h}}
+\subsubsection[dscal\_\-]{\setlength{\rightskip}{0pt plus 5cm}int dscal\_\- (const int $\ast$ {\em n}, \/  const double $\ast$ {\em da}, \/  double $\ast$ {\em dx}, \/  const int $\ast$ {\em incx})}}
+\label{matrix__ops_8h_8a6a79c53e3aa5e78164681424031d1c}
+
+

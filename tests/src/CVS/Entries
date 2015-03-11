@@ -1,0 +1,15 @@
+/libdrdc.h/1.12/Mon Oct 27 20:29:40 2008//
+D/cexcept////
+D/coordinate////
+D/data_conv////
+D/extras////
+D/f2c_blas////
+D/homogeneous////
+D/matrix_ops////
+D/quaternion////
+D/sglib////
+D/time_conv////
+D/unit_conv////
+D/wrapper////
+/Makefile.am/1.12/Tue Dec  2 20:49:08 2008//
+/Makefile.in/1.13/Tue Dec  2 20:46:21 2008//

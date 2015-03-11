@@ -1,0 +1,14 @@
+/Makefile.am/1.3/Thu Sep  4 21:09:03 2008//
+/blaswrap.h/1.1.1.1/Mon Mar 31 21:34:01 2008//
+/daxpy.c/1.1.1.1/Mon Mar 31 21:34:00 2008//
+/dcopy.c/1.1.1.1/Mon Mar 31 21:34:01 2008//
+/ddot.c/1.1.1.1/Mon Mar 31 21:34:00 2008//
+/dgemm.c/1.1.1.1/Mon Mar 31 21:34:03 2008//
+/dgemv.c/1.1.1.1/Mon Mar 31 21:34:01 2008//
+/dnrm2.c/1.1.1.1/Mon Mar 31 21:34:00 2008//
+/dscal.c/1.1.1.1/Mon Mar 31 21:34:01 2008//
+/f2c.h/1.2/Wed Sep  3 22:04:39 2008//
+/lsame.c/1.1.1.1/Mon Mar 31 21:34:03 2008//
+/xerbla.c/1.2/Wed Sep  3 22:04:39 2008//
+D/.deps////
+/Makefile.in/1.7/Tue Dec  2 20:46:22 2008//

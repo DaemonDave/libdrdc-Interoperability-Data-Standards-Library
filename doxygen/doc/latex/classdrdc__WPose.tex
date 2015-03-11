@@ -1,0 +1,175 @@
+\hypertarget{classdrdc__WPose}{
+\section{drdc\_\-WPose Class Reference}
+\label{classdrdc__WPose}\index{drdc\_\-WPose@{drdc\_\-WPose}}
+}
+C++ World Pose Representation.  
+
+
+{\tt \#include $<$wrapper.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdrdc__WPose_6514c2fd83bf9c7cb73bd4f1e984125b}{drdc\_\-WPose} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WPose_e64d64f0464aa320c73d3bea00bfd645}{set} (\hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} position, \hyperlink{classdrdc__Orient}{drdc\_\-Orient} orientation)
+\begin{CompactList}\small\item\em Set the object by specifying World Position and Quaternion orientation. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WPose_8f6641d88dd366dfb3c6a560c11f0285}{set} (const double $\ast$array)
+\begin{CompactList}\small\item\em Set the object by using array data type. \item\end{CompactList}\item 
+void \hyperlink{classdrdc__WPose_93914a9d20c6e13a4a0000b7532cda59}{toArray} (double $\ast$array)
+\begin{CompactList}\small\item\em Convert data in the object to data array type. \item\end{CompactList}\item 
+int \hyperlink{classdrdc__WPose_f61738b76e8b0f77f72b54c118e667c4}{compare} (\hyperlink{classdrdc__WPose}{drdc\_\-WPose} worldPose, \hyperlink{classdrdc__WPose}{drdc\_\-WPose} fuzz)
+\begin{CompactList}\small\item\em Compare the two objects. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WPosn}{drdc\_\-WPosn} \hyperlink{classdrdc__WPose_5467f7210d14c9622e938bb0ffbfdb34}{getPosition} ()
+\begin{CompactList}\small\item\em Return World Position. \item\end{CompactList}\item 
+\hyperlink{classdrdc__Orient}{drdc\_\-Orient} \hyperlink{classdrdc__WPose_fe1c71a99f8d8408985ea2659976a872}{getOrientation} ()
+\begin{CompactList}\small\item\em Return Quaternion orientation. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WPose}{drdc\_\-WPose} \& \hyperlink{classdrdc__WPose_c5657fdb3b91aa2319a39f07b6c966b9}{operator=} (\hyperlink{classdrdc__WPose}{drdc\_\-WPose} worldPose)
+\begin{CompactList}\small\item\em Copy object. \item\end{CompactList}\item 
+double \hyperlink{classdrdc__WPose_d6be16cfcf5278de7b802e8c83832ebd}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{CompactList}\small\item\em Return the nth element from the object. \item\end{CompactList}\item 
+\hyperlink{classdrdc__lPose}{drdc\_\-lPose} \hyperlink{classdrdc__WPose_9408d7f14b5a4a01843b2264a52b1e9c}{to\_\-lPose} (double falseElevation)
+\begin{CompactList}\small\item\em Convert World Pose to Local Pose. \item\end{CompactList}\item 
+\hyperlink{classdrdc__WUTMPose}{drdc\_\-WUTMPose} \hyperlink{classdrdc__WPose_e66211f37411b436ae76c10939144fcc}{to\_\-WUTMPose} ()
+\begin{CompactList}\small\item\em Convert World Pose to World UTM Pose. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{structdrdc__Vector__t}{drdc\_\-Vector\_\-t} $\ast$ \hyperlink{classdrdc__WPose_b02d1988175a6268511d4e13d0702508}{vector}
+\begin{CompactList}\small\item\em Data vector. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+C++ World Pose Representation. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdrdc__WPose_6514c2fd83bf9c7cb73bd4f1e984125b}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!drdc\_\-WPose@{drdc\_\-WPose}}
+\index{drdc\_\-WPose@{drdc\_\-WPose}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[drdc\_\-WPose]{\setlength{\rightskip}{0pt plus 5cm}drdc\_\-WPose::drdc\_\-WPose ()}}
+\label{classdrdc__WPose_6514c2fd83bf9c7cb73bd4f1e984125b}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdrdc__WPose_e64d64f0464aa320c73d3bea00bfd645}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!set@{set}}
+\index{set@{set}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WPose::set ({\bf drdc\_\-WPosn} {\em position}, \/  {\bf drdc\_\-Orient} {\em orientation})}}
+\label{classdrdc__WPose_e64d64f0464aa320c73d3bea00bfd645}
+
+
+Set the object by specifying World Position and Quaternion orientation. 
+
+\hypertarget{classdrdc__WPose_8f6641d88dd366dfb3c6a560c11f0285}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!set@{set}}
+\index{set@{set}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WPose::set (const double $\ast$ {\em array})}}
+\label{classdrdc__WPose_8f6641d88dd366dfb3c6a560c11f0285}
+
+
+Set the object by using array data type. 
+
+\hypertarget{classdrdc__WPose_93914a9d20c6e13a4a0000b7532cda59}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!toArray@{toArray}}
+\index{toArray@{toArray}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}void drdc\_\-WPose::toArray (double $\ast$ {\em array})}}
+\label{classdrdc__WPose_93914a9d20c6e13a4a0000b7532cda59}
+
+
+Convert data in the object to data array type. 
+
+\hypertarget{classdrdc__WPose_f61738b76e8b0f77f72b54c118e667c4}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!compare@{compare}}
+\index{compare@{compare}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[compare]{\setlength{\rightskip}{0pt plus 5cm}int drdc\_\-WPose::compare ({\bf drdc\_\-WPose} {\em worldPose}, \/  {\bf drdc\_\-WPose} {\em fuzz})}}
+\label{classdrdc__WPose_f61738b76e8b0f77f72b54c118e667c4}
+
+
+Compare the two objects. 
+
+The fuzz determines how close they are considered to be equal. \hypertarget{classdrdc__WPose_5467f7210d14c9622e938bb0ffbfdb34}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPosn} drdc\_\-WPose::getPosition ()}}
+\label{classdrdc__WPose_5467f7210d14c9622e938bb0ffbfdb34}
+
+
+Return World Position. 
+
+\hypertarget{classdrdc__WPose_fe1c71a99f8d8408985ea2659976a872}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[getOrientation]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Orient} drdc\_\-WPose::getOrientation ()}}
+\label{classdrdc__WPose_fe1c71a99f8d8408985ea2659976a872}
+
+
+Return Quaternion orientation. 
+
+\hypertarget{classdrdc__WPose_c5657fdb3b91aa2319a39f07b6c966b9}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!operator=@{operator=}}
+\index{operator=@{operator=}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WPose}\& drdc\_\-WPose::operator= ({\bf drdc\_\-WPose} {\em worldPose})}}
+\label{classdrdc__WPose_c5657fdb3b91aa2319a39f07b6c966b9}
+
+
+Copy object. 
+
+\hypertarget{classdrdc__WPose_d6be16cfcf5278de7b802e8c83832ebd}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[operator[]]{\setlength{\rightskip}{0pt plus 5cm}double drdc\_\-WPose::operator\mbox{[}$\,$\mbox{]} (int {\em n})}}
+\label{classdrdc__WPose_d6be16cfcf5278de7b802e8c83832ebd}
+
+
+Return the nth element from the object. 
+
+\hypertarget{classdrdc__WPose_9408d7f14b5a4a01843b2264a52b1e9c}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!to\_\-lPose@{to\_\-lPose}}
+\index{to\_\-lPose@{to\_\-lPose}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[to\_\-lPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-lPose} drdc\_\-WPose::to\_\-lPose (double {\em falseElevation})}}
+\label{classdrdc__WPose_9408d7f14b5a4a01843b2264a52b1e9c}
+
+
+Convert World Pose to Local Pose. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em falseElevation}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classdrdc__WPose_e66211f37411b436ae76c10939144fcc}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!to\_\-WUTMPose@{to\_\-WUTMPose}}
+\index{to\_\-WUTMPose@{to\_\-WUTMPose}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[to\_\-WUTMPose]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-WUTMPose} drdc\_\-WPose::to\_\-WUTMPose ()}}
+\label{classdrdc__WPose_e66211f37411b436ae76c10939144fcc}
+
+
+Convert World Pose to World UTM Pose. 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classdrdc__WPose_b02d1988175a6268511d4e13d0702508}{
+\index{drdc\_\-WPose@{drdc\_\-WPose}!vector@{vector}}
+\index{vector@{vector}!drdc_WPose@{drdc\_\-WPose}}
+\subsubsection[vector]{\setlength{\rightskip}{0pt plus 5cm}{\bf drdc\_\-Vector\_\-t}$\ast$ {\bf drdc\_\-WPose::vector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classdrdc__WPose_b02d1988175a6268511d4e13d0702508}
+
+
+Data vector. 
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/dave/src/libdrdc/src/wrapper/\hyperlink{wrapper_8h}{wrapper.h}\end{CompactItemize}
