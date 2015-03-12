@@ -3,8 +3,9 @@
 
 
 AC_PREREQ(2.6)
-AC_INIT([src/libdrdc.h])
-AC_INIT_AUTOMAKE([libdrdc], [[0.2-0]], [david.erickson@drdc-rddc.gc.ca])
+AC_INIT([libdrdc], [0.2-0])   
+AC_CONFIG_SRCDIR([src/libdrdc.h])
+AM_INIT_AUTOMAKE
 
 # determine system type by conventional m4 macro
 AC_CANONICAL_TARGET
@@ -57,6 +58,10 @@ LIB_VER=${MAJORVERSION}.${MINORVERSION}-${REVISION}
 #   +- increment if interfaces have been added, removed or changed
 AC_SUBST(LIB_VER)
 AC_SUBST(REL_VER)
+
+# generic declaration before modification
+AM_CFLAGS=
+AM_LDFLAGS=
 
 
 # assign library prefix based on output
@@ -120,7 +125,7 @@ AC_PROG_CXX
 AC_PROG_CC
 AC_PROG_LIBTOOL
 AM_PROG_CC_C_O
-
+AC_PROG_RANLIB
 
 
 case "${BUILD_TYPE}" in
@@ -177,10 +182,12 @@ AC_ARG_WITH([atlas],
                AC_CHECK_HEADER([atlas/clapack.h]) \
                AC_CHECK_HEADER([atlas.h]) \
                AC_CHECK_LIB([atlas],[ATL_cswap],[],[echo libatlas not found] ) \
-               AC_CHECK_FUNC([ATL_cswap], [AC_DEFINE([HAVE_ATL_CSWAP], [1],[Define function ATL_cswap exists.])],[] )
+               AC_CHECK_FUNC([ATL_cswap], [AC_DEFINE([HAVE_ATL_CSWAP], [1],[Define function ATL_cswap exists.])],[] ) \
+               AC_DEFINE([WITH_ATLAS], [1], [Define with ATLAS support included.] )
  ],
  [])
 
+AC_SUBST(WITH_ATLAS)
 
 # alternate location
 
@@ -290,6 +297,7 @@ cat <<EOF
    Library release               : ${REL_VER}
    enable tests                  : ${enable_tests}
    enable F2CBLAS library        : ${enable_f2cblas}
-   enable extras	     		 : ${enable_extras}
+   enable extras	    	     : ${enable_extras}
+   enable ATLAS	            	 : ${with_atlas}
 	 
 EOF
