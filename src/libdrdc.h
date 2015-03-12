@@ -1,4 +1,23 @@
-/* librdc - A ROBOTICS SOFTWARE STANDARDS LIBRARY
+/***\file librdc.h   *********************************************************
+                           
+ H.File   $Header:  $
+     
+ Date Started: -2015
+
+ Date: 	$Date:  $
+ * 
+ Author:  $Name:   $
+
+ Purpose:  The toplevel C header
+
+ Version:  $Id: doublerow.h,v 1.2 2007/08/24 14:27:29 cvsuser Exp $
+
+ Revision: $Revision:  $
+ * 
+ * 
+ Log:   $Log:   $
+ *
+ * \brief librdc - A ROBOTICS SOFTWARE STANDARDS LIBRARY
 
  HER MAJESTYTHE QUEEN IN RIGHT OF CANADA AS REPRESENTED BY THE MINISTER
  OF NATIONAL DEFENCE, CANADA, 2007
@@ -23,12 +42,6 @@
 
  Licence is located in license.txt in libdrdc source root
 */
-/*
- * Description  : libdrdc - 
- * Author       : Tie Peng
- * Purpose      : universal library header
- * Revision     : $Id: libdrdc.h,v 1.12 2008/10/27 20:29:40 cvsuser Exp $
- */
 
 
 #ifndef LIBDRDC_H
