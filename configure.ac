@@ -10,6 +10,7 @@ AM_INIT_AUTOMAKE
 # determine system type by conventional m4 macro
 AC_CANONICAL_TARGET
 
+
 # Get the date timestamp for library / documentation version control
 DATE=$(date)
 AC_SUBST(DATE)
@@ -69,6 +70,7 @@ AM_LDFLAGS=
 DRDC_PREFIX=libdrdc
 
 
+
 AC_ARG_ENABLE(
 [tests],
 [AC_HELP_STRING([--enable-tests],[enable tests (default:false)])],
@@ -79,9 +81,8 @@ AC_ARG_ENABLE(
 esac],
 [enable_tests=false]
 )
-
 AM_CONDITIONAL([TESTS], [test x$enable_tests = xtrue])
-AM_PROG_AR
+
 AC_ARG_ENABLE(
 [f2cblas],
 [AC_HELP_STRING([--enable-f2cblas],[enable f2cblas (default:false)])],
@@ -126,6 +127,7 @@ AC_PROG_CC
 AC_PROG_LIBTOOL
 AM_PROG_CC_C_O
 AC_PROG_RANLIB
+AM_PROG_AR
 
 
 case "${BUILD_TYPE}" in
@@ -168,6 +170,9 @@ AC_CHECK_HEADER([assert.h])
 # check for kernel headers
 AC_CHECK_HEADER([setjmp.h])
 
+AC_CHECK_LIB([atlas],[ATL_ddot],[],[echo ATL_ddot not found] )
+
+AC_CHECK_LIB([atlas],[ATL_cswap],[],[echo ATL_cswap not found] )
 # configure to use ATLAS library and make all checks within.
 # check for ATLAS availability of headers and functions here as a series of checks
 AC_ARG_WITH([atlas], 
@@ -176,18 +181,15 @@ AC_ARG_WITH([atlas],
               [AC_CHECK_HEADER([atlas_buildinfo.h]) \
                AC_CHECK_HEADER([atlas_pthreads.h])  \
                AC_CHECK_HEADER([atlas/atlas_f77.h])
-               AC_CHECK_HEADER([atlas/blas.h]) \
                AC_CHECK_HEADER([atlas/cblas.h]) \
-               AC_CHECK_HEADER([atlas/atlas.h]) \
                AC_CHECK_HEADER([atlas/clapack.h]) \
-               AC_CHECK_HEADER([atlas.h]) \
                AC_CHECK_LIB([atlas],[ATL_cswap],[],[echo libatlas not found] ) \
                AC_CHECK_FUNC([ATL_cswap], [AC_DEFINE([HAVE_ATL_CSWAP], [1],[Define function ATL_cswap exists.])],[] ) \
-               AC_DEFINE([WITH_ATLAS], [1], [Define with ATLAS support included.] )
+               AC_CHECK_FUNC([cblas_sdot], [AC_DEFINE([HAVE_ATL_SDOT], [1],[Define function cblas_sdot exists.])],[cblas_sdot not found] )
  ],
  [])
 
-AC_SUBST(WITH_ATLAS)
+
 
 # alternate location
 
