@@ -2,13 +2,13 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define function ATL_cswap exists. */
-#define HAVE_ATL_CSWAP 1
+/* #undef HAVE_ATL_CSWAP */
 
 /* Define function ATL_ddot exists. */
-#define HAVE_ATL_DDOT 1
+/* #undef HAVE_ATL_DDOT */
 
 /* Define function ATL_sdot exists. */
-#define HAVE_ATL_SDOT 1
+/* #undef HAVE_ATL_SDOT */
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
@@ -17,7 +17,7 @@
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `atlas' library (-latlas). */
-#define HAVE_LIBATLAS 1
+/* #undef HAVE_LIBATLAS */
 
 /* Define to 1 if you have the `blas' library (-lblas). */
 #define HAVE_LIBBLAS 1
@@ -87,4 +87,4 @@
 #define VERSION "0.2-0"
 
 /* Define with ATLAS support included. */
-#define WITH_ATLAS 1
+/* #undef WITH_ATLAS */
