@@ -186,7 +186,7 @@ void wp_scale(void *self, double scalar, void *resultObject) {
 double wp_dot(void *self, void *object) {
   drdc_Vector_t **_self=self;
   drdc_Vector_t **_object=object;
-  return vectorDot((*_self)->dsize, (*_self)->data, (*_object)->data);;
+  return vectorDot((*_self)->dsize, (*_self)->data, 1, (*_object)->data, 1);;
 }
 
 void wp_cross(void *self, void *object, void *resultObject) 

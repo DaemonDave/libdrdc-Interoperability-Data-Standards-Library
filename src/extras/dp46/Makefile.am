@@ -3,7 +3,8 @@
 # $Id: Makefile.am,v 1.1 2008/12/02 20:45:48 cvsuser Exp $
 
 bin_PROGRAMS = test
-test_SOURCES = test.c PanTiltMessage.c PanTiltImp.c
+test_SOURCES = test.c 
+test_LDADD = libdp46.la
 
 noinst_LTLIBRARIES = libdp46.la
 

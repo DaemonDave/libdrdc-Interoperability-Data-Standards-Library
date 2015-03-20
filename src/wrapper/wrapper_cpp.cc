@@ -185,7 +185,8 @@ void drdc_WUTMPosn::toArray(double *array) {
   wp_toArray(this, array);
 }
 
-int drdc_WUTMPosn::compare(drdc_WUTMPosn worldUTMPosition, drdc_WUTMPosn fuzz) {
+int drdc_WUTMPosn::compare(drdc_WUTMPosn worldUTMPosition, drdc_WUTMPosn fuzz) 
+{
   return wp_compareUTM(this, &worldUTMPosition, &fuzz);
 }
 

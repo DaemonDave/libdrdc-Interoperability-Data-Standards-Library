@@ -3,6 +3,12 @@
 /* Define function ATL_cswap exists. */
 #undef HAVE_ATL_CSWAP
 
+/* Define function ATL_ddot exists. */
+#undef HAVE_ATL_DDOT
+
+/* Define function ATL_sdot exists. */
+#undef HAVE_ATL_SDOT
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #undef HAVE_DLFCN_H
 

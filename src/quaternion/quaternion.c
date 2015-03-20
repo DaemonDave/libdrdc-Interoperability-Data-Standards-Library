@@ -117,7 +117,7 @@ int QuatQuatMult(double *quaternion1, double *quaternion2, double *resultQuatern
   double quaternion1_0=quaternion1[0];
   double quaternion2_0=quaternion2[0];
   
-  resultQuaternion[0] = quaternion1_0*quaternion2_0 - vectorDot(3, vector1, vector2);
+  resultQuaternion[0] = quaternion1_0*quaternion2_0 - vectorDot(3, vector1, 1, vector2, 1);
   vectorCross(vector1, vector2, resultVector);
   vectorAxpy(3, quaternion1_0, vector2, resultVector);
   vectorAxpy(3, quaternion2_0, vector1, resultVector);

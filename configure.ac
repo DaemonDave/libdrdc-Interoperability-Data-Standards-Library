@@ -1,7 +1,5 @@
 # $Id: configure.ac,v 1.16 2008/12/02 21:28:54 cvsuser Exp $
 # configure.ac
-
-
 AC_PREREQ(2.6)
 AC_INIT([libdrdc], [0.2-0])   
 AC_CONFIG_SRCDIR([src/libdrdc.h])
@@ -9,6 +7,8 @@ AM_INIT_AUTOMAKE
 
 # determine system type by conventional m4 macro
 AC_CANONICAL_TARGET
+AM_PROG_AR
+LT_INIT
 
 # Get the date timestamp for library / documentation version control
 DATE=$(date)
@@ -24,6 +24,18 @@ VER='${MAJORVERSION}:${MINORVERSION}:${REVISION}'
 #
 
 
+# USE PKGCONFIG 
+PKG_PROG_PKG_CONFIG
+if test -n "$PKG_CONFIG"; then
+    # Horrible hack for systems where the pkg-config install directory is simply wrong!
+    if $PKG_CONFIG --variable=pc_path pkg-config 2>/dev/null | grep -q /libdata/; then
+        PKG_INSTALLDIR(['${prefix}/libdata/pkgconfig'])
+    else
+        PKG_INSTALLDIR
+    fi
+fi
+#
+
 # Test for target type or accept default = build || target
 AC_MSG_CHECKING([Target OS type])
 if test -z "$DRDC_PREFIX" ; then
@@ -36,7 +48,7 @@ fi
 TARGET_PREFIX
 
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
-
+ 
 
 AC_SUBST(MAJORVERSION)
 AC_SUBST(MINORVERSION)
@@ -81,7 +93,7 @@ esac],
 )
 
 AM_CONDITIONAL([TESTS], [test x$enable_tests = xtrue])
-AM_PROG_AR
+
 AC_ARG_ENABLE(
 [f2cblas],
 [AC_HELP_STRING([--enable-f2cblas],[enable f2cblas (default:false)])],
@@ -123,9 +135,11 @@ AM_CONDITIONAL([EXTRAS], [test x$enable_extras = xtrue])
 AC_PROG_CC_STDC
 AC_PROG_CXX
 AC_PROG_CC
-AC_PROG_LIBTOOL
 AM_PROG_CC_C_O
-AC_PROG_RANLIB
+
+
+AM_CFLAGS=
+AM_LDFLAGS=
 
 
 case "${BUILD_TYPE}" in
@@ -183,6 +197,8 @@ AC_ARG_WITH([atlas],
                AC_CHECK_HEADER([atlas.h]) \
                AC_CHECK_LIB([atlas],[ATL_cswap],[],[echo libatlas not found] ) \
                AC_CHECK_FUNC([ATL_cswap], [AC_DEFINE([HAVE_ATL_CSWAP], [1],[Define function ATL_cswap exists.])],[] ) \
+               AC_CHECK_FUNC([ATL_sdot], [AC_DEFINE([HAVE_ATL_SDOT], [1],[Define function ATL_sdot exists.])],[] ) \
+               AC_CHECK_FUNC([ATL_ddot], [AC_DEFINE([HAVE_ATL_DDOT], [1],[Define function ATL_ddot exists.])],[] ) \                         
                AC_DEFINE([WITH_ATLAS], [1], [Define with ATLAS support included.] )
  ],
  [])
@@ -194,6 +210,7 @@ AC_SUBST(WITH_ATLAS)
 AC_CHECK_HEADER([blas.h])
 AC_CHECK_HEADER([cblas.h])
 AC_CHECK_HEADER([lapack.h])
+AC_CHECK_HEADER([clapack.h])
 
 # try to find libray in usual spaces
 AC_CHECK_LIB([m],[fabs],[],[echo fabs not found] )
@@ -201,18 +218,14 @@ AC_CHECK_LIB([m],[fabs],[],[echo fabs not found] )
 AC_CHECK_LIB([blas],[dgemm_],[],[echo blas not found] )
 AC_CHECK_LIB([cblas],[cblas_xerbla],[],[echo cblas not found] )
 
-
-
 AC_SUBST(DRDC_PREFIX)
 AC_SUBST(prefix)
 AC_SUBST(libdir)
 AC_SUBST(includedir)
 AC_SUBST(srcdir)
 
-
-
 # output phase - puts  results into files
-AC_CONFIG_HEADER(config.h)
+AC_CONFIG_HEADER([config.h])
 
 # standard compilation directories
 AC_CONFIG_FILES([
@@ -263,6 +276,13 @@ AC_CONFIG_FILES([
 	tests/sglib/Makefile
 	])
 ])
+
+# configure for pkgconfig files.
+AC_CONFIG_FILES([	
+	libdrdc.pc])
+
+
+
 
 AM_DEP_TRACK
 

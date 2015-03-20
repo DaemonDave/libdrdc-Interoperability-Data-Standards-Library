@@ -1,8 +1,11 @@
+SUBDIRS= src
 
+DIST_SUBDIRS= src
 if TESTS
-  SUBDIRS = src tests
+  SUBDIRS+= tests
+  DIST_SUBDIRS+= tests
 else
-  SUBDIRS = src
+
 endif
 
 

@@ -44,9 +44,19 @@
 #include "libdrdc.h"
 #endif
 
-
 #include "except.h"
 
+/**
+ * #define HAVE_LIBATLAS 1
+ * To use ATLAS libraries instead of local versions, then change the code to include atlas_cblas versions of the linear algebra.
+ * 
+ * */
+
+#ifdef HAVE_LIBATLAS
+#include <atlas/atlas_buildinfo.h>
+#include <atlas/cblas.h>
+#include <atlas/clapack.h>
+#endif
 
 /*!
 	\brief 	Matrix operations includes vector and matrix operations.
@@ -99,7 +109,7 @@ int vectorCompare(const int n, const double *vector1, const double *vector2, con
  * 
  * @return It returns the dot product result of two vectors.
  */
-double vectorDot(const int n, const double *vector1, const double *vector2);
+double vectorDot(const int n, const double *vector1, const int inc1, const double *vector2, const int inc2);
 
 /** 
  * Vector Magnitude

@@ -55,24 +55,42 @@
 #define MY_M32  matrix[11]
 #define MY_M33  matrix[15]
 
-int vectorCompare(const int n, const double *vector1, const double *vector2, const double *fuzzVector) {
+/** \fn vectorCompare  
+ * \brief vector compare two vectors
+ * */
+int vectorCompare(const int n, const double *vector1, const double *vector2, const double *fuzzVector) 
+{
   int i;
-  for(i=0; i<n; i++) {
-    if (fabs(vector1[i] - vector2[i]) > fuzzVector[i]) {
+  for(i=0; i<n; i++) 
+  {
+    if (fabs(vector1[i] - vector2[i]) > fuzzVector[i]) 
+    {
       return 1;
     }
   }
   return 0;
 }
 
-
-double vectorDot(const int n, const double *vector1, const double *vector2) {
+/** \fn vectorDot  
+ * \brief vector dot product of two vectors
+ * */
+double vectorDot(const int n, const double *vector1, const int inc1, const double *vector2, const int inc2) 
+{
   int incx=1;
   int incy=1;
-  return ddot_(&n, vector1, &incx, vector2, &incy);
+  //! The ATLAS VERSION CAN ACCOMODATE VECTOR - ARRAYS by index increment
+  #ifdef HAVE_ATL_DDOT
+	return ATL_ddot(n, vector1, inc1, vector2, inc2);
+ #else
+	//! The generic version uses the basic incrementals
+	return ddot_(&n, vector1, &incx, vector2, &incy);
+  #endif
 }
-
-double vectorMagnitude(const int n, const double *vector) {
+/**
+ * 
+ * */
+double vectorMagnitude(const int n, const double *vector) 
+{
   int incx=1;
   return dnrm2_(&n, vector, &incx);
 }
@@ -80,7 +98,8 @@ double vectorMagnitude(const int n, const double *vector) {
 void vectorNormalize(const int n, double *vector) {
   double norm=vectorMagnitude(n,vector);
 
-  if (DOUBLE_IS_ZERO(norm)) {
+  if (DOUBLE_IS_ZERO(norm)) 
+  {
     Throw DIVIDED_BY_ZERO;
   }
   vectorScale(n,1.0f/norm,vector);
@@ -128,10 +147,12 @@ void vectorSplit(const int n, const int m, const double *orgVector, double *vect
 
 void vectorJoin(const int n, const int m, const double *vector1, const double *vector2, double *resultVector) {
   int i;
-  for(i = 0; i < n; i++) {
+  for(i = 0; i < n; i++) 
+  {
     resultVector[i] = vector1[i];
   }
-  for(i = 0; i < m; i++) {
+  for(i = 0; i < m; i++) 
+  {
     resultVector[i + n] = vector2[i];
   }
 }

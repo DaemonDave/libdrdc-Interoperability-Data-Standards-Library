@@ -4,6 +4,12 @@
 /* Define function ATL_cswap exists. */
 #define HAVE_ATL_CSWAP 1
 
+/* Define function ATL_ddot exists. */
+#define HAVE_ATL_DDOT 1
+
+/* Define function ATL_sdot exists. */
+#define HAVE_ATL_SDOT 1
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
@@ -50,14 +56,11 @@
    */
 #define LT_OBJDIR ".libs/"
 
-/* Define to 1 if your C compiler doesn't accept -c and -o together. */
-/* #undef NO_MINUS_C_MINUS_O */
-
 /* Name of package */
 #define PACKAGE "libdrdc"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "david.erickson@drdc-rddc.gc.ca"
+#define PACKAGE_BUGREPORT ""
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "libdrdc"
@@ -82,3 +85,6 @@
 
 /* Version number of package */
 #define VERSION "0.2-0"
+
+/* Define with ATLAS support included. */
+#define WITH_ATLAS 1

@@ -1,9 +1,5 @@
+SUBDIRS = src 
 
-if TESTS
-  SUBDIRS = src tests
-else
-  SUBDIRS = src
-endif
 
 
 # target makes doxygen outputs, after updating config format file

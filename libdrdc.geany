@@ -15,6 +15,7 @@ indent_mode=2
 [project]
 name=libdrdc
 base_path=/home/dave/src/github-libdrdc/libdrdc-Interoperability-Data-Standards-Library
+description=
 
 [long line marker]
 long_line_behaviour=1
