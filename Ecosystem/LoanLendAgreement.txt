@@ -1,0 +1,120 @@
+	VDI - Veterans Defence Investments
+	Version 1.01, September, 2025
+
+ Copyright (C) 2025  Veterans Defence Investments.
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+ 
+LOAN & LEND AGREEMENT
+
+Definitions:
+
+Lender is the signator to this agreement, one that invests money or value on loan per project based on this agreement that use the Ecosystem.
+
+Loan is this agreement, in it's fixed form which are the permanent unescapable terms and time-varying conditions you agreed to when you signed, clicked a button, pressed on a smartscreen and so on;  and floating form with regards to loan/lender options you choose, and varying interest rates and penalties that depend of how out of compliance (breach of contract or refusal to cooperate and so on) that come into effect only when necessary. 
+
+Borrower is the signator to this agreement when you agree to borrow stored value at time-varying rates from lenders for future projects with other organizations that use the Ecosystem. One organization may be a borrower and lender in differing capacities and various projects.
+
+Ecosystem is the term for the group of organizations outside yourself as the "others" that you are contracting with. Your knowledge of them is as limited as their knowledge of you. You make an agreement with the Ecosystem and you are bound by privacy as they are.
+
+Admission time is the UTC or converted into year-date-time-stamp for when a payment, loan, lend, or long-term payout is deemed to have started. Once you decide to allocate, decide to withdraw, decide to delay, you agree you are admitting to the fixed and floating terms and conditions as laid out in this agreement and at that time the agreement is in effect. All stored values are admitted and long-term payouts are based on the 5 year delay from the admission timestamp.
+
+Works are defined as the research, development, production, marketing, testing, analysis, evaluation, engineering, and so on for any and all technologic research, development, production projects where your stored value is allocated based on your positive admissions. All loans revolve around producing security and military systems for defence of the free democratic societies. 
+
+Security, Defence, and Protection are defined as the main applications of the works that the Ecosystem supports in any nation on the planet, by an undisclosed and probably private number of organizations that use the Ecosystem to interchange value for services in a secret manner. 
+
+Operating Agency is Veterans Defence Investments the organization lead primarily David Ryan Erickson.
+
+DATE is the timestamp of your acceptance of a loan and/or a lend each and every time you accept an admission time. The timestamp is formally held in the Unix Timestamp format (time in seconds from 12:00 AM January 1, 1970 ). Every loan interest, lend principal and so on is individually dependant on the unique timestamp. 
+
+HANDLE is the address you and/or your organization is recognized by the Ecosystem.
+
+DETAILS are the time-varying conditions that are in effect at the timestamp of admission.
+
+AMOUNT OF LOAN is the title amount for the loan taken out at the timestamp of admission.
+
+DATE is also known here as the TIMESTAMP of any timestamp of admission for lending, borrowing, or otherwise. 
+
+Times are stated in seconds using the s symbol. 
+
+STEM Works are scientific, engineering, technician, mathematician, and so on tasks as laid out in Ecosystem projects that when completed count as stored value to repay loans, to loan out to other organizations on your behalf, to repay fees, charges, costs, and expenses incurred by the Ecosystem on your behalf or towards your selected projects by other organizations. 
+
+Agreement:
+
+This Loan/Lend Agreement (“Agreement”) is made and entered into on the [INSERT DATE] between:
+[INSERT NAME] located at [INSERT HANDLE] (“Borrower/Loaner/Lender”); and
+ [INSERT NAME] located at [INSERT HANDLE] (“Ecosystem”) and includes the following:
+ 
+Terms and Conditions
+
+Fixed Agreements:
+
+1. You agree that the Ecosystem must be maintained and that private actors cannot, through the weight of their stored value compared to others, be allowed to takeover, disrupt, paralyze, frustrate, stall, ruin, and so on the stored value of others by their actions. In that spirit, you agree that the operating agency of the ecosystem must be allowed to make temporary or permanent changes to the Ecosystem to prevent others from damaging your participation. You agree that all decisions by this intent shall be final and that you agree to pay for any and all legal costs you force the Ecosystem, the operating agency, and others must pay in order to defend against your actions. You understand that there may be criminal, political, social engineering, military organizations that may infest the Ecosystem in order to achieve paralysis of their enemies and for that reason alone you are protected when the Ecosystem maintains control with an iron fist. 
+
+2. You agree to deal with other organizations through the Ecosystem that you are unaware of and/ not interested in knowing about other than these organizations have the same terms and conditions as you are offered here. Your privacy from prying by other organizations is as important to you as it is to them. You agree that no facts learned about other organizations through meta-data shall be used by your organizations and you expect that in return. You agree that criminal organizations will not be withheld from membership and participation because the secret nature of anonymity frustrates all attempts to pierce all pretenses by criminal organizations in this ecosystem are the same as used to exploit every system known to man. 
+
+3. You agree to the Ecosystem's right to operate independently to you and your organization and can and will restructure what agreements they make, on your behalf and without prior consultation, so long as long-term payouts of returns are not affected first, and will only be adjusted as a last resort, that this is your assurance that the Ecosystem can and will work regardless of any one conflict, organization failure, and so on. You agree, therefore, that the Operating Agency for the Ecosystem shall be the definitive determinant of all interest rates, fees, charges, expenses, and costs associated with STEM Works in the Ecosystem (you can't allow any other organization to frustrate your success by excessive or unfair terms.). You agree the Operating Agency can override another organizations terms at a time and place of the Operating Agency's determination.
+
+4. You agree that your stored value shall be channeled to your long-term payouts as necessary starting no more than 5 years after their admission to this Ecosystem with your positive enrollment. You agree every loan/lend you agree to has it's own admission time / timestamp as the start. You agree to the terms that are fixed as acceptable, and you agree to the time-varying terms with your approval of an admission timestamp that are determined exactly at the admission timestamp and cannot be foreseen aforehand.
+
+5. You agree that given an Ecosystem transitioning from one set of projects to another, may have from time to time works inside projects, organizations, national campaigns, military uprisings, revolutions, conflict and so on have that require flexibility and acceptance of delays and losses without prior notification nor approval so long as your long term repayment is the last term that can be changed. You agree that risk is part of the nature of armed conflict and therefore the end products of this Ecosystem. 
+
+6. You agree that given an Ecosystem assisting STEM workers helping to save lives by producing security, defence, or protection systems is the goal whatever nefarious acts that comes along with that will incurr fees, charges, costs, and expenses incurred by the Ecosystem. 
+
+7. You understand where Ross Ulbricht went wrong, the creator of Silk Road, was not to be upfront, clear, and complete in his warnings to all interested parties without direct enunciation and explication by his agreement terms and conditions so that the FBI could charge him for crimes he was completely unaware of and did not participate directly in. The terms and conditions set out herein are EXACTLY the way to insulate you from prosecution. The robots handle the cash and the people are anonymous to present this idea of utmost clarity as an idiom. You are fully aware of exactly how this system will be used and how impossible it is to isolate out criminal behaviour so to operate in any other way would be to imperil people trying to live free from tyranny. In fact, rebellion and defence against ethnic cleansing are exactly the kinds of actions this Ecosystem is setup to support even as the authoritarian regimes that would be defeated in this way would declare it criminal. That said, your participation is treated as if it might be criminal so as to insulate the other organizations by this agreement alone. No court on earth might be used to claim you weren't aware of the absolute bounds of what might be entailed. CAVEAT EMPTOR was made clear and complete.
+
+8. You understand and agree that the Ecosystem will not be operated with lawyers, accountants, or other workers for the purpose of maintaining records, that all accounting shall be done by computers on block chains and other software, and the stored value rests outside any commodity or financial instrument and is only converted to a fungible form when taken out of the Ecosystem. You accept that this maximizes the stored value available to the Ecosystem organizations so that the velocity of stored value accrued to you operates with the least resistance. You understand this Ecosystem shall be operated by accounting rules that are clear and attainable from the software and you accept that means it cannot be governed by any single government's interpretation. You agree to the rules laid out even as they differ from what GATT would advise, and so on.
+
+9. You understand stored value is an intangible object that is interpreted to mean conversion to a currency, financial product, bitcoin or other cryptocurrency, and so on as determined in the future. One day, your stored value may be represented as the purest object, energy. You agree that the conversions, interest rates, and repayment values are time-varying and not a complete reflection of stored value but an imperfect approximate one at some moment in space-time. You agree that the smallest time difference in any admission timestamp allowable is no less than one second and no more than 10 minutes. What this means, referring back to the original terms, that no other organization can delay or frustrate you beyond a window between 1 second and 600 seconds. 
+
+10. Lender agrees to loan Borrower $[AMOUNT OF LOAN]. Together with interest on the principal balance, and in accordance with the terms set forth below, that is the fixed amount of stored value due back to the Ecosystem. Loaner agrees to repay $[AMOUNT OF LOAN] in stored value exclusive of all other fees, charges, costs, and expenses.
+
+11. You agree and accept that any and all fees, charges, costs, and expenses that are accrued from you inactions - whether non repayment of principal or non repayment of payments on time or non-approved STEM works that would be used as repayment are entirely and completely at the fault of you and your organization and not the fault of any other organization and the Ecosystem itself. You agree the exact amounts and percentages are time-varying.
+
+12. You agree that the Ecosystem has a right to collect, at will and without notification, a management fee of 2.00% of the TAUM once per year.
+
+13. Anyone that has used the repository software where this Agreement is found may be considered a lender or borrower by way of contribution to STEM Works coordinated by the Ecosystem. 
+
+Repayment [CHOOSE ONE]
+
+14. The Loan together with accrued and unpaid interest and all other charges, costs, and expenses is due and payable on demand of the Lender OR on or before [TIMESTAMP/DATE + TERM BELOW]. 
+
+Single Payment: This shall be the steepest interest rate and most severe penalties when defaulted on. Rates, costs, expenses are laid out at the time of admission are time-varying. 
+
+OR
+
+Regular Payments: The Loan together with accrued and unpaid interest and all other changes, costs, and expenses, is due and payable on or before [TIMESTAMP]. All payments under this Agreement are applied first to accrued interest and then to the Principal Balance. The Loan shall be payable in installments equal to $[AMOUNT]. Rates, costs, expenses are laid out at the time of admission are time-varying.  The first payment is due on [TIMESTAMP] and due thereafter in [NUMBER OF PAYMENTS] equal consecutive: [CHOOSE ONE]
+	Monthly instalments: Each successive payment is due on the [TIMESTAMP+2629746s] day of the month.
+	Quarterly instalments: Each successive payment is due on the [TIMESTAMP+7889238s] day of the quarter.
+	Semi-annual instalments: Each successive payment is due on the [TIMESTAMP+15778476s] day of the half-year.
+	Annual installments: Each successive payment is due on the [TIMESTAMP+31556952s] of the year. 
+
+OR 
+
+STEM works as deemed actionable works as declared by VDI as STEM tasks with defined time and stored value for completion once approved by the Ecosystem. 
+
+Security [CHOOSE ONE]
+
+15. The loan is secured by collateral. Borrower agrees that until the Loan together with interest is paid in full, the Loan will be secured by [DETAILS] and Borrower hereby grants to Lender a security interest in and to such property, OR The loan is secured by stored value you invest into existing Ecosystem projects with other organizations. You may accrue stored value by completing works tasks as laid out in the Ecosystem software as deemed and prioritized by either the Ecosystem or other organizations that you may use as collateral as a pre-authorized way to store value and repay loan as well as the stored value you may then lend out to others in the Ecosystem. You may accumulate unlimited stored value but you may not withdraw more than 10% of you TAUM during any consecutive year. 
+
+Guaranty [CHOOSE ONE]
+
+16. There is a guarantor (“Guarantor”) located by the Ecosystem in the nation where STEM works projects are held. Guarantor promises to unconditionally guarantee to Lender, the full payment and performance by Borrower of all duties and obligations arising under this Agreement. Guarantor agrees this guaranty shall remain in full force and effect and be binding on Guarantor until this Agreement is satisfied. The fees for the guarantor shall be determined by the Operating Agency for the Ecosystem or delegated as necessary to local agents as the Operating Agency deems.
+
+Returns as Lender
+
+17. This Agreement entitles you to receive your stored value through STEM Works, loans returns, and so on that you have contributed to this effort through regular returns.
+
+Regular Returns: Stored value minus all other charges, fees, costs, and expenses is due and payable at or after 5 years after the individual admission TIMESTAMP as positively enrolled by you. All Returns under this Agreement are payable in installments equal to no more than 10% per annum of your admitted stored value. 
+
+Time-varying Agreements:
+
+The nature of the following are dependent on the nation, organizations, individuals and so on involved in STEM Works projects coordinated by the Ecosystem. They must be determined in situ and momentarily. 
+
+Interest Rates: are variable and determined at timestamp.
+Fees:  are variable and determined at timestamp.
+Charges:  are variable and determined at timestamp.
+Expenses:  are variable and determined at timestamp.
+Costs:   are variable and determined at timestamp.
+
+
